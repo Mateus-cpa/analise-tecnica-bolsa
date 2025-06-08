@@ -1,0 +1,1 @@
+# analise-tecnica-bolsa
