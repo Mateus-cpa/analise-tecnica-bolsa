@@ -40,7 +40,7 @@ def definir_ticker():
     request = requests.get(url)
     tickers_yf = [ticker + '.SA' for ticker in tickers]
     print(tickers_yf[:10])"""
-    ticker = 'BBAS3.SA' 
+    ticker = 'BOVA11.SA' 
     #Listando os tickers disponíveis
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
@@ -59,17 +59,25 @@ def baixar_dados(ticker = None, tempo_anos=1):
     intervalo = '1d'  # Intervalo diário
     # Carregando os dados do Yahoo Finance
     df = yf.download(ticker, start=start_date, end=end_date, interval=intervalo)
+    # Corrige MultiIndex nas colunas, se houver
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = [col[0] for col in df.columns.values]  # Mantém só o 1º nível (ex: 'Close')
     return df
 
-def detectar_mudanca_tendencia(row, df):
-    idx = row.name
-    # Garante que o índice é inteiro sequencial (após reset_index)
-    if idx == 0:
-        return None
+def detectar_mudanca_tendencia(row, previous_row):
+    """Detecta mudanças de tendência com base nas médias móveis.
+    Args:
+        row (pd.Series): Linha atual do DataFrame.
+        previous_row (pd.Series): Linha anterior do DataFrame.
+    Returns:
+        str: 'Alta' se houve uma mudança de tendência de baixa para alta,
+             'Baixa' se houve uma mudança de tendência de alta para baixa,
+             None caso contrário.
+    """
     mm5_atual = row['MM5']
     mm21_atual = row['MM21']
-    mm5_ant = df.loc[idx - 1, 'MM5']
-    mm21_ant = df.loc[idx - 1, 'MM21']
+    mm5_ant = previous_row['MM5']
+    mm21_ant = previous_row['MM21']
 
     if pd.isna(mm5_atual) or pd.isna(mm21_atual):
         return None
@@ -107,71 +115,88 @@ def enriquecer_dados(acao):
     #acao['rsi'] = RSI(acao['Close'], timeperiod=14)
 
     
+    # Iterar no dataframe e marcar mudanças de tendência
+    acao['Date'] = acao.index  # Adiciona a coluna de data
+    acao = acao.reset_index(drop=True)
+    acao['mudanca_tendencia'] = acao.apply(lambda row: detectar_mudanca_tendencia(row, acao.iloc[row.name - 1]) if row.name > 0 else None, axis=1)
+
+    
+    # Adicionar marcadores de topos e fundos em comparação a +/- 5 dias
+    acao['marcador'] = None  # Cria a coluna se não existir
+    for i in range(5, len(acao) - 5):
+        close_atual = acao.iloc[i]['Close']
+        prev_5 = acao.iloc[i-5:i]['Close']
+        next_5 = acao.iloc[i+1:i+6]['Close']
+        # Verifica se o preço atual é maior que os 5 anteriores e os 5 seguintes
+        if all(close_atual > x for x in prev_5) and all(close_atual > x for x in next_5):
+            acao.at[acao.index[i], 'marcador'] = 'topo'
+        elif all(close_atual < x for x in prev_5) and all(close_atual < x for x in next_5):
+            acao.at[acao.index[i], 'marcador'] = 'fundo'
+
     #DATAFRAME
+    acao = acao.set_index('Date')  # Define a coluna de data como índice
     st.subheader("Dados do ativo:")
     st.dataframe(acao.sort_index(ascending=False))
-    
-    # Iterar no dataframe e marcar mudanças de tendência
-    acao = acao.reset_index(drop=True)
-    acao['mudanca_tendencia'] = acao.apply(lambda row: detectar_mudanca_tendencia(row, acao), axis=1)
-
-        # Adicionar marcadores de topos e fundos em comparação a +/- 5 dias
-    for i in range(5, len(acao)-5):
-        date = acao.index[i]
-        previous_date = acao.index[acao.index.get_loc(date) - 1]
-        next_dates = acao.index[i+1:i+6]
-
-        if all(acao.at[date,'Close'] > acao.at[previous_date,'Close'] for previous_date in previous_dates) and \
-        all(acao.at[date,'Close'] > acao.at[next_date,'Close'] for next_date in next_dates):
-            acao.at[date,'marcador'] = 'topo'
-
-        if all(acao.at[date,'Close'] < acao.at[previous_date,'Close'] for previous_date in previous_dates) and \
-        all(acao.at[date,'Close'] < acao.at[next_date,'Close'] for next_date in next_dates):
-            acao.at[date,'marcador'] = 'fundo'
 
     #Datas com marcadores
     data_mudanca = acao[acao['mudanca_tendencia'].notnull()].index
     data_topo = acao[acao['marcador'] == 'topo'].index
     data_fundo = acao[acao['marcador'] == 'fundo'].index
-    
     return acao
 
-def mostrar_dados(tempo_anos=1):
-    configuracoes_iniciais()
-    ticker = definir_ticker()
-    acao = baixar_dados(ticker, tempo_anos)
-
-    enriquecer_dados(acao)
-
-
-    # Exibindo os dados
-    st.title(f"Análise de {ticker.split('.')[0]}")
-    
-
-    # Plotando o gráfico de preços em candlestick no streamlit
-    st.subheader(f"Gráfico de Preços - {ticker}")
-    # Verificando se o DataFrame está vazio
+def plotar_grafico(acao, ticker):
+    """Plota o gráfico de preços da ação com médias móveis e marcadores de tendência.
+    Args:
+        acao (pd.DataFrame): DataFrame contendo os dados de preços da ação enriquecidos.
+    """
+    # Verifica se o DataFrame está vazio
     if acao.empty:
         st.error("Nenhum dado disponível para o ticker selecionado.")
         return
+
     # Convertendo o índice para o formato de data
     acao.index = pd.to_datetime(acao.index)
+
     # Verificando se a coluna 'Close' existe
     if 'Close' not in acao.columns:
         st.error("Coluna 'Close' não encontrada nos dados.")
         return
+
     # Plotando o gráfico de preços
-
     fig = make_subplots(rows=1, cols=1)
-    fig.add_trace(go.Scatter(x=df.index, y=df['Close'], mode='lines', name='Preço de Fechamento'))
-    fig.update_layout(title=f"Gráfico de Preços - {ticker}", xaxis_title='Data', yaxis_title='Preço (R$)')
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Preço de Fechamento'))
+    
+    # Adicionando médias móveis
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200'))
 
+    # Adicionando marcadores de tendência
+    for i in range(len(acao)):
+        if acao.iloc[i]['mudanca_tendencia'] == 'Alta':
+            fig.add_annotation(x=acao.index[i], y=acao.iloc[i]['Close'], text="Alta", showarrow=True, arrowhead=2, ax=-20, ay=-30)
+        elif acao.iloc[i]['mudanca_tendencia'] == 'Baixa':
+            fig.add_annotation(x=acao.index[i], y=acao.iloc[i]['Close'], text="Baixa", showarrow=True, arrowhead=2, ax=-20, ay=-30)
+
+    # Atualizando layout do gráfico
+    fig.update_layout(title=f"Gráfico de Preços - {ticker}", xaxis_title='Data', yaxis_title='Preço (R$)')
+    
     # Exibindo o gráfico no Streamlit
     st.plotly_chart(fig)
 
     # Exibindo estatísticas descritivas
     st.write("Estatísticas Descritivas:")
-    st.dataframe(df.describe())
+    st.dataframe(acao.describe())
+
+def mostrar_dados(tempo_anos=1):
+    configuracoes_iniciais()
+    ticker = definir_ticker()
+    acao = baixar_dados(ticker, tempo_anos)
+    acao = enriquecer_dados(acao)
+    plotar_grafico(acao, ticker)
+
+    
 
 
 if __name__ == "__main__":
