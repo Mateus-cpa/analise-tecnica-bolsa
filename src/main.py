@@ -95,6 +95,8 @@ def enriquecer_dados(acao):
         pd.DataFrame: DataFrame enriquecido com médias móveis e outros indicadores.
     """
         # Corrige o último dado de 'Low' se estiver vazio
+    
+
     if pd.isna(acao.iloc[-1,0]):
         if (acao.iloc[-1,3] < acao.iloc[-1,0]):
             acao.iloc[-1,2] = acao.iloc[-1,0]
@@ -133,11 +135,11 @@ def enriquecer_dados(acao):
         elif all(close_atual < x for x in prev_5) and all(close_atual < x for x in next_5):
             acao.at[acao.index[i], 'marcador'] = 'fundo'
 
-    #DATAFRAME
+    # Convertendo o índice para o formato de data
+    acao.index = pd.to_datetime(acao.index)
     acao = acao.set_index('Date')  # Define a coluna de data como índice
-    st.subheader("Dados do ativo:")
-    st.dataframe(acao.sort_index(ascending=False))
 
+    
     #Datas com marcadores
     data_mudanca = acao[acao['mudanca_tendencia'].notnull()].index
     data_topo = acao[acao['marcador'] == 'topo'].index
@@ -154,36 +156,107 @@ def plotar_grafico(acao, ticker):
         st.error("Nenhum dado disponível para o ticker selecionado.")
         return
 
-    # Convertendo o índice para o formato de data
-    acao.index = pd.to_datetime(acao.index)
 
     # Verificando se a coluna 'Close' existe
     if 'Close' not in acao.columns:
         st.error("Coluna 'Close' não encontrada nos dados.")
         return
 
+    #Criando filtro de data sendo padrão o inicial 30 dias antes do último dado e o final o último dado
+    data_inicio, data_fim = st.slider(
+        "Selecione o período de análise",
+        min_value=acao.index.min().date(),
+        max_value=acao.index.max().date(),
+        value=(acao.index.max().date() - timedelta(days=30), acao.index.max().date()),
+        format="DD/MM/YYYY",
+        key="data_slider"
+    )
+    # Filtra o DataFrame conforme o período selecionado
+    acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
+
+
     # Plotando o gráfico de preços
     fig = make_subplots(rows=1, cols=1)
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Preço de Fechamento'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Preço de Fechamento', marker_color='rgba(255,0,0,0.5)'))
     
     # Adicionando médias móveis
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200'))
-
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21', marker_color='rgba(160,160,160,0.5)'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72', marker_color='rgba(90,90,90,0.5)'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200', marker_color='rgba(40,40,40,0.5)'))
+    
+    #adicionando marcadores de topos e fundos com scatter
+    fig.add_trace(go.Scatter(
+        x=acao[acao['marcador'] == 'topo'].index,
+        y=acao[acao['marcador'] == 'topo']['Close'],
+        mode='markers',
+        name='Topos',
+        marker=dict(color='red', size=10, symbol='triangle-up')
+    ))
+    fig.add_trace(go.Scatter(
+        x=acao[acao['marcador'] == 'fundo'].index,
+        y=acao[acao['marcador'] == 'fundo']['Close'],
+        mode='markers',
+        name='Fundos',
+        marker=dict(color='green', size=10, symbol='triangle-down')
+    ))
     # Adicionando marcadores de tendência
     for i in range(len(acao)):
         if acao.iloc[i]['mudanca_tendencia'] == 'Alta':
-            fig.add_annotation(x=acao.index[i], y=acao.iloc[i]['Close'], text="Alta", showarrow=True, arrowhead=2, ax=-20, ay=-30)
+            fig.add_annotation(x=acao.index[i], 
+                               y=acao.iloc[i]['Close'], 
+                               text="Alta", 
+                               showarrow=True, 
+                               arrowhead=2, 
+                               ax=-20, 
+                               ay=-30,
+                               bgcolor='green',
+                               font=dict(color='white'))
         elif acao.iloc[i]['mudanca_tendencia'] == 'Baixa':
-            fig.add_annotation(x=acao.index[i], y=acao.iloc[i]['Close'], text="Baixa", showarrow=True, arrowhead=2, ax=-20, ay=-30)
+            fig.add_annotation(x=acao.index[i], 
+                               y=acao.iloc[i]['Close'], 
+                               text="Baixa", 
+                               showarrow=True, 
+                               arrowhead=2, 
+                               ax=-20, 
+                               ay=30,
+                                 bgcolor='red',
+                                 font=dict(color='white')
+                               )
 
+    
     # Atualizando layout do gráfico
-    fig.update_layout(title=f"Gráfico de Preços - {ticker}", xaxis_title='Data', yaxis_title='Preço (R$)')
+    fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
     
     # Exibindo o gráfico no Streamlit
     st.plotly_chart(fig)
+
+    st.divider()
+
+    
+
+def lancar_dataframe(acao, ticker):
+    """Lança o DataFrame enriquecido no Streamlit.
+    Args:
+        acao (pd.DataFrame): DataFrame contendo os dados de preços da ação enriquecidos.
+        ticker (str): O ticker da ação a ser analisada.
+    """
+    # Verifica se o DataFrame está vazio
+    if acao.empty:
+        st.error("Nenhum dado disponível para o ticker selecionado.")
+        return
+
+    # Exibe o DataFrame no Streamlit
+    st.dataframe(acao.sort_index(ascending=False))
+
+    # Exibe o DataFrame como CSV para download
+    csv = acao.to_csv(index=True).encode('utf-8')
+    st.download_button(
+        label="Download CSV",
+        data=csv,
+        file_name=f"{ticker.split('.')[0]}_dados_enriquecidos.csv",
+        mime='text/csv'
+    )
 
     # Exibindo estatísticas descritivas
     st.write("Estatísticas Descritivas:")
@@ -194,8 +267,9 @@ def mostrar_dados(tempo_anos=1):
     ticker = definir_ticker()
     acao = baixar_dados(ticker, tempo_anos)
     acao = enriquecer_dados(acao)
+    st.header(f"Dados do ativo - {ticker.split('.')[0]}")
     plotar_grafico(acao, ticker)
-
+    lancar_dataframe(acao, ticker)
     
 
 
