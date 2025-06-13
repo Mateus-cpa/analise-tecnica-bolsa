@@ -3,23 +3,17 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import date, timedelta
 import numpy as np
-
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-
+import requests
 import warnings
 warnings.filterwarnings('ignore')
 
-# Technical Analysis - TA-Lib
-#from talib import RSI # type: ignore[import]
-
-# API da Yahoo Finance
-import yfinance as yf
-
-import streamlit as st
-
-
-# machine learning
+# bibliotecas de terceiros
+#from talib import RSI # type: ignore[import] # Technical Analysis - TA-Lib
+import yfinance as yf # API da Yahoo Finance
+import streamlit as st # Streamlit para interface web
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from bs4 import BeautifulSoup as bs4  # Importando BeautifulSoup para manipulação de HTML
 #from sklearn.feature_selection import SelectKBest
 #from sklearn.model_selection import GridSearchCV, train_test_split
 #from sklearn.neural_network import MLPRegressor
@@ -29,19 +23,31 @@ import streamlit as st
 #from tensorflow.keras.models import Sequential
 #from tensorflow.keras.layers import Dense, LSTM, Dropout
 
+#bibliotecas locais
+from importar_tickers import importar_tickers # Importando a função para definir o ticker
+
+
 def configuracoes_iniciais():
     # Configurações iniciais
     plt.style.use('dark_background')  # Corrigido: 'darkgrid' não existe, use 'dark_background'
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
 
+
 def definir_ticker():
-    """url = "https://www.dadosdemercado.com.br/acoes"
-    request = requests.get(url)
-    tickers_yf = [ticker + '.SA' for ticker in tickers]
-    print(tickers_yf[:10])"""
-    ticker = 'BOVA11.SA' 
-    #Listando os tickers disponíveis
+    """Define o ticker a ser analisado.
+    Returns:
+        str: O ticker da ação a ser analisada.
+    """
+    st.header("Definir Ticker")
+    #importar tickers de raw_data/tickers.csv
+    tickers = pd.read_csv('raw_data/tickers.csv', header=None)[0].tolist()
+    st.session_state.ticker = st.selectbox(
+        "Selecione o ticker da ação",
+        options=tickers,
+        key="ticker_select"
+    )
+    ticker = st.session_state.ticker + '.SA'
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
 def baixar_dados(ticker = None, tempo_anos=1):
@@ -220,8 +226,8 @@ def plotar_grafico(acao, ticker):
                                arrowhead=2, 
                                ax=-20, 
                                ay=30,
-                                 bgcolor='red',
-                                 font=dict(color='white')
+                                bgcolor='red',
+                                font=dict(color='white')
                                )
 
     
@@ -264,6 +270,7 @@ def lancar_dataframe(acao, ticker):
 
 def mostrar_dados(tempo_anos=1):
     configuracoes_iniciais()
+    importar_tickers()  # Importa os tickers disponíveis
     ticker = definir_ticker()
     acao = baixar_dados(ticker, tempo_anos)
     acao = enriquecer_dados(acao)
