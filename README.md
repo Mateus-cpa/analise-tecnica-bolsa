@@ -28,7 +28,7 @@ Workspace
 (rerun without)
 Collecting workspace information
 ```
-├── Análise_técnica_de_ações.ipynb # Notebook principal com análises e experimentos 
+├── Análise_técnica_de_ações.ipynb # Notebook de origem com análises e experimentos 
 ├── pyproject.toml # Configuração do Poetry e dependências 
 ├── poetry.lock # Lockfile de dependências 
 ├── .python-version # Versão do Python utilizada 
@@ -46,6 +46,7 @@ python -m venv .venv
 source .venv/bin/activate  # No Windows use: .venv\Scripts\activate
 pyenv local 3.13.0  
 poetry init       # Certifique-se de ter o pyenv e Python 3.13.0 instalados
+poetry shell
 poetry install
 ```
 
