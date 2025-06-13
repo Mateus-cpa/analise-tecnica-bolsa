@@ -33,7 +33,6 @@ def configuracoes_iniciais():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
 
-
 def definir_ticker():
     """Define o ticker a ser analisado.
     Returns:
@@ -162,7 +161,6 @@ def plotar_grafico(acao, ticker):
         st.error("Nenhum dado disponível para o ticker selecionado.")
         return
 
-
     # Verificando se a coluna 'Close' existe
     if 'Close' not in acao.columns:
         st.error("Coluna 'Close' não encontrada nos dados.")
@@ -184,51 +182,69 @@ def plotar_grafico(acao, ticker):
     # Plotando o gráfico de preços
     fig = make_subplots(rows=1, cols=1)
     fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Preço de Fechamento', marker_color='rgba(255,0,0,0.5)'))
-    
+
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+
     # Adicionando médias móveis
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21', marker_color='rgba(160,160,160,0.5)'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72', marker_color='rgba(90,90,90,0.5)'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200', marker_color='rgba(40,40,40,0.5)'))
-    
+    if col1.checkbox('MM5', value=True):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
+    if col2.checkbox('MM21', value=True):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21', marker_color='rgba(160,160,160,0.5)'))
+    if col3.checkbox('MM72', value=True):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72', marker_color='rgba(90,90,90,0.5)'))
+    if col4.checkbox('MM200', value=False):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200', marker_color='rgba(40,40,40,0.5)'))
+
     #adicionando marcadores de topos e fundos com scatter
-    fig.add_trace(go.Scatter(
-        x=acao[acao['marcador'] == 'topo'].index,
-        y=acao[acao['marcador'] == 'topo']['Close'],
-        mode='markers',
-        name='Topos',
-        marker=dict(color='red', size=10, symbol='triangle-up')
-    ))
-    fig.add_trace(go.Scatter(
-        x=acao[acao['marcador'] == 'fundo'].index,
-        y=acao[acao['marcador'] == 'fundo']['Close'],
+    if col5.checkbox('Topos e Fundos', value=True):
+        fig.add_trace(go.Scatter(
+            x=acao[acao['marcador'] == 'topo'].index,
+            y=acao[acao['marcador'] == 'topo']['Close'],
+            mode='markers',
+            name='Topos',
+            marker=dict(color='red', size=10, symbol='triangle-up')
+        ))
+        
+        fig.add_trace(go.Scatter(
+            x=acao[acao['marcador'] == 'fundo'].index,
+            y=acao[acao['marcador'] == 'fundo']['Close'],
         mode='markers',
         name='Fundos',
         marker=dict(color='green', size=10, symbol='triangle-down')
-    ))
+        ))
     # Adicionando marcadores de tendência
-    for i in range(len(acao)):
-        if acao.iloc[i]['mudanca_tendencia'] == 'Alta':
-            fig.add_annotation(x=acao.index[i], 
-                               y=acao.iloc[i]['Close'], 
-                               text="Alta", 
-                               showarrow=True, 
-                               arrowhead=2, 
-                               ax=-20, 
-                               ay=-30,
-                               bgcolor='green',
-                               font=dict(color='white'))
-        elif acao.iloc[i]['mudanca_tendencia'] == 'Baixa':
-            fig.add_annotation(x=acao.index[i], 
-                               y=acao.iloc[i]['Close'], 
-                               text="Baixa", 
-                               showarrow=True, 
-                               arrowhead=2, 
-                               ax=-20, 
-                               ay=30,
-                                bgcolor='red',
-                                font=dict(color='white')
-                               )
+    if col6.checkbox('Mudança de Tendência', value=True):
+        # Filtra as datas com mudança de tendência
+        mudanca_tendencia = acao[acao['mudanca_tendencia'].notnull()]
+        fig.add_trace(go.Scatter(
+            x=mudanca_tendencia.index,
+            y=mudanca_tendencia['Close'],
+            mode='markers',
+            name='Mudança de Tendência',
+            marker=dict(color='yellow', size=10, symbol='circle')
+        ))
+        for i in range(len(acao)):
+            if acao.iloc[i]['mudanca_tendencia'] == 'Alta':
+                fig.add_annotation(x=acao.index[i], 
+                                y=acao.iloc[i]['Close'], 
+                                text="Alta", 
+                                showarrow=True, 
+                                arrowhead=2, 
+                                ax=-20, 
+                                ay=-30,
+                                bgcolor='green',
+                                font=dict(color='white'))
+            elif acao.iloc[i]['mudanca_tendencia'] == 'Baixa':
+                fig.add_annotation(x=acao.index[i], 
+                                y=acao.iloc[i]['Close'], 
+                                text="Baixa", 
+                                showarrow=True, 
+                                arrowhead=2, 
+                                ax=-20, 
+                                ay=30,
+                                    bgcolor='red',
+                                    font=dict(color='white')
+                                )
 
     
     # Atualizando layout do gráfico
