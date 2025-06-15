@@ -161,7 +161,8 @@ def mostrar_fundamentos(ticker: str, fundamentos: pd.DataFrame):
         ticker (str): O ticker da ação.
         fundamentos (pd.DataFrame): DataFrame contendo os fundamentos da ação.
     """
-    st.header(f"Dados do ativo - {ticker.split('.')[0]} - {fundamentos['sector'].values[0]}")
+    st.header(f"{fundamentos['shortName'].values[0]}")
+    st.subheader(f"{fundamentos['longName'].values[0]}")
 
     st.subheader("Fundamentos")
     if fundamentos.empty:
@@ -226,15 +227,20 @@ def plotar_grafico(acao, ticker):
         st.error("Coluna 'Close' não encontrada nos dados.")
         return
 
-    #Criando filtro de data sendo padrão o inicial 30 dias antes do último dado e o final o último dado
-    data_inicio, data_fim = st.slider(
-        "Selecione o período de análise",
-        min_value=acao.index.min().date(),
-        max_value=acao.index.max().date(),
-        value=(acao.index.max().date() - timedelta(days=30), acao.index.max().date()),
-        format="DD/MM/YYYY",
-        key="data_slider"
-    )
+    col1, col2 = st.columns([0.15, 0.85])
+    with col1:
+        st.selectbox('Tempo gráfico', options=['1M', '3M', '6M', '1Y', '2Y', '5Y'], key='tempo_grafico')
+    with col2:    
+        #Criando filtro de data sendo padrão o inicial 30 dias antes do último dado e o final o último dado
+        data_inicio, data_fim = st.slider(
+            "Selecione o período de análise",
+            min_value=acao.index.min().date(),
+            max_value=acao.index.max().date(),
+            value=(acao.index.max().date() - timedelta(days=30), acao.index.max().date()),
+            format="DD/MM/YYYY",
+            key="data_slider"
+        )
+    
     # Filtra o DataFrame conforme o período selecionado
     acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
 
@@ -355,7 +361,7 @@ def mostrar_dados(tempo_anos=1):
         mostrar_fundamentos(ticker, fundamentos)
         plotar_grafico(acao, ticker)
         lancar_dataframe(acao, ticker)
-    
+    st.header("Previsão de cotação")
 
 if __name__ == "__main__":
     configuracoes_iniciais()
