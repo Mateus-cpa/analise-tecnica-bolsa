@@ -25,6 +25,7 @@ from bs4 import BeautifulSoup as bs4  # Importando BeautifulSoup para manipulaç
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
+from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
 
 
 def configuracoes_iniciais():
@@ -151,6 +152,42 @@ def enriquecer_dados(acao):
     data_fundo = acao[acao['marcador'] == 'fundo'].index
     return acao
 
+def mostrar_fundamentos(fundamentos):
+    """Mostra os fundamentos da ação no Streamlit.
+    Args:
+        fundamentos (pd.DataFrame): DataFrame contendo os fundamentos da ação.
+    """
+    st.header("Fundamentos")
+    if fundamentos.empty:
+        st.error("Nenhum dado fundamental disponível para o ticker selecionado.")
+        return
+    # Exibe os fundamentos no Streamlit
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        #kpis
+        st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
+        st.metric("Último Dividendo", f"R$ {fundamentos['lastDividendValue'].values[0]:.2f}")
+        try:
+            st.metric("Data do Último Dividendo", f"{pd.to_datetime(fundamentos['lastDividendDate'].values[0]).strftime('%d/%m/%Y')}")
+        except Exception as e:
+            st.error(f"Erro ao exibir a data do último dividendo: {e}")
+
+    with col2:
+        st.metric("Margem de Lucro", f"{fundamentos['profitMargins'].values[0]:.2%}")
+        if 'buy' in fundamentos['recommendationKey'].values[0]:
+            st.metric("Recomendação", "Comprar", delta_color="normal")
+        elif 'sell' in fundamentos['recommendationKey'].values[0]:
+            st.metric("Recomendação", "Vender", delta_color="inverse")
+        st.metric('numberOfAnalystOpinions', fundamentos['numberOfAnalystOpinions'].values[0])
+        st.metric('targetMedianPrice', f"R$ {fundamentos['targetMedianPrice'].values[0]:.2f}")
+
+
+    with col3:
+        st.metric('targetHighPrice', f"R$ {fundamentos['targetHighPrice'].values[0]:.2f}")
+        st.metric('targetLowPrice', f"R$ {fundamentos['targetLowPrice'].values[0]:.2f}")
+        st.metric('targetMeanPrice', f"R$ {fundamentos['targetMeanPrice'].values[0]:.2f}")
+
+    st.write(fundamentos)
 def plotar_grafico(acao, ticker):
     """Plota o gráfico de preços da ação com médias móveis e marcadores de tendência.
     Args:
@@ -255,8 +292,6 @@ def plotar_grafico(acao, ticker):
 
     st.divider()
 
-    
-
 def lancar_dataframe(acao, ticker):
     """Lança o DataFrame enriquecido no Streamlit.
     Args:
@@ -291,6 +326,8 @@ def mostrar_dados(tempo_anos=1):
     acao = baixar_dados(ticker, tempo_anos)
     acao = enriquecer_dados(acao)
     st.header(f"Dados do ativo - {ticker.split('.')[0]}")
+    fundamentos = importar_fundamentos(ticker)
+    mostrar_fundamentos(fundamentos)
     plotar_grafico(acao, ticker)
     lancar_dataframe(acao, ticker)
     
