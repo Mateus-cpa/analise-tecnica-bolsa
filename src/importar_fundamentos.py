@@ -9,7 +9,9 @@ def importar_fundamentos(ticker):
                 'dividendYield','profitMargins','lastDividendValue','lastDividendDate',
                 'recommendationKey','targetHighPrice','targetLowPrice',
                 'targetMeanPrice','targetMedianPrice','numberOfAnalystOpinions']
-    dados = dados[colunas]
+    for coluna in colunas:
+        if coluna not in dados.columns:
+            dados[coluna] = None
     return dados
 
 if __name__ == "__main__":
