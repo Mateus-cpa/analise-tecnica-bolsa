@@ -42,11 +42,14 @@ def definir_ticker():
     st.header("Definir Ticker")
     #importar tickers de raw_data/tickers.csv
     tickers = pd.read_csv('raw_data/tickers.csv', header=None)[0].tolist()
-    st.session_state.ticker = st.selectbox(
-        "Selecione o ticker da ação",
-        options=tickers,
-        key="ticker_select"
-    )
+    col1, col2 = st.columns([0.3, 0.7])
+    with col1:
+        st.session_state.ticker = st.selectbox(
+            "Selecione o ticker da ação",
+            options= ['Nenhum'] + tickers,
+            key="ticker_select"
+        )
+    col2.selectbox('Setor', options=['Todos'] + sorted(tickers), key='setor_select')
     ticker = st.session_state.ticker + '.SA'
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
@@ -152,12 +155,15 @@ def enriquecer_dados(acao):
     data_fundo = acao[acao['marcador'] == 'fundo'].index
     return acao
 
-def mostrar_fundamentos(fundamentos):
+def mostrar_fundamentos(ticker: str, fundamentos: pd.DataFrame):
     """Mostra os fundamentos da ação no Streamlit.
     Args:
+        ticker (str): O ticker da ação.
         fundamentos (pd.DataFrame): DataFrame contendo os fundamentos da ação.
     """
-    st.header("Fundamentos")
+    st.header(f"Dados do ativo - {ticker.split('.')[0]} - {fundamentos['sector'].values[0]}")
+
+    st.subheader("Fundamentos")
     if fundamentos.empty:
         st.error("Nenhum dado fundamental disponível para o ticker selecionado.")
         return
@@ -165,34 +171,51 @@ def mostrar_fundamentos(fundamentos):
     col1, col2, col3 = st.columns(3)
     with col1:
         #kpis
-        st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
-        st.metric("Último Dividendo", f"R$ {fundamentos['lastDividendValue'].values[0]:.2f}")
+        if fundamentos['dividendYield'].values[0] is not None:
+            st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
+        if fundamentos['lastDividendValue'].values[0] is not None:
+            st.metric("Último Dividendo", f"R$ {fundamentos['lastDividendValue'].values[0]:.2f}")
         try:
             st.metric("Data do Último Dividendo", f"{pd.to_datetime(fundamentos['lastDividendDate'].values[0]).strftime('%d/%m/%Y')}")
         except Exception as e:
             st.error(f"Erro ao exibir a data do último dividendo: {e}")
 
     with col2:
-        st.metric("Margem de Lucro", f"{fundamentos['profitMargins'].values[0]:.2%}")
-        if 'buy' in fundamentos['recommendationKey'].values[0]:
-            st.metric("Recomendação", "Comprar", delta_color="normal")
-        elif 'sell' in fundamentos['recommendationKey'].values[0]:
-            st.metric("Recomendação", "Vender", delta_color="inverse")
-        st.metric('numberOfAnalystOpinions', fundamentos['numberOfAnalystOpinions'].values[0])
-        st.metric('targetMedianPrice', f"R$ {fundamentos['targetMedianPrice'].values[0]:.2f}")
-
+        if fundamentos['profitMargins'].values[0] is not None:
+            st.metric("Margem de Lucro", f"{fundamentos['profitMargins'].values[0]:.2%}")
+        if fundamentos['recommendationKey'].values[0] is not None:
+            if 'buy' in fundamentos['recommendationKey'].values[0]:
+                st.metric("Recomendação", "Comprar", delta_color="normal")
+                #st.metric("Recomendação", ":cow: [Comprar]", delta_color="normal")
+            elif 'sell' in fundamentos['recommendationKey'].values[0]:
+                st.metric("Recomendação", "Vender", delta_color="inverse")
+                #st.metric("Recomendação", ":bear: [Vender]", delta_color="inverse")
+        if fundamentos['numberOfAnalystOpinions'].values[0] is not None:
+            st.metric('Nº de Opiniões de Analistas', fundamentos['numberOfAnalystOpinions'].values[0])
+        if fundamentos['targetMedianPrice'].values[0] is not None:
+            st.metric('Mediana de Preço alvo', f"R$ {fundamentos['targetMedianPrice'].values[0]:.2f}")
 
     with col3:
-        st.metric('targetHighPrice', f"R$ {fundamentos['targetHighPrice'].values[0]:.2f}")
-        st.metric('targetLowPrice', f"R$ {fundamentos['targetLowPrice'].values[0]:.2f}")
-        st.metric('targetMeanPrice', f"R$ {fundamentos['targetMeanPrice'].values[0]:.2f}")
+        if fundamentos['targetHighPrice'].values[0] is not None:
+            st.metric('Preço alvo máximo', f"R$ {fundamentos['targetHighPrice'].values[0]:.2f}")
+        if fundamentos['targetLowPrice'].values[0] is not None:
+            st.metric('Preço alvo mínimo', f"R$ {fundamentos['targetLowPrice'].values[0]:.2f}")
+        if fundamentos['targetMeanPrice'].values[0] is not None:
+            st.metric('Média de Preço alvo', f"R$ {fundamentos['targetMeanPrice'].values[0]:.2f}")
 
-    st.write(fundamentos)
+    colunas = ['address1','address2','sector','longBusinessSummary',
+                'dividendYield','profitMargins','lastDividendValue','lastDividendDate',
+                'recommendationKey','targetHighPrice','targetLowPrice',
+                'targetMeanPrice','targetMedianPrice','numberOfAnalystOpinions']
+    for col in colunas:
+        st.write(f"{col}: {fundamentos[col].values[0]}")
+
 def plotar_grafico(acao, ticker):
     """Plota o gráfico de preços da ação com médias móveis e marcadores de tendência.
     Args:
         acao (pd.DataFrame): DataFrame contendo os dados de preços da ação enriquecidos.
     """
+    st.header("Gráfico de Preços")
     # Verifica se o DataFrame está vazio
     if acao.empty:
         st.error("Nenhum dado disponível para o ticker selecionado.")
@@ -323,15 +346,16 @@ def mostrar_dados(tempo_anos=1):
     configuracoes_iniciais()
     importar_tickers()  # Importa os tickers disponíveis
     ticker = definir_ticker()
-    acao = baixar_dados(ticker, tempo_anos)
-    acao = enriquecer_dados(acao)
-    st.header(f"Dados do ativo - {ticker.split('.')[0]}")
-    fundamentos = importar_fundamentos(ticker)
-    mostrar_fundamentos(fundamentos)
-    plotar_grafico(acao, ticker)
-    lancar_dataframe(acao, ticker)
+    if 'Nenhum' in st.session_state.ticker:
+        st.error("Por favor, selecione um ticker válido.")
+    else:
+        acao = baixar_dados(ticker, tempo_anos)
+        acao = enriquecer_dados(acao)
+        fundamentos = importar_fundamentos(ticker)
+        mostrar_fundamentos(ticker, fundamentos)
+        plotar_grafico(acao, ticker)
+        lancar_dataframe(acao, ticker)
     
-
 
 if __name__ == "__main__":
     configuracoes_iniciais()
