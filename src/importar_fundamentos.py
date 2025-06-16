@@ -1,7 +1,8 @@
 import os
 import pandas as pd
 import yfinance as yf
-import streamlit as st
+
+
 
 def importar_fundamentos(ticker):
     # Lógica para importar dados fundamentais do ticker
@@ -10,27 +11,44 @@ def importar_fundamentos(ticker):
     #st.write(dados.columns)
     colunas = ['address1','address2','sector','longBusinessSummary',
                 'dividendYield','profitMargins','lastDividendValue','lastDividendDate',
+                'previousClose','quoteType',
                 'recommendationKey','targetHighPrice','targetLowPrice',
                 'targetMeanPrice','targetMedianPrice','numberOfAnalystOpinions', 
                 'customPriceAlertConfidence',
-                'shortName','longName']
+                'shortName','longName','website']
     for coluna in colunas:
         if coluna not in dados.columns:
             dados[coluna] = None
-    """# Salvar setores de cada ticker em raw_data/setores.csv
-    os.makedirs('raw_data', exist_ok=True)  # Garante que a pasta existe
-    lista_tickers = pd.read_csv('raw_data/tickers.csv', header=None)[0].tolist()
-    setores_path = 'raw_data/setores.csv'
-    with open(setores_path, 'w') as f:
-        for ticker in lista_tickers:
-            f.write(yf.Ticker(ticker).info['sector'] + '\n')"""
-
     return dados
 
-if __name__ == "__main__":
-    ticker = "BPAC11.SA"  # Exemplo de ticker
-    fundamentos = importar_fundamentos(ticker)
-    print(f"Fundamentos para {ticker}:")
+def importar_lista_setores():
+    # criar arquivo ../raw_data/lista_setores.csv
+    raw_data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'raw_data'))
+    os.makedirs(raw_data_dir, exist_ok=True)
+    tickers_path = os.path.join(raw_data_dir, 'tickers.csv')
+    setores_path = os.path.join(raw_data_dir, 'lista_setores.csv')
 
-    for key, value in fundamentos.items():
-        print(f"{key}: {value}")
+    # Lê a lista de tickers
+    lista_tickers = pd.read_csv(tickers_path, header=None)[0].tolist()
+    setores = []
+
+    for ticker in lista_tickers:
+        try:
+            info = yf.Ticker(ticker + '.SA').info
+            setor = info.get('sector', 'N/A')
+            industria = info.get('industry', 'N/A')
+            print(f"Setor: {setor} | Indústria: {industria}")
+        except Exception:
+            setor = 'N/A'
+            industria = 'N/A'
+        setores.append({'ticker': ticker, 'setor': setor, 'industria': industria})
+
+    # Salva no CSV
+    df_setores = pd.DataFrame(setores)
+    df_setores.to_csv(setores_path, index=False)
+
+if __name__ == "__main__":
+    
+    #fundamentos = importar_fundamentos(ticker)
+    #importar_lista_setores()
+    print(f"Importação realizada com sucesso!")
