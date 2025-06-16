@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup as bs4  # Importando BeautifulSoup para manipulaç
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
-from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
+from importar_fundamentos import importar_fundamentos, importar_lista_setores # Importando a função para importar fundamentos
 
 
 def configuracoes_iniciais():
@@ -40,17 +40,44 @@ def definir_ticker():
         str: O ticker da ação a ser analisada.
     """
     st.header("Definir Ticker")
-    #importar tickers de raw_data/tickers.csv
-    tickers = pd.read_csv('raw_data/tickers.csv', header=None)[0].tolist()
-    col1, col2 = st.columns([0.3, 0.7])
-    with col1:
-        st.session_state.ticker = st.selectbox(
-            "Selecione o ticker da ação",
-            options= ['Nenhum'] + tickers,
-            key="ticker_select"
-        )
-    col2.selectbox('Setor', options=['Todos'] + sorted(tickers), key='setor_select')
+    
+    # Lê lista_setores.csv com cabeçalho
+    setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
+
+    setores = setores_df['setor'].dropna().unique().tolist()
+    col1, col2, col3 = st.columns([0.35, 0.45, 0.2])
+
+    setor_selecionado = col1.selectbox('Setor', options=['Todos'] + setores, key='setor_select')
+
+    # Filtra subsetores conforme setor
+    if setor_selecionado != 'Todos':
+        subsetores_filtrados = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
+    else:
+        subsetores_filtrados = setores_df['industria'].dropna().unique().tolist()
+
+    subsetor_selecionado = col2.selectbox('Subsetor', options=['Todos'] + subsetores_filtrados, key='subsetores_select')
+
+    # Filtra tickers conforme subsetor e setor
+    if setor_selecionado != 'Todos' and subsetor_selecionado != 'Todos':
+        tickers_filtrados = setores_df[
+            (setores_df['setor'] == setor_selecionado) &
+            (setores_df['industria'] == subsetor_selecionado)
+        ]['ticker'].dropna().unique().tolist()
+    elif setor_selecionado != 'Todos':
+        tickers_filtrados = setores_df[setores_df['setor'] == setor_selecionado]['ticker'].dropna().unique().tolist()
+    elif subsetor_selecionado != 'Todos':
+        tickers_filtrados = setores_df[setores_df['industria'] == subsetor_selecionado]['ticker'].dropna().unique().tolist()
+    else:
+        tickers_filtrados = setores_df['ticker'].dropna().unique().tolist()
+
+    st.session_state.ticker = col3.selectbox(
+        "Ticker da ação",
+        options=['Nenhum'] + tickers_filtrados,
+        key="ticker_select"
+    )
+    
     ticker = st.session_state.ticker + '.SA'
+    #st.write(yf.Ticker(ticker).info)
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
 def baixar_dados(ticker = None, tempo_anos=1):
@@ -155,7 +182,7 @@ def enriquecer_dados(acao):
     data_fundo = acao[acao['marcador'] == 'fundo'].index
     return acao
 
-def mostrar_fundamentos(ticker: str, fundamentos: pd.DataFrame):
+def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """Mostra os fundamentos da ação no Streamlit.
     Args:
         ticker (str): O ticker da ação.
@@ -172,6 +199,8 @@ def mostrar_fundamentos(ticker: str, fundamentos: pd.DataFrame):
     col1, col2, col3 = st.columns(3)
     with col1:
         #kpis
+        if fundamentos['previousClose'].values[0] is not None:
+            st.metric("Último Fechamento", f"R$ {fundamentos['previousClose'].values[0]:.2f}")
         if fundamentos['dividendYield'].values[0] is not None:
             st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
         if fundamentos['lastDividendValue'].values[0] is not None:
@@ -204,11 +233,8 @@ def mostrar_fundamentos(ticker: str, fundamentos: pd.DataFrame):
         if fundamentos['targetMeanPrice'].values[0] is not None:
             st.metric('Média de Preço alvo', f"R$ {fundamentos['targetMeanPrice'].values[0]:.2f}")
 
-    colunas = ['address1','address2','sector','longBusinessSummary',
-                'dividendYield','profitMargins','lastDividendValue','lastDividendDate',
-                'recommendationKey','targetHighPrice','targetLowPrice',
-                'targetMeanPrice','targetMedianPrice','numberOfAnalystOpinions']
-    for col in colunas:
+    
+    for col in fundamentos.columns:
         st.write(f"{col}: {fundamentos[col].values[0]}")
 
 def plotar_grafico(acao, ticker):
@@ -356,9 +382,13 @@ def mostrar_dados(tempo_anos=1):
         st.error("Por favor, selecione um ticker válido.")
     else:
         acao = baixar_dados(ticker, tempo_anos)
+        #importar_lista_setores()
         acao = enriquecer_dados(acao)
         fundamentos = importar_fundamentos(ticker)
-        mostrar_fundamentos(ticker, fundamentos)
+        if ticker != 'Nenhum':
+            mostrar_fundamentos(fundamentos)
+        #else:
+        #    analise_setor
         plotar_grafico(acao, ticker)
         lancar_dataframe(acao, ticker)
     st.header("Previsão de cotação")
