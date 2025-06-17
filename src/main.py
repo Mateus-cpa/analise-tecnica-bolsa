@@ -80,7 +80,7 @@ def definir_ticker():
     #st.write(yf.Ticker(ticker).info)
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
-def baixar_dados(ticker = None, tempo_anos=1):
+def baixar_dados(ticker = None):
     """Baixa os dados do Yahoo Finance para o ticker especificado.
     Args:
         ticker (str): O ticker da ação a ser analisada.
@@ -89,10 +89,13 @@ def baixar_dados(ticker = None, tempo_anos=1):
         pd.DataFrame: DataFrame contendo os dados de preços da ação.
     """
     # Definindo o período de análise
-    today = date.today()
-    start_date = today - timedelta(days=tempo_anos*365)  # Últimos 365 dias
-    end_date = today  # Até hoje
-    intervalo = '1d'  # Intervalo diário
+    tempo_anos = 1
+    start_date = date.today() - timedelta(days=tempo_anos*365)  # Últimos 365 dias
+    end_date = date.today()  # Até hoje
+    #intervalo = st.selectbox('Tempo gráfico',   # Lista Intervalos
+    #                         ['1m','2m','5m','15m','30m','60m','90m','1h','1d','5d','1wk','1mo','3mo'],
+    #                         placeholder='1d')
+    intervalo = '1d'
     # Carregando os dados do Yahoo Finance
     df = yf.download(ticker, start=start_date, end=end_date, interval=intervalo)
     # Corrige MultiIndex nas colunas, se houver
@@ -233,9 +236,10 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
         if fundamentos['targetMeanPrice'].values[0] is not None:
             st.metric('Média de Preço alvo', f"R$ {fundamentos['targetMeanPrice'].values[0]:.2f}")
 
-    
-    for col in fundamentos.columns:
-        st.write(f"{col}: {fundamentos[col].values[0]}")
+    mostrar_fundamentos = st.checkbox('Mostrar todos fundamentos')
+    if mostrar_fundamentos:
+        for col in fundamentos.columns:
+            st.write(f"{col}: {fundamentos[col].values[0]}")
 
 def plotar_grafico(acao, ticker):
     """Plota o gráfico de preços da ação com médias móveis e marcadores de tendência.
@@ -374,26 +378,27 @@ def lancar_dataframe(acao, ticker):
     st.write("Estatísticas Descritivas:")
     st.dataframe(acao.describe())
 
-def mostrar_dados(tempo_anos=1):
+def mostrar_dados(qtde_tempo=1):
     configuracoes_iniciais()
     importar_tickers()  # Importa os tickers disponíveis
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
         st.error("Por favor, selecione um ticker válido.")
     else:
-        acao = baixar_dados(ticker, tempo_anos)
-        #importar_lista_setores()
-        acao = enriquecer_dados(acao)
+        atualizar_base = st.checkbox('Atualizar base')
+        if atualizar_base:
+            importar_lista_setores()
         fundamentos = importar_fundamentos(ticker)
         if ticker != 'Nenhum':
             mostrar_fundamentos(fundamentos)
         #else:
         #    analise_setor
+        acao = baixar_dados(ticker)
+        acao = enriquecer_dados(acao)
         plotar_grafico(acao, ticker)
         lancar_dataframe(acao, ticker)
     st.header("Previsão de cotação")
 
 if __name__ == "__main__":
     configuracoes_iniciais()
-    tempo_anos = 1
-    mostrar_dados(tempo_anos=1)
+    mostrar_dados()
