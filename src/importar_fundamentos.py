@@ -9,7 +9,7 @@ def importar_fundamentos(ticker):
     dados = yf.Ticker(ticker).info
     dados = pd.DataFrame.from_dict(dados, orient='index').T
     #st.write(dados.columns)
-    colunas = ['address1','address2','sector','longBusinessSummary',
+    colunas = ['address1','address2','sector','industry','longBusinessSummary',
                 'dividendYield','profitMargins','lastDividendValue','lastDividendDate',
                 'previousClose','quoteType',
                 'recommendationKey','targetHighPrice','targetLowPrice',
@@ -37,11 +37,21 @@ def importar_lista_setores():
             info = yf.Ticker(ticker + '.SA').info
             setor = info.get('sector', 'N/A')
             industria = info.get('industry', 'N/A')
+            rendimento = info.get('dividendYield','N/A')
+            recomendacao = info.get('recommendationKey','N/A')
+            confianca_alerta = info.get('customPriceAlertConfidence','N/A')
+            tipo = info.get('typeDisp','N/A')
             print(f"Setor: {setor} | Indústria: {industria}")
         except Exception:
             setor = 'N/A'
             industria = 'N/A'
-        setores.append({'ticker': ticker, 'setor': setor, 'industria': industria})
+        setores.append({'ticker': ticker, 
+                        'setor': setor, 
+                        'industria': industria,
+                        'rendimento': rendimento,
+                        'recomendação': recomendacao,
+                        'confiança do alerta': confianca_alerta,
+                        'tipo': tipo})
 
     # Salva no CSV
     df_setores = pd.DataFrame(setores)
