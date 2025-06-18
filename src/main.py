@@ -277,7 +277,16 @@ def plotar_grafico(acao, ticker):
 
     # Plotando o gráfico de preços
     fig = make_subplots(rows=1, cols=1)
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Preço de Fechamento', marker_color='rgba(255,0,0,0.5)'))
+    fig.add_trace(
+        go.Candlestick(
+            x=acao.index,
+            open=acao['Open'],
+            high=acao['High'],
+            low=acao['Low'],
+            close=acao['Close'],
+            name='Candlestick'
+        )
+    )
 
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
