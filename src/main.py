@@ -14,18 +14,19 @@ import streamlit as st # Streamlit para interface web
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from bs4 import BeautifulSoup as bs4  # Importando BeautifulSoup para manipulação de HTML
-#from sklearn.feature_selection import SelectKBest
-#from sklearn.model_selection import GridSearchCV, train_test_split
-#from sklearn.neural_network import MLPRegressor
-#from sklearn.preprocessing import MinMaxScaler, StandardScaler # para normalizar os dados
-#from sklearn import datasets, linear_model
-#from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.feature_selection import SelectKBest
+from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.neural_network import MLPRegressor
+from sklearn.preprocessing import MinMaxScaler, StandardScaler # para normalizar os dados
+from sklearn import datasets, linear_model
+from sklearn.metrics import mean_squared_error, r2_score
 #from tensorflow.keras.models import Sequential
 #from tensorflow.keras.layers import Dense, LSTM, Dropout
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
 from importar_fundamentos import importar_fundamentos, importar_lista_setores # Importando a função para importar fundamentos
+from modelo_preditivo import acao_com_preditivo
 
 
 def configuracoes_iniciais():
@@ -387,7 +388,7 @@ def lancar_dataframe(acao, ticker):
     st.write("Estatísticas Descritivas:")
     st.dataframe(acao.describe())
 
-def mostrar_dados(qtde_tempo=1):
+def mostrar_dados():
     configuracoes_iniciais()
     importar_tickers()  # Importa os tickers disponíveis
     ticker = definir_ticker()
@@ -406,7 +407,9 @@ def mostrar_dados(qtde_tempo=1):
         acao = enriquecer_dados(acao)
         plotar_grafico(acao, ticker)
         lancar_dataframe(acao, ticker)
-    st.header("Previsão de cotação")
+        st.header("Previsão de cotação")
+        acao_com_preditivo(acao)
+
 
 if __name__ == "__main__":
     configuracoes_iniciais()
