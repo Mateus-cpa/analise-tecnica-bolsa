@@ -2,26 +2,17 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import date, timedelta
-import numpy as np
 import requests
 import warnings
 warnings.filterwarnings('ignore')
 
 # bibliotecas de terceiros
-#from talib import RSI # type: ignore[import] # Technical Analysis - TA-Lib
+#from talib import RSI # Technical Analysis - TA-Lib
 import yfinance as yf # API da Yahoo Finance
 import streamlit as st # Streamlit para interface web
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from bs4 import BeautifulSoup as bs4  # Importando BeautifulSoup para manipulação de HTML
-from sklearn.feature_selection import SelectKBest
-from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.neural_network import MLPRegressor
-from sklearn.preprocessing import MinMaxScaler, StandardScaler # para normalizar os dados
-from sklearn import datasets, linear_model
-from sklearn.metrics import mean_squared_error, r2_score
-#from tensorflow.keras.models import Sequential
-#from tensorflow.keras.layers import Dense, LSTM, Dropout
+
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
@@ -78,7 +69,6 @@ def definir_ticker():
     )
     
     ticker = st.session_state.ticker + '.SA'
-    #st.write(yf.Ticker(ticker).info)
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
 def baixar_dados(ticker = None):
@@ -90,7 +80,7 @@ def baixar_dados(ticker = None):
         pd.DataFrame: DataFrame contendo os dados de preços da ação.
     """
     # Definindo o período de análise
-    tempo_anos = 1
+    tempo_anos = st.select_slider('Tempo (anos)',range(1,20,1))
     start_date = date.today() - timedelta(days=tempo_anos*365)  # Últimos 365 dias
     end_date = date.today()  # Até hoje
     #intervalo = st.selectbox('Tempo gráfico',   # Lista Intervalos
@@ -258,19 +248,13 @@ def plotar_grafico(acao, ticker):
         st.error("Coluna 'Close' não encontrada nos dados.")
         return
 
-    col1, col2 = st.columns([0.15, 0.85])
-    with col1:
-        st.selectbox('Tempo gráfico', options=['1M', '3M', '6M', '1Y', '2Y', '5Y'], key='tempo_grafico')
-    with col2:    
-        #Criando filtro de data sendo padrão o inicial 30 dias antes do último dado e o final o último dado
-        data_inicio, data_fim = st.slider(
-            "Selecione o período de análise",
-            min_value=acao.index.min().date(),
-            max_value=acao.index.max().date(),
-            value=(acao.index.max().date() - timedelta(days=30), acao.index.max().date()),
-            format="DD/MM/YYYY",
-            key="data_slider"
-        )
+    data_inicio, data_fim = st.slider(
+        "Selecione o período de análise",
+        min_value=acao.index.min().date(),
+        max_value=acao.index.max().date(),
+        value=(acao.index.max().date() - timedelta(days=30), acao.index.max().date()),
+        format="DD/MM/YYYY",
+        key="data_slider")
     
     # Filtra o DataFrame conforme o período selecionado
     acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
@@ -278,22 +262,22 @@ def plotar_grafico(acao, ticker):
 
     # Plotando o gráfico de preços
     fig = make_subplots(rows=1, cols=1)
-    fig.add_trace(
+    
+    col1, col2, col3, col4, col5 = st.columns(5)
+
+    # Adicionando elementos no gráfico
+    
+    if col1.checkbox('MM5', value=True):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
+    if col1.checkbox('Candles', value=True):
+        fig.add_trace(
         go.Candlestick(
             x=acao.index,
             open=acao['Open'],
             high=acao['High'],
             low=acao['Low'],
             close=acao['Close'],
-            name='Candlestick'
-        )
-    )
-
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
-
-    # Adicionando médias móveis
-    if col1.checkbox('MM5', value=True):
-        fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
+            name='Candlestick'))
     if col2.checkbox('MM21', value=True):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21', marker_color='rgba(160,160,160,0.5)'))
     if col3.checkbox('MM72', value=True):
@@ -319,7 +303,7 @@ def plotar_grafico(acao, ticker):
         marker=dict(color='green', size=10, symbol='triangle-down')
         ))
     # Adicionando marcadores de tendência
-    if col6.checkbox('Mudança de Tendência', value=True):
+    if col2.checkbox('Mudança de Tendência', value=True):
         # Filtra as datas com mudança de tendência
         mudanca_tendencia = acao[acao['mudanca_tendencia'].notnull()]
         fig.add_trace(go.Scatter(
@@ -352,6 +336,13 @@ def plotar_grafico(acao, ticker):
                                     font=dict(color='white')
                                 )
 
+    if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_regressao_linear'], mode='lines', name='Regr. linear', marker_color='rgba(0,255,0,0.5)'))
+    if col4.checkbox('Rede neural', value=True, key = 'neural_net'):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural'], mode='lines', name='Rede neural', marker_color='rgba(0,255,255,0.5)'))
+    if col5.checkbox('Hiperparâmetros', value=False, key = 'hyperparam'):
+        fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural_hiper_parameter'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Fechamento', marker_color='rgba(255,0,0,0.5)'))
     
     # Atualizando layout do gráfico
     fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
@@ -385,19 +376,18 @@ def lancar_dataframe(acao, ticker):
     )
 
     # Exibindo estatísticas descritivas
-    st.write("Estatísticas Descritivas:")
+    
     st.dataframe(acao.describe())
 
 def mostrar_dados():
     configuracoes_iniciais()
+    if st.button('Atualizar base'):
+            importar_lista_setores()
     importar_tickers()  # Importa os tickers disponíveis
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
         st.error("Por favor, selecione um ticker válido.")
     else:
-        atualizar_base = st.checkbox('Atualizar base')
-        if atualizar_base:
-            importar_lista_setores()
         fundamentos = importar_fundamentos(ticker)
         if ticker != 'Nenhum':
             mostrar_fundamentos(fundamentos)
@@ -405,10 +395,12 @@ def mostrar_dados():
         #    analise_setor
         acao = baixar_dados(ticker)
         acao = enriquecer_dados(acao)
-        plotar_grafico(acao, ticker)
-        lancar_dataframe(acao, ticker)
         st.header("Previsão de cotação")
-        acao_com_preditivo(acao)
+        acao = acao_com_preditivo(acao)
+        plotar_grafico(acao, ticker)
+        if st.checkbox("Tabelas:"):
+            lancar_dataframe(acao, ticker)
+        
 
 
 if __name__ == "__main__":
