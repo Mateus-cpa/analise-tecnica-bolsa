@@ -64,3 +64,8 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, cor
 
 ## Licença
 Este projeto está sob a licença MIT.
+
+
+# Inspirações
+- https://www.infomoney.com.br/guias/analise-tecnica/
+- Video previsão 10 dias: # https://www.youtube.com/watch?v=CvfAx3_nGME&list=PL1woXE9p74ASlH4i2QQytmASjle8Bt8An&index=7
