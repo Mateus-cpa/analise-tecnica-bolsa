@@ -43,9 +43,9 @@ Clone o repositório e configure o ambiente virtual com as dependências necess�
 git clone git@github.com:Mateus-cpa/analise-tecnica-bolsa.git
 cd analise-tecnica-bolsa
 python -m venv .venv
-source .venv/bin/activate  # No Windows use: .venv\Scripts\activate
-pyenv local 3.12.7 
-poetry init       # Certifique-se de ter o pyenv e Python 3.13.0 instalados
+source .venv/Scripts/activate  # No windows 
+pyenv local 3.11.8 
+poetry init       # Certifique-se de ter o pyenv e Python 3.11.8 instalados
 poetry shell
 poetry install
 ```
