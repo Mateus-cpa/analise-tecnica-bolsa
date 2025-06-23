@@ -37,15 +37,20 @@ Collecting workspace information
 
 ## Instalação de Dependências
 
-Clone o repositório e configure o ambiente virtual com as dependências necessárias:
+Clone o repositório:
 
 ```bash
 git clone git@github.com:Mateus-cpa/analise-tecnica-bolsa.git
 cd analise-tecnica-bolsa
-python -m venv .venv
-source .venv/Scripts/activate  # No windows 
-pyenv local 3.11.8 
-poetry init       # Certifique-se de ter o pyenv e Python 3.11.8 instalados
+```
+
+Configure o ambiente virtual com as dependências necessárias:
+
+```bash
+pyenv install 3.10.11             # Instale o Python 3.10.11 se ainda não tiver
+pyenv local 3.10.11               # Defina a versão local do projeto
+python -m venv .venv              # Crie o ambiente virtual
+source .venv/Scripts/activate     # No Windows
 poetry shell
 poetry install
 ```

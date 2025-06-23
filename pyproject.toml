@@ -6,7 +6,7 @@ authors = ["Mateus Pinheiro <mateus.mcpa@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10.11"
 matplotlib = "^3.10.3"
 pandas = "^2.3.0"
 plotly = "^6.1.2"
