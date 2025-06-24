@@ -12,6 +12,7 @@ import yfinance as yf # API da Yahoo Finance
 import streamlit as st # Streamlit para interface web
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from dateutil.relativedelta import relativedelta
 
 
 #bibliotecas locais
@@ -80,7 +81,7 @@ def baixar_dados(ticker = None):
         pd.DataFrame: DataFrame contendo os dados de preços da ação.
     """
     # Definindo o período de análise
-    tempo_anos = st.select_slider('Tempo (anos)',range(1,20,1))
+    tempo_anos = st.select_slider('Tempo (anos)',range(1,20,1),19)
     start_date = date.today() - timedelta(days=tempo_anos*365)  # Últimos 365 dias
     end_date = date.today()  # Até hoje
     #intervalo = st.selectbox('Tempo gráfico',   # Lista Intervalos
@@ -267,9 +268,9 @@ def plotar_grafico(acao, ticker):
 
     # Adicionando elementos no gráfico
     
-    if col1.checkbox('MM5', value=True):
+    if col1.checkbox('MM5', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
-    if col1.checkbox('Candles', value=True):
+    if col1.checkbox('Candles', value=False):
         fig.add_trace(
         go.Candlestick(
             x=acao.index,
@@ -278,15 +279,15 @@ def plotar_grafico(acao, ticker):
             low=acao['Low'],
             close=acao['Close'],
             name='Candlestick'))
-    if col2.checkbox('MM21', value=True):
+    if col2.checkbox('MM21', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21', marker_color='rgba(160,160,160,0.5)'))
-    if col3.checkbox('MM72', value=True):
+    if col3.checkbox('MM72', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72', marker_color='rgba(90,90,90,0.5)'))
     if col4.checkbox('MM200', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200', marker_color='rgba(40,40,40,0.5)'))
 
     #adicionando marcadores de topos e fundos com scatter
-    if col5.checkbox('Topos e Fundos', value=True):
+    if col5.checkbox('Topos e Fundos', value=False):
         fig.add_trace(go.Scatter(
             x=acao[acao['marcador'] == 'topo'].index,
             y=acao[acao['marcador'] == 'topo']['Close'],
@@ -302,8 +303,9 @@ def plotar_grafico(acao, ticker):
         name='Fundos',
         marker=dict(color='green', size=10, symbol='triangle-down')
         ))
+    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Real', marker_color='rgba(255,0,0,0.5)'))
     # Adicionando marcadores de tendência
-    if col2.checkbox('Mudança de Tendência', value=True):
+    if col2.checkbox('Mudança de Tendência', value=False):
         # Filtra as datas com mudança de tendência
         mudanca_tendencia = acao[acao['mudanca_tendencia'].notnull()]
         fig.add_trace(go.Scatter(
@@ -342,7 +344,36 @@ def plotar_grafico(acao, ticker):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural'], mode='lines', name='Rede neural', marker_color='rgba(0,255,255,0.5)'))
     if col5.checkbox('Hiperparâmetros', value=False, key = 'hyperparam'):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural_hiper_parameter'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
-    fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Fechamento', marker_color='rgba(255,0,0,0.5)'))
+    
+    if col1.checkbox('Random Forest', value=True, key='rf'):
+        fig.add_trace(go.Scatter(
+            x=acao.index, y=acao['previsao_random_forest'],
+            mode='lines', name='Random Forest', marker_color='rgba(0,100,255,0.5)'
+        ))
+    
+    if col2.checkbox('Gradient Boosting', value=True, key='gb'):
+        fig.add_trace(go.Scatter(
+            x=acao.index, y=acao['previsao_gradient_boosting'],
+            mode='lines', name='Gradient Boosting', marker_color='rgba(255,100,0,0.5)'
+            ))
+    
+    if col3.checkbox('SVR', value=True, key='svr'):
+        fig.add_trace(go.Scatter(
+            x=acao.index, y=acao['previsao_svr'],
+            mode='lines', name='SVR', marker_color='rgba(150,0,255,0.5)'
+        ))
+    
+    if col4.checkbox('Ridge', value=True, key='ridge'):
+        fig.add_trace(go.Scatter(
+            x=acao.index, y=acao['previsao_ridge'],
+            mode='lines', name='Ridge', marker_color='rgba(0,255,100,0.5)'
+        ))
+
+    if col5.checkbox('Lasso', value=True, key='lasso'):
+        fig.add_trace(go.Scatter(
+            x=acao.index, y=acao['previsao_lasso'],
+            mode='lines', name='Lasso', marker_color='rgba(255,0,150,0.5)'
+        ))
     
     # Atualizando layout do gráfico
     fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
