@@ -81,7 +81,7 @@ def baixar_dados(ticker = None):
         pd.DataFrame: DataFrame contendo os dados de preços da ação.
     """
     # Definindo o período de análise
-    tempo_anos = st.select_slider('Tempo (anos)',range(1,20,1),19)
+    tempo_anos = st.select_slider('Qtde. de anos de download',range(1,20,1),19)
     start_date = date.today() - timedelta(days=tempo_anos*365)  # Últimos 365 dias
     end_date = date.today()  # Até hoje
     #intervalo = st.selectbox('Tempo gráfico',   # Lista Intervalos
@@ -426,7 +426,7 @@ def mostrar_dados():
         #    analise_setor
         acao = baixar_dados(ticker)
         acao = enriquecer_dados(acao)
-        st.header("Previsão de cotação")
+        st.header("Dados de treino de ML")
         acao = acao_com_preditivo(acao)
         plotar_grafico(acao, ticker)
         if st.checkbox("Tabelas:"):
