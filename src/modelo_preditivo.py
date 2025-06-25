@@ -1,4 +1,5 @@
 import pandas as pd
+from pandas.tseries.offsets import BDay
 
 import streamlit as st
 
@@ -16,37 +17,32 @@ from sklearn.linear_model import Ridge, Lasso
 
 
 def acao_com_preditivo(acao):
-    #ajustar valor fechamento para o dia anterior
     acao_prev = acao.copy()
-    acao_prev['Close'] = acao_prev['Close'].shift(-1) # passa o valor de fechamento para o dia anterior
 
-    #retirando dados vazios
-    acao_prev = acao_prev.drop(columns = ['mudanca_tendencia', 'marcador'])
+    # NÃO faça o shift(-1) na coluna Close!
+    # acao_prev['Close'] = acao_prev['Close'].shift(-1)
+
+    # Retirando dados vazios
+    acao_prev = acao_prev.drop(columns=['mudanca_tendencia', 'marcador'])
     acao_prev = acao_prev.dropna()
 
-    #verificando quantidade de linhas
+    # Verificando quantidade de linhas
     qtd_linhas = len(acao_prev)
+    qtd_linhas_treino = round(.70 * qtd_linhas)
+    qtd_linhas_teste = qtd_linhas - qtd_linhas_treino
 
-    qtd_linhas_treino= round(.70 * qtd_linhas)
-    qtd_linhas_teste= qtd_linhas - qtd_linhas_treino
+    # Separando as features e labels
+    features = acao_prev.drop(columns=['Close'])
+    labels = acao_prev['Close']
 
-        
-    #separando as features e labels
-    features = acao_prev.drop(columns = ['Close']) # isola o dataframe da coluna de fechamento
-    labels = acao_prev['Close'] # seleciona apenas a coluna de fechamento para previsão
-
-    #testando quais features têm melhores resultados de previsão
-    features_list = ('Open','High','Low','Volume','MM5', 'MM21','MM72','MM200')#, 'rsi')
-
-    k_best_features = SelectKBest(k='all') # seleciona as melhores features (colunas)
+    # Seleção de features (mantém igual)
+    features_list = ('Open','High','Low','Volume','MM5', 'MM21','MM72','MM200')
+    k_best_features = SelectKBest(k='all')
     k_best_features.fit_transform(features, labels)
     k_best_features_scores = k_best_features.scores_
-    raw_pairs = zip(features_list[1:], k_best_features_scores) # transforma em dicionário os nomes das features e a pontuação de afinidade com a coluna de avaliação
-    ordered_pairs = list(reversed(sorted(raw_pairs, key=lambda x: x[1]))) # ordena os maiores aos menores
-
+    raw_pairs = zip(features_list[1:], k_best_features_scores)
+    ordered_pairs = list(reversed(sorted(raw_pairs, key=lambda x: x[1])))
     k_best_features_final = dict(ordered_pairs[:15])
-
-    
     melhores_colunas = []
     k_best_features_filtrado = {k: v for k, v in k_best_features_final.items() if v > 50}
     for k in k_best_features_filtrado:
@@ -54,31 +50,26 @@ def acao_com_preditivo(acao):
     st.write(f'encontradas {len(melhores_colunas)} colunas de dataframe com k-means acima de 50:')
     st.write(k_best_features_filtrado)
 
-    #separando as features escolhidas
-    features = acao_prev.loc[:,melhores_colunas]
+    # Separando as features escolhidas
+    features = acao_prev.loc[:, melhores_colunas]
 
-    #Normalizando os dados de entrada(features)
-
-    # Gerando o novo padrão
+    # Normalizando os dados de entrada (features)
     scaler = MinMaxScaler().fit(features)
     features_scale = scaler.transform(features)
-        
-    #Separa os dados de treino teste e validação
+
+    # Separa os dados de treino, teste e validação
     X_train = features_scale[:qtd_linhas_treino]
     X_test = features_scale[qtd_linhas_treino:qtd_linhas_treino + qtd_linhas_teste]
-
     y_train = labels[:qtd_linhas_treino]
     y_test = labels[qtd_linhas_treino:qtd_linhas_treino + qtd_linhas_teste]
 
-    st.write(f'FEATURES: {features_scale.shape}, TREINO: {len(X_train)}, TESTE: {len(X_test)}')
+    st.write(f'Divisão das linhas /// FEATURES: {features_scale.shape}, TREINO: {len(X_train)}, TESTE: {len(X_test)}')
 
     st.subheader('Modelos de Machine Learning')
     col1, col2, col3, col4 = st.columns(4)
-
     coeficientes_modelos = {}
 
     if col1.checkbox('Regressão linear', value=True):
-        #treinamento usando regressão linear
         lr = linear_model.LinearRegression()
         lr.fit(X_train, y_train)
         pred_lr = lr.predict(X_test)
@@ -87,7 +78,6 @@ def acao_com_preditivo(acao):
         coeficientes_modelos['Regressão Linear'] = cd_lr * 100
 
     if col1.checkbox('Rede neural', value=True):
-        #rede neural
         rn = MLPRegressor(max_iter=2000)
         rn.fit(X_train, y_train)
         pred_rn = rn.predict(X_test)
@@ -96,15 +86,14 @@ def acao_com_preditivo(acao):
         coeficientes_modelos['Rede Neural'] = cd_rn * 100
 
     if col2.checkbox('Hyperparametros (pesado!)'):
-        #rede neural com ajuste hyper parameters
         rn_hp = MLPRegressor()
         parameter_space = {
-                'hidden_layer_sizes': [(i,) for i in list(range(1, 21))], # camada escondida, quantos neurônios. De 1 a 21, neste caso
-                'activation': ['tanh', 'relu'],
-                'solver': ['sgd', 'adam', 'lbfgs'],
-                'alpha': [0.0001, 0.05],
-                'learning_rate': ['constant', 'adaptive'],
-            }
+            'hidden_layer_sizes': [(i,) for i in list(range(1, 21))],
+            'activation': ['tanh', 'relu'],
+            'solver': ['sgd', 'adam', 'lbfgs'],
+            'alpha': [0.0001, 0.05],
+            'learning_rate': ['constant', 'adaptive'],
+        }
         search = GridSearchCV(rn_hp, parameter_space, n_jobs=-1, cv=5)
         search.fit(X_train, y_train)
         clf = search.best_estimator_
@@ -151,35 +140,32 @@ def acao_com_preditivo(acao):
         col4.write(f'Coef: {cd_lasso * 100:.2f}')
         coeficientes_modelos['Lasso'] = cd_lasso * 100
 
-
     # Plotando gráfico dos coeficientes
     if coeficientes_modelos:
-        # Remove modelos com coeficiente <= 0
         coef_filtrados = {k: v for k, v in coeficientes_modelos.items() if v > 0}
-        # Ordena do maior para o menor coeficiente
         coef_ordenados = dict(sorted(coef_filtrados.items(), key=lambda item: item[1], reverse=True))
         st.write('Comparativo dos Coeficientes de Determinação (%)')
         st.bar_chart(coef_ordenados, horizontal=True)
-    
-     # dataframe com a previsão
-    previsao = features_scale[qtd_linhas_teste:qtd_linhas]
+
+    # dataframe com a previsão
+    previsao_supervivionada = features_scale[qtd_linhas_teste:qtd_linhas]
     data_pregao_full = acao_prev.index
     data_pregao = data_pregao_full[qtd_linhas_teste:qtd_linhas]
     res_full = acao_prev['Close']
     res = res_full[qtd_linhas_teste:qtd_linhas]
 
     # Previsões de todos os modelos
-    pred_lr = lr.predict(previsao) if 'lr' in locals() else None
-    pred_rn = rn.predict(previsao) if 'rn' in locals() else None
+    pred_lr = lr.predict(previsao_supervivionada) if 'lr' in locals() else None
+    pred_rn = rn.predict(previsao_supervivionada) if 'rn' in locals() else None
     try:
-        pred_rnhp = clf.predict(previsao)
+        pred_rnhp = clf.predict(previsao_supervivionada)
     except:
         pred_rnhp = None
-    pred_rf = rf.predict(previsao) if 'rf' in locals() else None
-    pred_gb = gb.predict(previsao) if 'gb' in locals() else None
-    pred_svr = svr.predict(previsao) if 'svr' in locals() else None
-    pred_ridge = ridge.predict(previsao) if 'ridge' in locals() else None
-    pred_lasso = lasso.predict(previsao) if 'lasso' in locals() else None
+    pred_rf = rf.predict(previsao_supervivionada) if 'rf' in locals() else None
+    pred_gb = gb.predict(previsao_supervivionada) if 'gb' in locals() else None
+    pred_svr = svr.predict(previsao_supervivionada) if 'svr' in locals() else None
+    pred_ridge = ridge.predict(previsao_supervivionada) if 'ridge' in locals() else None
+    pred_lasso = lasso.predict(previsao_supervivionada) if 'lasso' in locals() else None
 
     # Monta o DataFrame com as previsões
     df = pd.DataFrame({'data_pregao': data_pregao, 'real': res})
@@ -200,8 +186,31 @@ def acao_com_preditivo(acao):
     if pred_lasso is not None:
         df['previsao_lasso'] = pred_lasso
 
-    df.real = df.real.shift(+1)
+    # Cria linha extra para o próximo pregão
+    proxima_data = df['data_pregao'].iloc[-1] + BDay(1)
+    nova_linha = {'real': None}
+    if pred_lr is not None:
+        nova_linha['previsao_regressao_linear'] = lr.predict([features_scale[-1]])[0]
+    if pred_rn is not None:
+        nova_linha['previsao_rede_neural'] = rn.predict([features_scale[-1]])[0]
+    if pred_rnhp is not None:
+        nova_linha['previsao_rede_neural_hiper_parameter'] = clf.predict([features_scale[-1]])[0]
+    if pred_rf is not None:
+        nova_linha['previsao_random_forest'] = rf.predict([features_scale[-1]])[0]
+    if pred_gb is not None:
+        nova_linha['previsao_gradient_boosting'] = gb.predict([features_scale[-1]])[0]
+    if pred_svr is not None:
+        nova_linha['previsao_svr'] = svr.predict([features_scale[-1]])[0]
+    if pred_ridge is not None:
+        nova_linha['previsao_ridge'] = ridge.predict([features_scale[-1]])[0]
+    if pred_lasso is not None:
+        nova_linha['previsao_lasso'] = lasso.predict([features_scale[-1]])[0]
+
+    # Adiciona a nova linha ao DataFrame
+    nova_linha_df = pd.DataFrame([nova_linha], index=[proxima_data])
     df.set_index('data_pregao', inplace=True)
+    df = pd.concat([df, nova_linha_df])
+
 
     # Concatenar previsões ao DataFrame original acao
     previsoes_cols = [col for col in df.columns if col.startswith('previsao_')]
