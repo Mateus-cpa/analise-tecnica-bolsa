@@ -253,7 +253,7 @@ def plotar_grafico(acao, ticker):
         "Selecione o período de análise",
         min_value=acao.index.min().date(),
         max_value=acao.index.max().date(),
-        value=(acao.index.max().date() - timedelta(days=30), acao.index.max().date()),
+        value=(acao.index.max().date() - timedelta(days=17), acao.index.max().date() - timedelta(days=1)),
         format="DD/MM/YYYY",
         key="data_slider")
     
