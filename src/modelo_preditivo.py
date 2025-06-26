@@ -1,5 +1,6 @@
 import pandas as pd
 from pandas.tseries.offsets import BDay
+import numpy as np
 
 import streamlit as st
 
@@ -14,7 +15,51 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.svm import SVR
 from sklearn.linear_model import Ridge, Lasso
 
+def prever_n_dias(acao, modelos, scaler, melhores_colunas, n=10):
+    # acao: DataFrame original já enriquecido
+    # modelos: dict com {'nome_modelo': modelo_treinado}
+    # scaler: scaler treinado nas features
+    # melhores_colunas: lista de features usadas
+    acao_prev = acao.copy()
+    previsoes_futuras = []
 
+    for i in range(n):
+        # Cria nova linha para o próximo pregão
+        proxima_data = acao_prev.index[-1] + BDay(1)
+        nova_linha = {}
+
+        # Atualize as features para o novo dia
+        # Exemplo: para médias móveis, use rolling com os últimos valores (incluindo previstos)
+        temp = acao_prev[-200:].copy()  # pega últimos 200 dias para MM200
+        # Preencha as features do novo dia:
+        nova_linha['Open'] = temp['Close'].iloc[-1]  # ou outra lógica
+        nova_linha['High'] = temp['Close'].iloc[-1]
+        nova_linha['Low'] = temp['Close'].iloc[-1]
+        nova_linha['Volume'] = temp['Volume'].iloc[-1]  # ou média, etc
+
+        # Atualize médias móveis
+        for mm in [5, 21, 72, 200]:
+            nova_linha[f'MM{mm}'] = pd.concat([temp['Close'], pd.Series([temp['Close'].iloc[-1]])]).rolling(window=mm).mean().iloc[-1]
+        # Outras features conforme necessário...
+
+        # Monta DataFrame para as features do novo dia
+        features_novo_dia = pd.DataFrame([nova_linha], index=[proxima_data])
+        features_novo_dia = features_novo_dia[melhores_colunas]
+        features_novo_dia_scaled = scaler.transform(features_novo_dia)
+
+        # Previsão para cada modelo
+        for nome, modelo in modelos.items():
+            pred = modelo.predict(features_novo_dia_scaled)[0]
+            nova_linha[f'previsao_{nome}'] = pred
+
+        # O valor previsto de Close para o próximo dia (pode escolher o modelo principal)
+        nova_linha['Close'] = nova_linha['previsao_regressao_linear']  # ou outro modelo
+
+        # Adiciona a nova linha ao DataFrame principal
+        acao_prev = pd.concat([acao_prev, pd.DataFrame([nova_linha], index=[proxima_data])])
+        previsoes_futuras.append(nova_linha)
+
+    return acao_prev  # agora com 10 dias previstos a mais
 
 def acao_com_preditivo(acao):
     acao_prev = acao.copy()
@@ -65,10 +110,13 @@ def acao_com_preditivo(acao):
 
     st.write(f'Divisão das linhas /// FEATURES: {features_scale.shape}, TREINO: {len(X_train)}, TESTE: {len(X_test)}')
 
+    #inizializa dicionário de modelos para previsão
+    modelos = {}
+
+    #-- SELEÇÃO DOS MODELOS A SEREM APLICADOS --
     st.subheader('Modelos de Machine Learning')
     col1, col2, col3, col4 = st.columns(4)
     coeficientes_modelos = {}
-
     if col1.checkbox('Regressão linear', value=True):
         lr = linear_model.LinearRegression()
         lr.fit(X_train, y_train)
@@ -76,6 +124,7 @@ def acao_com_preditivo(acao):
         cd_lr = r2_score(y_test, pred_lr)
         col1.write(f'Coef: {cd_lr * 100:.2f}')
         coeficientes_modelos['Regressão Linear'] = cd_lr * 100
+        modelos['regressao_linear'] = lr
 
     if col1.checkbox('Rede neural', value=True):
         rn = MLPRegressor(max_iter=2000)
@@ -84,6 +133,7 @@ def acao_com_preditivo(acao):
         cd_rn = rn.score(X_test, y_test)
         col1.write(f'Coef: {cd_rn * 100:.2f}')
         coeficientes_modelos['Rede Neural'] = cd_rn * 100
+        modelos['rede_neural'] = rn
 
     if col2.checkbox('Hyperparametros (pesado!)'):
         rn_hp = MLPRegressor()
@@ -101,14 +151,16 @@ def acao_com_preditivo(acao):
         cd_rnhp = search.score(X_test, y_test)
         col2.write(f'Coef: {cd_rnhp * 100:.2f}')
         coeficientes_modelos['Rede Neural HP'] = cd_rnhp * 100
+        modelos['rede_neural_hiper_parameter'] = clf
 
-    if col2.checkbox('Random Forest Regr.', value=True):
+    if col2.checkbox('Random Forest Regression', value=True):
         rf = RandomForestRegressor(n_estimators=100)
         rf.fit(X_train, y_train)
         pred_rf = rf.predict(X_test)
         cd_rf = rf.score(X_test, y_test)
         col2.write(f'Coef: {cd_rf * 100:.2f}')
         coeficientes_modelos['Random Forest'] = cd_rf * 100
+        modelos['random_forest'] = rf
 
     if col3.checkbox('Gradient Boosting Regr.', value=True):
         gb = GradientBoostingRegressor()
@@ -117,6 +169,7 @@ def acao_com_preditivo(acao):
         cd_gb = gb.score(X_test, y_test)
         col3.write(f'Coef: {cd_gb * 100:.2f}')
         coeficientes_modelos['Gradient Boosting'] = cd_gb * 100
+        modelos['gradient_boosting'] = gb
 
     if col3.checkbox('Support Vector Regression', value=True):
         svr = SVR()
@@ -125,6 +178,7 @@ def acao_com_preditivo(acao):
         cd_svr = svr.score(X_test, y_test)
         col3.write(f'Coef: {cd_svr * 100:.2f}')
         coeficientes_modelos['SVR'] = cd_svr * 100
+        modelos['svr'] = svr
 
     if col4.checkbox('Regressão Ridge', value=True):
         ridge = Ridge()
@@ -132,6 +186,7 @@ def acao_com_preditivo(acao):
         cd_ridge = ridge.score(X_test, y_test)
         col4.write(f'Coef: {cd_ridge * 100:.2f}', value=True)
         coeficientes_modelos['Ridge'] = cd_ridge * 100
+        modelos['ridge'] = ridge
 
     if col4.checkbox('Regressão Lasso', value=True):
         lasso = Lasso()
@@ -139,6 +194,7 @@ def acao_com_preditivo(acao):
         cd_lasso = lasso.score(X_test, y_test)
         col4.write(f'Coef: {cd_lasso * 100:.2f}')
         coeficientes_modelos['Lasso'] = cd_lasso * 100
+        modelos['lasso'] = lasso
 
     # Plotando gráfico dos coeficientes
     if coeficientes_modelos:
@@ -147,25 +203,26 @@ def acao_com_preditivo(acao):
         st.write('Comparativo dos Coeficientes de Determinação (%)')
         st.bar_chart(coef_ordenados, horizontal=True)
 
+    
     # dataframe com a previsão
-    previsao_supervivionada = features_scale[qtd_linhas_teste:qtd_linhas]
+    previsao_supervisionada = features_scale[qtd_linhas_teste:qtd_linhas]
     data_pregao_full = acao_prev.index
     data_pregao = data_pregao_full[qtd_linhas_teste:qtd_linhas]
     res_full = acao_prev['Close']
     res = res_full[qtd_linhas_teste:qtd_linhas]
 
     # Previsões de todos os modelos
-    pred_lr = lr.predict(previsao_supervivionada) if 'lr' in locals() else None
-    pred_rn = rn.predict(previsao_supervivionada) if 'rn' in locals() else None
+    pred_lr = lr.predict(previsao_supervisionada) if 'lr' in locals() else None
+    pred_rn = rn.predict(previsao_supervisionada) if 'rn' in locals() else None
     try:
-        pred_rnhp = clf.predict(previsao_supervivionada)
+        pred_rnhp = clf.predict(previsao_supervisionada)
     except:
         pred_rnhp = None
-    pred_rf = rf.predict(previsao_supervivionada) if 'rf' in locals() else None
-    pred_gb = gb.predict(previsao_supervivionada) if 'gb' in locals() else None
-    pred_svr = svr.predict(previsao_supervivionada) if 'svr' in locals() else None
-    pred_ridge = ridge.predict(previsao_supervivionada) if 'ridge' in locals() else None
-    pred_lasso = lasso.predict(previsao_supervivionada) if 'lasso' in locals() else None
+    pred_rf = rf.predict(previsao_supervisionada) if 'rf' in locals() else None
+    pred_gb = gb.predict(previsao_supervisionada) if 'gb' in locals() else None
+    pred_svr = svr.predict(previsao_supervisionada) if 'svr' in locals() else None
+    pred_ridge = ridge.predict(previsao_supervisionada) if 'ridge' in locals() else None
+    pred_lasso = lasso.predict(previsao_supervisionada) if 'lasso' in locals() else None
 
     # Monta o DataFrame com as previsões
     df = pd.DataFrame({'data_pregao': data_pregao, 'real': res})
@@ -187,7 +244,6 @@ def acao_com_preditivo(acao):
         df['previsao_lasso'] = pred_lasso
 
     # Cria linha extra para o próximo pregão
-    proxima_data = df['data_pregao'].iloc[-1] + BDay(1)
     nova_linha = {'real': None}
     if pred_lr is not None:
         nova_linha['previsao_regressao_linear'] = lr.predict([features_scale[-1]])[0]
@@ -206,17 +262,30 @@ def acao_com_preditivo(acao):
     if pred_lasso is not None:
         nova_linha['previsao_lasso'] = lasso.predict([features_scale[-1]])[0]
 
-    # Adiciona a nova linha ao DataFrame
-    nova_linha_df = pd.DataFrame([nova_linha], index=[proxima_data])
-    df.set_index('data_pregao', inplace=True)
-    df = pd.concat([df, nova_linha_df])
-
-
     # Concatenar previsões ao DataFrame original acao
     previsoes_cols = [col for col in df.columns if col.startswith('previsao_')]
     previsoes = df[previsoes_cols]
     acao_concat = pd.concat([acao, previsoes], axis=1)
 
+    #chama função de previsão para os próximos 10 dias
+    df_prev_10_dias = prever_n_dias(acao_prev, modelos, scaler, melhores_colunas, n=10)
+
+    # Ajusta o índice de df_prev_10_dias se necessário
+    df_prev_10_dias.index.name = acao_concat.index.name
+
+    # Garante que as colunas de df_prev_10_dias estejam presentes em acao_concat (adiciona colunas ausentes como NaN)
+    for col in acao_concat.columns:
+        if col not in df_prev_10_dias.columns:
+            df_prev_10_dias[col] = np.nan
+    for col in df_prev_10_dias.columns:
+        if col not in acao_concat.columns:
+            acao_concat[col] = np.nan
+
+    # Reordena as colunas para garantir alinhamento
+    df_prev_10_dias = df_prev_10_dias[acao_concat.columns]
+
+    # Concatena os DataFrames
+    acao_concat = pd.concat([acao_concat, df_prev_10_dias], axis=0)
     return acao_concat
 
 if __name__ == "__main__":
