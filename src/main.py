@@ -2,7 +2,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import date, timedelta
-import requests
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -13,6 +12,8 @@ import streamlit as st # Streamlit para interface web
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from dateutil.relativedelta import relativedelta
+from pandas.tseries.offsets import BDay
+
 
 
 #bibliotecas locais
@@ -171,10 +172,6 @@ def enriquecer_dados(acao):
     acao = acao.set_index('Date')  # Define a coluna de data como índice
 
     
-    #Datas com marcadores
-    data_mudanca = acao[acao['mudanca_tendencia'].notnull()].index
-    data_topo = acao[acao['marcador'] == 'topo'].index
-    data_fundo = acao[acao['marcador'] == 'fundo'].index
     return acao
 
 def mostrar_fundamentos(fundamentos: pd.DataFrame):
@@ -232,6 +229,16 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
     if mostrar_fundamentos:
         for col in fundamentos.columns:
             st.write(f"{col}: {fundamentos[col].values[0]}")
+
+def marcador_hoje(acao):
+    #adicionar marcador de data de hoje
+    acao['marcador_hoje'] = None
+    hoje = pd.Timestamp(date.today() - timedelta(days=1)) # Garante que o índice está no formato datetime
+    acao.index = pd.to_datetime(acao.index) # Marca a linha correspondente à data de hoje (se existir)
+    if hoje in acao.index:
+        acao.at[hoje, 'marcador_hoje'] = 'hoje' 
+    
+    return acao
 
 def plotar_grafico(acao, ticker):
     """Plota o gráfico de preços da ação com médias móveis e marcadores de tendência.
@@ -338,6 +345,7 @@ def plotar_grafico(acao, ticker):
                                     font=dict(color='white')
                                 )
 
+    #marcadores de Machine Learning
     if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_regressao_linear'], mode='lines', name='Regr. linear', marker_color='rgba(0,255,0,0.5)'))
     if col4.checkbox('Rede neural', value=True, key = 'neural_net'):
@@ -375,9 +383,17 @@ def plotar_grafico(acao, ticker):
             mode='lines', name='Lasso', marker_color='rgba(255,0,150,0.5)'
         ))
     
-    # Atualizando layout do gráfico
-    fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
+    # Colocar marcador de hoje
+    fig.add_trace(go.Scatter(
+            x=acao[acao['marcador_hoje'] == 'hoje'].index,
+            y=acao[acao['marcador_hoje'] == 'hoje']['Close'],
+            mode='markers',
+            name='Início previsão',
+            marker=dict(color='blue', size=20, symbol='hourglass')
+        ))
     
+    fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
+ 
     # Exibindo o gráfico no Streamlit
     st.plotly_chart(fig)
 
@@ -428,6 +444,7 @@ def mostrar_dados():
         acao = enriquecer_dados(acao)
         st.header("Dados de treino de ML")
         acao = acao_com_preditivo(acao)
+        acao = marcador_hoje(acao)
         plotar_grafico(acao, ticker)
         if st.checkbox("Tabelas:"):
             lancar_dataframe(acao, ticker)
