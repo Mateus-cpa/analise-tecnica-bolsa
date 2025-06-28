@@ -38,6 +38,11 @@ def definir_ticker():
     # Lê lista_setores.csv com cabeçalho
     setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
 
+    # Filtrar por tipo de ticker - Equity (ações) e Index
+    tipo = setores_df['tipo'].dropna().unique().tolist()
+    tipo_selecionado = st.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
+
+    # Filtrar por setor
     setores = setores_df['setor'].dropna().unique().tolist()
     col1, col2, col3 = st.columns([0.35, 0.45, 0.2])
 
@@ -52,7 +57,9 @@ def definir_ticker():
     subsetor_selecionado = col2.selectbox('Subsetor', options=['Todos'] + subsetores_filtrados, key='subsetores_select')
 
     # Filtra tickers conforme subsetor e setor
-    if setor_selecionado != 'Todos' and subsetor_selecionado != 'Todos':
+    if tipo_selecionado != 'Todos':
+        tickers_filtrados = setores_df[setores_df['tipo'] == tipo_selecionado]['ticker'].dropna().unique().tolist()  
+    elif setor_selecionado != 'Todos' and subsetor_selecionado != 'Todos':
         tickers_filtrados = setores_df[
             (setores_df['setor'] == setor_selecionado) &
             (setores_df['industria'] == subsetor_selecionado)
@@ -428,9 +435,9 @@ def lancar_dataframe(acao, ticker):
 
 def mostrar_dados():
     configuracoes_iniciais()
+    importar_tickers()  # Importa os tickers disponíveis
     if st.button('Atualizar base'):
             importar_lista_setores()
-    importar_tickers()  # Importa os tickers disponíveis
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
         st.error("Por favor, selecione um ticker válido.")
