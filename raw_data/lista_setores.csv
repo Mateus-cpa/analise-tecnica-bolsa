@@ -1,404 +1,430 @@
 ticker,setor,industria,rendimento,recomendação,confiança do alerta,tipo
-ORVR3,N/A,N/A,N/A,N/A,LOW,Equity
-ALPA3,Consumer Cyclical,Footwear & Accessories,1.1,none,LOW,Equity
-BRBI11,N/A,N/A,8.65,N/A,LOW,Equity
-CMIG3,N/A,N/A,8.95,N/A,LOW,Equity
-CVCB3,N/A,N/A,N/A,N/A,LOW,Equity
-EKTR3,Utilities,Utilities - Regulated Electric,29.32,none,LOW,Equity
-MWET3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-CTSA3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-FESA3,Basic Materials,Steel,3.83,none,LOW,Equity
-MGEL4,Basic Materials,Steel,N/A,none,LOW,Equity
-AHEB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
-VULC3,Consumer Cyclical,Footwear & Accessories,7.56,none,LOW,Equity
-CLSC4,Utilities,Utilities - Regulated Electric,7.67,none,LOW,Equity
-EQPA3,Utilities,Utilities - Regulated Electric,11.62,none,LOW,Equity
-ONCO3,Healthcare,Medical Care Facilities,N/A,underperform,LOW,Equity
-SHOW3,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
-ITSA4,N/A,N/A,7.35,N/A,LOW,Equity
-VIVR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-MNPR3,Consumer Defensive,Farm Products,N/A,none,LOW,Equity
-VTRU3,Consumer Defensive,Education & Training Services,0.24,buy,LOW,Equity
-CEDO4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-FRIO3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",N/A,none,LOW,Equity
-BEES4,Financial Services,Banks - Regional,3.27,none,LOW,Equity
-BBDC3,Financial Services,Banks - Regional,1.43,none,LOW,Equity
-BLAU3,Healthcare,Drug Manufacturers - Specialty & Generic,3.34,buy,LOW,Equity
-SEQL3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
-GOAU3,Basic Materials,Steel,3.72,hold,LOW,Equity
-EALT4,Industrials,Metal Fabrication,0.49,none,LOW,Equity
-BRKM3,N/A,N/A,N/A,N/A,LOW,Equity
-CAMB3,Consumer Cyclical,Leisure,8.67,none,LOW,Equity
-SEER3,Consumer Defensive,Education & Training Services,1.45,buy,LOW,Equity
-CYRE3,Consumer Cyclical,Residential Construction,4.19,buy,LOW,Equity
-AMAR11,N/A,N/A,N/A,N/A,NONE,N/A
-OIBR3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-JOPA3,N/A,N/A,3.15,N/A,LOW,Equity
-AGXY3,N/A,N/A,N/A,N/A,LOW,Equity
-MRFG3,N/A,N/A,11.63,N/A,LOW,Equity
-CURY3,N/A,N/A,6.43,N/A,LOW,Equity
-SBSP3,Utilities,Utilities - Regulated Water,3.22,buy,LOW,Equity
-CEBR3,Utilities,Utilities - Regulated Electric,10.52,none,LOW,Equity
-JBSS3,Consumer Defensive,Packaged Foods,7.69,strong_buy,LOW,Equity
-WEST3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
-PATI4,Basic Materials,Steel,25.8,none,LOW,Equity
-HBSA3,Industrials,Integrated Freight & Logistics,N/A,buy,LOW,Equity
-ENMT3,Utilities,Utilities - Regulated Electric,6.47,none,LOW,Equity
-KLBN4,Basic Materials,Paper & Paper Products,5.13,none,LOW,Equity
-ABCB4,Financial Services,Banks - Regional,7.68,hold,LOW,Equity
-TRIS3,Real Estate,Real Estate Services,4.29,hold,LOW,Equity
-SYNE3,N/A,N/A,54.5,N/A,LOW,Equity
-CBEE3,Utilities,Utilities - Regulated Electric,4.67,none,LOW,Equity
-USIM5,Basic Materials,Steel,4.94,hold,LOW,Equity
-BRSR3,N/A,N/A,9.41,N/A,LOW,Equity
-PETR4,Energy,Oil & Gas Integrated,15.53,buy,LOW,Equity
-PMAM3,Basic Materials,Copper,N/A,none,LOW,Equity
-WHRL3,N/A,N/A,11.21,N/A,LOW,Equity
-ALPA4,Consumer Cyclical,Footwear & Accessories,1.16,buy,LOW,Equity
-UNIP3,Basic Materials,Chemicals,6.78,none,LOW,Equity
-EQPA7,N/A,N/A,8.18,N/A,LOW,Equity
-BRAP4,Financial Services,Asset Management,15.64,hold,LOW,Equity
-RECV3,Energy,Oil & Gas E&P,5.78,buy,LOW,Equity
-SRNA3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-AZEV3,Industrials,Engineering & Construction,N/A,none,LOW,Equity
-BEEF3,Consumer Defensive,Farm Products,N/A,hold,LOW,Equity
-POSI3,Technology,Computer Hardware,6.21,none,LOW,Equity
-BRST3,Communication Services,Telecom Services,1.4,none,LOW,Equity
-PDTC3,Technology,Communication Equipment,4.58,none,LOW,Equity
-PDGR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-TOTS3,Technology,Software - Application,0.66,buy,LOW,Equity
-OFSA3,Healthcare,Drug Manufacturers - Specialty & Generic,0.36,none,LOW,Equity
-RAIL3,Industrials,Railroads,4.39,buy,LOW,Equity
-OSXB3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
-QUAL3,Healthcare,Healthcare Plans,0.3,none,LOW,Equity
-CSNA3,Basic Materials,Steel,15.54,hold,LOW,Equity
-ODPV3,Healthcare,Healthcare Plans,8.93,none,LOW,Equity
-SLCE3,Consumer Defensive,Farm Products,7.47,none,LOW,Equity
-BPAN4,N/A,N/A,7.47,none,LOW,Equity
-REDE3,Utilities,Utilities - Regulated Electric,12.31,none,LOW,Equity
-JFEN3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-BMEB3,Financial Services,Banks - Regional,6.01,none,LOW,Equity
-ITUB3,Financial Services,Banks - Regional,0.65,none,LOW,Equity
-ALUP11,Utilities,Utilities - Renewable,2.76,none,LOW,Equity
-MRSA3B,Industrials,Railroads,3.62,none,LOW,Equity
-SOND5,N/A,N/A,14.25,N/A,LOW,Equity
-TAEE4,Utilities,Utilities - Regulated Electric,7.98,none,LOW,Equity
-HAGA3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
-PPLA11,N/A,N/A,N/A,N/A,LOW,Equity
-AGRO3,N/A,N/A,7.6,N/A,LOW,Equity
-SAPR11,Utilities,Utilities - Regulated Water,4.4,hold,LOW,Equity
-RDNI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+ISEE,N/A,N/A,N/A,N/A,LOW,Index
+IRBR3,Financial Services,Insurance - Reinsurance,N/A,none,LOW,Equity
+CPLE6,Utilities,Utilities - Regulated Electric,4.96,strong_buy,LOW,Equity
+INDX,N/A,N/A,N/A,N/A,LOW,Index
+TOTS3,Technology,Software - Application,0.7,buy,LOW,Equity
 HAGA4,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
-ROMI3,Industrials,Industrial Distribution,7.96,none,LOW,Equity
-MRSA5B,N/A,N/A,4.04,N/A,LOW,Equity
-DESK3,Communication Services,Telecom Services,0.38,hold,LOW,Equity
-ALUP3,Utilities,Utilities - Renewable,2.59,none,LOW,Equity
-TTEN3,N/A,N/A,1.31,N/A,LOW,Equity
-COGN3,Consumer Defensive,Education & Training Services,9.27,buy,LOW,Equity
-BHIA3,Consumer Cyclical,Specialty Retail,N/A,underperform,LOW,Equity
-KLBN3,N/A,N/A,4.93,N/A,LOW,Equity
-ELET3,Utilities,Utilities - Renewable,3.12,strong_buy,LOW,Equity
-DOTZ3,Communication Services,Advertising Agencies,N/A,none,LOW,Equity
-SNSY5,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-RSUL4,N/A,N/A,3.32,N/A,LOW,Equity
-WHRL4,Consumer Cyclical,"Furnishings, Fixtures & Appliances",11.48,none,LOW,Equity
-ISAE3,N/A,N/A,7.73,N/A,LOW,Equity
-VVEO3,Healthcare,Medical Distribution,11.87,underperform,LOW,Equity
-GEPA3,N/A,N/A,16.65,N/A,LOW,Equity
-AZEV4,Industrials,Engineering & Construction,N/A,none,LOW,Equity
-FICT3,N/A,N/A,N/A,N/A,LOW,Equity
-UGPA3,N/A,N/A,4.04,N/A,LOW,Equity
-VALE3,N/A,N/A,14.63,N/A,LOW,Equity
-AZUL4,N/A,N/A,N/A,N/A,LOW,Equity
-ELET6,Utilities,Utilities - Renewable,8.08,strong_buy,LOW,Equity
-LOGN3,Industrials,Marine Shipping,N/A,none,LOW,Equity
-CXSE3,Financial Services,Insurance - Diversified,8.14,buy,LOW,Equity
-SAPR3,Utilities,Utilities - Regulated Water,4.07,none,LOW,Equity
-AMAR3,Consumer Cyclical,Apparel Retail,N/A,none,LOW,Equity
-CRPG5,Basic Materials,Chemicals,5.57,none,LOW,Equity
-NGRD3,Technology,Software - Application,0.68,hold,LOW,Equity
-LJQQ3,Consumer Cyclical,Specialty Retail,4.77,buy,LOW,Equity
-CMIN3,Basic Materials,Steel,19.84,underperform,LOW,Equity
-SIMH3,Industrials,Rental & Leasing Services,1.17,buy,LOW,Equity
-ALUP4,Utilities,Utilities - Renewable,2.89,none,LOW,Equity
-HBRE3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-ESPA3,Consumer Cyclical,Personal Services,0.16,none,LOW,Equity
-MOAR3,Industrials,Conglomerates,22.8,none,LOW,Equity
-BDLL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-PTNT3,Consumer Cyclical,Apparel Manufacturing,3.03,none,LOW,Equity
-FRAS3,Consumer Cyclical,Auto Parts,2.01,none,LOW,Equity
-BOBR4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
-ARML3,Industrials,Rental & Leasing Services,9.02,buy,LOW,Equity
-GOAU4,Basic Materials,Steel,3.71,buy,LOW,Equity
-PINE4,Financial Services,Banks - Regional,9.7,none,LOW,Equity
-PGMN3,Healthcare,Pharmaceutical Retailers,7.4,hold,LOW,Equity
-BRSR6,Financial Services,Banks - Regional,7.59,none,LOW,Equity
-SMFT3,Consumer Cyclical,Leisure,2.72,strong_buy,LOW,Equity
-TCSA3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-DASA3,Healthcare,Diagnostics & Research,N/A,hold,LOW,Equity
-PFRM3,Healthcare,Medical Distribution,6.37,none,LOW,Equity
-INTB3,Technology,Communication Equipment,3.75,buy,LOW,Equity
-POMO4,Industrials,Farm & Heavy Construction Machinery,7.53,strong_buy,LOW,Equity
-CCTY3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-EQMA3B,Utilities,Utilities - Regulated Electric,10.15,none,LOW,Equity
-DTCY3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-YDUQ3,Consumer Defensive,Education & Training Services,3.38,buy,LOW,Equity
-NUTR3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
-SANB11,Financial Services,Banks - Regional,5.34,buy,LOW,Equity
-MULT3,Real Estate,Real Estate Services,3.42,strong_buy,LOW,Equity
-LOGG3,Real Estate,Real Estate Services,9.3,buy,LOW,Equity
-GFSA3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
-COCE3,Utilities,Utilities - Regulated Electric,4.83,none,LOW,Equity
-DXCO3,Basic Materials,Lumber & Wood Production,0.95,buy,LOW,Equity
-RPAD6,Industrials,Conglomerates,N/A,none,LOW,Equity
-POMO3,Industrials,Farm & Heavy Construction Machinery,9.14,none,LOW,Equity
-CLSC3,Utilities,Utilities - Regulated Electric,7.31,none,LOW,Equity
-BGIP4,Financial Services,Banks - Regional,15.45,none,LOW,Equity
-NEXP3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-ALOS3,Real Estate,Real Estate Services,5.53,buy,LOW,Equity
-EZTC3,Real Estate,Real Estate - Development,3.06,hold,LOW,Equity
-BMIN3,Financial Services,Banks - Regional,1.77,none,LOW,Equity
-ECOR3,Industrials,Infrastructure Operations,2.94,buy,LOW,Equity
-CEEB3,Utilities,Utilities - Regulated Electric,0.89,none,LOW,Equity
-TFCO4,Consumer Cyclical,Apparel Retail,1.2,buy,LOW,Equity
-RANI3,Consumer Cyclical,Packaging & Containers,8.18,strong_buy,LOW,Equity
-CPLE5,Utilities,Utilities - Regulated Electric,4.62,none,LOW,Equity
-AHEB5,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
-GEPA4,Utilities,Utilities - Regulated Electric,16.65,none,LOW,Equity
-BRAV3,Energy,Oil & Gas E&P,2.22,buy,LOW,Equity
-ENJU3,Consumer Cyclical,Internet Retail,N/A,hold,LOW,Equity
-CGRA4,Consumer Cyclical,Department Stores,12.32,none,LOW,Equity
-GOLL4,Industrials,Airlines,N/A,underperform,LOW,Equity
-KEPL3,Industrials,Farm & Heavy Construction Machinery,6.43,none,LOW,Equity
-AFLT3,Utilities,Utilities - Regulated Electric,9.12,none,LOW,Equity
-CRPG6,N/A,N/A,5.31,N/A,LOW,Equity
-BRKM5,Basic Materials,Chemicals,N/A,hold,LOW,Equity
-SANB3,Financial Services,Banks - Regional,5.4,none,LOW,Equity
-PINE3,Financial Services,Banks - Regional,5.92,none,LOW,Equity
-ATED3,Communication Services,Publishing,N/A,none,LOW,Equity
-MTSA4,Industrials,Farm & Heavy Construction Machinery,6.32,none,LOW,Equity
-LREN3,Consumer Cyclical,Department Stores,4.01,buy,LOW,Equity
-CPLE3,Utilities,Utilities - Regulated Electric,6.81,strong_buy,LOW,Equity
-EPAR3,Basic Materials,Lumber & Wood Production,42.31,none,LOW,Equity
-AMOB3,Consumer Cyclical,Auto & Truck Dealerships,N/A,none,LOW,Equity
-MGLU3,Consumer Cyclical,Specialty Retail,3.26,hold,LOW,Equity
-PCAR3,Consumer Cyclical,Department Stores,N/A,hold,LOW,Equity
-EUCA3,Industrials,Building Products & Equipment,3.12,none,LOW,Equity
-CEED3,Utilities,Utilities - Regulated Electric,N/A,none,LOW,Equity
-PORT3,Industrials,Marine Shipping,8.75,none,LOW,Equity
-IFCM3,Industrials,Specialty Business Services,N/A,buy,LOW,Equity
-CGAS5,Utilities,Utilities - Regulated Gas,17.68,none,LOW,Equity
-PINE11,N/A,N/A,N/A,N/A,N/A,N/A
-TASA3,Industrials,Aerospace & Defense,2.3,none,LOW,Equity
-AERI3,N/A,N/A,N/A,N/A,LOW,Equity
-ENGI11,Utilities,Utilities - Regulated Electric,6.15,buy,LOW,Equity
-BBDC4,Financial Services,Banks - Regional,1.36,buy,LOW,Equity
-BGIP3,Financial Services,Banks - Regional,10.99,none,LOW,Equity
-REAG3,N/A,N/A,N/A,N/A,LOW,Equity
-ITSA3,Industrials,Conglomerates,7.35,none,LOW,Equity
-VSTE3,N/A,N/A,N/A,none,LOW,Equity
-NTCO3,Consumer Defensive,Household & Personal Products,7.87,buy,LOW,Equity
-LWSA3,Technology,Software - Infrastructure,1.73,buy,LOW,Equity
-GGPS3,Industrials,Specialty Business Services,1.5,strong_buy,LOW,Equity
-BMGB4,Financial Services,Banks - Regional,10.84,none,LOW,Equity
-ZAMP3,Consumer Cyclical,Restaurants,N/A,buy,LOW,Equity
-DEXP4,Basic Materials,Chemicals,9.63,none,LOW,Equity
-NORD3,Financial Services,Shell Companies,N/A,none,LOW,Equity
-MWET4,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-CEBR6,Utilities,Utilities - Regulated Electric,10.44,none,LOW,Equity
-MTSA3,Industrials,Farm & Heavy Construction Machinery,3.33,none,LOW,Equity
-RPAD5,Industrials,Conglomerates,8.65,none,LOW,Equity
-CEEB5,Utilities,Utilities - Regulated Electric,0.72,none,LOW,Equity
-TPIS3,Industrials,Infrastructure Operations,5.72,none,LOW,Equity
-DEXP3,N/A,N/A,9.79,N/A,LOW,Equity
-UNIP6,N/A,N/A,6.78,N/A,LOW,Equity
-GUAR3,Consumer Cyclical,Apparel Retail,1.48,buy,LOW,Equity
-BPAC5,N/A,N/A,3.64,N/A,LOW,Equity
-BMIN4,Financial Services,Banks - Regional,8.5,none,LOW,Equity
-BMOB3,Communication Services,Entertainment,6.07,buy,LOW,Equity
-MELK3,Real Estate,Real Estate Services,10.03,none,LOW,Equity
-AZTE3,Energy,Oil & Gas E&P,N/A,none,LOW,Equity
-INEP4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-ENGI4,Utilities,Utilities - Regulated Electric,6.63,none,LOW,Equity
-LUXM4,Industrials,Marine Shipping,2.09,none,LOW,Equity
-PSSA3,Financial Services,Insurance - Diversified,3.27,buy,LOW,Equity
-CSAN3,Energy,Oil & Gas Refining & Marketing,5.62,buy,LOW,Equity
-ITUB4,Financial Services,Banks - Regional,0.58,strong_buy,LOW,Equity
-OIBR4,N/A,N/A,N/A,N/A,LOW,Equity
-BAUH4,Consumer Defensive,Packaged Foods,1.51,none,LOW,Equity
-BBAS3,N/A,N/A,1.66,N/A,LOW,Equity
-LVTC3,N/A,N/A,5.03,N/A,LOW,Equity
-MRSA6B,Industrials,Railroads,4.11,none,LOW,Equity
-PRNR3,N/A,N/A,0.83,N/A,LOW,Equity
-IGTI11,Real Estate,Real Estate Services,3.04,strong_buy,LOW,Equity
-FIQE3,Communication Services,Telecom Services,8.11,none,LOW,Equity
-PETZ3,Consumer Cyclical,Specialty Retail,13.57,none,LOW,Equity
-BMKS3,Consumer Cyclical,Leisure,9.46,none,LOW,Equity
-MEAL3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
-SHUL4,Consumer Cyclical,Auto Parts,5.56,none,LOW,Equity
-PSVM11,N/A,N/A,N/A,N/A,LOW,Equity
-KLBN11,Basic Materials,Paper & Paper Products,5.07,buy,LOW,Equity
-RAPT3,Industrials,Farm & Heavy Construction Machinery,0.55,none,LOW,Equity
-LPSB3,Real Estate,Real Estate Services,1.96,none,LOW,Equity
-B3SA3,Financial Services,Financial Data & Stock Exchanges,1.82,buy,LOW,Equity
-VBBR3,Consumer Cyclical,Specialty Retail,11.04,buy,LOW,Equity
-ALPK3,Industrials,Infrastructure Operations,N/A,none,LOW,Equity
-TKNO4,Basic Materials,Steel,0.83,none,LOW,Equity
-UNIP5,Basic Materials,Chemicals,6.7,none,LOW,Equity
-PEAB3,N/A,N/A,1.93,N/A,LOW,Equity
-PTNT4,Consumer Cyclical,Apparel Manufacturing,5.53,none,LOW,Equity
-CEDO3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-TELB3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-EMBR3,Industrials,Aerospace & Defense,0.19,buy,LOW,Equity
-MDNE3,Real Estate,Real Estate Services,3.04,strong_buy,LOW,Equity
-BEES3,Financial Services,Banks - Regional,3.36,none,LOW,Equity
-BDLL3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-BBSE3,Financial Services,Insurance - Diversified,13.06,none,LOW,Equity
-SOJA3,Basic Materials,Agricultural Inputs,2.48,strong_buy,LOW,Equity
-WEGE3,Industrials,Electrical Equipment & Parts,1.0,buy,LOW,Equity
-SMTO3,Basic Materials,Specialty Chemicals,4.64,buy,LOW,Equity
-GGBR3,Basic Materials,Steel,4.36,none,LOW,Equity
-IRBR3,Financial Services,Insurance - Reinsurance,N/A,buy,LOW,Equity
-RAPT4,N/A,N/A,0.52,N/A,LOW,Equity
-FESA4,N/A,N/A,7.11,N/A,LOW,Equity
-HOOT4,N/A,N/A,N/A,N/A,LOW,Equity
-TELB4,Communication Services,Telecom Services,N/A,none,LOW,Equity
-BPAC3,Financial Services,Capital Markets,1.47,none,LOW,Equity
-CASH3,Communication Services,Internet Content & Information,70.09,none,LOW,Equity
-AMER3,N/A,N/A,N/A,N/A,LOW,Equity
-EALT3,Industrials,Metal Fabrication,2.84,none,LOW,Equity
-PTBL3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
-HBOR3,Real Estate,Real Estate Services,3.54,none,LOW,Equity
-TAEE11,Utilities,Utilities - Regulated Electric,8.0,underperform,LOW,Equity
-TASA4,Industrials,Aerospace & Defense,2.57,none,LOW,Equity
-PETR3,Energy,Oil & Gas Integrated,14.3,buy,LOW,Equity
-AURE3,Utilities,Utilities - Renewable,0.57,hold,LOW,Equity
-CEBR5,Utilities,Utilities - Regulated Electric,10.23,none,LOW,Equity
-BRKM6,Basic Materials,Chemicals,N/A,none,LOW,Equity
-HAPV3,Financial Services,Insurance - Life,N/A,buy,LOW,Equity
-JSLG3,Industrials,Integrated Freight & Logistics,6.46,strong_buy,LOW,Equity
-MILS3,Industrials,Rental & Leasing Services,5.68,none,LOW,Equity
-SBFG3,Consumer Cyclical,Specialty Retail,4.51,buy,LOW,Equity
-RPAD3,Industrials,Conglomerates,N/A,none,LOW,Equity
-RADL3,Healthcare,Pharmaceutical Retailers,2.2,buy,LOW,Equity
-PRIO3,Energy,Oil & Gas E&P,N/A,buy,LOW,Equity
-COCE5,Utilities,Utilities - Regulated Electric,5.2,none,LOW,Equity
-INEP3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-CTSA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-MNDL3,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
-ANIM3,Consumer Defensive,Education & Training Services,1.26,buy,LOW,Equity
-TGMA3,Industrials,Trucking,9.29,none,LOW,Equity
-ELMD3,Communication Services,Advertising Agencies,0.64,buy,LOW,Equity
-BAZA3,Financial Services,Banks - Regional,10.35,none,LOW,Equity
-MYPK3,Consumer Cyclical,Auto Parts,6.11,buy,LOW,Equity
-MOVI3,Industrials,Rental & Leasing Services,2.08,buy,LOW,Equity
-SOND6,Industrials,Engineering & Construction,13.4,none,LOW,Equity
-IGTI3,Real Estate,Real Estate Services,3.67,none,LOW,Equity
-TECN3,Consumer Cyclical,Luxury Goods,3.52,none,LOW,Equity
-CGAS3,Utilities,Utilities - Regulated Gas,16.35,none,LOW,Equity
-MATD3,Healthcare,Medical Care Facilities,1.57,none,LOW,Equity
-BRSR5,Financial Services,Banks - Regional,7.83,none,LOW,Equity
-BRFS3,Consumer Defensive,Packaged Foods,3.37,none,LOW,Equity
-ASAI3,Consumer Defensive,Grocery Stores,0.97,buy,LOW,Equity
-TEND3,Real Estate,Real Estate - Development,0.74,buy,LOW,Equity
-RENT3,Industrials,Rental & Leasing Services,4.07,strong_buy,LOW,Equity
-WLMM3,Consumer Cyclical,Auto & Truck Dealerships,1.22,none,LOW,Equity
-NEOE3,Utilities,Utilities - Regulated Electric,3.98,buy,LOW,Equity
-EMAE4,Utilities,Utilities - Diversified,9.17,none,LOW,Equity
-LEVE3,Consumer Cyclical,Auto Parts,8.67,none,LOW,Equity
-PLAS3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-SANB4,Financial Services,Banks - Regional,5.4,none,LOW,Equity
-LAND3,Consumer Defensive,Farm Products,0.7,none,LOW,Equity
-CEAB3,Consumer Cyclical,Specialty Retail,2.2,buy,LOW,Equity
-BSLI3,Financial Services,Banks - Regional,1.48,none,LOW,Equity
-LIGT3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-FLRY3,Healthcare,Diagnostics & Research,8.65,hold,LOW,Equity
-EGIE3,Utilities,Utilities - Renewable,5.73,none,LOW,Equity
-EVEN3,Real Estate,Real Estate - Development,22.13,none,LOW,Equity
-SNSY3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-OPCT3,Industrials,Specialty Business Services,N/A,buy,LOW,Equity
-JALL3,N/A,N/A,1.71,N/A,LOW,Equity
-CBAV3,Basic Materials,Aluminum,N/A,buy,LOW,Equity
-TUPY3,Industrials,Metal Fabrication,9.8,hold,LOW,Equity
-PNVL3,Healthcare,Drug Manufacturers - General,3.82,buy,LOW,Equity
-CSUD3,Technology,Software - Infrastructure,5.31,none,LOW,Equity
-HYPE3,Healthcare,Drug Manufacturers - Specialty & Generic,4.22,buy,LOW,Equity
-VIVA3,Consumer Cyclical,Luxury Goods,2.58,buy,LOW,Equity
-BALM3,Healthcare,Medical Instruments & Supplies,3.22,none,LOW,Equity
-BPAC11,Financial Services,Capital Markets,2.41,none,LOW,Equity
-USIM3,Basic Materials,Steel,4.48,none,LOW,Equity
-ESTR4,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
-EQTL3,Utilities,Utilities - Regulated Electric,2.16,strong_buy,LOW,Equity
-AZEV11,N/A,N/A,N/A,N/A,NONE,N/A
-BALM4,Healthcare,Medical Instruments & Supplies,4.04,none,LOW,Equity
-SCAR3,Real Estate,Real Estate Services,10.06,none,LOW,Equity
-TIMS3,Communication Services,Telecom Services,5.93,buy,LOW,Equity
-SUZB3,Basic Materials,Paper & Paper Products,3.82,strong_buy,LOW,Equity
-PLPL3,Real Estate,Real Estate - Development,13.38,strong_buy,LOW,Equity
-CMIG4,Utilities,Utilities - Diversified,11.13,hold,LOW,Equity
-ISAE4,Utilities,Utilities - Independent Power Producers,10.13,hold,LOW,Equity
-GSHP3,Real Estate,Real Estate - Diversified,N/A,none,LOW,Equity
-GRND3,Consumer Cyclical,Footwear & Accessories,8.98,none,LOW,Equity
-SAPR4,Utilities,Utilities - Regulated Water,4.53,none,LOW,Equity
-VITT3,Basic Materials,Agricultural Inputs,3.7,strong_buy,LOW,Equity
-CPFE3,Utilities,Utilities - Regulated Electric,1.93,hold,LOW,Equity
-MOTV3,Industrials,Infrastructure Operations,2.2,buy,LOW,Equity
-WLMM4,Consumer Cyclical,Auto & Truck Dealerships,1.27,none,LOW,Equity
-MRVE3,Real Estate,Real Estate - Development,N/A,buy,LOW,Equity
-ETER3,Industrials,Building Products & Equipment,7.17,none,LOW,Equity
-BMEB4,Financial Services,Banks - Regional,5.3,none,LOW,Equity
-JHSF3,Real Estate,Real Estate - Development,7.06,none,LOW,Equity
-BSLI4,Financial Services,Banks - Regional,2.63,none,LOW,Equity
-MTRE3,Real Estate,Real Estate - Development,13.84,none,LOW,Equity
-ELET5,Utilities,Utilities - Renewable,5.89,none,LOW,Equity
-EUCA4,Industrials,Building Products & Equipment,3.9,none,LOW,Equity
-TAEE3,Utilities,Utilities - Regulated Electric,8.02,none,LOW,Equity
-CRPG3,Basic Materials,Chemicals,24.88,none,LOW,Equity
-DOHL4,Consumer Cyclical,Textile Manufacturing,0.28,none,LOW,Equity
-LUPA3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
-GGBR4,Basic Materials,Steel,3.87,buy,LOW,Equity
-RNEW4,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-STBP3,Industrials,Marine Shipping,4.27,none,LOW,Equity
-RPMG3,Energy,Oil & Gas Refining & Marketing,N/A,none,LOW,Equity
-MLAS3,Technology,Electronics & Computer Distribution,N/A,none,LOW,Equity
-RAIZ4,Utilities,Utilities - Renewable,10.14,buy,LOW,Equity
-CSMG3,Utilities,Utilities - Regulated Water,5.94,hold,LOW,Equity
-WIZC3,Financial Services,Insurance Brokers,3.13,hold,LOW,Equity
-BIOM3,Healthcare,Biotechnology,N/A,none,LOW,Equity
-PATI3,Basic Materials,Steel,15.51,none,LOW,Equity
-ALLD3,Technology,Software - Application,47.6,buy,LOW,Equity
-BNBR3,Financial Services,Banks - Regional,6.85,none,LOW,Equity
-RCSL3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-UCAS3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",12.27,none,LOW,Equity
-CGRA3,Consumer Cyclical,Department Stores,12.24,none,LOW,Equity
-CAML3,Consumer Defensive,Packaged Foods,5.49,buy,LOW,Equity
-FIEI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-ENEV3,Utilities,Utilities - Diversified,N/A,buy,LOW,Equity
-VIVT3,Communication Services,Telecom Services,2.48,buy,LOW,Equity
-EKTR4,Utilities,Utilities - Regulated Electric,4.86,none,LOW,Equity
-DMVF3,Healthcare,Pharmaceutical Retailers,N/A,none,LOW,Equity
+IMOB,N/A,N/A,N/A,N/A,LOW,Index
+TAEE11,Utilities,Utilities - Regulated Electric,7.96,none,LOW,Equity
 CTKA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-ENGI3,Utilities,Utilities - Regulated Electric,4.77,none,LOW,Equity
-VAMO3,Industrials,Rental & Leasing Services,12.14,buy,LOW,Equity
-CPLE6,Utilities,Utilities - Regulated Electric,4.84,strong_buy,LOW,Equity
-RNEW3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-FHER3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
-RDOR3,Healthcare,Medical Care Facilities,2.31,none,LOW,Equity
-RNEW11,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-AVLL3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-CSED3,Consumer Defensive,Education & Training Services,6.14,buy,LOW,Equity
-RCSL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-RSID3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
+MDIA3,Consumer Defensive,Packaged Foods,2.55,hold,LOW,Equity
+IBEE,N/A,N/A,N/A,N/A,LOW,Index
+ITSA4,Industrials,Conglomerates,8.01,strong_buy,LOW,Equity
 MAPT4,Financial Services,Asset Management,N/A,none,LOW,Equity
-ABEV3,Consumer Defensive,Beverages - Brewers,6.84,hold,LOW,Equity
-LAVV3,Real Estate,Real Estate Services,5.75,strong_buy,LOW,Equity
-VLID3,Industrials,Specialty Business Services,13.2,none,LOW,Equity
-BRAP3,Financial Services,Asset Management,15.14,hold,LOW,Equity
-GMAT3,Consumer Cyclical,Department Stores,3.19,buy,LOW,Equity
-AZZA3,Consumer Cyclical,Footwear & Accessories,5.32,buy,LOW,Equity
+BMGB4,Financial Services,Banks - Regional,10.87,none,LOW,Equity
+BEES3,Financial Services,Banks - Regional,3.36,none,LOW,Equity
+ASAI3,Consumer Defensive,Grocery Stores,0.97,buy,LOW,Equity
+CEDO4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+EQMA3B,Utilities,Utilities - Regulated Electric,9.37,none,LOW,Equity
+DIRR3,Real Estate,Real Estate - Development,12.56,strong_buy,LOW,Equity
+INTB3,Technology,Communication Equipment,3.65,buy,LOW,Equity
+ITUB4,Financial Services,Banks - Regional,0.58,strong_buy,LOW,Equity
+EZTC3,Real Estate,Real Estate - Development,3.04,hold,LOW,Equity
+BSLI3,Financial Services,Banks - Regional,1.46,none,LOW,Equity
+PINE11,N/A,N/A,N/A,N/A,N/A,N/A
+MTSA3,Industrials,Farm & Heavy Construction Machinery,3.29,none,LOW,Equity
+ESPA3,Consumer Cyclical,Personal Services,0.16,none,LOW,Equity
+BMKS3,Consumer Cyclical,Leisure,9.46,none,LOW,Equity
+BRFS3,Consumer Defensive,Packaged Foods,3.54,none,LOW,Equity
+SNSY5,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+ELET3,Utilities,Utilities - Renewable,3.19,strong_buy,LOW,Equity
+USIM6,Basic Materials,Steel,3.37,none,LOW,Equity
+IBBC,N/A,N/A,N/A,N/A,LOW,Index
+PLAS3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+SBFG3,Consumer Cyclical,Specialty Retail,4.65,none,LOW,Equity
+AZUL4,Industrials,Airlines,N/A,underperform,LOW,Equity
+ENMT3,Utilities,Utilities - Regulated Electric,6.58,none,LOW,Equity
+EUCA3,Industrials,Building Products & Equipment,3.21,none,LOW,Equity
+CRPG6,Basic Materials,Chemicals,5.31,none,LOW,Equity
+PATI4,Basic Materials,Steel,26.08,none,LOW,Equity
+ENGI11,Utilities,Utilities - Regulated Electric,6.23,none,LOW,Equity
+TCSA3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+MLCX,N/A,N/A,N/A,N/A,LOW,Index
+CEBR3,Utilities,Utilities - Regulated Electric,10.55,none,LOW,Equity
+PPLA11,Financial Services,Asset Management,N/A,none,LOW,Equity
+OIBR4,Communication Services,Telecom Services,N/A,none,LOW,Equity
+LUPA3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
+YDUQ3,Consumer Defensive,Education & Training Services,3.53,buy,LOW,Equity
+MOAR3,Industrials,Conglomerates,23.28,none,LOW,Equity
+BBAS3,Financial Services,Banks - Regional,1.66,hold,LOW,Equity
+IFIX,N/A,N/A,N/A,N/A,LOW,Index
+PTNT4,Consumer Cyclical,Apparel Manufacturing,5.72,none,LOW,Equity
+AZEV4,Industrials,Engineering & Construction,N/A,none,LOW,Equity
+REDE3,Utilities,Utilities - Regulated Electric,9.9,none,LOW,Equity
+CGRA3,Consumer Cyclical,Department Stores,12.36,none,LOW,Equity
+GEPA4,Utilities,Utilities - Regulated Electric,16.74,none,LOW,Equity
+WEST3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
+IGNM,N/A,N/A,N/A,N/A,LOW,Index
+VVEO3,Healthcare,Medical Distribution,11.87,underperform,LOW,Equity
+LOGG3,Real Estate,Real Estate Services,9.43,buy,LOW,Equity
+ITUB3,Financial Services,Banks - Regional,0.66,none,LOW,Equity
+PETR4,Energy,Oil & Gas Integrated,16.37,buy,LOW,Equity
+UNIP3,Basic Materials,Chemicals,6.84,none,LOW,Equity
+BNBR3,Financial Services,Banks - Regional,6.94,none,LOW,Equity
+CSNA3,Basic Materials,Steel,16.89,hold,LOW,Equity
+NTCO3,Consumer Defensive,Household & Personal Products,7.87,buy,LOW,Equity
+LOGN3,Industrials,Marine Shipping,N/A,none,LOW,Equity
+LREN3,Consumer Cyclical,Department Stores,3.84,buy,LOW,Equity
+PDTC3,Technology,Communication Equipment,4.58,none,LOW,Equity
+ICON,N/A,N/A,N/A,N/A,LOW,Index
+CTSA3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+SAPR4,Utilities,Utilities - Regulated Water,7.65,none,LOW,Equity
+PSVM11,N/A,N/A,N/A,N/A,LOW,Equity
+ENGI4,Utilities,Utilities - Regulated Electric,6.55,none,LOW,Equity
+AHEB5,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
+DASA3,Healthcare,Diagnostics & Research,N/A,hold,LOW,Equity
+IEEX,N/A,N/A,N/A,N/A,N/A,N/A
+STBP3,Industrials,Marine Shipping,4.27,buy,LOW,Equity
+DEXP4,Basic Materials,Chemicals,9.52,none,LOW,Equity
+CBAV3,Basic Materials,Aluminum,N/A,buy,LOW,Equity
+BMEB3,Financial Services,Banks - Regional,6.1,none,LOW,Equity
+SEQL3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
+KLBN3,Basic Materials,Paper & Paper Products,4.97,none,LOW,Equity
+JALL3,Consumer Defensive,Confectioners,1.74,strong_buy,LOW,Equity
+IFNC,N/A,N/A,N/A,N/A,LOW,Index
+BPAC3,Financial Services,Capital Markets,1.49,none,LOW,Equity
+VTRU3,Consumer Defensive,Education & Training Services,0.23,none,LOW,Equity
+AGFS,N/A,N/A,N/A,N/A,LOW,Index
+BAZA3,Financial Services,Banks - Regional,10.83,none,LOW,Equity
+NGRD3,Technology,Software - Application,0.68,none,LOW,Equity
+BRKM5,Basic Materials,Chemicals,N/A,none,LOW,Equity
+NORD3,Financial Services,Shell Companies,N/A,none,LOW,Equity
+FICT3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+AGRO3,Consumer Defensive,Farm Products,7.76,none,LOW,Equity
+SOND6,Industrials,Engineering & Construction,16.57,none,LOW,Equity
+LAND3,Consumer Defensive,Farm Products,0.7,none,LOW,Equity
+TECN3,Consumer Cyclical,Luxury Goods,3.35,none,LOW,Equity
+FRAS3,Consumer Cyclical,Auto Parts,2.02,none,LOW,Equity
+TTEN3,Basic Materials,Agricultural Inputs,1.25,buy,LOW,Equity
+LWSA3,Technology,Software - Infrastructure,1.76,buy,LOW,Equity
+PRNR3,Industrials,Engineering & Construction,0.85,none,LOW,Equity
+RPMG3,Energy,Oil & Gas Refining & Marketing,N/A,none,LOW,Equity
+AMAR3,Consumer Cyclical,Apparel Retail,N/A,none,LOW,Equity
+MRSA3B,Industrials,Railroads,3.31,none,LOW,Equity
+ARML3,Industrials,Rental & Leasing Services,10.61,buy,LOW,Equity
+MILS3,Industrials,Rental & Leasing Services,5.6,buy,LOW,Equity
+BOBR4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
+ATED3,Communication Services,Publishing,N/A,none,LOW,Equity
 AALR3,Healthcare,Diagnostics & Research,N/A,none,LOW,Equity
-BIED3,Consumer Defensive,Education & Training Services,N/A,none,LOW,Equity
+WHRL3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.45,none,LOW,Equity
+JSLG3,Industrials,Integrated Freight & Logistics,7.19,strong_buy,LOW,Equity
+DXCO3,Basic Materials,Lumber & Wood Production,0.95,buy,LOW,Equity
+MWET3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+ELET6,Utilities,Utilities - Renewable,8.31,strong_buy,LOW,Equity
+IVBX,N/A,N/A,N/A,N/A,N/A,N/A
+PMAM3,Basic Materials,Copper,N/A,none,LOW,Equity
+COCE3,Utilities,Utilities - Regulated Electric,4.83,none,LOW,Equity
+BIOM3,Healthcare,Biotechnology,N/A,none,LOW,Equity
+VIVA3,Consumer Cyclical,Luxury Goods,2.52,buy,LOW,Equity
+EGIE3,Utilities,Utilities - Renewable,5.17,none,LOW,Equity
+RCSL3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+AVLL3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+RAPT4,Industrials,Farm & Heavy Construction Machinery,0.54,buy,LOW,Equity
+ALPA4,Consumer Cyclical,Footwear & Accessories,1.15,none,LOW,Equity
+TUPY3,Industrials,Metal Fabrication,9.9,none,LOW,Equity
+DEXP3,Basic Materials,Chemicals,10.0,none,LOW,Equity
+OFSA3,Healthcare,Drug Manufacturers - Specialty & Generic,0.38,none,LOW,Equity
+BEES4,Financial Services,Banks - Regional,3.36,none,LOW,Equity
+TELB4,Communication Services,Telecom Services,N/A,none,LOW,Equity
+SCAR3,Real Estate,Real Estate Services,10.06,none,LOW,Equity
 TRAD3,Technology,Software - Application,N/A,none,LOW,Equity
-DIRR3,N/A,N/A,7.84,N/A,LOW,Equity
-AMBP3,Industrials,Waste Management,N/A,hold,LOW,Equity
-MDIA3,Consumer Defensive,Packaged Foods,2.61,none,LOW,Equity
+MWET4,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+VSTE3,N/A,N/A,N/A,none,LOW,Equity
+AZEV3,Industrials,Engineering & Construction,N/A,none,LOW,Equity
+AFLT3,Utilities,Utilities - Regulated Electric,9.33,none,LOW,Equity
+HETA4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
+TIMS3,Communication Services,Telecom Services,5.89,none,LOW,Equity
+DOHL4,Consumer Cyclical,Textile Manufacturing,0.28,none,LOW,Equity
+EVEN3,Real Estate,Real Estate - Development,21.8,hold,LOW,Equity
+ECOR3,Industrials,Infrastructure Operations,2.94,buy,LOW,Equity
+PRIO3,Energy,Oil & Gas E&P,N/A,buy,LOW,Equity
+BBDC4,Financial Services,Banks - Regional,1.37,buy,LOW,Equity
+TFCO4,Consumer Cyclical,Apparel Retail,1.33,buy,LOW,Equity
+BEEF3,Consumer Defensive,Farm Products,N/A,buy,LOW,Equity
+BRSR3,Financial Services,Banks - Regional,9.45,none,LOW,Equity
+ROMI3,Industrials,Industrial Distribution,8.03,none,LOW,Equity
+IFCM3,Industrials,Specialty Business Services,N/A,none,LOW,Equity
+RNEW4,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+EKTR3,Utilities,Utilities - Regulated Electric,29.32,none,LOW,Equity
+LEVE3,Consumer Cyclical,Auto Parts,8.74,none,LOW,Equity
+SMLL,N/A,N/A,N/A,N/A,LOW,Index
+SANB11,Financial Services,Banks - Regional,5.52,buy,LOW,Equity
+SANB3,Financial Services,Banks - Regional,5.56,none,LOW,Equity
+IGCX,N/A,N/A,N/A,N/A,N/A,N/A
+BRKM3,Basic Materials,Chemicals,N/A,none,LOW,Equity
+RSUL4,Consumer Cyclical,Auto Parts,3.22,none,LOW,Equity
+AGXY3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
+EALT3,Industrials,Metal Fabrication,2.81,none,LOW,Equity
+WEGE3,Industrials,Electrical Equipment & Parts,0.77,buy,LOW,Equity
+RENT3,Industrials,Rental & Leasing Services,4.99,strong_buy,LOW,Equity
+ALUP4,Utilities,Utilities - Renewable,2.85,none,LOW,Equity
+TPIS3,Industrials,Infrastructure Operations,5.78,none,LOW,Equity
+FRIO3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",N/A,none,LOW,Equity
+RAPT3,Industrials,Farm & Heavy Construction Machinery,0.57,none,LOW,Equity
+PTBL3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
+LUXM4,Industrials,Marine Shipping,2.16,none,LOW,Equity
+GEPA3,Utilities,Utilities - Regulated Electric,18.16,none,LOW,Equity
+AZZA3,Consumer Cyclical,Footwear & Accessories,5.35,buy,LOW,Equity
+IBOV,N/A,N/A,N/A,N/A,NONE,Fund
+FIQE3,Communication Services,Telecom Services,8.22,none,LOW,Equity
+TRIS3,Real Estate,Real Estate Services,4.68,none,LOW,Equity
+HAPV3,Financial Services,Insurance - Life,N/A,buy,LOW,Equity
+UCAS3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",12.79,none,LOW,Equity
+IBEW,N/A,N/A,N/A,N/A,LOW,Index
+RNEW3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+UNIP6,Basic Materials,Chemicals,6.83,none,LOW,Equity
+BSLI4,Financial Services,Banks - Regional,2.69,none,LOW,Equity
+RECV3,Energy,Oil & Gas E&P,6.28,buy,LOW,Equity
+WIZC3,Financial Services,Insurance Brokers,3.24,none,LOW,Equity
+UGPA3,Energy,Oil & Gas Refining & Marketing,4.15,hold,LOW,Equity
+IBSD,N/A,N/A,N/A,N/A,LOW,Index
+POMO3,Industrials,Farm & Heavy Construction Machinery,8.9,none,LOW,Equity
+PLPL3,Real Estate,Real Estate - Development,13.47,strong_buy,LOW,Equity
+PFRM3,Healthcare,Medical Distribution,6.75,none,LOW,Equity
+HYPE3,Healthcare,Drug Manufacturers - Specialty & Generic,4.35,buy,LOW,Equity
+ENGI3,Utilities,Utilities - Regulated Electric,4.83,none,LOW,Equity
+SIMH3,Industrials,Rental & Leasing Services,1.4,buy,LOW,Equity
+BBSE3,Financial Services,Insurance - Diversified,13.17,hold,LOW,Equity
+EMBR3,Industrials,Aerospace & Defense,0.19,buy,LOW,Equity
+BHIA3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
+RAIZ4,Utilities,Utilities - Renewable,11.01,none,LOW,Equity
+HBOR3,Real Estate,Real Estate Services,4.06,hold,LOW,Equity
+PGMN3,Healthcare,Pharmaceutical Retailers,7.37,buy,LOW,Equity
+CGRA4,Consumer Cyclical,Department Stores,12.63,none,LOW,Equity
+GOAU4,Basic Materials,Steel,3.85,buy,LOW,Equity
+CURY3,Real Estate,Real Estate - Development,6.47,strong_buy,LOW,Equity
+PETR3,Energy,Oil & Gas Integrated,15.12,buy,LOW,Equity
+FESA4,Basic Materials,Steel,7.36,none,LOW,Equity
+VALE3,Basic Materials,Other Industrial Metals & Mining,14.18,buy,LOW,Equity
+SMFT3,Consumer Cyclical,Leisure,2.72,strong_buy,LOW,Equity
+BRAP4,Financial Services,Asset Management,15.35,hold,LOW,Equity
+TASA4,Industrials,Aerospace & Defense,2.7,none,LOW,Equity
+IGCT,N/A,N/A,N/A,N/A,LOW,Index
+CPFE3,Utilities,Utilities - Regulated Electric,1.94,hold,LOW,Equity
+B3SA3,Financial Services,Financial Data & Stock Exchanges,2.06,buy,LOW,Equity
+BRST3,Communication Services,Telecom Services,1.4,hold,LOW,Equity
+RAIL3,Industrials,Railroads,4.51,buy,LOW,Equity
+ZAMP3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
+OIBR3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+RPAD3,Industrials,Conglomerates,N/A,none,LOW,Equity
+LVTC3,Communication Services,Telecom Services,5.28,none,LOW,Equity
+RCSL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+SRNA3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+CAMB3,Consumer Cyclical,Leisure,8.36,none,LOW,Equity
+ALOS3,Real Estate,Real Estate Services,5.32,buy,LOW,Equity
+EKTR4,Utilities,Utilities - Regulated Electric,4.95,none,LOW,Equity
+BDLL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+POSI3,Technology,Computer Hardware,6.21,none,LOW,Equity
+MOTV3,Industrials,Infrastructure Operations,2.24,none,LOW,Equity
+CSED3,Consumer Defensive,Education & Training Services,6.45,none,LOW,Equity
+HOOT4,Consumer Cyclical,Lodging,N/A,none,LOW,Equity
+ONCO3,Healthcare,Medical Care Facilities,N/A,underperform,LOW,Equity
+BRSR5,Financial Services,Banks - Regional,7.72,none,LOW,Equity
+IDIV,N/A,N/A,N/A,N/A,LOW,Index
+MGLU3,Consumer Cyclical,Specialty Retail,3.28,hold,LOW,Equity
+BALM3,Healthcare,Medical Instruments & Supplies,3.2,none,LOW,Equity
+COCE5,Utilities,Utilities - Regulated Electric,5.16,none,LOW,Equity
+BRKM6,Basic Materials,Chemicals,N/A,none,LOW,Equity
+PSSA3,Financial Services,Insurance - Diversified,3.54,buy,LOW,Equity
+PATI3,Basic Materials,Steel,15.02,none,LOW,Equity
+GPTW,N/A,N/A,N/A,N/A,LOW,Index
+MNDL3,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
+FESA3,Basic Materials,Steel,4.12,none,LOW,Equity
+IBEP,N/A,N/A,N/A,N/A,LOW,Index
+IBRA,N/A,N/A,N/A,N/A,LOW,Index
+CRPG3,Basic Materials,Chemicals,24.88,none,LOW,Equity
+MYPK3,Consumer Cyclical,Auto Parts,5.98,buy,LOW,Equity
+NEXP3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+RADL3,Healthcare,Pharmaceutical Retailers,2.1,buy,LOW,Equity
+PETZ3,Consumer Cyclical,Specialty Retail,14.52,none,LOW,Equity
+BALM4,Healthcare,Medical Instruments & Supplies,4.03,none,LOW,Equity
+IGTI11,Real Estate,Real Estate Services,2.93,strong_buy,LOW,Equity
+REAG3,Financial Services,Asset Management,N/A,none,LOW,Equity
+OSXB3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
+RSID3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
+LIGT3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+KEPL3,Industrials,Farm & Heavy Construction Machinery,6.51,none,LOW,Equity
+MNPR3,Consumer Defensive,Farm Products,N/A,none,LOW,Equity
+BMEB4,Financial Services,Banks - Regional,5.56,none,LOW,Equity
+VIVT3,Communication Services,Telecom Services,3.78,buy,LOW,Equity
+MTRE3,Real Estate,Real Estate - Development,14.66,none,LOW,Equity
+IGTI4,Real Estate,Real Estate Services,2.89,none,LOW,Equity
+IBLV,N/A,N/A,N/A,N/A,LOW,Index
+OPCT3,Industrials,Specialty Business Services,N/A,buy,LOW,Equity
+GSHP3,Real Estate,Real Estate - Diversified,N/A,none,LOW,Equity
+ETER3,Industrials,Building Products & Equipment,7.2,none,LOW,Equity
+RNEW11,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+IBXX,N/A,N/A,N/A,N/A,LOW,Index
+NUTR3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
+ANIM3,Consumer Defensive,Education & Training Services,1.29,buy,LOW,Equity
+MATD3,Healthcare,Medical Care Facilities,1.63,buy,LOW,Equity
+MGEL4,Basic Materials,Steel,N/A,none,LOW,Equity
+TASA3,Industrials,Aerospace & Defense,2.3,none,LOW,Equity
+PDGR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+CEBR5,Utilities,Utilities - Regulated Electric,10.17,none,LOW,Equity
+VBBR3,Consumer Cyclical,Specialty Retail,11.26,buy,LOW,Equity
+CCTY3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+CYRE3,Consumer Cyclical,Residential Construction,4.17,buy,LOW,Equity
+EUCA4,Industrials,Building Products & Equipment,3.93,none,LOW,Equity
+BGIP4,Financial Services,Banks - Regional,15.23,none,LOW,Equity
+UTIL,N/A,N/A,N/A,N/A,LOW,Index
+SHUL4,Consumer Cyclical,Auto Parts,6.14,none,LOW,Equity
+COGN3,Consumer Defensive,Education & Training Services,9.57,buy,LOW,Equity
+BDRX,N/A,N/A,N/A,N/A,LOW,Index
+CEEB3,Utilities,Utilities - Regulated Electric,0.91,none,LOW,Equity
+TGMA3,Industrials,Trucking,9.53,buy,LOW,Equity
+GRND3,Consumer Cyclical,Footwear & Accessories,8.95,none,LOW,Equity
+IBHB,N/A,N/A,N/A,N/A,LOW,Index
+EPAR3,Basic Materials,Lumber & Wood Production,42.57,none,LOW,Equity
+ABEV3,Consumer Defensive,Beverages - Brewers,7.02,hold,LOW,Equity
+SOJA3,Basic Materials,Agricultural Inputs,2.6,strong_buy,LOW,Equity
+ODPV3,Healthcare,Healthcare Plans,7.86,hold,LOW,Equity
+ALUP11,Utilities,Utilities - Renewable,2.77,none,LOW,Equity
+BMIN4,Financial Services,Banks - Regional,8.5,none,LOW,Equity
+ABCB4,Financial Services,Banks - Regional,9.78,hold,LOW,Equity
+PTNT3,Consumer Cyclical,Apparel Manufacturing,2.99,none,LOW,Equity
+PORT3,Industrials,Marine Shipping,8.77,none,LOW,Equity
+SLCE3,Consumer Defensive,Farm Products,7.68,none,LOW,Equity
+EQTL3,Utilities,Utilities - Regulated Electric,2.24,strong_buy,LOW,Equity
+LJQQ3,Consumer Cyclical,Specialty Retail,4.8,none,LOW,Equity
+CEBR6,Utilities,Utilities - Regulated Electric,10.34,none,LOW,Equity
+JFEN3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+MDNE3,Real Estate,Real Estate Services,2.97,none,LOW,Equity
+MLAS3,Technology,Electronics & Computer Distribution,N/A,none,LOW,Equity
+BPAN4,Financial Services,Banks - Regional,2.99,none,LOW,Equity
+GMAT3,Consumer Cyclical,Department Stores,3.39,none,LOW,Equity
+RANI3,Consumer Cyclical,Packaging & Containers,8.46,strong_buy,LOW,Equity
+BRSR6,Financial Services,Banks - Regional,7.72,hold,LOW,Equity
+ICO2,N/A,N/A,N/A,N/A,LOW,Index
+MULT3,Real Estate,Real Estate Services,3.63,strong_buy,LOW,Equity
+VAMO3,Industrials,Rental & Leasing Services,14.22,buy,LOW,Equity
+HBTS5,Real Estate,Real Estate Services,5.95,none,LOW,Equity
+TKNO4,Basic Materials,Steel,0.83,none,LOW,Equity
+CEDO3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+USIM5,Basic Materials,Steel,4.94,hold,LOW,Equity
+SMTO3,Basic Materials,Specialty Chemicals,5.11,buy,LOW,Equity
+INEP3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+BPAC5,Financial Services,Capital Markets,3.57,none,LOW,Equity
+RPAD6,Industrials,Conglomerates,N/A,none,LOW,Equity
+BBDC3,Financial Services,Banks - Regional,1.45,none,LOW,Equity
+CPLE3,Utilities,Utilities - Regulated Electric,6.97,strong_buy,LOW,Equity
+AMOB3,Consumer Cyclical,Auto & Truck Dealerships,N/A,strong_buy,LOW,Equity
+PCAR3,Consumer Cyclical,Department Stores,N/A,none,LOW,Equity
+CGAS5,Utilities,Utilities - Regulated Gas,17.55,none,LOW,Equity
+DTCY3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+BIED3,Consumer Defensive,Education & Training Services,N/A,none,LOW,Equity
+ALUP3,Utilities,Utilities - Renewable,2.58,none,LOW,Equity
+TFIX,N/A,N/A,N/A,N/A,LOW,Index
+CMIG4,Utilities,Utilities - Diversified,11.95,hold,LOW,Equity
+SNSY3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+MOVI3,Industrials,Rental & Leasing Services,2.5,buy,LOW,Equity
+CRPG5,Basic Materials,Chemicals,5.57,none,LOW,Equity
+DMVF3,Healthcare,Pharmaceutical Retailers,N/A,none,LOW,Equity
+IGTI3,Real Estate,Real Estate Services,3.48,none,LOW,Equity
+EQPA3,Utilities,Utilities - Regulated Electric,11.62,none,LOW,Equity
+GGPS3,Industrials,Specialty Business Services,1.52,none,LOW,Equity
+JHSF3,Real Estate,Real Estate - Development,7.11,none,LOW,Equity
+MEAL3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
+GOAU3,Basic Materials,Steel,3.84,hold,LOW,Equity
+CASH3,Communication Services,Internet Content & Information,69.0,hold,LOW,Equity
+ALLD3,Technology,Software - Application,48.72,none,LOW,Equity
+RDNI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+SAPR3,Utilities,Utilities - Regulated Water,6.77,none,LOW,Equity
+ITAG,N/A,N/A,N/A,N/A,LOW,Index
+CLSC4,Utilities,Utilities - Regulated Electric,7.69,none,LOW,Equity
+CGAS3,Utilities,Utilities - Regulated Gas,17.38,none,LOW,Equity
+CAML3,Consumer Defensive,Packaged Foods,5.82,buy,LOW,Equity
+TEND3,Real Estate,Real Estate - Development,0.7,buy,LOW,Equity
+AZTE3,Energy,Oil & Gas E&P,N/A,none,LOW,Equity
+VULC3,Consumer Cyclical,Footwear & Accessories,7.24,none,LOW,Equity
+AMAR11,N/A,N/A,N/A,N/A,NONE,N/A
+WLMM4,Consumer Cyclical,Auto & Truck Dealerships,1.29,none,LOW,Equity
+UNIP5,Basic Materials,Chemicals,6.98,none,LOW,Equity
+CMIG3,Utilities,Utilities - Diversified,9.31,none,LOW,Equity
+QUAL3,Healthcare,Healthcare Plans,0.3,hold,LOW,Equity
+SUZB3,Basic Materials,Paper & Paper Products,3.94,strong_buy,LOW,Equity
+AMER3,Consumer Cyclical,Internet Retail,N/A,none,LOW,Equity
+TAEE4,Utilities,Utilities - Regulated Electric,7.91,none,LOW,Equity
+USIM3,Basic Materials,Steel,4.48,none,LOW,Equity
+ENEV3,Utilities,Utilities - Diversified,N/A,none,LOW,Equity
+BMOB3,Communication Services,Entertainment,5.92,none,LOW,Equity
+CXSE3,Financial Services,Insurance - Diversified,8.18,buy,LOW,Equity
+CBEE3,Utilities,Utilities - Regulated Electric,4.92,none,LOW,Equity
+HBSA3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
+AMBP3,Industrials,Waste Management,N/A,none,LOW,Equity
+BRBI11,Financial Services,Capital Markets,8.88,strong_buy,LOW,Equity
+MRVE3,Real Estate,Real Estate - Development,N/A,buy,LOW,Equity
+CSUD3,Technology,Software - Infrastructure,5.21,none,LOW,Equity
+IDVR,N/A,N/A,N/A,N/A,LOW,Index
+MRFG3,Consumer Defensive,Packaged Foods,12.59,buy,LOW,Equity
+CSMG3,Utilities,Utilities - Regulated Water,5.96,hold,LOW,Equity
+EALT4,Industrials,Metal Fabrication,3.31,none,LOW,Equity
+FIEI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+PNVL3,Healthcare,Drug Manufacturers - General,3.62,none,LOW,Equity
+CPLE5,Utilities,Utilities - Regulated Electric,4.34,none,LOW,Equity
+LAVV3,Real Estate,Real Estate Services,5.79,strong_buy,LOW,Equity
+ESTR4,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
+GUAR3,Consumer Cyclical,Apparel Retail,1.48,buy,LOW,Equity
+CVCB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
+CEAB3,Consumer Cyclical,Specialty Retail,1.92,buy,LOW,Equity
+SHOW3,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
+PINE4,Financial Services,Banks - Regional,9.8,none,LOW,Equity
+IBBE,N/A,N/A,N/A,N/A,LOW,Index
+DOTZ3,Communication Services,Advertising Agencies,N/A,none,LOW,Equity
+RDOR3,Healthcare,Medical Care Facilities,2.34,buy,LOW,Equity
+HBRE3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+BRAV3,Energy,Oil & Gas E&P,2.22,buy,LOW,Equity
+ITSA3,Industrials,Conglomerates,7.95,none,LOW,Equity
+JOPA3,Consumer Defensive,Packaged Foods,3.15,none,LOW,Equity
+IMAT,N/A,N/A,N/A,N/A,LOW,Index
+GGBR3,Basic Materials,Steel,4.4,none,LOW,Equity
+ALPA3,Consumer Cyclical,Footwear & Accessories,1.11,none,LOW,Equity
+BPAC11,Financial Services,Capital Markets,2.41,none,LOW,Equity
+DESK3,Communication Services,Telecom Services,0.39,none,LOW,Equity
+BGIP3,Financial Services,Banks - Regional,12.97,none,LOW,Equity
+GFSA3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
+FHER3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
+IFIL,N/A,N/A,N/A,N/A,LOW,Index
+SANB4,Financial Services,Banks - Regional,5.5,none,LOW,Equity
+ALPK3,Industrials,Infrastructure Operations,N/A,none,LOW,Equity
+AHEB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
+WHRL4,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.53,none,LOW,Equity
+SBSP3,Utilities,Utilities - Regulated Water,3.24,buy,LOW,Equity
+BRAP3,Financial Services,Asset Management,14.93,hold,LOW,Equity
+NEOE3,Utilities,Utilities - Regulated Electric,3.99,buy,LOW,Equity
+VLID3,Industrials,Specialty Business Services,13.34,none,LOW,Equity
+MTSA4,Industrials,Farm & Heavy Construction Machinery,6.51,none,LOW,Equity
+PINE3,Financial Services,Banks - Regional,5.78,none,LOW,Equity
+KLBN4,Basic Materials,Paper & Paper Products,5.11,buy,LOW,Equity
+BAUH4,Consumer Defensive,Packaged Foods,1.47,none,LOW,Equity
+IBBR,N/A,N/A,N/A,N/A,LOW,Index
+HAGA3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
+KLBN11,Basic Materials,Paper & Paper Products,5.12,buy,LOW,Equity
+IBXL,N/A,N/A,N/A,N/A,N/A,N/A
+AZEV11,N/A,N/A,N/A,N/A,NONE,N/A
+FLRY3,Healthcare,Diagnostics & Research,9.15,hold,LOW,Equity
+POMO4,N/A,N/A,9.15,hold,LOW,Equity
+VIVR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+TAEE3,Utilities,Utilities - Regulated Electric,7.98,none,LOW,Equity
+BLAU3,Healthcare,Drug Manufacturers - Specialty & Generic,4.49,buy,LOW,Equity
+VITT3,Basic Materials,Agricultural Inputs,3.42,none,LOW,Equity
+CTSA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+TELB3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+ISAE3,Utilities,Utilities - Independent Power Producers,7.8,none,LOW,Equity
+ORVR3,Industrials,Waste Management,N/A,none,LOW,Equity
+SEER3,Consumer Defensive,Education & Training Services,1.71,none,LOW,Equity
+LPSB3,Real Estate,Real Estate Services,1.93,none,LOW,Equity
+ISAE4,Utilities,Utilities - Independent Power Producers,10.36,hold,LOW,Equity
+ENJU3,Consumer Cyclical,Internet Retail,N/A,hold,LOW,Equity
+GGBR4,Basic Materials,Steel,4.03,buy,LOW,Equity
+CSAN3,Energy,Oil & Gas Refining & Marketing,5.62,buy,LOW,Equity
+SAPR11,Utilities,Utilities - Regulated Water,7.47,hold,LOW,Equity
+CLSC3,Utilities,Utilities - Regulated Electric,7.95,none,LOW,Equity
+AERI3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+CMIN3,Basic Materials,Steel,20.25,underperform,LOW,Equity
+EMAE4,Utilities,Utilities - Diversified,9.7,none,LOW,Equity
+AURE3,Utilities,Utilities - Renewable,0.57,hold,LOW,Equity
+INEP4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+MELK3,Real Estate,Real Estate Services,13.45,none,LOW,Equity
+SYNE3,Real Estate,Real Estate - Diversified,52.2,none,LOW,Equity
