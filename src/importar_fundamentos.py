@@ -41,7 +41,7 @@ def importar_lista_setores():
             recomendacao = info.get('recommendationKey','N/A')
             confianca_alerta = info.get('customPriceAlertConfidence','N/A')
             tipo = info.get('typeDisp','N/A')
-            print(f"Setor: {setor} | Indústria: {industria}")
+            print(f"Ticker: {ticker} | Setor: {setor} | Indústria: {industria}")
         except Exception:
             setor = 'N/A'
             industria = 'N/A'
@@ -60,5 +60,5 @@ def importar_lista_setores():
 if __name__ == "__main__":
     
     #fundamentos = importar_fundamentos(ticker)
-    #importar_lista_setores()
+    importar_lista_setores()
     print(f"Importação realizada com sucesso!")
