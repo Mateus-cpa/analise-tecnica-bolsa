@@ -1,9 +1,9 @@
 import pandas as pd
 from pandas.tseries.offsets import BDay
 import numpy as np
-from datetime import date, timedelta
+import json
 
-
+# Bibliotecas importadas
 import streamlit as st
 
 # MLs
@@ -147,13 +147,17 @@ def acao_com_preditivo(acao):
     st.subheader('Modelos de Machine Learning')
     col1, col2, col3, col4 = st.columns(4)
     coeficientes_modelos = {}
+    #atribuir valor 0 a todos modelos
+    for modelo in ['regressao_linear', 'rede_neural', 'rede_neural_hiper_parameter', 'random_forest', 'gradient_boosting', 'svr', 'ridge', 'lasso']:
+        coeficientes_modelos[modelo] = 0.0
+    
 
     if col1.checkbox('Regressão linear', value=True):
         lr = treinar_lr(X_train, y_train)
         pred_lr = lr.predict(X_test)
         cd_lr = r2_score(y_test, pred_lr)
         col1.write(f'Coef: {cd_lr * 100:.2f}')
-        coeficientes_modelos['Regressão Linear'] = cd_lr * 100
+        coeficientes_modelos['regressao_linear'] = cd_lr * 100
         modelos['regressao_linear'] = lr
 
     if col1.checkbox('Rede neural', value=True):
@@ -161,7 +165,7 @@ def acao_com_preditivo(acao):
         pred_rn = rn.predict(X_test)
         cd_rn = rn.score(X_test, y_test)
         col1.write(f'Coef: {cd_rn * 100:.2f}')
-        coeficientes_modelos['Rede Neural'] = cd_rn * 100
+        coeficientes_modelos['rede_neural'] = cd_rn * 100
         modelos['rede_neural'] = rn
 
     if col2.checkbox('Hyperparametros (pesado!)'):
@@ -169,7 +173,7 @@ def acao_com_preditivo(acao):
         pred_rnhp = clf.predict(X_test)
         cd_rnhp = clf.score(X_test, y_test)
         col2.write(f'Coef: {cd_rnhp * 100:.2f}')
-        coeficientes_modelos['Rede Neural HP'] = cd_rnhp * 100
+        coeficientes_modelos['hiper_parametro'] = cd_rnhp * 100
         modelos['rede_neural_hiper_parameter'] = clf
 
     if col2.checkbox('Random Forest Regression', value=True):
@@ -177,7 +181,7 @@ def acao_com_preditivo(acao):
         pred_rf = rf.predict(X_test)
         cd_rf = rf.score(X_test, y_test)
         col2.write(f'Coef: {cd_rf * 100:.2f}')
-        coeficientes_modelos['Random Forest'] = cd_rf * 100
+        coeficientes_modelos['random_forest'] = cd_rf * 100
         modelos['random_forest'] = rf
 
     if col3.checkbox('Gradient Boosting Regr.', value=True):
@@ -185,7 +189,7 @@ def acao_com_preditivo(acao):
         pred_gb = gb.predict(X_test)
         cd_gb = gb.score(X_test, y_test)
         col3.write(f'Coef: {cd_gb * 100:.2f}')
-        coeficientes_modelos['Gradient Boosting'] = cd_gb * 100
+        coeficientes_modelos['gradient_boosting'] = cd_gb * 100
         modelos['gradient_boosting'] = gb
 
     if col3.checkbox('Support Vector Regression', value=True):
@@ -193,22 +197,26 @@ def acao_com_preditivo(acao):
         pred_svr = svr.predict(X_test)
         cd_svr = svr.score(X_test, y_test)
         col3.write(f'Coef: {cd_svr * 100:.2f}')
-        coeficientes_modelos['SVR'] = cd_svr * 100
+        coeficientes_modelos['svr'] = cd_svr * 100
         modelos['svr'] = svr
 
     if col4.checkbox('Regressão Ridge', value=True):
         ridge = treinar_ridge(X_train, y_train)
         cd_ridge = ridge.score(X_test, y_test)
         col4.write(f'Coef: {cd_ridge * 100:.2f}')
-        coeficientes_modelos['Ridge'] = cd_ridge * 100
+        coeficientes_modelos['ridge'] = cd_ridge * 100
         modelos['ridge'] = ridge
 
     if col4.checkbox('Regressão Lasso', value=True):
         lasso = treinar_lasso(X_train, y_train)
         cd_lasso = lasso.score(X_test, y_test)
         col4.write(f'Coef: {cd_lasso * 100:.2f}')
-        coeficientes_modelos['Lasso'] = cd_lasso * 100
+        coeficientes_modelos['lasso'] = cd_lasso * 100
         modelos['lasso'] = lasso
+
+    # Salva coeficientes dos modelos em json
+    with open('bronze_data/coeficientes_modelos.json', 'w') as f:
+        json.dump(coeficientes_modelos, f)
 
     previsao_supervisionada = features_scale[qtd_linhas_teste:qtd_linhas]
     data_pregao_full = acao_prev.index
@@ -225,7 +233,7 @@ def acao_com_preditivo(acao):
     pred_svr = modelos['svr'].predict(previsao_supervisionada) if 'svr' in modelos else None
     pred_ridge = modelos['ridge'].predict(previsao_supervisionada) if 'ridge' in modelos else None
     pred_lasso = modelos['lasso'].predict(previsao_supervisionada) if 'lasso' in modelos else None
-
+  
     df = pd.DataFrame({'data_pregao': data_pregao, 'real': res})
     if pred_lr is not None:
         df['previsao_regressao_linear'] = pred_lr
