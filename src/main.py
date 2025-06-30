@@ -4,6 +4,7 @@ import pandas as pd
 from datetime import date, timedelta
 import warnings
 warnings.filterwarnings('ignore')
+import json
 
 # bibliotecas de terceiros
 #from talib import RSI # Technical Analysis - TA-Lib
@@ -274,14 +275,12 @@ def plotar_grafico(acao, ticker):
     # Filtra o DataFrame conforme o período selecionado
     acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
 
-
+    
     # Plotando o gráfico de preços
     fig = make_subplots(rows=1, cols=1)
     
-    col1, col2, col3, col4, col5 = st.columns(5)
-
     # Adicionando elementos no gráfico
-    
+    col1, col2, col3, col4, col5 = st.columns(5)
     if col1.checkbox('MM5', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
     if col1.checkbox('Candles', value=False):
@@ -318,6 +317,7 @@ def plotar_grafico(acao, ticker):
         marker=dict(color='green', size=10, symbol='triangle-down')
         ))
     fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Real', marker_color='rgba(255,0,0,0.5)'))
+    
     # Adicionando marcadores de tendência
     if col2.checkbox('Mudança de Tendência', value=False):
         # Filtra as datas com mudança de tendência
@@ -353,42 +353,53 @@ def plotar_grafico(acao, ticker):
                                 )
 
     #marcadores de Machine Learning
-    if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
-        fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_regressao_linear'], mode='lines', name='Regr. linear', marker_color='rgba(0,255,0,0.5)'))
-    if col4.checkbox('Rede neural', value=True, key = 'neural_net'):
-        fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural'], mode='lines', name='Rede neural', marker_color='rgba(0,255,255,0.5)'))
-    if col5.checkbox('Hiperparâmetros', value=False, key = 'hyperparam'):
-        fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural_hiper_parameter'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
-    
-    if col1.checkbox('Random Forest', value=True, key='rf'):
-        fig.add_trace(go.Scatter(
-            x=acao.index, y=acao['previsao_random_forest'],
-            mode='lines', name='Random Forest', marker_color='rgba(0,100,255,0.5)'
-        ))
-    
-    if col2.checkbox('Gradient Boosting', value=True, key='gb'):
-        fig.add_trace(go.Scatter(
-            x=acao.index, y=acao['previsao_gradient_boosting'],
-            mode='lines', name='Gradient Boosting', marker_color='rgba(255,100,0,0.5)'
-            ))
-    
-    if col3.checkbox('SVR', value=True, key='svr'):
-        fig.add_trace(go.Scatter(
-            x=acao.index, y=acao['previsao_svr'],
-            mode='lines', name='SVR', marker_color='rgba(150,0,255,0.5)'
-        ))
-    
-    if col4.checkbox('Ridge', value=True, key='ridge'):
-        fig.add_trace(go.Scatter(
-            x=acao.index, y=acao['previsao_ridge'],
-            mode='lines', name='Ridge', marker_color='rgba(0,255,100,0.5)'
-        ))
+    try:
+        with open('bronze_data/coeficientes_modelos.json', 'r') as f:
+            coeficientes_modelos = json.load(f) #salva como dict
+    except FileNotFoundError:
+        st.warning("Arquivo de coeficientes não encontrado.")
+        coeficientes_modelos = {}
 
-    if col5.checkbox('Lasso', value=True, key='lasso'):
-        fig.add_trace(go.Scatter(
-            x=acao.index, y=acao['previsao_lasso'],
-            mode='lines', name='Lasso', marker_color='rgba(255,0,150,0.5)'
-        ))
+    
+    if coeficientes_modelos['regressao_linear'] > 90.0:
+        if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
+            fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_regressao_linear'], mode='lines', name='Regr. linear', marker_color='rgba(0,255,0,0.5)'))
+    if coeficientes_modelos['rede_neural'] > 90.0:
+        if col4.checkbox('Rede neural', value=True, key = 'neural_net'):
+            fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural'], mode='lines', name='Rede neural', marker_color='rgba(0,255,255,0.5)'))
+    if coeficientes_modelos['rede_neural_hiper_parameter'] > 90.0:
+        if col5.checkbox('Hiperparâmetros', value=False, key = 'hyperparam'):
+            fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural_hiper_parameter'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
+    if coeficientes_modelos['random_forest'] > 90.0:    
+        if col1.checkbox('Random Forest', value=True, key='rf'):
+            fig.add_trace(go.Scatter(
+                x=acao.index, y=acao['previsao_random_forest'],
+                mode='lines', name='Random Forest', marker_color='rgba(0,100,255,0.5)'
+            ))
+    if coeficientes_modelos['gradient_boosting'] > 90.0:
+        if col2.checkbox('Gradient Boosting', value=True, key='gb'):
+            fig.add_trace(go.Scatter(
+                x=acao.index, y=acao['previsao_gradient_boosting'],
+                mode='lines', name='Gradient Boosting', marker_color='rgba(255,100,0,0.5)'
+                ))
+    if coeficientes_modelos['svr'] > 90.0:    
+        if col3.checkbox('SVR', value=True, key='svr'):
+            fig.add_trace(go.Scatter(
+                x=acao.index, y=acao['previsao_svr'],
+                mode='lines', name='SVR', marker_color='rgba(150,0,255,0.5)'
+            ))
+    if coeficientes_modelos['ridge'] > 90.0:
+        if col4.checkbox('Ridge', value=True, key='ridge'):
+            fig.add_trace(go.Scatter(
+                x=acao.index, y=acao['previsao_ridge'],
+                mode='lines', name='Ridge', marker_color='rgba(0,255,100,0.5)'
+            ))
+    if coeficientes_modelos['lasso'] > 90.0:
+        if col5.checkbox('Lasso', value=True, key='lasso'):
+            fig.add_trace(go.Scatter(
+                x=acao.index, y=acao['previsao_lasso'],
+                mode='lines', name='Lasso', marker_color='rgba(255,0,150,0.5)'
+            ))
     
     # Colocar marcador de hoje
     fig.add_trace(go.Scatter(
@@ -460,7 +471,6 @@ def mostrar_dados():
         if st.checkbox("Tabelas:"):
             lancar_dataframe(acao, ticker)
         
-
 
 if __name__ == "__main__":
     configuracoes_iniciais()
