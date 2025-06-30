@@ -435,9 +435,13 @@ def lancar_dataframe(acao, ticker):
 
 def mostrar_dados():
     configuracoes_iniciais()
-    importar_tickers()  # Importa os tickers disponíveis
-    if st.button('Atualizar base'):
+    
+    col1, col2 = st.columns(2)
+    if col1.button('Importar tickers'):
+        importar_tickers()  # Importa os tickers disponíveis
+    if col2.button('Atualizar base'):
             importar_lista_setores()
+            
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
         st.error("Por favor, selecione um ticker válido.")
