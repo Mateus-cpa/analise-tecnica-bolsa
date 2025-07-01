@@ -148,7 +148,7 @@ def acao_com_preditivo(acao):
     col1, col2, col3, col4 = st.columns(4)
     coeficientes_modelos = {}
     #atribuir valor 0 a todos modelos
-    for modelo in ['regressao_linear', 'rede_neural', 'rede_neural_hiper_parameter', 'random_forest', 'gradient_boosting', 'svr', 'ridge', 'lasso']:
+    for modelo in ['regressao_linear', 'rede_neural', 'hiper_parametro', 'random_forest', 'gradient_boosting', 'svr', 'ridge', 'lasso']:
         coeficientes_modelos[modelo] = 0.0
     
 
