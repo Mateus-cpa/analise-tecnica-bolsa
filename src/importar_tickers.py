@@ -6,6 +6,7 @@ import streamlit as st
 
 
 def importar_tickers():
+    st.subheader('Importando tickers')
     #criar pasta raw_data se não existir
     if not os.path.exists('raw_data'):
         os.makedirs('raw_data')
@@ -21,15 +22,19 @@ def importar_tickers():
     soup = bs4(content, 'html.parser')
     table_container = soup.find('div', {'class': 'table-container'})
     table = table_container.find('table') if table_container else None
-    st.write(f'Qtde. de Ações:  {table.shape[0]}')
     if table is None:
         raise ValueError("Tabela não encontrada no conteúdo HTML.")
+    qtd_acoes = 0
     # Extraindo os tickers do conteúdo HTML
     for row in table.find_all('tr')[1:]:  # Ignora o cabeçalho
         cols = row.find_all('td')
         if len(cols) > 0:
             ticker = cols[0].text.strip()
             todos_tickers.append(ticker)
+        qtd_acoes += 1
+    st.write(f'Qtde. de Ações:  {qtd_acoes}')
+
+    
     print('Importando índices')
 
     # -- ÍNDICES B3 --
@@ -40,7 +45,7 @@ def importar_tickers():
     soup = bs4(content, 'html.parser')
     table_container = soup.find('div', {'class': 'table-container'})
     table = table_container.find('table') if table_container else None
-    st.write(f'Qtde. de Índices:  {table.shape[0]}')
+    qtd_indices = 0
     if table is None:
         raise ValueError("Tabela não encontrada no conteúdo HTML.")
     for row in table.find_all('tr')[1:]:  # Ignora o cabeçalho
@@ -48,6 +53,8 @@ def importar_tickers():
         if len(cols) > 0:
             ticker = cols[0].text.strip() # Extraindo os tickers do conteúdo HTML
             todos_tickers.append(ticker)
+            qtd_indices += 1
+    st.write(f'Qtde. de Índices:  {qtd_indices}')
 
     # -- Índices macroeconômicos --
     # https://www.dadosdemercado.com.br/indices

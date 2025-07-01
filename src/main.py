@@ -19,7 +19,8 @@ from pandas.tseries.offsets import BDay
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
-from importar_fundamentos import importar_fundamentos, importar_lista_setores # Importando a função para importar fundamentos
+from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
+from atualizar_base_setores import atualizar_base_setores
 from modelo_preditivo import acao_com_preditivo
 
 
@@ -454,7 +455,7 @@ def mostrar_dados():
     if col1.button('Importar tickers'):
         importar_tickers()  # Importa os tickers disponíveis
     if col2.button('Atualizar base'):
-            importar_lista_setores()
+            atualizar_base_setores()
             
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
