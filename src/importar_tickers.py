@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs4
 import os
 import pandas as pd
+import streamlit as st
 
 
 def importar_tickers():
@@ -20,6 +21,7 @@ def importar_tickers():
     soup = bs4(content, 'html.parser')
     table_container = soup.find('div', {'class': 'table-container'})
     table = table_container.find('table') if table_container else None
+    st.write(f'Qtde. de Ações:  {table.shape[0]}')
     if table is None:
         raise ValueError("Tabela não encontrada no conteúdo HTML.")
     # Extraindo os tickers do conteúdo HTML
@@ -38,6 +40,7 @@ def importar_tickers():
     soup = bs4(content, 'html.parser')
     table_container = soup.find('div', {'class': 'table-container'})
     table = table_container.find('table') if table_container else None
+    st.write(f'Qtde. de Índices:  {table.shape[0]}')
     if table is None:
         raise ValueError("Tabela não encontrada no conteúdo HTML.")
     for row in table.find_all('tr')[1:]:  # Ignora o cabeçalho
@@ -56,6 +59,7 @@ def importar_tickers():
     lista_fiis = pd.read_csv('raw_data/fiisListados.csv', 
                                encoding='latin-1', 
                                sep=';').Fundo.tolist()
+    st.write(f'Qtde. de FIIs:  {len(lista_fiis)}')
     for i in lista_fiis:
         todos_tickers.append(i + '11')
 
@@ -65,11 +69,13 @@ def importar_tickers():
     lista_etfs = pd.read_csv('raw_data/etfsListados.csv', 
                                encoding='latin-1', 
                                sep=';').Fundo.tolist()
+    st.write(f'Qtde. de ETFs:  {len(lista_etfs)}')
     for i in lista_etfs:
         todos_tickers.append(i + '11')
 
-
+    # -- TOTAL --
     todos_tickers = list(set(todos_tickers))  # Remove duplicatas
+    st.write(f'Qtde. Total (sem duplicatas):  {len(todos_tickers)}')    
     # Salvando os tickers em um arquivo CSV
     with open('raw_data/tickers.csv', 'w', encoding='utf-8') as file:
         for ticker in todos_tickers:
