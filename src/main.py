@@ -364,12 +364,15 @@ def plotar_grafico(acao, ticker):
     if coeficientes_modelos['regressao_linear'] > 90.0:
         if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
             fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_regressao_linear'], mode='lines', name='Regr. linear', marker_color='rgba(0,255,0,0.5)'))
+    
     if coeficientes_modelos['rede_neural'] > 90.0:
         if col4.checkbox('Rede neural', value=True, key = 'neural_net'):
             fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural'], mode='lines', name='Rede neural', marker_color='rgba(0,255,255,0.5)'))
-    if coeficientes_modelos['rede_neural_hiper_parameter'] > 90.0:
-        if col5.checkbox('Hiperparâmetros', value=False, key = 'hyperparam'):
+    
+    if coeficientes_modelos['hiper_parametro'] > 90.0:
+        if col5.checkbox('Hiperparâmetros', value=True, key = 'hyperparam'):
             fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural_hiper_parameter'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
+    
     if coeficientes_modelos['random_forest'] > 90.0:    
         if col1.checkbox('Random Forest', value=True, key='rf'):
             fig.add_trace(go.Scatter(
