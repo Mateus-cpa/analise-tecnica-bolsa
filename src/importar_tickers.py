@@ -4,7 +4,16 @@ import os
 import pandas as pd
 import streamlit as st
 
-
+def importar_ipca_sidra():
+    url = "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/all/p/all/d/v63%202,v69%202,v2266%2013,v2263%202,v2264%202,v2265%202?formato=json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        dados = response.json()
+        pd.DataFrame(dados).to_csv('raw_data/ipca_sidra.csv', index=False)
+    else:
+        st.error(f"Erro ao acessar a API do SIDRA: {response.status_code}")
+        return None
+    
 def importar_tickers():
     st.subheader('Importando tickers')
     #criar pasta raw_data se não existir
@@ -35,9 +44,8 @@ def importar_tickers():
     st.write(f'Qtde. de Ações:  {qtd_acoes}')
 
     
-    print('Importando índices')
-
     # -- ÍNDICES B3 --
+    print('Importando índices')
     url = "https://www.dadosdemercado.com.br/b3"
     request = requests.get(url)
     content = request.content.decode('utf-8')
@@ -58,6 +66,8 @@ def importar_tickers():
 
     # -- Índices macroeconômicos --
     # https://www.dadosdemercado.com.br/indices
+    # IPCA
+    importar_ipca_sidra()
 
     # -- FIIs --
     #https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/fundos-de-investimentos/fii/fiis-listados/
