@@ -52,24 +52,24 @@ def definir_ticker():
 
     # Filtra subsetores conforme setor
     if setor_selecionado != 'Todos':
-        subsetores_filtrados = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
+        industrias_filtradas = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
     else:
-        subsetores_filtrados = setores_df['industria'].dropna().unique().tolist()
+        industrias_filtradas = setores_df['industria'].dropna().unique().tolist()
 
-    subsetor_selecionado = col2.selectbox('Subsetor', options=['Todos'] + subsetores_filtrados, key='subsetores_select')
+    industria_selecionada = col2.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
 
     # Filtra tickers conforme subsetor e setor
     if tipo_selecionado != 'Todos':
         tickers_filtrados = setores_df[setores_df['tipo'] == tipo_selecionado]['ticker'].dropna().unique().tolist()  
-    elif setor_selecionado != 'Todos' and subsetor_selecionado != 'Todos':
+    elif setor_selecionado != 'Todos' and industria_selecionada != 'Todos':
         tickers_filtrados = setores_df[
             (setores_df['setor'] == setor_selecionado) &
-            (setores_df['industria'] == subsetor_selecionado)
+            (setores_df['industria'] == industria_selecionada)
         ]['ticker'].dropna().unique().tolist()
     elif setor_selecionado != 'Todos':
         tickers_filtrados = setores_df[setores_df['setor'] == setor_selecionado]['ticker'].dropna().unique().tolist()
-    elif subsetor_selecionado != 'Todos':
-        tickers_filtrados = setores_df[setores_df['industria'] == subsetor_selecionado]['ticker'].dropna().unique().tolist()
+    elif industria_selecionada != 'Todos':
+        tickers_filtrados = setores_df[setores_df['industria'] == industria_selecionada]['ticker'].dropna().unique().tolist()
     else:
         tickers_filtrados = setores_df['ticker'].dropna().unique().tolist()
 
