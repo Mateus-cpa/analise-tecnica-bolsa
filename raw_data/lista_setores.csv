@@ -1,1025 +1,1027 @@
 ticker,setor,industria,rendimento,recomendação,confiança do alerta,tipo
-ALUG11,,,N/A,none,LOW,Equity
-SEED11,Real Estate,REIT - Specialty,12.0,none,LOW,Equity
-BBDC3,Financial Services,Banks - Regional,1.45,none,LOW,Equity
-MCCI11,Real Estate,REIT - Diversified,12.34,none,LOW,Equity
-HGBL11,Real Estate,REIT - Industrial,10.16,none,LOW,Equity
-INOI11,N/A,N/A,N/A,N/A,N/A,N/A
-EXES11,Real Estate,REIT - Diversified,16.6,none,LOW,Equity
-BRKM5,Basic Materials,Chemicals,N/A,none,LOW,Equity
-NASD11,,,N/A,none,LOW,Equity
-EALT4,Industrials,Metal Fabrication,3.31,none,LOW,Equity
-BEES3,Financial Services,Banks - Regional,3.36,none,LOW,Equity
-HBTS5,Real Estate,Real Estate Services,5.95,none,LOW,Equity
-AZPL11,Real Estate,REIT - Industrial,14.65,none,LOW,Equity
-RZAT11,Real Estate,REIT - Diversified,15.15,none,LOW,Equity
-HGIC11,Real Estate,REIT - Diversified,13.57,none,LOW,Equity
-MTSA4,Industrials,Farm & Heavy Construction Machinery,6.51,none,LOW,Equity
-MGHT11,Real Estate,REIT - Hotel & Motel,33.96,none,LOW,Equity
-IBSD,N/A,N/A,N/A,N/A,LOW,Index
-TOTS3,Technology,Software - Application,0.7,buy,LOW,Equity
-PCAR3,Consumer Cyclical,Department Stores,N/A,none,LOW,Equity
-GMAT3,Consumer Cyclical,Department Stores,3.39,none,LOW,Equity
-MATD3,Healthcare,Medical Care Facilities,1.63,buy,LOW,Equity
-FRIO3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",N/A,none,LOW,Equity
-KNIP11,Real Estate,REIT - Diversified,13.69,none,LOW,Equity
-RBHY11,Real Estate,REIT - Diversified,15.48,none,LOW,Equity
-IFCM3,Industrials,Specialty Business Services,N/A,none,LOW,Equity
-SARE11,Real Estate,REIT - Residential,6.8,none,LOW,Equity
-SLDZ11,N/A,N/A,N/A,N/A,N/A,N/A
-SIMH3,Industrials,Rental & Leasing Services,1.4,buy,LOW,Equity
-MGLU3,Consumer Cyclical,Specialty Retail,3.28,hold,LOW,Equity
-RDLI11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-HYPI11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-RDIV11,N/A,N/A,N/A,N/A,N/A,N/A
-TECK11,,,N/A,none,LOW,Equity
-RBRS11,Real Estate,REIT - Residential,1.91,none,LOW,Equity
-FIQE3,Communication Services,Telecom Services,8.22,none,LOW,Equity
-EDFO11,N/A,N/A,8.22,none,LOW,Equity
-PNVL3,Healthcare,Drug Manufacturers - General,3.62,none,LOW,Equity
-FTRE11,N/A,N/A,N/A,N/A,N/A,N/A
-POMO3,Industrials,Farm & Heavy Construction Machinery,8.9,none,LOW,Equity
-BTAL11,Real Estate,REIT - Industrial,13.41,none,LOW,Equity
-NAVT11,Financial Services,Asset Management,11.59,none,LOW,Equity
-ABCP11,Real Estate,REIT - Retail,11.27,none,LOW,Equity
-ERPA11,Real Estate,REIT - Diversified,8.91,none,LOW,Equity
-BIME11,Real Estate,REIT - Diversified,15.32,none,LOW,Equity
-DPRO11,Real Estate,REIT - Industrial,10.78,none,LOW,Equity
-IBBE,N/A,N/A,N/A,N/A,LOW,Index
-FIGS11,Real Estate,REIT - Diversified,8.85,none,LOW,Equity
-SEQR11,Real Estate,REIT - Diversified,14.21,none,LOW,Equity
-AERO11,N/A,N/A,N/A,N/A,N/A,N/A
-DVLP11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-GOAU4,Basic Materials,Steel,3.85,buy,LOW,Equity
-MAPT4,Financial Services,Asset Management,N/A,none,LOW,Equity
-RDNI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-CPUR11,Real Estate,REIT - Diversified,11.1,none,LOW,Equity
-CAPE11,N/A,N/A,N/A,N/A,NONE,N/A
-CCTY3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-AHEB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
-RSPD11,Real Estate,REIT - Diversified,23.57,none,LOW,Equity
-USIM5,Basic Materials,Steel,4.94,hold,LOW,Equity
-TGAR11,Real Estate,REIT - Diversified,13.0,none,LOW,Equity
-RADL3,Healthcare,Pharmaceutical Retailers,2.1,buy,LOW,Equity
-CPHH11,N/A,N/A,N/A,N/A,N/A,N/A
-VALE3,Basic Materials,Other Industrial Metals & Mining,14.18,buy,LOW,Equity
-ARML3,Industrials,Rental & Leasing Services,10.61,buy,LOW,Equity
-EPAR3,Basic Materials,Lumber & Wood Production,42.57,none,LOW,Equity
-LVTC3,Communication Services,Telecom Services,5.28,none,LOW,Equity
-HOOT4,Consumer Cyclical,Lodging,N/A,none,LOW,Equity
-PETR4,Energy,Oil & Gas Integrated,16.37,buy,LOW,Equity
-VRTM11,Real Estate,REIT - Diversified,15.25,none,LOW,Equity
-AURE3,Utilities,Utilities - Renewable,0.57,hold,LOW,Equity
-VCJR11,Real Estate,REIT - Diversified,15.5,none,LOW,Equity
-WHRL3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.45,none,LOW,Equity
-NEXP3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-HAAA11,Real Estate,REIT - Diversified,1.95,none,LOW,Equity
-INTB3,Technology,Communication Equipment,3.65,buy,LOW,Equity
-RPRI11,Real Estate,REIT - Specialty,16.53,none,LOW,Equity
-DOVL11,N/A,N/A,N/A,none,LOW,Equity
-SMRE11,Real Estate,REIT - Diversified,15.0,none,LOW,Equity
-ELET6,Utilities,Utilities - Renewable,8.31,strong_buy,LOW,Equity
-KISU11,Real Estate,REIT - Diversified,12.17,none,LOW,Equity
-MAXR11,Real Estate,REIT - Retail,5.96,none,LOW,Equity
-CEOC11,Real Estate,REIT - Office,13.88,none,LOW,Equity
-TRXY11,Real Estate,REIT - Diversified,14.21,none,LOW,Equity
-BTSI11,Real Estate,REIT - Industrial,8.41,none,LOW,Equity
-GRUL11,Real Estate,REIT - Diversified,16.28,none,LOW,Equity
-FARU11,N/A,N/A,N/A,N/A,N/A,N/A
-KNSC11,Real Estate,REIT - Residential,13.53,none,LOW,Equity
-IVCI11,N/A,N/A,N/A,N/A,NONE,N/A
-PTNT3,Consumer Cyclical,Apparel Manufacturing,2.99,none,LOW,Equity
-ITAG,N/A,N/A,N/A,N/A,LOW,Index
-HUSI11,Real Estate,REIT - Diversified,8.31,none,LOW,Equity
-PRNR3,Industrials,Engineering & Construction,0.85,none,LOW,Equity
-CXRI11,Real Estate,REIT - Diversified,11.57,none,LOW,Equity
-MRVE3,Real Estate,Real Estate - Development,N/A,buy,LOW,Equity
-MTOF11,N/A,N/A,N/A,N/A,NONE,N/A
-FIIB11,Real Estate,REIT - Industrial,9.26,none,LOW,Equity
-SHPP11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-RMBS11,N/A,N/A,N/A,N/A,N/A,N/A
-IGCX,N/A,N/A,N/A,N/A,N/A,N/A
-BOVB11,,,N/A,none,LOW,Equity
-CPLE6,Utilities,Utilities - Regulated Electric,4.96,strong_buy,LOW,Equity
-ENJU3,Consumer Cyclical,Internet Retail,N/A,hold,LOW,Equity
-EUCA4,Industrials,Building Products & Equipment,3.93,none,LOW,Equity
-GSHP3,Real Estate,Real Estate - Diversified,N/A,none,LOW,Equity
-HBCR11,Real Estate,REIT - Diversified,11.88,none,LOW,Equity
-KIVO11,Real Estate,REIT - Diversified,17.51,none,LOW,Equity
-RNEW3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-WSEC11,Real Estate,REIT - Specialty,43.58,none,LOW,Equity
-PORT3,Industrials,Marine Shipping,8.77,none,LOW,Equity
-BNFS11,Real Estate,REIT - Diversified,15.04,none,LOW,Equity
-BMEB3,Financial Services,Banks - Regional,6.1,none,LOW,Equity
-JCDB11,N/A,N/A,N/A,N/A,N/A,N/A
-CGRA4,Consumer Cyclical,Department Stores,12.63,none,LOW,Equity
-CLSC3,Utilities,Utilities - Regulated Electric,7.95,none,LOW,Equity
-BLCA11,Real Estate,REIT - Diversified,6.2,none,LOW,Equity
-SEER3,Consumer Defensive,Education & Training Services,1.71,none,LOW,Equity
-BRSE11,N/A,N/A,N/A,N/A,N/A,N/A
-URET11,N/A,N/A,N/A,N/A,N/A,N/A
-RCRB11,,,6.15,none,LOW,Equity
-MILL11,,,N/A,none,LOW,Equity
-CORN11,,,N/A,none,LOW,Equity
-MDNE3,Real Estate,Real Estate Services,2.97,none,LOW,Equity
-KFEN11,Real Estate,REIT - Diversified,12.69,none,LOW,Equity
-AMER3,Consumer Cyclical,Internet Retail,N/A,none,LOW,Equity
-BEES4,Financial Services,Banks - Regional,3.36,none,LOW,Equity
-ARXD11,Real Estate,REIT - Diversified,14.52,none,LOW,Equity
-KLBN11,Basic Materials,Paper & Paper Products,5.12,buy,LOW,Equity
-PULV11,Real Estate,REIT - Diversified,13.76,none,LOW,Equity
-RCSL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-MOFF11,N/A,N/A,N/A,N/A,N/A,N/A
-RZZI11,N/A,N/A,N/A,N/A,N/A,N/A
-RDOR3,Healthcare,Medical Care Facilities,2.34,buy,LOW,Equity
-CXSE3,Financial Services,Insurance - Diversified,8.18,buy,LOW,Equity
-GUAR3,Consumer Cyclical,Apparel Retail,1.48,buy,LOW,Equity
-ELDO11,N/A,N/A,N/A,N/A,NONE,Fund
-IGTI11,Real Estate,Real Estate Services,2.93,strong_buy,LOW,Equity
-GGRC11,Real Estate,REIT - Industrial,11.95,none,LOW,Equity
-LRED11,N/A,N/A,N/A,N/A,N/A,N/A
-FPAB11,Real Estate,REIT - Diversified,7.27,none,LOW,Equity
-SCPF11,Real Estate,REIT - Diversified,28.27,none,LOW,Equity
-EMBR3,Industrials,Aerospace & Defense,0.19,buy,LOW,Equity
-SPXS11,Financial Services,Asset Management,14.13,none,LOW,Equity
-BIED3,Consumer Defensive,Education & Training Services,N/A,none,LOW,Equity
-SPGM11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
-SNLG11,Real Estate,REIT - Diversified,1440.0,none,LOW,Equity
-AFHI11,Real Estate,REIT - Diversified,13.02,none,LOW,Equity
-ARTE11,N/A,N/A,N/A,N/A,N/A,N/A
-KPMR11,N/A,N/A,N/A,N/A,N/A,N/A
-RCFA11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-ACWI11,,,N/A,none,LOW,Equity
-MILS3,Industrials,Rental & Leasing Services,5.6,buy,LOW,Equity
-FESA4,Basic Materials,Steel,7.36,none,LOW,Equity
-IBEE,N/A,N/A,N/A,N/A,LOW,Index
-JFLL11,Real Estate,REIT - Diversified,8.61,none,LOW,Equity
-HCTR11,Financial Services,Asset Management,19.77,none,LOW,Equity
-MOAR3,Industrials,Conglomerates,23.28,none,LOW,Equity
-BXPO11,,,N/A,none,LOW,Equity
-IGNM,N/A,N/A,N/A,N/A,LOW,Index
-MOVI3,Industrials,Rental & Leasing Services,2.5,buy,LOW,Equity
-BBFI11,Real Estate,REIT - Office,2013.43,none,LOW,Equity
-ALZR11,Real Estate,Real Estate Services,9.32,none,LOW,Equity
-KNPR11,N/A,N/A,N/A,N/A,N/A,N/A
-SAIC11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-RZZV11,Real Estate,REIT - Diversified,9.33,none,LOW,Equity
-VGRI11,Real Estate,REIT - Diversified,16.84,none,LOW,Equity
-ENGI3,Utilities,Utilities - Regulated Electric,4.83,none,LOW,Equity
-SAPR3,Utilities,Utilities - Regulated Water,6.77,none,LOW,Equity
-BDLL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-AGFS,N/A,N/A,N/A,N/A,LOW,Index
-HILG11,Real Estate,REIT - Diversified,8.93,none,LOW,Equity
-EKTR4,Utilities,Utilities - Regulated Electric,4.95,none,LOW,Equity
-KRES11,N/A,N/A,N/A,N/A,N/A,N/A
-EQPA3,Utilities,Utilities - Regulated Electric,11.62,none,LOW,Equity
-CAMB3,Consumer Cyclical,Leisure,8.36,none,LOW,Equity
-KLOG11,N/A,N/A,N/A,N/A,N/A,N/A
-BRAX11,,,N/A,none,LOW,Equity
-VJFD11,Real Estate,REIT - Diversified,5.81,none,LOW,Equity
-UNIP3,Basic Materials,Chemicals,6.84,none,LOW,Equity
-DEVA11,Real Estate,REIT - Diversified,16.2,none,LOW,Equity
-OSXB3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
-ALUP3,Utilities,Utilities - Renewable,2.58,none,LOW,Equity
-SNCI11,Industrials,Consulting Services,13.52,none,LOW,Equity
-PGMN3,Healthcare,Pharmaceutical Retailers,7.37,buy,LOW,Equity
-VVMR11,Real Estate,REIT - Diversified,1.88,none,LOW,Equity
-DOLA11,,,N/A,none,LOW,Equity
-SMAB11,,,N/A,none,LOW,Equity
-CGAS5,Utilities,Utilities - Regulated Gas,17.55,none,LOW,Equity
-SOJA3,Basic Materials,Agricultural Inputs,2.6,strong_buy,LOW,Equity
-EURO11,Real Estate,REIT - Diversified,9.75,none,LOW,Equity
-CEBR5,Utilities,Utilities - Regulated Electric,10.17,none,LOW,Equity
-GGPS3,Industrials,Specialty Business Services,1.52,none,LOW,Equity
-SPVJ11,N/A,N/A,N/A,N/A,N/A,N/A
-RDCI11,N/A,N/A,N/A,N/A,N/A,N/A
-PKIN11,,,N/A,none,LOW,Equity
-ASRF11,Financial Services,Asset Management,N/A,none,LOW,Equity
-BIZD11,,,N/A,none,LOW,Equity
-REVE11,,,N/A,none,LOW,Equity
-RTEL11,N/A,N/A,N/A,N/A,N/A,N/A
-JCDA11,N/A,N/A,N/A,N/A,N/A,N/A
-HSLG11,Real Estate,REIT - Diversified,9.4,none,LOW,Equity
-NSLU11,Real Estate,REIT - Healthcare Facilities,11.21,none,LOW,Equity
-ALOS3,Real Estate,Real Estate Services,5.32,buy,LOW,Equity
-CXCI11,Real Estate,REIT - Specialty,13.31,none,LOW,Equity
-CFII11,Real Estate,REIT - Diversified,40.53,none,LOW,Equity
-HGBS11,Real Estate,REIT - Retail,9.75,none,LOW,Equity
-LFTT11,Real Estate,REIT - Residential,403.75,none,LOW,Equity
 SPXR11,,,N/A,none,LOW,Equity
-BRAV3,Energy,Oil & Gas E&P,2.22,buy,LOW,Equity
-BETW11,N/A,N/A,N/A,N/A,N/A,N/A
-CSUD3,Technology,Software - Infrastructure,5.21,none,LOW,Equity
-EGYR11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-RBRF11,Real Estate,REIT - Diversified,10.36,none,LOW,Equity
-URPR11,Real Estate,REIT - Residential,13.17,none,LOW,Equity
-SUZB3,Basic Materials,Paper & Paper Products,3.94,strong_buy,LOW,Equity
-RCSL3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-CMIG3,Utilities,Utilities - Diversified,9.31,none,LOW,Equity
-TRIS3,Real Estate,Real Estate Services,4.68,none,LOW,Equity
-BLAU3,Healthcare,Drug Manufacturers - Specialty & Generic,4.49,buy,LOW,Equity
-ITUB3,Financial Services,Banks - Regional,0.66,none,LOW,Equity
-BIPD11,N/A,N/A,N/A,N/A,NONE,Fund
-BMOB3,Communication Services,Entertainment,5.92,none,LOW,Equity
-IBBR,N/A,N/A,N/A,N/A,LOW,Index
-NUTR3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
-PORD11,Real Estate,REIT - Diversified,13.34,none,LOW,Equity
-MCRE11,Real Estate,REIT - Diversified,15.53,none,LOW,Equity
-PLAG11,Real Estate,REIT - Diversified,11.37,none,LOW,Equity
-ISUS11,,,N/A,none,LOW,Equity
-RECM11,,,N/A,none,LOW,Equity
-VULC3,Consumer Cyclical,Footwear & Accessories,7.24,none,LOW,Equity
-NCRI11,Real Estate,REIT - Diversified,15.07,none,LOW,Equity
-MALL11,Real Estate,REIT - Retail,10.15,none,LOW,Equity
-VTXI11,N/A,N/A,N/A,N/A,N/A,N/A
-MGRI11,N/A,N/A,N/A,N/A,NONE,N/A
-CASA11,,,N/A,none,LOW,Equity
-BCRI11,Real Estate,REIT - Diversified,16.07,none,LOW,Equity
-RRCI11,Real Estate,REIT - Diversified,13.93,none,LOW,Equity
-PRIO3,Energy,Oil & Gas E&P,N/A,buy,LOW,Equity
-CEBR3,Utilities,Utilities - Regulated Electric,10.55,none,LOW,Equity
-VERE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-JSLG3,Industrials,Integrated Freight & Logistics,7.19,strong_buy,LOW,Equity
-RZTR11,Real Estate,REIT - Diversified,13.37,none,LOW,Equity
-VVEO3,Healthcare,Medical Distribution,11.87,underperform,LOW,Equity
-HOFC11,Real Estate,REIT - Office,6.29,none,LOW,Equity
-FAMB11,Real Estate,REIT - Office,32.5,none,LOW,Equity
-BPAC11,Financial Services,Capital Markets,2.41,none,LOW,Equity
-BIPE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-CSED3,Consumer Defensive,Education & Training Services,6.45,none,LOW,Equity
-LUPA3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
-UGPA3,Energy,Oil & Gas Refining & Marketing,4.15,hold,LOW,Equity
-SMLL,N/A,N/A,N/A,N/A,LOW,Index
-AMOB3,Consumer Cyclical,Auto & Truck Dealerships,N/A,strong_buy,LOW,Equity
-RSUL4,Consumer Cyclical,Auto Parts,3.22,none,LOW,Equity
-BMKS3,Consumer Cyclical,Leisure,9.46,none,LOW,Equity
-CTKA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-PETR3,Energy,Oil & Gas Integrated,15.12,buy,LOW,Equity
-ALPA4,Consumer Cyclical,Footwear & Accessories,1.15,none,LOW,Equity
-CRPG3,Basic Materials,Chemicals,24.88,none,LOW,Equity
-SANB11,Financial Services,Banks - Regional,5.52,buy,LOW,Equity
-DIRR3,Real Estate,Real Estate - Development,12.56,strong_buy,LOW,Equity
-IBXL,N/A,N/A,N/A,N/A,N/A,N/A
-AURB11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-SVAL11,,,N/A,none,LOW,Equity
-NORD3,Financial Services,Shell Companies,N/A,none,LOW,Equity
-IEEX,N/A,N/A,N/A,N/A,N/A,N/A
-MOSO11,N/A,N/A,N/A,N/A,N/A,N/A
-BTML11,N/A,N/A,N/A,N/A,NONE,Fund
-PETZ3,Consumer Cyclical,Specialty Retail,14.52,none,LOW,Equity
-RBRY11,Financial Services,Asset Management,14.1,none,LOW,Equity
-LUXM4,Industrials,Marine Shipping,2.16,none,LOW,Equity
-BREW11,,,N/A,none,LOW,Equity
-B3SA3,Financial Services,Financial Data & Stock Exchanges,2.06,buy,LOW,Equity
-ISCJ11,Real Estate,REIT - Diversified,14.41,none,LOW,Equity
-RECR11,Real Estate,REIT - Diversified,14.87,none,LOW,Equity
-CVCB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
-LLAO11,Real Estate,REIT - Specialty,29.74,none,LOW,Equity
-PSVM11,N/A,N/A,N/A,N/A,LOW,Equity
-VTPA11,N/A,N/A,N/A,N/A,N/A,N/A
-VCTH11,N/A,N/A,N/A,N/A,N/A,N/A
-ORVR3,Industrials,Waste Management,N/A,none,LOW,Equity
-TCIN11,Real Estate,REIT - Residential,N/A,none,LOW,Equity
-JCIN11,Real Estate,REIT - Specialty,4.4,none,LOW,Equity
-HAGA3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
-HRDF11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-BARI11,Real Estate,REIT - Diversified,14.89,none,LOW,Equity
-ODPV3,Healthcare,Healthcare Plans,7.86,hold,LOW,Equity
-TASA4,Industrials,Aerospace & Defense,2.7,none,LOW,Equity
-TOPP11,Real Estate,REIT - Diversified,14.2,none,LOW,Equity
-ESGB11,,,N/A,none,LOW,Equity
-HIGH11,,,N/A,none,LOW,Equity
-FHER3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
-KLBN3,Basic Materials,Paper & Paper Products,4.97,none,LOW,Equity
-VTVI11,N/A,N/A,N/A,N/A,N/A,N/A
-GRND3,Consumer Cyclical,Footwear & Accessories,8.95,none,LOW,Equity
-XPCM11,Real Estate,REIT - Diversified,8.15,none,LOW,Equity
-JOPA3,Consumer Defensive,Packaged Foods,3.15,none,LOW,Equity
-BMIN4,Financial Services,Banks - Regional,8.5,none,LOW,Equity
-IMAT,N/A,N/A,N/A,N/A,LOW,Index
-BRKM6,Basic Materials,Chemicals,N/A,none,LOW,Equity
-BCIA11,Real Estate,REIT - Diversified,11.65,none,LOW,Equity
-HBOR3,Real Estate,Real Estate Services,4.06,hold,LOW,Equity
-AFLT3,Utilities,Utilities - Regulated Electric,9.33,none,LOW,Equity
-VGIP11,Real Estate,REIT - Diversified,28.83,none,LOW,Equity
-CMIN3,Basic Materials,Steel,20.25,underperform,LOW,Equity
-FESA3,Basic Materials,Steel,4.12,none,LOW,Equity
-CEDO4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-FICT3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-CXAG11,Real Estate,REIT - Specialty,11.51,none,LOW,Equity
-GEPA4,Utilities,Utilities - Regulated Electric,16.74,none,LOW,Equity
-KNHY11,Financial Services,Asset Management,15.88,none,LOW,Equity
-EGDB11,Real Estate,REIT - Office,N/A,none,LOW,Equity
-COCE5,Utilities,Utilities - Regulated Electric,5.16,none,LOW,Equity
-IVVB11,,,N/A,none,LOW,Equity
-DOTZ3,Communication Services,Advertising Agencies,N/A,none,LOW,Equity
-STBP3,Industrials,Marine Shipping,4.27,buy,LOW,Equity
-KNRI11,Financial,REIT - Diversified,7.57,none,LOW,Equity
-MANA11,Real Estate,REIT - Specialty,14.88,none,LOW,Equity
-VCRR11,Real Estate,REIT - Residential,8.97,none,LOW,Equity
-BGIP4,Financial Services,Banks - Regional,15.23,none,LOW,Equity
-USTK11,,,N/A,none,LOW,Equity
-OUJP11,Real Estate,REIT - Diversified,16.93,none,LOW,Equity
-DTCY3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-SPG211,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-ONCO3,Healthcare,Medical Care Facilities,N/A,underperform,LOW,Equity
-BRIM11,Real Estate,REIT - Diversified,90.48,none,LOW,Equity
-SHOP11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-CRFF11,Real Estate,REIT - Specialty,10.19,none,LOW,Equity
-VVRI11,Real Estate,REIT - Diversified,12.9,none,LOW,Equity
-HUSC11,Real Estate,REIT - Healthcare Facilities,11.1,none,LOW,Equity
-GENB11,,,N/A,none,LOW,Equity
-SPVT11,,,N/A,none,LOW,Equity
-FCFL11,Real Estate,REIT - Diversified,8.53,none,LOW,Equity
-JHSF3,Real Estate,Real Estate - Development,7.11,none,LOW,Equity
-BPFF11,Real Estate,REIT - Diversified,10.81,none,LOW,Equity
-FMOF11,Real Estate,REIT - Office,6.65,none,LOW,Equity
-ESPA3,Consumer Cyclical,Personal Services,0.16,none,LOW,Equity
-OIBR3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-EWBZ11,N/A,N/A,N/A,N/A,NONE,N/A
-AERI3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-ALPK3,Industrials,Infrastructure Operations,N/A,none,LOW,Equity
-TAEE3,Utilities,Utilities - Regulated Electric,7.98,none,LOW,Equity
-COIN11,,,N/A,none,LOW,Equity
-BRIP11,Real Estate,REIT - Diversified,17.35,none,LOW,Equity
-CLIN11,Real Estate,REIT - Diversified,15.22,none,LOW,Equity
-CLSC4,Utilities,Utilities - Regulated Electric,7.69,none,LOW,Equity
-ELET3,Utilities,Utilities - Renewable,3.19,strong_buy,LOW,Equity
-BHIA3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
-PNDL11,Real Estate,REIT - Diversified,0.79,none,LOW,Equity
-DAMT11,Real Estate,REIT - Industrial,7.8,none,LOW,Equity
-LWSA3,Technology,Software - Infrastructure,1.76,buy,LOW,Equity
-NEWL11,Real Estate,REIT - Industrial,10.81,none,LOW,Equity
-XINA11,,,N/A,none,LOW,Equity
-NDIV11,,,N/A,none,LOW,Equity
-LEVE3,Consumer Cyclical,Auto Parts,8.74,none,LOW,Equity
-ITSA4,Industrials,Conglomerates,8.01,strong_buy,LOW,Equity
-IRDM11,Real Estate,REIT - Diversified,14.58,none,LOW,Equity
-RSID3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
-LASC11,Real Estate,REIT - Diversified,10.2,none,LOW,Equity
-BZEL11,N/A,N/A,N/A,N/A,N/A,N/A
-HDEL11,Financial Services,Asset Management,139.19,none,LOW,Equity
-BTWR11,Real Estate,REIT - Diversified,7.56,none,LOW,Equity
-WTSP11,Real Estate,REIT - Diversified,6.55,none,LOW,Equity
-CEAB3,Consumer Cyclical,Specialty Retail,1.92,buy,LOW,Equity
-AGRO3,Consumer Defensive,Farm Products,7.76,none,LOW,Equity
-SHOW3,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
-WHRL4,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.53,none,LOW,Equity
-NEWU11,Real Estate,REIT - Diversified,3.27,none,LOW,Equity
-CARE11,Real Estate,REIT - Retail,N/A,none,LOW,Equity
-COCE3,Utilities,Utilities - Regulated Electric,4.83,none,LOW,Equity
-FLCR11,Real Estate,REIT - Diversified,14.32,none,LOW,Equity
-KNHF11,Financial Services,Asset Management,12.99,none,LOW,Equity
-BBDC4,Financial Services,Banks - Regional,1.37,buy,LOW,Equity
-RENV11,Real Estate,REIT - Diversified,4.0,none,LOW,Equity
-WRLD11,,,N/A,none,LOW,Equity
-TJKB11,Real Estate,REIT - Diversified,13.89,none,LOW,Equity
-RCFF11,Real Estate,REIT - Diversified,64.9,none,LOW,Equity
-GOVE11,,,N/A,none,LOW,Equity
-NSDV11,,,N/A,none,LOW,Equity
-HCHG11,Real Estate,REIT - Diversified,14.68,none,LOW,Equity
-BNBR3,Financial Services,Banks - Regional,6.94,none,LOW,Equity
-RAPT3,Industrials,Farm & Heavy Construction Machinery,0.57,none,LOW,Equity
-PATA11,Real Estate,REIT - Diversified,10.14,none,LOW,Equity
-B3BR11,,,N/A,none,LOW,Equity
-ANIM3,Consumer Defensive,Education & Training Services,1.29,buy,LOW,Equity
-BEEF3,Consumer Defensive,Farm Products,N/A,buy,LOW,Equity
-KCRE11,Real Estate,REIT - Specialty,12.96,none,LOW,Equity
-RENT3,Industrials,Rental & Leasing Services,4.99,strong_buy,LOW,Equity
-BRFS3,Consumer Defensive,Packaged Foods,3.54,none,LOW,Equity
-JSCR11,Real Estate,REIT - Diversified,13.72,none,LOW,Equity
-IVBX,N/A,N/A,N/A,N/A,N/A,N/A
-GGBR4,Basic Materials,Steel,4.03,buy,LOW,Equity
-IBHB,N/A,N/A,N/A,N/A,LOW,Index
-AZEV11,N/A,N/A,N/A,N/A,NONE,N/A
-BDRX,N/A,N/A,N/A,N/A,LOW,Index
-MEAL3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
-BIOM3,Healthcare,Biotechnology,N/A,none,LOW,Equity
-BTHF11,Real Estate,REIT - Diversified,12.75,none,LOW,Equity
-CPOF11,Real Estate,REIT - Diversified,7.19,none,LOW,Equity
-SHDP11,N/A,N/A,N/A,N/A,NONE,Fund
-HREC11,Real Estate,Real Estate - Diversified,12.98,none,LOW,Equity
-REIT11,Real Estate,REIT - Diversified,10.27,none,LOW,Equity
-IRIM11,Real Estate,REIT - Diversified,14.74,none,LOW,Equity
-YDRO11,,,N/A,none,LOW,Equity
-SOND6,Industrials,Engineering & Construction,16.57,none,LOW,Equity
-TEPP11,Real Estate,REIT - Residential,13.54,none,LOW,Equity
-BRBI11,Financial Services,Capital Markets,8.88,strong_buy,LOW,Equity
-CXTL11,Financial,REIT - Diversified,6.74,none,LOW,Equity
-TRNT11,Real Estate,REIT - Diversified,0.86,none,LOW,Equity
-MYPK3,Consumer Cyclical,Auto Parts,5.98,buy,LOW,Equity
-OFSA3,Healthcare,Drug Manufacturers - Specialty & Generic,0.38,none,LOW,Equity
-XPCI11,Real Estate,REIT - Mortgage,14.07,none,LOW,Equity
-SPXI11,,,N/A,none,LOW,Equity
-BOVA11,,,N/A,none,LOW,Equity
-YDUQ3,Consumer Defensive,Education & Training Services,3.53,buy,LOW,Equity
-STRX11,,,N/A,none,LOW,Equity
-JTPR11,N/A,N/A,N/A,N/A,N/A,N/A
-NVHO11,Real Estate,REIT - Diversified,8.13,none,LOW,Equity
-VIDS11,N/A,N/A,N/A,N/A,N/A,N/A
-SBSP3,Utilities,Utilities - Regulated Water,3.24,buy,LOW,Equity
-USIM3,Basic Materials,Steel,4.48,none,LOW,Equity
-ECOO11,,,N/A,none,LOW,Equity
-HOMS11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-RNGO11,Real Estate,REIT - Diversified,9.88,none,LOW,Equity
-BRCD11,N/A,N/A,N/A,N/A,N/A,N/A
-SJAU11,Real Estate,REIT - Diversified,228.52,none,LOW,Equity
-IDVR,N/A,N/A,N/A,N/A,LOW,Index
-IBOB11,,,N/A,none,LOW,Equity
-SPMO11,N/A,N/A,N/A,N/A,NONE,Fund
-BBRC11,Real Estate,REIT - Diversified,12.17,none,LOW,Equity
-DAYM11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
-HDOF11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-EDGE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-PINE4,Financial Services,Banks - Regional,9.8,none,LOW,Equity
-PLAS3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-FIVN11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-PQDP11,Real Estate,REIT - Retail,12.24,none,LOW,Equity
-IBBC,N/A,N/A,N/A,N/A,LOW,Index
-IGTI3,Real Estate,Real Estate Services,3.48,none,LOW,Equity
-BRSR6,Financial Services,Banks - Regional,7.72,hold,LOW,Equity
-BBIG11,Real Estate,REIT - Retail,12.94,none,LOW,Equity
-LVBI11,Real Estate,Real Estate Services,8.87,none,LOW,Equity
-SMTO3,Basic Materials,Specialty Chemicals,5.11,buy,LOW,Equity
-DAMA11,Real Estate,REIT - Diversified,14.48,none,LOW,Equity
-GCDL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-SMAL11,,,N/A,none,LOW,Equity
-VITT3,Basic Materials,Agricultural Inputs,3.42,none,LOW,Equity
-ABCB4,Financial Services,Banks - Regional,9.78,hold,LOW,Equity
-VRTA11,Real Estate,REIT - Diversified,9.55,none,LOW,Equity
-JFEN3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-TFIX,N/A,N/A,N/A,N/A,LOW,Index
-AMBP3,Industrials,Waste Management,N/A,none,LOW,Equity
-PMAM3,Basic Materials,Copper,N/A,none,LOW,Equity
-DVER11,,,N/A,none,LOW,Equity
-CTSA3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-CGRA3,Consumer Cyclical,Department Stores,12.36,none,LOW,Equity
-TSER11,Real Estate,REIT - Diversified,11.31,none,LOW,Equity
-CAML3,Consumer Defensive,Packaged Foods,5.82,buy,LOW,Equity
-BPDR11,N/A,N/A,N/A,N/A,N/A,N/A
-ANCR11,Real Estate,REIT - Retail,3.67,none,LOW,Equity
-APXM11,Real Estate,REIT - Retail,5.0,none,LOW,Equity
-RAPT4,Industrials,Farm & Heavy Construction Machinery,0.54,buy,LOW,Equity
-BTSG11,Real Estate,REIT - Industrial,7.17,none,LOW,Equity
-CSMG3,Utilities,Utilities - Regulated Water,5.96,hold,LOW,Equity
-VLID3,Industrials,Specialty Business Services,13.34,none,LOW,Equity
-QTZD11,N/A,N/A,N/A,N/A,N/A,N/A
-DIVO11,,,N/A,none,LOW,Equity
-CURY3,Real Estate,Real Estate - Development,6.47,strong_buy,LOW,Equity
-PATB11,N/A,N/A,N/A,N/A,N/A,N/A
-CIXF11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-BAUH4,Consumer Defensive,Packaged Foods,1.47,none,LOW,Equity
-VBBR3,Consumer Cyclical,Specialty Retail,11.26,buy,LOW,Equity
-BPMW11,N/A,N/A,N/A,N/A,N/A,N/A
-TKNO4,Basic Materials,Steel,0.83,none,LOW,Equity
-MGEL4,Basic Materials,Steel,N/A,none,LOW,Equity
-FLMA11,Real Estate,REIT - Diversified,11.77,none,LOW,Equity
-MCEM11,Real Estate,REIT - Specialty,2.86,none,LOW,Equity
-LPSB3,Real Estate,Real Estate Services,1.93,none,LOW,Equity
-TRBL11,Real Estate,REIT - Industrial,8.73,none,LOW,Equity
-FLRY3,Healthcare,Diagnostics & Research,9.15,hold,LOW,Equity
-TAEE4,Utilities,Utilities - Regulated Electric,7.91,none,LOW,Equity
-SAPI11,Financial Services,Asset Management,15.42,none,LOW,Equity
-FISC11,Real Estate,REIT - Diversified,9.8,none,LOW,Equity
-PMIS11,Real Estate,REIT - Specialty,13.27,none,LOW,Equity
-CBAV3,Basic Materials,Aluminum,N/A,buy,LOW,Equity
-IBEW,N/A,N/A,N/A,N/A,LOW,Index
-BLMG11,Real Estate,REIT - Industrial,11.1,none,LOW,Equity
-LOFT11,N/A,N/A,N/A,N/A,N/A,N/A
-IFNC,N/A,N/A,N/A,N/A,LOW,Index
-HRES11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-VCHG11,N/A,N/A,N/A,N/A,N/A,N/A
-AZPE11,N/A,N/A,N/A,N/A,NONE,N/A
-CENU11,N/A,N/A,N/A,N/A,NONE,Fund
-LVOL11,,,N/A,none,LOW,Equity
-PVBI11,Real Estate,REIT - Diversified,7.93,none,LOW,Equity
-RZAK11,Real Estate,REIT - Diversified,17.12,none,LOW,Equity
-VAMO3,Industrials,Rental & Leasing Services,14.22,buy,LOW,Equity
-VSLH11,Real Estate,REIT - Diversified,13.56,none,LOW,Equity
-EKTR3,Utilities,Utilities - Regulated Electric,29.32,none,LOW,Equity
-TELB3,Communication Services,Telecom Services,N/A,none,LOW,Equity
-JALL3,Consumer Defensive,Confectioners,1.74,strong_buy,LOW,Equity
-BLOG11,Real Estate,REIT - Diversified,4.45,none,LOW,Equity
-NTCO3,Consumer Defensive,Household & Personal Products,7.87,buy,LOW,Equity
-BPLC11,N/A,N/A,N/A,N/A,N/A,N/A
-PLCR11,Real Estate,REIT - Diversified,13.85,none,LOW,Equity
-N4V111,N/A,N/A,N/A,N/A,N/A,N/A
-SNSY5,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-PNCR11,Real Estate,REIT - Diversified,15.87,none,LOW,Equity
-MCFY11,N/A,N/A,N/A,N/A,N/A,N/A
-IBRA,N/A,N/A,N/A,N/A,LOW,Index
-SEQL3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
-ICNE11,N/A,N/A,N/A,N/A,NONE,N/A
-BBOV11,,,N/A,none,LOW,Equity
-FTCE11,Real Estate,REIT - Diversified,2.92,none,LOW,Equity
-EMAE4,Utilities,Utilities - Diversified,9.7,none,LOW,Equity
-LSOI11,N/A,N/A,N/A,N/A,N/A,N/A
-SPXG11,N/A,N/A,N/A,N/A,N/A,N/A
-BBSD11,,,N/A,none,LOW,Equity
-TIMS3,Communication Services,Telecom Services,5.89,none,LOW,Equity
-MOTV3,Industrials,Infrastructure Operations,2.24,none,LOW,Equity
-VISC11,Real Estate,REIT - Retail,8.65,none,LOW,Equity
-DOLB11,,,N/A,none,LOW,Equity
-CPFE3,Utilities,Utilities - Regulated Electric,1.94,hold,LOW,Equity
-BDEF11,,,N/A,none,LOW,Equity
-SCVB11,,,N/A,none,LOW,Equity
-IDUA11,N/A,N/A,N/A,N/A,NONE,N/A
-HUCG11,Real Estate,REIT - Healthcare Facilities,2.57,none,LOW,Equity
-ASAI3,Consumer Defensive,Grocery Stores,0.97,buy,LOW,Equity
-VTLT11,Real Estate,REIT - Specialty,13.24,none,LOW,Equity
-SPAF11,N/A,N/A,N/A,N/A,N/A,N/A
-MRSA3B,Industrials,Railroads,3.31,none,LOW,Equity
-ITIP11,Real Estate,REIT - Diversified,14.51,none,LOW,Equity
-FAED11,Real Estate,REIT - Diversified,14.12,none,LOW,Equity
-BRAP4,Financial Services,Asset Management,15.35,hold,LOW,Equity
-PSSA3,Financial Services,Insurance - Diversified,3.54,buy,LOW,Equity
-CPSH11,Real Estate,REIT - Retail,12.38,none,LOW,Equity
-HGPO11,Real Estate,REIT - Office,15.49,none,LOW,Equity
-RECV3,Energy,Oil & Gas E&P,6.28,buy,LOW,Equity
-GPTW,N/A,N/A,N/A,N/A,LOW,Index
-CVPR11,N/A,N/A,N/A,N/A,N/A,N/A
-MFII11,Real Estate,REIT - Diversified,16.28,none,LOW,Equity
-HYPE3,Healthcare,Drug Manufacturers - Specialty & Generic,4.35,buy,LOW,Equity
-EZTC3,Real Estate,Real Estate - Development,3.04,hold,LOW,Equity
-DEXP3,Basic Materials,Chemicals,10.0,none,LOW,Equity
-BTCI11,Financial Services,Asset Management,12.99,none,LOW,Equity
-RBVA11,Financial,Asset Management,10.75,none,LOW,Equity
-RFOF11,Real Estate,REIT - Diversified,12.63,none,LOW,Equity
-MLAS3,Technology,Electronics & Computer Distribution,N/A,none,LOW,Equity
-LREN3,Consumer Cyclical,Department Stores,3.84,buy,LOW,Equity
-BRST3,Communication Services,Telecom Services,1.4,hold,LOW,Equity
-BOVS11,,,N/A,none,LOW,Equity
-GAME11,Real Estate,REIT - Diversified,13.12,none,LOW,Equity
-CPLE3,Utilities,Utilities - Regulated Electric,6.97,strong_buy,LOW,Equity
-CTXT11,Real Estate,REIT - Diversified,10.1,none,LOW,Equity
-TTEN3,Basic Materials,Agricultural Inputs,1.25,buy,LOW,Equity
-MWET3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-TCPF11,N/A,N/A,N/A,N/A,NONE,N/A
-OCRE11,Financial Services,Asset Management,9.88,none,LOW,Equity
-KEPL3,Industrials,Farm & Heavy Construction Machinery,6.51,none,LOW,Equity
-UCAS3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",12.79,none,LOW,Equity
-MTRE3,Real Estate,Real Estate - Development,14.66,none,LOW,Equity
-BRKM3,Basic Materials,Chemicals,N/A,none,LOW,Equity
-OPCT3,Industrials,Specialty Business Services,N/A,buy,LOW,Equity
-SMFT3,Consumer Cyclical,Leisure,2.72,strong_buy,LOW,Equity
-USIM6,Basic Materials,Steel,3.37,none,LOW,Equity
-LIFE11,Real Estate,REIT - Diversified,16.09,none,LOW,Equity
-BRSR5,Financial Services,Banks - Regional,7.72,none,LOW,Equity
-PNLM11,N/A,N/A,N/A,N/A,NONE,N/A
-BSLT11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-SALI11,N/A,N/A,N/A,N/A,N/A,N/A
-BBOI11,,,N/A,none,LOW,Equity
-ESTR4,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
-RBRX11,Real Estate,REIT - Diversified,13.5,none,LOW,Equity
-GGBR3,Basic Materials,Steel,4.4,none,LOW,Equity
-AFHF11,N/A,N/A,N/A,N/A,N/A,N/A
-PMFO11,Financial Services,Asset Management,11.53,none,LOW,Equity
-BRHT11,N/A,N/A,N/A,N/A,N/A,N/A
-HCRI11,Real Estate,REIT - Healthcare Facilities,12.25,none,LOW,Equity
-VTRU3,Consumer Defensive,Education & Training Services,0.23,none,LOW,Equity
-DXCO3,Basic Materials,Lumber & Wood Production,0.95,buy,LOW,Equity
-FYTO11,Real Estate,REIT - Diversified,15.73,none,LOW,Equity
-LOGG3,Real Estate,Real Estate Services,9.43,buy,LOW,Equity
-KEVE11,Real Estate,REIT - Residential,51.34,none,LOW,Equity
-TSNC11,Financial Services,Asset Management,20.05,none,LOW,Equity
-WHGR11,Real Estate,REIT - Specialty,13.59,none,LOW,Equity
-RZZR11,Real Estate,REIT - Industrial,10.16,none,LOW,Equity
-MMPD11,N/A,N/A,N/A,N/A,NONE,Fund
-ICRI11,Real Estate,REIT - Diversified,13.16,none,LOW,Equity
-ZAGH11,Real Estate,REIT - Specialty,8.15,none,LOW,Equity
-GLDX11,,,N/A,none,LOW,Equity
-HSAF11,Real Estate,REIT - Diversified,14.4,none,LOW,Equity
-BRAZ11,,,N/A,none,LOW,Equity
-HFOF11,Real Estate,REIT - Specialty,11.63,none,LOW,Equity
-ATCR11,N/A,N/A,N/A,N/A,N/A,N/A
-SPTW11,Financial,REIT - Diversified,13.41,none,LOW,Equity
-HSRE11,Real Estate,REIT - Diversified,7.88,none,LOW,Equity
-MULT3,Real Estate,Real Estate Services,3.63,strong_buy,LOW,Equity
-NVIF11,N/A,N/A,N/A,N/A,N/A,N/A
-PATC11,Real Estate,REIT - Diversified,4.71,none,LOW,Equity
-FINF11,N/A,N/A,N/A,N/A,N/A,N/A
-RBRK11,,,N/A,none,LOW,Equity
-CHIP11,,,N/A,none,LOW,Equity
-VCRI11,Real Estate,REIT - Office,16.02,none,LOW,Equity
-KORE11,Real Estate,REIT - Diversified,18.16,none,LOW,Equity
-BPAC5,Financial Services,Capital Markets,3.57,none,LOW,Equity
-ATED3,Communication Services,Publishing,N/A,none,LOW,Equity
-DVFF11,Real Estate,REIT - Diversified,12.58,none,LOW,Equity
-FIIC11,N/A,N/A,N/A,N/A,N/A,N/A
-UTIL,N/A,N/A,N/A,N/A,LOW,Index
-PATL11,Real Estate,REIT - Industrial,13.27,none,LOW,Equity
-ETER3,Industrials,Building Products & Equipment,7.2,none,LOW,Equity
-BALM3,Healthcare,Medical Instruments & Supplies,3.2,none,LOW,Equity
-INEP3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-BROF11,Real Estate,REIT - Diversified,13.85,none,LOW,Equity
-HOSI11,Real Estate,REIT - Residential,9.98,none,LOW,Equity
-FIIP11,N/A,N/A,N/A,none,LOW,Equity
-SHIP11,N/A,N/A,N/A,N/A,N/A,N/A
-SNFF11,Real Estate,REIT - Diversified,12.08,none,LOW,Equity
-HAPV3,Financial Services,Insurance - Life,N/A,buy,LOW,Equity
-SURE11,N/A,N/A,N/A,N/A,N/A,N/A
-INEP4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
-MRFG3,Consumer Defensive,Packaged Foods,12.59,buy,LOW,Equity
-BOVX11,,,N/A,none,LOW,Equity
-TMPS11,Real Estate,Real Estate - Diversified,11.96,none,LOW,Equity
-MMVE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-ENEV3,Utilities,Utilities - Diversified,N/A,none,LOW,Equity
-SCAR3,Real Estate,Real Estate Services,10.06,none,LOW,Equity
-CFHI11,Real Estate,REIT - Diversified,96.35,none,LOW,Equity
-ONDV11,N/A,N/A,N/A,N/A,N/A,N/A
-XPSF11,Real Estate,REIT - Mortgage,11.8,none,LOW,Equity
-CEEB3,Utilities,Utilities - Regulated Electric,0.91,none,LOW,Equity
-ISAE4,Utilities,Utilities - Independent Power Producers,10.36,hold,LOW,Equity
-UNIP5,Basic Materials,Chemicals,6.98,none,LOW,Equity
-SAPR4,Utilities,Utilities - Regulated Water,7.65,none,LOW,Equity
-NEOE3,Utilities,Utilities - Regulated Electric,3.99,buy,LOW,Equity
-HAGA4,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
-GOLD11,,,N/A,none,LOW,Equity
-ZAMP3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
-CEDO3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-ISEE,N/A,N/A,N/A,N/A,LOW,Index
-VXXV11,Real Estate,REIT - Diversified,628.06,none,LOW,Equity
-IGTI4,Real Estate,Real Estate Services,2.89,none,LOW,Equity
-NAUI11,Real Estate,REIT - Diversified,21.12,none,LOW,Equity
-VVCO11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-QQQQ11,,,N/A,none,LOW,Equity
-ECOR3,Industrials,Infrastructure Operations,2.94,buy,LOW,Equity
-BMLC11,,,8.85,none,LOW,Equity
-HPDP11,Real Estate,REIT - Retail,7.64,none,LOW,Equity
-LTMT11,Real Estate,REIT - Diversified,105.61,none,LOW,Equity
-MTSA3,Industrials,Farm & Heavy Construction Machinery,3.29,none,LOW,Equity
-JPPA11,Real Estate,REIT - Residential,15.86,none,LOW,Equity
-CCME11,Real Estate,REIT - Diversified,11.6,none,LOW,Equity
-BBSE3,Financial Services,Insurance - Diversified,13.17,hold,LOW,Equity
-INDE11,N/A,N/A,N/A,N/A,NONE,N/A
-RNEW11,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-VLJS11,N/A,N/A,N/A,N/A,NONE,N/A
-BMMT11,,,N/A,none,LOW,Equity
-ROMI3,Industrials,Industrial Distribution,8.03,none,LOW,Equity
-GFDL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-RBDS11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-KOPI11,N/A,N/A,N/A,N/A,N/A,N/A
-PIBB11,,,N/A,none,LOW,Equity
-CMIG4,Utilities,Utilities - Diversified,11.95,hold,LOW,Equity
-ENGI11,Utilities,Utilities - Regulated Electric,6.23,none,LOW,Equity
-XPIN11,Real Estate,REIT - Industrial,12.69,none,LOW,Equity
-CRPG5,Basic Materials,Chemicals,5.57,none,LOW,Equity
-DMVF3,Healthcare,Pharmaceutical Retailers,N/A,none,LOW,Equity
-BTLG11,Real Estate,REIT - Industrial,9.12,none,LOW,Equity
-PLRI11,Real Estate,REIT - Diversified,101.46,none,LOW,Equity
-HLOG11,Real Estate,REIT - Industrial,9.55,none,LOW,Equity
-TRXF11,Real Estate,REIT - Diversified,10.84,none,LOW,Equity
-JPPC11,Real Estate,REIT - Diversified,237.73,none,LOW,Equity
-RPAD3,Industrials,Conglomerates,N/A,none,LOW,Equity
-PDGR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-VGII11,Real Estate,REIT - Diversified,18.61,none,LOW,Equity
-HTMX11,Real Estate,REIT - Hotel & Motel,12.8,none,LOW,Equity
-JSRE11,Financial,REIT - Diversified,7.6,none,LOW,Equity
-BPAC3,Financial Services,Capital Markets,1.49,none,LOW,Equity
-PEVC11,,,N/A,none,LOW,Equity
-EGIE3,Utilities,Utilities - Renewable,5.17,none,LOW,Equity
-VVCR11,Real Estate,REIT - Specialty,14.15,none,LOW,Equity
-PBLV11,N/A,N/A,N/A,N/A,NONE,N/A
-VIVA3,Consumer Cyclical,Luxury Goods,2.52,buy,LOW,Equity
-BRAP3,Financial Services,Asset Management,14.93,hold,LOW,Equity
-PLPL3,Real Estate,Real Estate - Development,13.47,strong_buy,LOW,Equity
-LKDV11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-VPSI11,Real Estate,REIT - Diversified,10.33,none,LOW,Equity
-PRSV11,Financial,REIT - Diversified,7.12,none,LOW,Equity
-CASH3,Communication Services,Internet Content & Information,69.0,hold,LOW,Equity
-NBOV11,,,N/A,none,LOW,Equity
-TPIS3,Industrials,Infrastructure Operations,5.78,none,LOW,Equity
-ISAE3,Utilities,Utilities - Independent Power Producers,7.8,none,LOW,Equity
-RBHG11,Real Estate,REIT - Diversified,14.46,none,LOW,Equity
-PCAS11,N/A,N/A,N/A,N/A,N/A,N/A
-DIVD11,,,N/A,none,LOW,Equity
-UNIP6,Basic Materials,Chemicals,6.83,none,LOW,Equity
-HGRE11,Real Estate,REIT - Diversified,7.42,none,LOW,Equity
-EMET11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-BMEB4,Financial Services,Banks - Regional,5.56,none,LOW,Equity
-FPNG11,Real Estate,REIT - Diversified,17.98,none,LOW,Equity
-SPXM11,N/A,N/A,N/A,N/A,N/A,N/A
-BPAN4,Financial Services,Banks - Regional,2.99,none,LOW,Equity
-RBRR11,Financial Services,Asset Management,12.2,none,LOW,Equity
-PATI3,Basic Materials,Steel,15.02,none,LOW,Equity
-RANI3,Consumer Cyclical,Packaging & Containers,8.46,strong_buy,LOW,Equity
-APTO11,Real Estate,REIT - Specialty,12.68,none,LOW,Equity
-OBAL11,Real Estate,REIT - Diversified,13.23,none,LOW,Equity
-PQAG11,Real Estate,REIT - Industrial,9.93,none,LOW,Equity
-PTBL3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
-DOHL4,Consumer Cyclical,Textile Manufacturing,0.28,none,LOW,Equity
-MWET4,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-PABY11,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-AJFI11,Real Estate,REIT - Diversified,9.8,none,LOW,Equity
-VGHF11,Real Estate,REIT - Diversified,13.94,none,LOW,Equity
-IMOB,N/A,N/A,N/A,N/A,LOW,Index
-TECX11,,,N/A,none,LOW,Equity
-OIBR4,Communication Services,Telecom Services,N/A,none,LOW,Equity
-OULG11,Financial Services,Asset Management,23.85,none,LOW,Equity
-CYRE3,Consumer Cyclical,Residential Construction,4.17,buy,LOW,Equity
-RAIZ4,Utilities,Utilities - Renewable,11.01,none,LOW,Equity
-VLQI11,N/A,N/A,N/A,N/A,N/A,N/A
-ALUP4,Utilities,Utilities - Renewable,2.85,none,LOW,Equity
-GEPA3,Utilities,Utilities - Regulated Electric,18.16,none,LOW,Equity
-RBRI11,Real Estate,REIT - Residential,49.91,none,LOW,Equity
-DRIT11,Real Estate,REIT - Diversified,7.19,none,LOW,Equity
-EIRA11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-CVBI11,Real Estate,REIT - Residential,15.07,none,LOW,Equity
-PINE3,Financial Services,Banks - Regional,5.78,none,LOW,Equity
-BLUE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-FLRP11,Real Estate,REIT - Retail,8.12,none,LOW,Equity
-AZEV3,Industrials,Engineering & Construction,N/A,none,LOW,Equity
-BTHI11,,,N/A,none,LOW,Equity
-GOAU3,Basic Materials,Steel,3.84,hold,LOW,Equity
-BDOM11,,,N/A,none,LOW,Equity
-RECT11,Financial Services,Asset Management,14.21,none,LOW,Equity
-CEBB11,N/A,N/A,N/A,N/A,N/A,N/A
+MOFF11,N/A,N/A,N/A,N/A,N/A,N/A
 AMAR3,Consumer Cyclical,Apparel Retail,N/A,none,LOW,Equity
-SANB3,Financial Services,Banks - Regional,5.56,none,LOW,Equity
-EALT3,Industrials,Metal Fabrication,2.81,none,LOW,Equity
-IBEP,N/A,N/A,N/A,N/A,LOW,Index
-IGCT,N/A,N/A,N/A,N/A,LOW,Index
-CPLG11,Real Estate,REIT - Diversified,6.56,none,LOW,Equity
-CYCR11,Real Estate,REIT - Diversified,15.37,none,LOW,Equity
-MTES11,N/A,N/A,N/A,N/A,N/A,N/A
-VIVR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-ABEV3,Consumer Defensive,Beverages - Brewers,7.02,hold,LOW,Equity
-FIEI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-CNES11,Real Estate,REIT - Office,4.2,none,LOW,Equity
-RBOP11,,,N/A,none,LOW,Equity
-KPRP11,N/A,N/A,N/A,N/A,N/A,N/A
-SPYI11,,,N/A,none,LOW,Equity
-BCIC11,,,N/A,none,LOW,Equity
-IFIL,N/A,N/A,N/A,N/A,LOW,Index
-HBSA3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
-CJCT11,Real Estate,REIT - Diversified,3.84,none,LOW,Equity
-GCRI11,Real Estate,REIT - Specialty,16.31,none,LOW,Equity
-ARRI11,Real Estate,REIT - Residential,15.0,none,LOW,Equity
-RINV11,Financial Services,Asset Management,12.23,none,LOW,Equity
-LIGT3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-SHPH11,Real Estate,REIT - Diversified,35.52,none,LOW,Equity
-SAPR11,Utilities,Utilities - Regulated Water,7.47,hold,LOW,Equity
-SLCE3,Consumer Defensive,Farm Products,7.68,none,LOW,Equity
-ATWN11,N/A,N/A,N/A,N/A,N/A,N/A
-YUFI11,Real Estate,REIT - Residential,4.92,none,LOW,Equity
-VIVT3,Communication Services,Telecom Services,3.78,buy,LOW,Equity
-ICON,N/A,N/A,N/A,N/A,LOW,Index
-ITRI11,Real Estate,REIT - Diversified,12.1,none,LOW,Equity
-GLCR11,Real Estate,REIT - Diversified,11.93,none,LOW,Equity
-GCOI11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-XPML11,Real Estate,REIT - Retail,10.7,none,LOW,Equity
-TECN3,Consumer Cyclical,Luxury Goods,3.35,none,LOW,Equity
+MLAS3,Technology,Electronics & Computer Distribution,N/A,none,LOW,Equity
+VIVT3,Communication Services,Telecom Services,3.72,buy,LOW,Equity
+VRTM11,Real Estate,REIT - Diversified,15.21,none,LOW,Equity
+KCRE11,Real Estate,REIT - Specialty,12.94,none,LOW,Equity
+HAGA3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
+MOTV3,Industrials,Infrastructure Operations,2.19,buy,LOW,Equity
+GZIT11,Real Estate,REIT - Specialty,20.35,none,LOW,Equity
+FICT3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+CXCE11,Real Estate,REIT - Specialty,13.47,none,LOW,Equity
+BIPD11,N/A,N/A,N/A,N/A,NONE,Fund
+FVPQ11,Real Estate,REIT - Retail,17.08,none,LOW,Equity
+BOVA11,,,N/A,none,LOW,Equity
+BPLC11,N/A,N/A,N/A,N/A,N/A,N/A
+CBOP11,Real Estate,REIT - Diversified,5.33,none,LOW,Equity
+RBDS11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
 USAL11,,,N/A,none,LOW,Equity
-PPLA11,Financial Services,Asset Management,N/A,none,LOW,Equity
-HTEK11,,,N/A,none,LOW,Equity
-TFCO4,Consumer Cyclical,Apparel Retail,1.33,buy,LOW,Equity
-VPPR11,Real Estate,REIT - Diversified,6.64,none,LOW,Equity
-NGRD3,Technology,Software - Application,0.68,none,LOW,Equity
-BICE11,Real Estate,REIT - Diversified,4.76,none,LOW,Equity
-ERCR11,,,N/A,none,LOW,Equity
-AGRI11,,,N/A,none,LOW,Equity
-RAIL3,Industrials,Railroads,4.51,buy,LOW,Equity
-CSNA3,Basic Materials,Steel,16.89,hold,LOW,Equity
-AIEC11,Real Estate,REIT - Specialty,8.48,none,LOW,Equity
-EQTL3,Utilities,Utilities - Regulated Electric,2.24,strong_buy,LOW,Equity
-BOBR4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
-CSAN3,Energy,Oil & Gas Refining & Marketing,5.62,buy,LOW,Equity
-IWMI11,,,N/A,none,LOW,Equity
-PNRC11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-QUAL3,Healthcare,Healthcare Plans,0.3,hold,LOW,Equity
-CXCE11,Real Estate,REIT - Specialty,13.57,none,LOW,Equity
-BLUR11,,,N/A,none,LOW,Equity
-ATSA11,Real Estate,REIT - Diversified,2.88,none,LOW,Equity
-KFOF11,Financial Services,Asset Management,11.11,none,LOW,Equity
-ZAVC11,Real Estate,REIT - Specialty,17.73,none,LOW,Equity
-TELM11,Real Estate,REIT - Diversified,11.94,none,LOW,Equity
-LAND3,Consumer Defensive,Farm Products,0.7,none,LOW,Equity
-JASC11,Real Estate,REIT - Specialty,7.67,none,LOW,Equity
-GLOG11,N/A,N/A,N/A,none,LOW,Equity
-XBOV11,,,N/A,none,LOW,Equity
-IRBR3,Financial Services,Insurance - Reinsurance,N/A,none,LOW,Equity
-EVEN3,Real Estate,Real Estate - Development,21.8,hold,LOW,Equity
-LPLP11,Real Estate,REIT - Diversified,38.02,none,LOW,Equity
-POMO4,Industrials,Farm & Heavy Construction Machinery,7.29,strong_buy,LOW,Equity
-AHEB5,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
-AVLL3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-ENMT3,Utilities,Utilities - Regulated Electric,6.58,none,LOW,Equity
-RELG11,Real Estate,REIT - Diversified,11.41,none,LOW,Equity
-HGLG11,Real Estate,REIT - Diversified,8.38,none,LOW,Equity
-ELAS11,,,N/A,none,LOW,Equity
-AUVP11,,,N/A,none,LOW,Equity
-UTEC11,,,N/A,none,LOW,Equity
-KNGR11,N/A,N/A,N/A,N/A,N/A,N/A
-BPML11,Real Estate,REIT - Retail,13.8,none,LOW,Equity
-BGRB11,Real Estate,REIT - Diversified,11.94,none,LOW,Equity
-BGS111,N/A,N/A,N/A,N/A,N/A,N/A
-VINO11,Real Estate,REIT - Office,11.88,none,LOW,Equity
-HCST11,Real Estate,REIT - Residential,N/A,none,LOW,Equity
-WIZC3,Financial Services,Insurance Brokers,3.24,none,LOW,Equity
-BTYU11,Real Estate,REIT - Diversified,15.82,none,LOW,Equity
-DRIM11,N/A,N/A,N/A,N/A,N/A,N/A
-RPMG3,Energy,Oil & Gas Refining & Marketing,N/A,none,LOW,Equity
-ITSA3,Industrials,Conglomerates,7.95,none,LOW,Equity
-TIRB11,,,N/A,none,LOW,Equity
-VIMO11,N/A,N/A,N/A,N/A,N/A,N/A
-RVBI11,Real Estate,REIT - Diversified,12.9,none,LOW,Equity
-RBRL11,Financial Services,Asset Management,11.45,none,LOW,Equity
-ALUP11,Utilities,Utilities - Renewable,2.77,none,LOW,Equity
-HSML11,Financial Services,Asset Management,9.28,none,LOW,Equity
-WEST3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
-YEES11,N/A,N/A,N/A,N/A,NONE,Fund
-VIUR11,Real Estate,REIT - Diversified,13.98,none,LOW,Equity
-FATN11,Real Estate,REIT - Specialty,12.64,none,LOW,Equity
-INRD11,Real Estate,REIT - Residential,9.71,none,LOW,Equity
-TRAD3,Technology,Software - Application,N/A,none,LOW,Equity
-XPLG11,Real Estate,REIT - Industrial,9.84,none,LOW,Equity
-ESTQ11,N/A,N/A,N/A,N/A,N/A,N/A
-WLMM4,Consumer Cyclical,Auto & Truck Dealerships,1.33,none,LOW,Equity
-ALLD3,Technology,Software - Application,48.72,none,LOW,Equity
-BRCR11,Real Estate,REIT - Office,11.8,none,LOW,Equity
-TGMA3,Industrials,Trucking,9.53,buy,LOW,Equity
-GARE11,Real Estate,REIT - Specialty,11.15,none,LOW,Equity
-NUCL11,,,N/A,none,LOW,Equity
-EQMA3B,Utilities,Utilities - Regulated Electric,9.37,none,LOW,Equity
-HETA4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
-RBFF11,Real Estate,REIT - Mortgage,11.86,none,LOW,Equity
-TUPY3,Industrials,Metal Fabrication,9.9,none,LOW,Equity
-IBOV,N/A,N/A,N/A,N/A,NONE,Fund
-SADI11,Real Estate,REIT - Specialty,13.76,none,LOW,Equity
-AROA11,Real Estate,REIT - Diversified,7.56,none,LOW,Equity
-VIOL11,N/A,N/A,N/A,N/A,N/A,N/A
-ALZC11,Real Estate,REIT - Diversified,16.83,none,LOW,Equity
-AZTE3,Energy,Oil & Gas E&P,N/A,none,LOW,Equity
-JOGO11,,,N/A,none,LOW,Equity
-TELB4,Communication Services,Telecom Services,N/A,none,LOW,Equity
-BSLI3,Financial Services,Banks - Regional,1.46,none,LOW,Equity
-SRNA3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-JBFO11,N/A,N/A,N/A,N/A,NONE,Fund
-GSFI11,Financial Services,Capital Markets,N/A,none,LOW,Equity
-KNCR11,Real Estate,REIT - Mortgage,13.62,none,LOW,Equity
-BVAR11,Real Estate,REIT - Diversified,5.12,none,LOW,Equity
-KNRE11,Real Estate,REIT - Residential,49.92,none,LOW,Equity
-IBLV,N/A,N/A,N/A,N/A,LOW,Index
-SOLR11,N/A,N/A,N/A,N/A,NONE,Fund
-ENGI4,Utilities,Utilities - Regulated Electric,6.55,none,LOW,Equity
-PTNT4,Consumer Cyclical,Apparel Manufacturing,5.72,none,LOW,Equity
-TRXB11,Real Estate,Real Estate - Diversified,8.7,none,LOW,Equity
-KNUQ11,Real Estate,REIT - Diversified,15.48,none,LOW,Equity
 BRXC11,,,N/A,none,LOW,Equity
-RNEW4,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
-ICO2,N/A,N/A,N/A,N/A,LOW,Index
-VSHO11,Real Estate,REIT - Retail,11.22,none,LOW,Equity
-BOVV11,,,N/A,none,LOW,Equity
-BGIP3,Financial Services,Banks - Regional,12.97,none,LOW,Equity
-PATI4,Basic Materials,Steel,26.08,none,LOW,Equity
-IFIX,N/A,N/A,N/A,N/A,LOW,Index
-POSI3,Technology,Computer Hardware,6.21,none,LOW,Equity
-CSMC11,N/A,N/A,N/A,N/A,N/A,N/A
-VIFI11,Real Estate,REIT - Diversified,18.27,none,LOW,Equity
-VOTS11,Real Estate,REIT - Specialty,9.64,none,LOW,Equity
-MNPR3,Consumer Defensive,Farm Products,N/A,none,LOW,Equity
-LAVV3,Real Estate,Real Estate Services,5.79,strong_buy,LOW,Equity
-REAG3,Financial Services,Asset Management,N/A,none,LOW,Equity
-RMAI11,,,N/A,none,LOW,Equity
-SMAC11,,,N/A,none,LOW,Equity
-AGXY3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
-BBAS3,Financial Services,Banks - Regional,1.66,hold,LOW,Equity
-DEXP4,Basic Materials,Chemicals,9.52,none,LOW,Equity
-LOGN3,Industrials,Marine Shipping,N/A,none,LOW,Equity
-TVRI11,Real Estate,REIT - Diversified,13.12,none,LOW,Equity
-GTWR11,Real Estate,REIT - Office,13.48,none,LOW,Equity
-ITIT11,Real Estate,REIT - Specialty,10.8,none,LOW,Equity
-URHF11,Real Estate,REIT - Diversified,17.34,none,LOW,Equity
-ITUB4,Financial Services,Banks - Regional,0.58,strong_buy,LOW,Equity
-EAGL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-ESGU11,N/A,N/A,N/A,N/A,N/A,N/A
-TEND3,Real Estate,Real Estate - Development,0.7,buy,LOW,Equity
-AZEV4,Industrials,Engineering & Construction,N/A,none,LOW,Equity
-ALMI11,Real Estate,REIT - Office,7.17,none,LOW,Equity
-CPLE5,Utilities,Utilities - Regulated Electric,4.34,none,LOW,Equity
-BRCO11,Real Estate,REIT - Industrial,9.54,none,LOW,Equity
-GFSA3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
-SBFG3,Consumer Cyclical,Specialty Retail,4.65,none,LOW,Equity
-TELD11,N/A,N/A,N/A,N/A,N/A,N/A
-PEMA11,Real Estate,REIT - Diversified,18.93,none,LOW,Equity
-SNME11,Real Estate,REIT - Diversified,13.69,none,LOW,Equity
-VDSV11,N/A,N/A,N/A,N/A,N/A,N/A
-VILG11,Financial Services,Asset Management,9.71,none,LOW,Equity
-IBCR11,Real Estate,REIT - Diversified,18.49,none,LOW,Equity
-GPUS11,,,N/A,none,LOW,Equity
-CGAS3,Utilities,Utilities - Regulated Gas,17.38,none,LOW,Equity
-RBRD11,Real Estate,REIT - Diversified,14.9,none,LOW,Equity
-BRSR3,Financial Services,Banks - Regional,9.45,none,LOW,Equity
-AZUL4,Industrials,Airlines,N/A,underperform,LOW,Equity
-MCLO11,Real Estate,REIT - Diversified,11.81,none,LOW,Equity
-HABT11,Financial Services,Asset Management,16.87,none,LOW,Equity
-HGRU11,Real Estate,REIT - Diversified,8.66,none,LOW,Equity
-REDE3,Utilities,Utilities - Regulated Electric,9.9,none,LOW,Equity
-PDTC3,Technology,Communication Equipment,4.58,none,LOW,Equity
-BTHR11,N/A,N/A,N/A,N/A,N/A,N/A
-RBRP11,Financial Services,Asset Management,9.71,none,LOW,Equity
-BTRA11,Real Estate,REIT - Specialty,7.37,none,LOW,Equity
-MDIA3,Consumer Defensive,Packaged Foods,2.55,hold,LOW,Equity
-FISD11,N/A,N/A,N/A,N/A,NONE,Fund
-CXCO11,Real Estate,REIT - Diversified,13.51,none,LOW,Equity
-ZIFI11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
-VSTE3,N/A,N/A,N/A,none,LOW,Equity
-TORD11,Real Estate,REIT - Diversified,12.78,none,LOW,Equity
-TGRU11,N/A,N/A,N/A,N/A,N/A,N/A
-IBXX,N/A,N/A,N/A,N/A,LOW,Index
-MATB11,,,N/A,none,LOW,Equity
-PRSN11,Real Estate,REIT - Diversified,56.54,none,LOW,Equity
-CPFF11,Real Estate,REIT - Diversified,8.58,none,LOW,Equity
-VGIR11,Real Estate,REIT - Diversified,15.11,none,LOW,Equity
-RPAD6,Industrials,Conglomerates,N/A,none,LOW,Equity
-CPTS11,Real Estate,REIT - Diversified,14.22,none,LOW,Equity
-MXRF11,Real Estate,REIT - Diversified,12.67,none,LOW,Equity
-RZLC11,Real Estate,REIT - Diversified,14.55,none,LOW,Equity
-ZAVI11,Real Estate,REIT - Diversified,15.63,none,LOW,Equity
-CCVA11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-CMDB11,,,N/A,none,LOW,Equity
-DLMT11,N/A,N/A,N/A,N/A,N/A,N/A
-INLG11,Real Estate,REIT - Diversified,12.43,none,LOW,Equity
-APXU11,N/A,N/A,N/A,N/A,N/A,N/A
-MLCX,N/A,N/A,N/A,N/A,LOW,Index
-DASA3,Healthcare,Diagnostics & Research,N/A,hold,LOW,Equity
-FIND11,,,N/A,none,LOW,Equity
-FRAS3,Consumer Cyclical,Auto Parts,2.02,none,LOW,Equity
-KGUJ11,N/A,N/A,N/A,N/A,N/A,N/A
-SHUL4,Consumer Cyclical,Auto Parts,6.14,none,LOW,Equity
-MELK3,Real Estate,Real Estate Services,13.45,none,LOW,Equity
-PFRM3,Healthcare,Medical Distribution,6.75,none,LOW,Equity
-TASA3,Industrials,Aerospace & Defense,2.3,none,LOW,Equity
-SNSY3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
-VTPL11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
-GLPF11,Real Estate,REIT - Diversified,10.3,none,LOW,Equity
-IDIV,N/A,N/A,N/A,N/A,LOW,Index
-DESK3,Communication Services,Telecom Services,0.39,hold,LOW,Equity
-JCCJ11,Real Estate,REIT - Diversified,2.7,none,LOW,Equity
-SPDE11,Real Estate,REIT - Specialty,5.54,none,LOW,Equity
-TRIG11,,,N/A,none,LOW,Equity
-TCSA3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
-AALR3,Healthcare,Diagnostics & Research,N/A,none,LOW,Equity
-AMAR11,N/A,N/A,N/A,N/A,NONE,N/A
-PNPR11,Real Estate,REIT - Diversified,99.03,none,LOW,Equity
-AZZA3,Consumer Cyclical,Footwear & Accessories,5.35,buy,LOW,Equity
-TAEE11,Utilities,Utilities - Regulated Electric,7.96,none,LOW,Equity
-SYNE3,Real Estate,Real Estate - Diversified,52.2,none,LOW,Equity
-FVPQ11,Real Estate,REIT - Retail,16.93,none,LOW,Equity
-JSAF11,Real Estate,REIT - Diversified,14.09,none,LOW,Equity
-BALM4,Healthcare,Medical Instruments & Supplies,4.03,none,LOW,Equity
-BINR11,N/A,N/A,N/A,N/A,NONE,N/A
-CRPG6,Basic Materials,Chemicals,5.31,none,LOW,Equity
-BSLI4,Financial Services,Banks - Regional,2.69,none,LOW,Equity
-RBLG11,Real Estate,REIT - Industrial,12.0,none,LOW,Equity
-EDGA11,Real Estate,REIT - Office,5.8,none,LOW,Equity
-LJQQ3,Consumer Cyclical,Specialty Retail,4.8,none,LOW,Equity
-SOFF11,,,N/A,none,LOW,Equity
-BLMO11,Real Estate,REIT - Diversified,8.3,none,LOW,Equity
-ALPA3,Consumer Cyclical,Footwear & Accessories,1.11,none,LOW,Equity
-CEBR6,Utilities,Utilities - Regulated Electric,10.34,none,LOW,Equity
-EUCA3,Industrials,Building Products & Equipment,3.21,none,LOW,Equity
-CBEE3,Utilities,Utilities - Regulated Electric,4.92,none,LOW,Equity
-RBTS11,Financial Services,Capital Markets,126.08,none,LOW,Equity
-SPXL11,N/A,N/A,N/A,N/A,N/A,N/A
-SPXB11,,,N/A,none,LOW,Equity
-BMLT11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-WEGE3,Industrials,Electrical Equipment & Parts,0.77,buy,LOW,Equity
-CTSA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
-COGN3,Consumer Defensive,Education & Training Services,9.57,buy,LOW,Equity
-SPUB11,,,N/A,none,LOW,Equity
-RBIR11,Real Estate,REIT - Residential,13.54,none,LOW,Equity
+SEQR11,Real Estate,REIT - Diversified,14.32,none,LOW,Equity
+EDGA11,Real Estate,REIT - Office,5.82,none,LOW,Equity
+CEBR5,Utilities,Utilities - Regulated Electric,10.09,none,LOW,Equity
+BPML11,Real Estate,REIT - Retail,13.8,none,LOW,Equity
+CLSC3,Utilities,Utilities - Regulated Electric,7.95,none,LOW,Equity
+RMBS11,N/A,N/A,N/A,N/A,N/A,N/A
+SMAB11,,,N/A,none,LOW,Equity
+OIBR3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+BRFS3,Consumer Defensive,Packaged Foods,3.5,none,LOW,Equity
+VPSI11,Real Estate,REIT - Diversified,10.33,none,LOW,Equity
+GGRC11,Real Estate,REIT - Industrial,11.89,none,LOW,Equity
+CXRI11,Real Estate,REIT - Diversified,11.08,none,LOW,Equity
+REDE3,Utilities,Utilities - Regulated Electric,9.72,none,LOW,Equity
+AMBP3,Industrials,Waste Management,N/A,none,LOW,Equity
+PINE4,Financial Services,Banks - Regional,9.49,none,LOW,Equity
+MELK3,Real Estate,Real Estate Services,13.06,none,LOW,Equity
+ICON,N/A,N/A,N/A,N/A,LOW,Index
 CIXM11,N/A,N/A,N/A,N/A,N/A,N/A
-RCKF11,N/A,N/A,N/A,N/A,N/A,N/A
-KLBN4,Basic Materials,Paper & Paper Products,5.11,buy,LOW,Equity
-EQIR11,Real Estate,REIT - Diversified,15.27,none,LOW,Equity
+XPSF11,Real Estate,REIT - Mortgage,11.73,none,LOW,Equity
+UNIP3,Basic Materials,Chemicals,6.87,none,LOW,Equity
+RBRF11,Real Estate,REIT - Diversified,10.27,none,LOW,Equity
+TKNO4,Basic Materials,Steel,0.83,none,LOW,Equity
+SNFF11,Real Estate,REIT - Diversified,11.92,none,LOW,Equity
+CTSA3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+IBHB,N/A,N/A,N/A,N/A,LOW,Index
+YDRO11,,,N/A,none,LOW,Equity
+ONCO3,Healthcare,Medical Care Facilities,N/A,underperform,LOW,Equity
+DRIM11,N/A,N/A,N/A,N/A,N/A,N/A
+BMIN4,Financial Services,Banks - Regional,8.0,none,LOW,Equity
+VCJR11,Real Estate,REIT - Diversified,15.31,none,LOW,Equity
+JCDA11,N/A,N/A,N/A,N/A,N/A,N/A
+VISC11,Real Estate,REIT - Retail,8.69,none,LOW,Equity
+GUAR3,Consumer Cyclical,Apparel Retail,1.48,buy,LOW,Equity
+SALI11,N/A,N/A,N/A,N/A,N/A,N/A
+RFOF11,Real Estate,REIT - Diversified,12.38,none,LOW,Equity
+SAPR3,Utilities,Utilities - Regulated Water,6.62,none,LOW,Equity
+OULG11,Financial Services,Asset Management,23.84,none,LOW,Equity
+SMTO3,Basic Materials,Specialty Chemicals,5.13,buy,LOW,Equity
+FRIO3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",N/A,none,LOW,Equity
 PINE11,N/A,N/A,N/A,N/A,N/A,N/A
-IBBP11,Real Estate,REIT - Industrial,10.1,none,LOW,Equity
-SANB4,Financial Services,Banks - Regional,5.5,none,LOW,Equity
-BMGB4,Financial Services,Banks - Regional,10.87,none,LOW,Equity
-SNEL11,Real Estate,REIT - Specialty,14.15,none,LOW,Equity
-GZIT11,Real Estate,REIT - Specialty,20.37,none,LOW,Equity
+BVAR11,Real Estate,REIT - Diversified,5.12,none,LOW,Equity
+REIT11,Real Estate,REIT - Diversified,10.27,none,LOW,Equity
+PLAG11,Real Estate,REIT - Diversified,11.33,none,LOW,Equity
+UNIP5,Basic Materials,Chemicals,7.18,none,LOW,Equity
+BGRB11,Real Estate,REIT - Diversified,11.94,none,LOW,Equity
+KNGR11,N/A,N/A,N/A,N/A,N/A,N/A
+SHPP11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+XPIN11,Real Estate,REIT - Industrial,12.6,none,LOW,Equity
+IVBX,N/A,N/A,N/A,N/A,N/A,N/A
+RECR11,Real Estate,REIT - Diversified,14.71,none,LOW,Equity
+DOLA11,,,N/A,none,LOW,Equity
+HGLG11,Real Estate,REIT - Diversified,8.29,none,LOW,Equity
+ALUP4,Utilities,Utilities - Renewable,2.81,none,LOW,Equity
+AMOB3,Consumer Cyclical,Auto & Truck Dealerships,N/A,strong_buy,LOW,Equity
+NEOE3,Utilities,Utilities - Regulated Electric,3.88,buy,LOW,Equity
+IFIX,N/A,N/A,N/A,N/A,LOW,Index
+AZUL4,Industrials,Airlines,N/A,underperform,LOW,Equity
+BOVS11,,,N/A,none,LOW,Equity
+CEBR6,Utilities,Utilities - Regulated Electric,10.31,none,LOW,Equity
+CSUD3,Technology,Software - Infrastructure,5.03,none,LOW,Equity
+ZAGH11,Real Estate,REIT - Specialty,8.15,none,LOW,Equity
+QUAL3,Healthcare,Healthcare Plans,0.29,hold,LOW,Equity
+ITUB3,Financial Services,Banks - Regional,0.64,none,LOW,Equity
+MCLO11,Real Estate,REIT - Diversified,11.25,none,LOW,Equity
+MAXR11,Real Estate,REIT - Retail,5.92,none,LOW,Equity
+ALUP11,Utilities,Utilities - Renewable,2.71,none,LOW,Equity
+SBSP3,Utilities,Utilities - Regulated Water,3.13,buy,LOW,Equity
+MATD3,Healthcare,Medical Care Facilities,1.59,buy,LOW,Equity
+PATA11,Real Estate,REIT - Diversified,10.13,none,LOW,Equity
+CVCB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
+SYNE3,Real Estate,Real Estate - Diversified,51.17,none,LOW,Equity
+BBFI11,Real Estate,REIT - Office,2013.43,none,LOW,Equity
+CVBI11,Real Estate,REIT - Residential,14.94,none,LOW,Equity
+USTK11,,,N/A,none,LOW,Equity
+VSTE3,N/A,N/A,N/A,none,LOW,Equity
+RBHY11,Real Estate,REIT - Diversified,15.47,none,LOW,Equity
+HFOF11,Real Estate,REIT - Specialty,11.29,none,LOW,Equity
+EKTR3,Utilities,Utilities - Regulated Electric,3.54,none,LOW,Equity
+GFSA3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
+CFII11,Real Estate,REIT - Diversified,40.53,none,LOW,Equity
+CTXT11,Real Estate,REIT - Diversified,10.1,none,LOW,Equity
+DPRO11,Real Estate,REIT - Industrial,11.13,none,LOW,Equity
+VCHG11,N/A,N/A,N/A,N/A,N/A,N/A
+HUSI11,Real Estate,REIT - Diversified,8.3,none,LOW,Equity
+CEOC11,Real Estate,REIT - Office,13.68,none,LOW,Equity
+AGFS,N/A,N/A,N/A,N/A,LOW,Index
+BTWR11,Real Estate,REIT - Diversified,7.56,none,LOW,Equity
+RBRS11,Real Estate,REIT - Residential,1.91,none,LOW,Equity
+BOVB11,,,N/A,none,LOW,Equity
+ARXD11,Real Estate,REIT - Diversified,14.69,none,LOW,Equity
+VIFI11,Real Estate,REIT - Diversified,18.27,none,LOW,Equity
+BDOM11,,,N/A,none,LOW,Equity
+SMLL,N/A,N/A,N/A,N/A,LOW,Index
+SNSY3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+RAIZ4,Utilities,Utilities - Renewable,10.88,buy,LOW,Equity
+PMFO11,Financial Services,Asset Management,11.53,none,LOW,Equity
+AMAR11,N/A,N/A,N/A,N/A,NONE,N/A
+KNHF11,Financial Services,Asset Management,12.77,none,LOW,Equity
+VITT3,Basic Materials,Agricultural Inputs,3.31,none,LOW,Equity
+NDIV11,,,N/A,none,LOW,Equity
+TGRU11,N/A,N/A,N/A,N/A,N/A,N/A
+IDVR,N/A,N/A,N/A,N/A,LOW,Index
+APTO11,Real Estate,REIT - Specialty,12.83,none,LOW,Equity
+PLRI11,Real Estate,REIT - Diversified,101.46,none,LOW,Equity
+MCFY11,N/A,N/A,N/A,N/A,N/A,N/A
+ICNE11,N/A,N/A,N/A,N/A,NONE,N/A
+FHER3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
+BRSE11,N/A,N/A,N/A,N/A,N/A,N/A
+HBSA3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
+GPTW,N/A,N/A,N/A,N/A,LOW,Index
+GENB11,,,N/A,none,LOW,Equity
+CRPG5,Basic Materials,Chemicals,5.57,none,LOW,Equity
+BMLC11,,,8.85,none,LOW,Equity
+LTMT11,Real Estate,REIT - Diversified,106.37,none,LOW,Equity
+TIMS3,Communication Services,Telecom Services,5.7,buy,LOW,Equity
+POMO4,Industrials,Farm & Heavy Construction Machinery,7.22,strong_buy,LOW,Equity
+VJFD11,Real Estate,REIT - Diversified,5.81,none,LOW,Equity
+KNCR11,Real Estate,REIT - Mortgage,13.69,none,LOW,Equity
+TRXY11,Real Estate,REIT - Diversified,13.75,none,LOW,Equity
+ESTR4,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
+CSMG3,Utilities,Utilities - Regulated Water,5.84,hold,LOW,Equity
+MOVI3,Industrials,Rental & Leasing Services,2.53,buy,LOW,Equity
+CEDO4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+IGTI4,Real Estate,Real Estate Services,2.89,none,LOW,Equity
+CGRA4,Consumer Cyclical,Department Stores,12.55,none,LOW,Equity
+MDIA3,Consumer Defensive,Packaged Foods,2.54,hold,LOW,Equity
+ERCR11,,,N/A,none,LOW,Equity
+RBRI11,Real Estate,REIT - Residential,49.91,none,LOW,Equity
+RRCI11,Real Estate,REIT - Diversified,13.8,none,LOW,Equity
+DVER11,,,N/A,none,LOW,Equity
+ENJU3,Consumer Cyclical,Internet Retail,N/A,none,LOW,Equity
+AFLT3,Utilities,Utilities - Regulated Electric,1.48,none,LOW,Equity
+BEEF3,Consumer Defensive,Farm Products,N/A,buy,LOW,Equity
+IRDM11,Real Estate,REIT - Diversified,14.28,none,LOW,Equity
+RAPT4,Industrials,Farm & Heavy Construction Machinery,0.52,buy,LOW,Equity
+SPXM11,N/A,N/A,N/A,N/A,N/A,N/A
+CTKA3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+CPSH11,Real Estate,REIT - Retail,12.38,none,LOW,Equity
+EMET11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+CGRA3,Consumer Cyclical,Department Stores,12.37,none,LOW,Equity
+RZZV11,Real Estate,REIT - Diversified,9.33,none,LOW,Equity
+RZAT11,Real Estate,REIT - Diversified,15.15,none,LOW,Equity
+BBRC11,Real Estate,REIT - Diversified,11.98,none,LOW,Equity
+PQDP11,Real Estate,REIT - Retail,12.08,none,LOW,Equity
+HUSC11,Real Estate,REIT - Healthcare Facilities,10.98,none,LOW,Equity
+SVAL11,,,N/A,none,LOW,Equity
+ENMT3,Utilities,Utilities - Regulated Electric,6.19,none,LOW,Equity
+CPHH11,N/A,N/A,N/A,N/A,N/A,N/A
+BRSR6,Financial Services,Banks - Regional,7.61,hold,LOW,Equity
+CVPR11,N/A,N/A,N/A,N/A,N/A,N/A
+SPTW11,Financial,REIT - Diversified,13.41,none,LOW,Equity
+HCST11,Real Estate,REIT - Residential,N/A,none,LOW,Equity
+CHIP11,,,N/A,none,LOW,Equity
+AZTE3,Energy,Oil & Gas E&P,N/A,none,LOW,Equity
+HBOR3,Real Estate,Real Estate Services,3.95,hold,LOW,Equity
+GCOI11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+VLID3,Industrials,Specialty Business Services,13.09,none,LOW,Equity
+HABT11,Financial Services,Asset Management,16.68,none,LOW,Equity
+AGRI11,,,N/A,none,LOW,Equity
+RBRL11,Financial Services,Asset Management,11.37,none,LOW,Equity
+FIGS11,Real Estate,REIT - Diversified,8.85,none,LOW,Equity
+RBIR11,Real Estate,REIT - Residential,13.27,none,LOW,Equity
+MCCI11,Real Estate,REIT - Diversified,12.09,none,LOW,Equity
+VCTH11,N/A,N/A,N/A,N/A,N/A,N/A
+DOVL11,N/A,N/A,N/A,none,LOW,Equity
+RENT3,Industrials,Rental & Leasing Services,5.0,strong_buy,LOW,Equity
+MGHT11,Real Estate,REIT - Hotel & Motel,34.14,none,LOW,Equity
+GRUL11,Real Estate,REIT - Diversified,15.71,none,LOW,Equity
+BBSE3,Financial Services,Insurance - Diversified,12.96,hold,LOW,Equity
+ITIP11,Real Estate,REIT - Diversified,14.52,none,LOW,Equity
+TAEE11,Utilities,Utilities - Regulated Electric,7.84,none,LOW,Equity
+VIVR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+JFLL11,Real Estate,REIT - Diversified,8.57,none,LOW,Equity
+HSML11,Financial Services,Asset Management,9.14,none,LOW,Equity
+VVCR11,Real Estate,REIT - Specialty,14.19,none,LOW,Equity
+DMVF3,Healthcare,Pharmaceutical Retailers,N/A,none,LOW,Equity
+BLCA11,Real Estate,REIT - Diversified,6.2,none,LOW,Equity
+USIM5,Basic Materials,Steel,4.94,hold,LOW,Equity
+NGRD3,Technology,Software - Application,0.68,none,LOW,Equity
+KNHY11,Financial Services,Asset Management,15.81,none,LOW,Equity
+RBRD11,Real Estate,REIT - Diversified,14.63,none,LOW,Equity
+SPXI11,,,N/A,none,LOW,Equity
+AERI3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+CCME11,Real Estate,REIT - Diversified,11.3,none,LOW,Equity
+CIXF11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+LWSA3,Technology,Software - Infrastructure,1.81,buy,LOW,Equity
+BIOM3,Healthcare,Biotechnology,N/A,none,LOW,Equity
+BOBR4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
+ACWI11,,,N/A,none,LOW,Equity
+PSSA3,Financial Services,Insurance - Diversified,3.48,buy,LOW,Equity
+ATED3,Communication Services,Publishing,N/A,none,LOW,Equity
 HLMB11,N/A,N/A,N/A,N/A,N/A,N/A
-FIXX11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-ROOF11,Real Estate,REIT - Residential,41.41,none,LOW,Equity
-QQQI11,,,N/A,none,LOW,Equity
-APXR11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
-BBFO11,Real Estate,REIT - Diversified,14.08,none,LOW,Equity
-CYLD11,Real Estate,REIT - Industrial,N/A,none,LOW,Equity
-RECD11,Real Estate,REIT - Diversified,13.01,none,LOW,Equity
-RCRI11,N/A,N/A,N/A,N/A,N/A,N/A
-FLNR11,N/A,N/A,N/A,N/A,NONE,N/A
-HBRE3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
-HGFF11,Real Estate,REIT - Specialty,12.17,none,LOW,Equity
-CDHY11,N/A,N/A,N/A,N/A,N/A,N/A
-CBOP11,Real Estate,REIT - Diversified,5.38,none,LOW,Equity
+RZZR11,Real Estate,REIT - Industrial,10.02,none,LOW,Equity
 LRDI11,Real Estate,REIT - Residential,6.88,none,LOW,Equity
-OPTM11,N/A,N/A,N/A,N/A,NONE,N/A
-INDX,N/A,N/A,N/A,N/A,LOW,Index
+ITSA4,Industrials,Conglomerates,7.84,strong_buy,LOW,Equity
+FRAS3,Consumer Cyclical,Auto Parts,2.0,none,LOW,Equity
+KPRP11,N/A,N/A,N/A,N/A,N/A,N/A
+EDGE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+PRSN11,Real Estate,REIT - Diversified,56.54,none,LOW,Equity
+SPAF11,N/A,N/A,N/A,N/A,N/A,N/A
+SAIC11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+SLDZ11,N/A,N/A,N/A,N/A,N/A,N/A
+EKTR4,Utilities,Utilities - Regulated Electric,2.9,none,LOW,Equity
+BRAX11,,,N/A,none,LOW,Equity
+TOTS3,Technology,Software - Application,0.69,buy,LOW,Equity
+GOAU3,Basic Materials,Steel,3.8,hold,LOW,Equity
+EGDB11,Real Estate,REIT - Office,N/A,none,LOW,Equity
+BPAN4,Financial Services,Banks - Regional,2.99,buy,LOW,Equity
+NEXP3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+IBEW,N/A,N/A,N/A,N/A,LOW,Index
+EQTL3,Utilities,Utilities - Regulated Electric,2.19,strong_buy,LOW,Equity
+WHRL4,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.61,none,LOW,Equity
+QQQI11,,,N/A,none,LOW,Equity
+SPG211,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+RSID3,Consumer Cyclical,Residential Construction,N/A,none,LOW,Equity
+IBLV,N/A,N/A,N/A,N/A,LOW,Index
+CEDO3,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+BRAZ11,,,N/A,none,LOW,Equity
+MLCX,N/A,N/A,N/A,N/A,LOW,Index
+RCFA11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+URPR11,Real Estate,REIT - Residential,13.38,none,LOW,Equity
+BPDR11,N/A,N/A,N/A,N/A,N/A,N/A
+SOJA3,Basic Materials,Agricultural Inputs,2.58,strong_buy,LOW,Equity
+SNSY5,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+AURB11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+JSCR11,Real Estate,REIT - Diversified,13.59,none,LOW,Equity
+AZEV3,Industrials,Engineering & Construction,N/A,none,LOW,Equity
+LIFE11,Real Estate,REIT - Diversified,16.07,none,LOW,Equity
+BOVV11,,,N/A,none,LOW,Equity
+BDRX,N/A,N/A,N/A,N/A,LOW,Index
+EQIR11,Real Estate,REIT - Diversified,15.23,none,LOW,Equity
+TAEE3,Utilities,Utilities - Regulated Electric,7.9,none,LOW,Equity
+RNGO11,Real Estate,REIT - Diversified,9.88,none,LOW,Equity
+TMPS11,Real Estate,Real Estate - Diversified,12.06,none,LOW,Equity
+CYLD11,Real Estate,REIT - Industrial,N/A,none,LOW,Equity
+AGXY3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
+KNIP11,Real Estate,REIT - Diversified,13.72,none,LOW,Equity
+FLRY3,Healthcare,Diagnostics & Research,8.95,hold,LOW,Equity
+FIIB11,Real Estate,REIT - Industrial,9.18,none,LOW,Equity
+MYPK3,Consumer Cyclical,Auto Parts,5.99,buy,LOW,Equity
+MGEL4,Basic Materials,Steel,N/A,none,LOW,Equity
+CACR11,Real Estate,REIT - Diversified,16.65,none,LOW,Equity
+YEES11,N/A,N/A,N/A,N/A,NONE,Fund
+BRCD11,N/A,N/A,N/A,N/A,N/A,N/A
+SARE11,Real Estate,REIT - Residential,6.74,none,LOW,Equity
+TECK11,,,N/A,none,LOW,Equity
+SOFF11,,,N/A,none,LOW,Equity
+BRKM5,Basic Materials,Chemicals,N/A,hold,LOW,Equity
+HGBS11,Real Estate,REIT - Retail,9.65,none,LOW,Equity
+ISUS11,,,N/A,none,LOW,Equity
+MNPR3,Consumer Defensive,Farm Products,N/A,none,LOW,Equity
+IBCR11,Real Estate,REIT - Diversified,18.52,none,LOW,Equity
+TRXB11,Real Estate,Real Estate - Diversified,8.7,none,LOW,Equity
+OBAL11,Real Estate,REIT - Diversified,13.23,none,LOW,Equity
+ALZC11,Real Estate,REIT - Diversified,16.81,none,LOW,Equity
+BPAC3,Financial Services,Capital Markets,1.45,none,LOW,Equity
+KISU11,Real Estate,REIT - Diversified,12.09,none,LOW,Equity
+KOPI11,N/A,N/A,N/A,N/A,N/A,N/A
+PNRC11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+TRIS3,Real Estate,Real Estate Services,4.68,none,LOW,Equity
+RPAD3,Industrials,Conglomerates,N/A,none,LOW,Equity
+FPNG11,Real Estate,REIT - Diversified,17.98,none,LOW,Equity
+GLPF11,Real Estate,REIT - Diversified,10.29,none,LOW,Equity
+RINV11,Financial Services,Asset Management,12.06,none,LOW,Equity
+CLIN11,Real Estate,REIT - Diversified,14.84,none,LOW,Equity
+VINO11,Real Estate,REIT - Office,11.7,none,LOW,Equity
+BETW11,N/A,N/A,N/A,N/A,N/A,N/A
+MRFG3,Consumer Defensive,Packaged Foods,12.37,buy,LOW,Equity
+VULC3,Consumer Cyclical,Footwear & Accessories,7.11,none,LOW,Equity
+AZEV11,N/A,N/A,N/A,N/A,NONE,N/A
+BRBI11,Financial Services,Capital Markets,8.7,strong_buy,LOW,Equity
+HUCG11,Real Estate,REIT - Healthcare Facilities,N/A,none,LOW,Equity
+TSER11,Real Estate,REIT - Diversified,11.31,none,LOW,Equity
+B3SA3,Financial Services,Financial Data & Stock Exchanges,2.0,buy,LOW,Equity
+LIGT3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+XPLG11,Real Estate,REIT - Industrial,9.89,none,LOW,Equity
+PRIO3,Energy,Oil & Gas E&P,N/A,buy,LOW,Equity
+BTCI11,Financial Services,Asset Management,12.75,none,LOW,Equity
+PCAR3,Consumer Cyclical,Department Stores,N/A,none,LOW,Equity
+BPFF11,Real Estate,REIT - Diversified,10.81,none,LOW,Equity
+SPYI11,,,N/A,none,LOW,Equity
+MRSA3B,Industrials,Railroads,3.31,none,LOW,Equity
+IBBC,N/A,N/A,N/A,N/A,LOW,Index
+CPLE3,Utilities,Utilities - Regulated Electric,6.84,strong_buy,LOW,Equity
+BBDC3,Financial Services,Banks - Regional,1.43,none,LOW,Equity
+DTCY3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+GTWR11,Real Estate,REIT - Office,13.36,none,LOW,Equity
+GRND3,Consumer Cyclical,Footwear & Accessories,8.79,none,LOW,Equity
+BRSR5,Financial Services,Banks - Regional,7.72,none,LOW,Equity
+SHOW3,Consumer Cyclical,Leisure,N/A,none,LOW,Equity
+LPLP11,Real Estate,REIT - Diversified,35.09,none,LOW,Equity
+DIVD11,,,N/A,none,LOW,Equity
+BRAV3,Energy,Oil & Gas E&P,2.22,buy,LOW,Equity
+NORD3,Financial Services,Shell Companies,N/A,none,LOW,Equity
+WIZC3,Financial Services,Insurance Brokers,3.21,none,LOW,Equity
+NUTR3,Basic Materials,Agricultural Inputs,N/A,none,LOW,Equity
+SPXL11,N/A,N/A,N/A,N/A,N/A,N/A
+BRCR11,Real Estate,REIT - Office,11.64,none,LOW,Equity
+NTCO3,Consumer Defensive,Household & Personal Products,7.87,buy,LOW,Equity
+SEED11,Real Estate,REIT - Specialty,12.0,none,LOW,Equity
+DESK3,Communication Services,Telecom Services,0.37,hold,LOW,Equity
+FISC11,Real Estate,REIT - Diversified,9.02,none,LOW,Equity
+ESGB11,,,N/A,none,LOW,Equity
+ANIM3,Consumer Defensive,Education & Training Services,1.26,buy,LOW,Equity
+WEGE3,Industrials,Electrical Equipment & Parts,0.76,buy,LOW,Equity
+EWBZ11,,,N/A,none,LOW,Equity
+ESGU11,N/A,N/A,N/A,N/A,N/A,N/A
+PORT3,Industrials,Marine Shipping,8.77,none,LOW,Equity
+HOFC11,Real Estate,REIT - Office,6.1,none,LOW,Equity
+HIGH11,,,N/A,none,LOW,Equity
+HGIC11,Real Estate,REIT - Diversified,13.52,none,LOW,Equity
+CMIG4,Utilities,Utilities - Diversified,11.6,hold,LOW,Equity
+HETA4,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
+HYPI11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+VXXV11,Real Estate,REIT - Diversified,628.06,none,LOW,Equity
+SANB11,Financial Services,Banks - Regional,5.41,buy,LOW,Equity
+IGTI3,Real Estate,Real Estate Services,3.41,none,LOW,Equity
+SMAL11,,,N/A,none,LOW,Equity
+TJKB11,Real Estate,REIT - Diversified,13.66,none,LOW,Equity
+HGBL11,Real Estate,REIT - Industrial,10.07,none,LOW,Equity
+MGRI11,N/A,N/A,N/A,N/A,NONE,N/A
+BOVX11,,,N/A,none,LOW,Equity
+DAYM11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
+JTPR11,N/A,N/A,N/A,N/A,N/A,N/A
+AZEV4,Industrials,Engineering & Construction,N/A,none,LOW,Equity
+WSEC11,Real Estate,REIT - Specialty,43.84,none,LOW,Equity
+SANB4,Financial Services,Banks - Regional,5.47,none,LOW,Equity
+KFEN11,Real Estate,REIT - Diversified,12.69,none,LOW,Equity
+BRST3,Communication Services,Telecom Services,1.39,hold,LOW,Equity
+RCRB11,,,6.15,none,LOW,Equity
+JOGO11,,,N/A,none,LOW,Equity
+LVTC3,Communication Services,Telecom Services,5.38,none,LOW,Equity
+PGMN3,Healthcare,Pharmaceutical Retailers,7.33,buy,LOW,Equity
+APXU11,N/A,N/A,N/A,N/A,N/A,N/A
+SNME11,Real Estate,REIT - Diversified,13.72,none,LOW,Equity
+VVEO3,Healthcare,Medical Distribution,11.87,underperform,LOW,Equity
+HLOG11,Real Estate,REIT - Industrial,9.4,none,LOW,Equity
+URHF11,Real Estate,REIT - Diversified,17.34,none,LOW,Equity
+EALT4,Industrials,Metal Fabrication,3.21,none,LOW,Equity
+PETR4,Energy,Oil & Gas Integrated,16.29,buy,LOW,Equity
+CNES11,Real Estate,REIT - Office,4.16,none,LOW,Equity
+HILG11,Real Estate,REIT - Diversified,8.93,none,LOW,Equity
+VGRI11,Real Estate,REIT - Diversified,16.88,none,LOW,Equity
+ALPA3,Consumer Cyclical,Footwear & Accessories,1.11,none,LOW,Equity
+UTIL,N/A,N/A,N/A,N/A,LOW,Index
+ROOF11,Real Estate,REIT - Residential,41.41,none,LOW,Equity
+IGTI11,Real Estate,Real Estate Services,2.91,strong_buy,LOW,Equity
+ICRI11,Real Estate,REIT - Diversified,13.01,none,LOW,Equity
+ICO2,N/A,N/A,N/A,N/A,LOW,Index
+JBFO11,N/A,N/A,N/A,N/A,NONE,Fund
+UTEC11,,,N/A,none,LOW,Equity
+BICE11,Real Estate,REIT - Diversified,4.76,none,LOW,Equity
+RZLC11,Real Estate,REIT - Diversified,14.52,none,LOW,Equity
+BRKM3,Basic Materials,Chemicals,N/A,none,LOW,Equity
+VSLH11,Real Estate,REIT - Diversified,13.61,none,LOW,Equity
+ABCP11,Real Estate,REIT - Retail,11.08,none,LOW,Equity
+SPXB11,,,N/A,none,LOW,Equity
+IFNC,N/A,N/A,N/A,N/A,LOW,Index
+SCAR3,Real Estate,Real Estate Services,10.06,none,LOW,Equity
+CBEE3,Utilities,Utilities - Regulated Electric,4.92,none,LOW,Equity
+RDIV11,N/A,N/A,N/A,N/A,N/A,N/A
+FATN11,Real Estate,REIT - Specialty,12.6,none,LOW,Equity
+EXES11,Real Estate,REIT - Diversified,16.6,none,LOW,Equity
+VVRI11,Real Estate,REIT - Diversified,12.9,none,LOW,Equity
+ABCB4,Financial Services,Banks - Regional,9.7,hold,LOW,Equity
+APXM11,Real Estate,REIT - Retail,4.78,none,LOW,Equity
+RZTR11,Real Estate,REIT - Diversified,13.26,none,LOW,Equity
+GCDL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+TRNT11,Real Estate,REIT - Diversified,0.86,none,LOW,Equity
+KIVO11,Real Estate,REIT - Diversified,17.07,none,LOW,Equity
+VCRR11,Real Estate,REIT - Residential,9.07,none,LOW,Equity
+BMLT11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+SPXG11,N/A,N/A,N/A,N/A,N/A,N/A
+BLUR11,,,N/A,none,LOW,Equity
+GEPA4,Utilities,Utilities - Regulated Electric,16.7,none,LOW,Equity
+EUCA4,Industrials,Building Products & Equipment,3.9,none,LOW,Equity
+TASA4,Industrials,Aerospace & Defense,2.69,none,LOW,Equity
+CXAG11,Real Estate,REIT - Specialty,11.11,none,LOW,Equity
+AIEC11,Real Estate,REIT - Specialty,8.42,none,LOW,Equity
+BLOG11,Real Estate,REIT - Diversified,4.45,none,LOW,Equity
+GCRI11,Real Estate,REIT - Specialty,16.09,none,LOW,Equity
+SRNA3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+TASA3,Industrials,Aerospace & Defense,2.3,none,LOW,Equity
+PDGR3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+VILG11,Financial Services,Asset Management,9.65,none,LOW,Equity
+RBRR11,Financial Services,Asset Management,12.14,none,LOW,Equity
+UGPA3,Energy,Oil & Gas Refining & Marketing,3.99,hold,LOW,Equity
+CENU11,N/A,N/A,N/A,N/A,NONE,Fund
+EMAE4,Utilities,Utilities - Diversified,9.62,none,LOW,Equity
+AHEB3,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
+RECT11,Financial Services,Asset Management,14.13,none,LOW,Equity
+MTSA4,Industrials,Farm & Heavy Construction Machinery,6.25,none,LOW,Equity
+RENV11,Real Estate,REIT - Diversified,3.97,none,LOW,Equity
+HDOF11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+BTSG11,Real Estate,REIT - Industrial,7.17,none,LOW,Equity
+HOMS11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+SNEL11,Real Estate,REIT - Specialty,14.17,none,LOW,Equity
+FIQE3,Communication Services,Telecom Services,8.14,none,LOW,Equity
+CASH3,Communication Services,Internet Content & Information,68.32,hold,LOW,Equity
+BEES4,Financial Services,Banks - Regional,3.34,none,LOW,Equity
+BMKS3,Consumer Cyclical,Leisure,9.46,none,LOW,Equity
+FIVN11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+VTRU3,Consumer Defensive,Education & Training Services,0.23,none,LOW,Equity
+HRDF11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+LRED11,N/A,N/A,N/A,N/A,N/A,N/A
+SNCI11,Industrials,Consulting Services,13.54,none,LOW,Equity
+ENGI11,Utilities,Utilities - Regulated Electric,6.0,none,LOW,Equity
+GOVE11,,,N/A,none,LOW,Equity
+SLCE3,Consumer Defensive,Farm Products,7.7,buy,LOW,Equity
+BLMG11,Real Estate,REIT - Industrial,11.05,none,LOW,Equity
+TEPP11,Real Estate,REIT - Residential,13.5,none,LOW,Equity
+ZAVC11,Real Estate,REIT - Specialty,17.33,none,LOW,Equity
+GLCR11,Real Estate,REIT - Diversified,11.91,none,LOW,Equity
+RVBI11,Real Estate,REIT - Diversified,12.84,none,LOW,Equity
+ENGI3,Utilities,Utilities - Regulated Electric,4.73,none,LOW,Equity
+TRAD3,Technology,Software - Application,N/A,none,LOW,Equity
+ITAG,N/A,N/A,N/A,N/A,LOW,Index
+PETR3,Energy,Oil & Gas Integrated,14.99,buy,LOW,Equity
+JCCJ11,Real Estate,REIT - Diversified,2.7,none,LOW,Equity
+BLUE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+WEST3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
+RBRX11,Real Estate,REIT - Diversified,13.38,none,LOW,Equity
+JSAF11,Real Estate,REIT - Diversified,13.82,none,LOW,Equity
+AMER3,Consumer Cyclical,Internet Retail,N/A,none,LOW,Equity
+FINF11,N/A,N/A,N/A,N/A,N/A,N/A
+LEVE3,Consumer Cyclical,Auto Parts,8.55,none,LOW,Equity
+PVBI11,Real Estate,REIT - Diversified,7.88,none,LOW,Equity
+LOFT11,N/A,N/A,N/A,N/A,N/A,N/A
+RBHG11,Real Estate,REIT - Diversified,14.53,none,LOW,Equity
+SANB3,Financial Services,Banks - Regional,5.48,none,LOW,Equity
+ATWN11,N/A,N/A,N/A,N/A,N/A,N/A
+HOSI11,Real Estate,REIT - Residential,9.69,none,LOW,Equity
+VAMO3,Industrials,Rental & Leasing Services,14.05,none,LOW,Equity
+SCVB11,,,N/A,none,LOW,Equity
+FARU11,N/A,N/A,N/A,N/A,N/A,N/A
+PATI4,Basic Materials,Steel,26.04,none,LOW,Equity
+BXPO11,,,N/A,none,LOW,Equity
+LJQQ3,Consumer Cyclical,Specialty Retail,4.64,none,LOW,Equity
+AURE3,Utilities,Utilities - Renewable,0.56,none,LOW,Equity
+CRPG6,Basic Materials,Chemicals,5.31,none,LOW,Equity
+FAED11,Real Estate,REIT - Diversified,13.97,none,LOW,Equity
+MTRE3,Real Estate,Real Estate - Development,14.01,none,LOW,Equity
+ITIT11,Real Estate,REIT - Specialty,10.73,none,LOW,Equity
+PBLV11,N/A,N/A,N/A,N/A,NONE,N/A
+QTZD11,N/A,N/A,N/A,N/A,N/A,N/A
+RDLI11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+NBOV11,,,N/A,none,LOW,Equity
+APXR11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+GAME11,Real Estate,REIT - Diversified,13.0,none,LOW,Equity
+CMDB11,,,N/A,none,LOW,Equity
+BSLI4,Financial Services,Banks - Regional,3.02,none,LOW,Equity
+MRVE3,Real Estate,Real Estate - Development,N/A,buy,LOW,Equity
+OSXB3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
+UNIP6,Basic Materials,Chemicals,6.79,none,LOW,Equity
+SPVT11,,,N/A,none,LOW,Equity
+USIM6,Basic Materials,Steel,3.37,none,LOW,Equity
+JPPA11,Real Estate,REIT - Residential,15.78,none,LOW,Equity
+RDNI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+RELG11,Real Estate,REIT - Diversified,11.47,none,LOW,Equity
+MTES11,N/A,N/A,N/A,N/A,N/A,N/A
+GOAU4,Basic Materials,Steel,3.81,buy,LOW,Equity
+ALUP3,Utilities,Utilities - Renewable,2.55,none,LOW,Equity
+ETER3,Industrials,Building Products & Equipment,7.22,none,LOW,Equity
+RNEW3,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+PMAM3,Basic Materials,Copper,N/A,none,LOW,Equity
+BRAP4,Financial Services,Asset Management,15.26,hold,LOW,Equity
+PINE3,Financial Services,Banks - Regional,5.4,none,LOW,Equity
+AGRO3,Consumer Defensive,Farm Products,7.86,none,LOW,Equity
+FAMB11,Real Estate,REIT - Office,32.37,none,LOW,Equity
+TFCO4,Consumer Cyclical,Apparel Retail,1.29,buy,LOW,Equity
+BBAS3,Financial Services,Banks - Regional,1.64,hold,LOW,Equity
+SHDP11,N/A,N/A,N/A,N/A,NONE,Fund
+BALM4,Healthcare,Medical Instruments & Supplies,4.14,none,LOW,Equity
+EALT3,Industrials,Metal Fabrication,2.79,none,LOW,Equity
+RPAD6,Industrials,Conglomerates,N/A,none,LOW,Equity
+BTYU11,Real Estate,REIT - Diversified,15.27,none,LOW,Equity
+DEVA11,Real Estate,REIT - Diversified,16.15,none,LOW,Equity
+RCFF11,Real Estate,REIT - Diversified,64.9,none,LOW,Equity
+AJFI11,Real Estate,REIT - Diversified,9.8,none,LOW,Equity
+RBRY11,Financial Services,Asset Management,13.83,none,LOW,Equity
+TIRB11,,,N/A,none,LOW,Equity
+IDUA11,N/A,N/A,N/A,N/A,NONE,N/A
+PEMA11,Real Estate,REIT - Diversified,18.95,none,LOW,Equity
+OFSA3,Healthcare,Drug Manufacturers - Specialty & Generic,0.39,none,LOW,Equity
+EURO11,Real Estate,REIT - Diversified,9.83,none,LOW,Equity
+TEND3,Real Estate,Real Estate - Development,0.7,buy,LOW,Equity
+ALPA4,Consumer Cyclical,Footwear & Accessories,1.15,none,LOW,Equity
+TECX11,,,N/A,none,LOW,Equity
 XPRE11,N/A,N/A,N/A,N/A,N/A,N/A
-BAZA3,Financial Services,Banks - Regional,10.83,none,LOW,Equity
-HGCR11,Real Estate,REIT - Diversified,13.47,none,LOW,Equity
-WPLZ11,Real Estate,REIT - Retail,8.03,none,LOW,Equity
+NAUI11,Real Estate,REIT - Diversified,21.12,none,LOW,Equity
+BMEB3,Financial Services,Banks - Regional,6.1,none,LOW,Equity
+INDE11,N/A,N/A,N/A,N/A,NONE,N/A
+ECOO11,,,N/A,none,LOW,Equity
+BPMW11,N/A,N/A,N/A,N/A,N/A,N/A
+ELAS11,,,N/A,none,LOW,Equity
+CGAS5,Utilities,Utilities - Regulated Gas,18.21,none,LOW,Equity
+ZIFI11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
+SNLG11,Real Estate,REIT - Diversified,1344.0,none,LOW,Equity
+BIPE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+HRES11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+MMVE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+NCRI11,Real Estate,REIT - Diversified,15.07,none,LOW,Equity
+SIMH3,Industrials,Rental & Leasing Services,1.38,buy,LOW,Equity
+CGAS3,Utilities,Utilities - Regulated Gas,17.38,none,LOW,Equity
+TGMA3,Industrials,Trucking,9.4,buy,LOW,Equity
+MANA11,Real Estate,REIT - Specialty,14.85,none,LOW,Equity
+FIIP11,N/A,N/A,N/A,none,LOW,Equity
+CEAB3,Consumer Cyclical,Specialty Retail,1.95,buy,LOW,Equity
+ELET3,Utilities,Utilities - Renewable,3.14,strong_buy,LOW,Equity
+BPAC5,Financial Services,Capital Markets,3.54,none,LOW,Equity
+ROMI3,Industrials,Industrial Distribution,8.07,none,LOW,Equity
+SHPH11,Real Estate,REIT - Diversified,35.48,none,LOW,Equity
+BBSD11,,,N/A,none,LOW,Equity
+KEPL3,Industrials,Farm & Heavy Construction Machinery,6.48,none,LOW,Equity
+CSNA3,Basic Materials,Steel,17.03,hold,LOW,Equity
+AALR3,Healthcare,Diagnostics & Research,N/A,none,LOW,Equity
+MAPT4,Financial Services,Asset Management,N/A,none,LOW,Equity
+CTKA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+XPCI11,Real Estate,REIT - Mortgage,14.03,none,LOW,Equity
+EUCA3,Industrials,Building Products & Equipment,3.21,none,LOW,Equity
+KGUJ11,N/A,N/A,N/A,N/A,N/A,N/A
+PDTC3,Technology,Communication Equipment,4.58,none,LOW,Equity
+ZAVI11,Real Estate,REIT - Diversified,15.66,none,LOW,Equity
+CCVA11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+BZEL11,N/A,N/A,N/A,N/A,N/A,N/A
+DEXP4,Basic Materials,Chemicals,9.52,none,LOW,Equity
+BRIP11,Real Estate,REIT - Diversified,17.55,none,LOW,Equity
+ISAE4,Utilities,Utilities - Independent Power Producers,10.18,hold,LOW,Equity
+PLAS3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+ISCJ11,Real Estate,REIT - Diversified,14.41,none,LOW,Equity
+HSRE11,Real Estate,REIT - Diversified,7.88,none,LOW,Equity
+AUVP11,,,N/A,none,LOW,Equity
+LVOL11,,,N/A,none,LOW,Equity
+PATC11,Real Estate,REIT - Diversified,4.71,none,LOW,Equity
+IBXL,N/A,N/A,N/A,N/A,N/A,N/A
+XBOV11,,,N/A,none,LOW,Equity
+CLSC4,Utilities,Utilities - Regulated Electric,7.66,none,LOW,Equity
+ASRF11,Financial Services,Asset Management,N/A,none,LOW,Equity
+NEWU11,Real Estate,REIT - Diversified,3.27,none,LOW,Equity
+SOLR11,N/A,N/A,N/A,N/A,NONE,Fund
+AZZA3,Consumer Cyclical,Footwear & Accessories,5.11,buy,LOW,Equity
+SHUL4,Consumer Cyclical,Auto Parts,5.95,none,LOW,Equity
+CARE11,Real Estate,REIT - Retail,N/A,none,LOW,Equity
+TSNC11,Financial Services,Asset Management,20.05,none,LOW,Equity
+FISD11,N/A,N/A,N/A,N/A,NONE,Fund
+PSVM11,N/A,N/A,N/A,N/A,LOW,Equity
+RZZI11,N/A,N/A,N/A,N/A,N/A,N/A
+DXCO3,Basic Materials,Lumber & Wood Production,0.95,buy,LOW,Equity
+EMBR3,Industrials,Aerospace & Defense,0.18,buy,LOW,Equity
+BIZD11,,,N/A,none,LOW,Equity
+ITUB4,Financial Services,Banks - Regional,0.57,strong_buy,LOW,Equity
+IMAT,N/A,N/A,N/A,N/A,LOW,Index
+HDEL11,Financial Services,Asset Management,139.19,none,LOW,Equity
+HPDP11,Real Estate,REIT - Retail,7.57,none,LOW,Equity
+CSED3,Consumer Defensive,Education & Training Services,6.38,none,LOW,Equity
+CRFF11,Real Estate,REIT - Specialty,10.18,none,LOW,Equity
+TCIN11,Real Estate,REIT - Residential,N/A,none,LOW,Equity
+BALM3,Healthcare,Medical Instruments & Supplies,3.2,none,LOW,Equity
+ONDV11,N/A,N/A,N/A,N/A,N/A,N/A
+SPMO11,N/A,N/A,N/A,N/A,NONE,Fund
+CPLE5,Utilities,Utilities - Regulated Electric,4.34,none,LOW,Equity
+BMMT11,,,N/A,none,LOW,Equity
+ODPV3,Healthcare,Healthcare Plans,7.79,hold,LOW,Equity
+BBDC4,Financial Services,Banks - Regional,1.35,buy,LOW,Equity
+BDLL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+AERO11,N/A,N/A,N/A,N/A,N/A,N/A
+FIXX11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+IWMI11,,,N/A,none,LOW,Equity
+RDCI11,N/A,N/A,N/A,N/A,N/A,N/A
+RPRI11,Real Estate,REIT - Specialty,16.39,none,LOW,Equity
+POMO3,Industrials,Farm & Heavy Construction Machinery,8.85,none,LOW,Equity
+VIUR11,Real Estate,REIT - Diversified,14.01,none,LOW,Equity
+XPCM11,Real Estate,REIT - Diversified,8.15,none,LOW,Equity
+SPVJ11,N/A,N/A,N/A,N/A,N/A,N/A
+IBOB11,,,N/A,none,LOW,Equity
+EIRA11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+BREW11,,,N/A,none,LOW,Equity
+MDNE3,Real Estate,Real Estate Services,2.82,none,LOW,Equity
+IBXX,N/A,N/A,N/A,N/A,LOW,Index
+ABEV3,Consumer Defensive,Beverages - Brewers,6.93,hold,LOW,Equity
+FIIC11,N/A,N/A,N/A,N/A,N/A,N/A
+ESPA3,Consumer Cyclical,Personal Services,0.15,none,LOW,Equity
+LUPA3,Energy,Oil & Gas Equipment & Services,N/A,none,LOW,Equity
+WLMM4,Consumer Cyclical,Auto & Truck Dealerships,1.33,none,LOW,Equity
+LLAO11,Real Estate,REIT - Specialty,29.74,none,LOW,Equity
+FLNR11,N/A,N/A,N/A,N/A,NONE,N/A
+FCFL11,Real Estate,REIT - Diversified,8.6,none,LOW,Equity
+RCRI11,N/A,N/A,N/A,N/A,N/A,N/A
+VBBR3,Consumer Cyclical,Specialty Retail,11.03,buy,LOW,Equity
+SPDE11,Real Estate,REIT - Specialty,5.54,none,LOW,Equity
+LAND3,Consumer Defensive,Farm Products,0.72,none,LOW,Equity
+TRBL11,Real Estate,REIT - Industrial,8.73,none,LOW,Equity
+VVMR11,Real Estate,REIT - Diversified,1.84,none,LOW,Equity
+DOTZ3,Communication Services,Advertising Agencies,N/A,none,LOW,Equity
+OPTM11,N/A,N/A,N/A,N/A,NONE,N/A
+PULV11,Real Estate,REIT - Diversified,13.53,none,LOW,Equity
+MFII11,Real Estate,REIT - Diversified,16.11,none,LOW,Equity
+BSLT11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+OCRE11,Financial Services,Asset Management,9.88,none,LOW,Equity
+PNLM11,N/A,N/A,N/A,N/A,NONE,N/A
+JSRE11,Financial,REIT - Diversified,7.6,none,LOW,Equity
+BMOB3,Communication Services,Entertainment,5.68,none,LOW,Equity
+BARI11,Real Estate,REIT - Diversified,14.73,none,LOW,Equity
+TVRI11,Real Estate,REIT - Diversified,13.12,none,LOW,Equity
+RPMG3,Energy,Oil & Gas Refining & Marketing,N/A,none,LOW,Equity
+BRKM6,Basic Materials,Chemicals,N/A,none,LOW,Equity
+ALZR11,Real Estate,Real Estate Services,9.29,none,LOW,Equity
+CBAV3,Basic Materials,Aluminum,N/A,buy,LOW,Equity
+PATI3,Basic Materials,Steel,15.02,none,LOW,Equity
+RZAK11,Real Estate,REIT - Diversified,17.07,none,LOW,Equity
+BBOV11,,,N/A,none,LOW,Equity
+VTPA11,N/A,N/A,N/A,N/A,N/A,N/A
+HTEK11,,,N/A,none,LOW,Equity
+JHSF3,Real Estate,Real Estate - Development,7.0,none,LOW,Equity
+CYRE3,Consumer Cyclical,Residential Construction,4.09,buy,LOW,Equity
+KLBN4,Basic Materials,Paper & Paper Products,5.0,buy,LOW,Equity
+PRNR3,Industrials,Engineering & Construction,0.81,none,LOW,Equity
+CMIG3,Utilities,Utilities - Diversified,9.28,none,LOW,Equity
+AFHF11,N/A,N/A,N/A,N/A,N/A,N/A
+OUJP11,Real Estate,REIT - Diversified,16.74,none,LOW,Equity
+USIM3,Basic Materials,Steel,4.48,none,LOW,Equity
+RAIL3,Industrials,Railroads,4.37,buy,LOW,Equity
+FESA4,Basic Materials,Steel,7.36,none,LOW,Equity
+KLBN3,Basic Materials,Paper & Paper Products,4.82,none,LOW,Equity
+ALOS3,Real Estate,Real Estate Services,5.28,buy,LOW,Equity
+IBOV,N/A,N/A,N/A,N/A,NONE,Fund
+BCRI11,Real Estate,REIT - Diversified,15.92,none,LOW,Equity
+KPMR11,N/A,N/A,N/A,N/A,N/A,N/A
+IEEX,N/A,N/A,N/A,N/A,N/A,N/A
+FPAB11,Real Estate,REIT - Diversified,7.09,none,LOW,Equity
+SEER3,Consumer Defensive,Education & Training Services,1.69,none,LOW,Equity
+REVE11,,,N/A,none,LOW,Equity
+SHOP11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+PATL11,Real Estate,REIT - Industrial,12.98,none,LOW,Equity
+OIBR4,Communication Services,Telecom Services,N/A,none,LOW,Equity
+BRCO11,Real Estate,REIT - Industrial,9.47,none,LOW,Equity
+CEEB3,Utilities,Utilities - Regulated Electric,5.04,none,LOW,Equity
+RMAI11,,,N/A,none,LOW,Equity
+BDEF11,,,N/A,none,LOW,Equity
+DASA3,Healthcare,Diagnostics & Research,N/A,hold,LOW,Equity
+HGPO11,Real Estate,REIT - Office,15.56,none,LOW,Equity
+EGIE3,Utilities,Utilities - Renewable,5.12,none,LOW,Equity
+MULT3,Real Estate,Real Estate Services,3.61,strong_buy,LOW,Equity
+SEQL3,Industrials,Integrated Freight & Logistics,N/A,none,LOW,Equity
+BAZA3,Financial Services,Banks - Regional,10.77,none,LOW,Equity
+PTNT4,Consumer Cyclical,Apparel Manufacturing,5.64,none,LOW,Equity
+TELM11,Real Estate,REIT - Diversified,11.94,none,LOW,Equity
+VDSV11,N/A,N/A,N/A,N/A,N/A,N/A
+HAAA11,Real Estate,REIT - Diversified,1.93,none,LOW,Equity
+PEAB4,Financial Services,Asset Management,1.9,none,LOW,Equity
+BTHI11,,,N/A,none,LOW,Equity
+PNPR11,Real Estate,REIT - Diversified,99.03,none,LOW,Equity
+TRIG11,,,N/A,none,LOW,Equity
+SMAC11,,,N/A,none,LOW,Equity
+GSFI11,Financial Services,Capital Markets,N/A,none,LOW,Equity
+ARRI11,Real Estate,REIT - Residential,15.13,none,LOW,Equity
+SHIP11,N/A,N/A,N/A,N/A,N/A,N/A
+VOTS11,Real Estate,REIT - Specialty,9.54,none,LOW,Equity
+TCPF11,N/A,N/A,N/A,N/A,NONE,N/A
+RBRP11,Financial Services,Asset Management,9.47,none,LOW,Equity
+BLAU3,Healthcare,Drug Manufacturers - Specialty & Generic,4.38,buy,LOW,Equity
+LREN3,Consumer Cyclical,Department Stores,4.13,buy,LOW,Equity
+JOPA3,Consumer Defensive,Packaged Foods,3.15,none,LOW,Equity
+CDHY11,N/A,N/A,N/A,N/A,N/A,N/A
+RCKF11,N/A,N/A,N/A,N/A,N/A,N/A
+GLDX11,,,N/A,none,LOW,Equity
+PTBL3,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
+VPPR11,Real Estate,REIT - Diversified,6.51,none,LOW,Equity
+JALL3,Consumer Defensive,Confectioners,1.76,strong_buy,LOW,Equity
+RTEL11,N/A,N/A,N/A,N/A,N/A,N/A
+KNPR11,N/A,N/A,N/A,N/A,N/A,N/A
+BRHT11,N/A,N/A,N/A,N/A,N/A,N/A
+BGS111,N/A,N/A,N/A,N/A,N/A,N/A
+FTCE11,Real Estate,REIT - Diversified,2.92,none,LOW,Equity
+REAG3,Financial Services,Asset Management,N/A,none,LOW,Equity
+LOGN3,Industrials,Marine Shipping,N/A,none,LOW,Equity
+CEBB11,N/A,N/A,N/A,N/A,N/A,N/A
+IVCI11,N/A,N/A,N/A,N/A,NONE,N/A
+PKIN11,,,N/A,none,LOW,Equity
+LFTT11,Real Estate,REIT - Residential,387.55,none,LOW,Equity
+RBLG11,Real Estate,REIT - Industrial,12.0,none,LOW,Equity
+JSLG3,Industrials,Integrated Freight & Logistics,6.95,strong_buy,LOW,Equity
+GMAT3,Consumer Cyclical,Department Stores,3.28,buy,LOW,Equity
+INEP3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+ALUG11,,,N/A,none,LOW,Equity
+JPPC11,Real Estate,REIT - Diversified,241.37,none,LOW,Equity
+CPOF11,Real Estate,REIT - Diversified,7.19,none,LOW,Equity
+SPXS11,Financial Services,Asset Management,14.09,none,LOW,Equity
+AROA11,Real Estate,REIT - Diversified,7.56,none,LOW,Equity
+ATCR11,N/A,N/A,N/A,N/A,N/A,N/A
+MTOF11,N/A,N/A,N/A,N/A,NONE,N/A
+RNEW4,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+BTHR11,N/A,N/A,N/A,N/A,N/A,N/A
+IBRA,N/A,N/A,N/A,N/A,LOW,Index
+ORVR3,Industrials,Waste Management,N/A,none,LOW,Equity
+CSMC11,N/A,N/A,N/A,N/A,N/A,N/A
+PNDL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+BTAL11,Real Estate,REIT - Industrial,13.28,none,LOW,Equity
+ITSA3,Industrials,Conglomerates,7.85,none,LOW,Equity
+BNFS11,Real Estate,REIT - Diversified,14.47,none,LOW,Equity
+RSPD11,Real Estate,REIT - Diversified,21.75,none,LOW,Equity
+WHRL3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.64,none,LOW,Equity
+BRAP3,Financial Services,Asset Management,14.83,hold,LOW,Equity
+BTML11,N/A,N/A,N/A,N/A,NONE,Fund
+DIVO11,,,N/A,none,LOW,Equity
+BGIP3,Financial Services,Banks - Regional,12.97,none,LOW,Equity
+TCSA3,Real Estate,Real Estate - Development,N/A,underperform,LOW,Equity
+ALPK3,Industrials,Infrastructure Operations,N/A,none,LOW,Equity
+TFIX,N/A,N/A,N/A,N/A,LOW,Index
+SMRE11,Real Estate,REIT - Diversified,15.15,none,LOW,Equity
+VLQI11,N/A,N/A,N/A,N/A,N/A,N/A
+TOPP11,Real Estate,REIT - Diversified,14.13,none,LOW,Equity
+BTSI11,Real Estate,REIT - Industrial,8.41,none,LOW,Equity
+MWET4,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+EQMA3B,Utilities,Utilities - Regulated Electric,9.86,none,LOW,Equity
+MALL11,Real Estate,REIT - Retail,10.05,none,LOW,Equity
+BBFO11,Real Estate,REIT - Diversified,14.07,none,LOW,Equity
+GOLD11,,,N/A,none,LOW,Equity
+SADI11,Real Estate,REIT - Specialty,13.71,none,LOW,Equity
+SJAU11,Real Estate,REIT - Diversified,228.52,none,LOW,Equity
+NEWL11,Real Estate,REIT - Industrial,10.74,none,LOW,Equity
+BHIA3,Consumer Cyclical,Specialty Retail,N/A,none,LOW,Equity
+IGCX,N/A,N/A,N/A,N/A,N/A,N/A
+KEVE11,Real Estate,REIT - Residential,51.34,none,LOW,Equity
+DVFF11,Real Estate,REIT - Diversified,12.54,none,LOW,Equity
+MOAR3,Industrials,Conglomerates,23.28,none,LOW,Equity
+LAVV3,Real Estate,Real Estate Services,5.62,strong_buy,LOW,Equity
+RADL3,Healthcare,Pharmaceutical Retailers,2.08,buy,LOW,Equity
+CCTY3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+ECOR3,Industrials,Infrastructure Operations,2.94,buy,LOW,Equity
+CPFE3,Utilities,Utilities - Regulated Electric,1.91,hold,LOW,Equity
+RSUL4,Consumer Cyclical,Auto Parts,3.21,none,LOW,Equity
+FTRE11,N/A,N/A,N/A,N/A,N/A,N/A
+ASAI3,Consumer Defensive,Grocery Stores,0.95,buy,LOW,Equity
+DLMT11,N/A,N/A,N/A,N/A,N/A,N/A
+JASC11,Real Estate,REIT - Specialty,7.67,none,LOW,Equity
+HOOT4,Consumer Cyclical,Lodging,N/A,none,LOW,Equity
+BPAC11,Financial Services,Capital Markets,2.38,none,LOW,Equity
+GEPA3,Utilities,Utilities - Regulated Electric,18.16,none,LOW,Equity
+NSLU11,Real Estate,REIT - Healthcare Facilities,11.21,none,LOW,Equity
+BTLG11,Real Estate,REIT - Industrial,9.12,none,LOW,Equity
+RECD11,Real Estate,REIT - Diversified,13.09,none,LOW,Equity
+XINA11,,,N/A,none,LOW,Equity
+GLOG11,N/A,N/A,N/A,none,LOW,Equity
+CEBR3,Utilities,Utilities - Regulated Electric,10.21,none,LOW,Equity
+HCHG11,Real Estate,REIT - Diversified,14.41,none,LOW,Equity
+UCAS3,Consumer Cyclical,"Furnishings, Fixtures & Appliances",12.88,none,LOW,Equity
+VTVI11,N/A,N/A,N/A,N/A,N/A,N/A
+INLG11,Real Estate,REIT - Diversified,12.33,none,LOW,Equity
+TORD11,Real Estate,REIT - Diversified,12.74,none,LOW,Equity
+CASA11,,,N/A,none,LOW,Equity
+CPLE6,Utilities,Utilities - Regulated Electric,4.88,strong_buy,LOW,Equity
+VCRI11,Real Estate,REIT - Office,15.85,none,LOW,Equity
+GARE11,Real Estate,REIT - Specialty,11.1,none,LOW,Equity
+DAMA11,Real Estate,REIT - Diversified,14.74,none,LOW,Equity
+MOSO11,N/A,N/A,N/A,N/A,N/A,N/A
+CPFF11,Real Estate,REIT - Diversified,8.58,none,LOW,Equity
+NUCL11,,,N/A,none,LOW,Equity
+SUZB3,Basic Materials,Paper & Paper Products,3.94,strong_buy,LOW,Equity
+CAMB3,Consumer Cyclical,Leisure,8.02,none,LOW,Equity
+IGNM,N/A,N/A,N/A,N/A,LOW,Index
+AZPL11,Real Estate,REIT - Industrial,14.5,none,LOW,Equity
+IMOB,N/A,N/A,N/A,N/A,LOW,Index
+IFIL,N/A,N/A,N/A,N/A,LOW,Index
+WTSP11,Real Estate,REIT - Diversified,5.69,none,LOW,Equity
+BTHF11,Real Estate,REIT - Diversified,12.57,none,LOW,Equity
+KRES11,N/A,N/A,N/A,N/A,N/A,N/A
+KLOG11,N/A,N/A,N/A,N/A,N/A,N/A
+LSOI11,N/A,N/A,N/A,N/A,N/A,N/A
+PNCR11,Real Estate,REIT - Diversified,15.87,none,LOW,Equity
+PLCR11,Real Estate,REIT - Diversified,13.69,none,LOW,Equity
+BBOI11,,,N/A,none,LOW,Equity
+AHEB5,Consumer Cyclical,Travel Services,N/A,none,LOW,Equity
+KLBN11,Basic Materials,Paper & Paper Products,4.96,buy,LOW,Equity
+RCSL4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+PFRM3,Healthcare,Medical Distribution,6.43,none,LOW,Equity
+BRIM11,Real Estate,REIT - Diversified,90.5,none,LOW,Equity
+VIOL11,N/A,N/A,N/A,N/A,N/A,N/A
+HAGA4,Industrials,Building Products & Equipment,N/A,none,LOW,Equity
+ERPA11,Real Estate,REIT - Diversified,8.84,none,LOW,Equity
+ELDO11,N/A,N/A,N/A,N/A,NONE,Fund
+RNEW11,Utilities,Utilities - Renewable,N/A,none,LOW,Equity
+VRTA11,Real Estate,REIT - Diversified,9.55,none,LOW,Equity
+CXCI11,Real Estate,REIT - Specialty,13.29,none,LOW,Equity
+SPUB11,,,N/A,none,LOW,Equity
+TELB3,Communication Services,Telecom Services,N/A,none,LOW,Equity
+RBOP11,,,N/A,none,LOW,Equity
+HGCR11,Real Estate,REIT - Diversified,13.31,none,LOW,Equity
+TGAR11,Real Estate,REIT - Diversified,13.02,none,LOW,Equity
+VERE11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+WPLZ11,Real Estate,REIT - Retail,8.0,none,LOW,Equity
+VGHF11,Real Estate,REIT - Diversified,13.92,none,LOW,Equity
+TECN3,Consumer Cyclical,Luxury Goods,3.34,none,LOW,Equity
+BIED3,Consumer Defensive,Education & Training Services,N/A,none,LOW,Equity
+HBCR11,Real Estate,REIT - Diversified,11.88,none,LOW,Equity
+IBBR,N/A,N/A,N/A,N/A,LOW,Index
+HREC11,Real Estate,Real Estate - Diversified,12.87,none,LOW,Equity
+PQAG11,Real Estate,REIT - Industrial,9.87,none,LOW,Equity
+XPML11,Real Estate,REIT - Retail,10.6,none,LOW,Equity
+FESA3,Basic Materials,Steel,3.95,none,LOW,Equity
+HCTR11,Financial Services,Asset Management,19.67,none,LOW,Equity
+PCAS11,N/A,N/A,N/A,N/A,N/A,N/A
+BEES3,Financial Services,Banks - Regional,3.36,none,LOW,Equity
+TELB4,Communication Services,Telecom Services,N/A,none,LOW,Equity
+JCDB11,N/A,N/A,N/A,N/A,N/A,N/A
+MTSA3,Industrials,Farm & Heavy Construction Machinery,3.29,none,LOW,Equity
+ALMI11,Real Estate,REIT - Office,6.69,none,LOW,Equity
+TELD11,N/A,N/A,N/A,N/A,N/A,N/A
+HGRE11,Real Estate,REIT - Diversified,7.42,none,LOW,Equity
+B3BR11,,,N/A,none,LOW,Equity
+HBTS5,Real Estate,Real Estate Services,5.95,none,LOW,Equity
+VGIP11,Real Estate,REIT - Diversified,29.01,none,LOW,Equity
+SURE11,N/A,N/A,N/A,N/A,N/A,N/A
+VIDS11,N/A,N/A,N/A,N/A,N/A,N/A
+COCE5,Utilities,Utilities - Regulated Electric,5.03,none,LOW,Equity
+LUXM4,Industrials,Marine Shipping,2.23,none,LOW,Equity
+RAPT3,Industrials,Farm & Heavy Construction Machinery,0.56,none,LOW,Equity
+KNSC11,Real Estate,REIT - Residential,13.41,none,LOW,Equity
+CAPE11,,,N/A,none,LOW,Equity
+KNRI11,Financial,REIT - Diversified,7.57,none,LOW,Equity
+RCSL3,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+QQQQ11,,,N/A,none,LOW,Equity
+CYCR11,Real Estate,REIT - Diversified,15.38,none,LOW,Equity
+LASC11,Real Estate,REIT - Diversified,10.2,none,LOW,Equity
+ISAE3,Utilities,Utilities - Independent Power Producers,7.79,none,LOW,Equity
+BMGB4,Financial Services,Banks - Regional,10.84,none,LOW,Equity
+ARML3,Industrials,Rental & Leasing Services,11.35,buy,LOW,Equity
+AFHI11,Real Estate,REIT - Diversified,13.03,none,LOW,Equity
+NAVT11,Financial Services,Asset Management,11.51,none,LOW,Equity
+FIEI3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+SCPF11,Real Estate,REIT - Diversified,28.27,none,LOW,Equity
+ELET6,Utilities,Utilities - Renewable,8.16,strong_buy,LOW,Equity
+DIRR3,Real Estate,Real Estate - Development,13.06,strong_buy,LOW,Equity
+VALE3,Basic Materials,Other Industrial Metals & Mining,14.23,buy,LOW,Equity
+VGIR11,Real Estate,REIT - Diversified,14.91,none,LOW,Equity
+TAEE4,Utilities,Utilities - Regulated Electric,7.88,none,LOW,Equity
+BSLI3,Financial Services,Banks - Regional,1.52,none,LOW,Equity
+EZTC3,Real Estate,Real Estate - Development,2.94,hold,LOW,Equity
+TPIS3,Industrials,Infrastructure Operations,5.78,none,LOW,Equity
+INOI11,N/A,N/A,N/A,N/A,N/A,N/A
+LKDV11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+COGN3,Consumer Defensive,Education & Training Services,9.5,buy,LOW,Equity
+RBRK11,,,N/A,none,LOW,Equity
+MILL11,,,N/A,none,LOW,Equity
+DAMT11,Real Estate,REIT - Industrial,N/A,none,LOW,Equity
+GGBR3,Basic Materials,Steel,4.4,none,LOW,Equity
+VIVA3,Consumer Cyclical,Luxury Goods,2.44,buy,LOW,Equity
+IGCT,N/A,N/A,N/A,N/A,LOW,Index
+ARTE11,N/A,N/A,N/A,N/A,N/A,N/A
+CPUR11,Real Estate,REIT - Diversified,11.1,none,LOW,Equity
+IBEP,N/A,N/A,N/A,N/A,LOW,Index
+GFDL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+MCRE11,Real Estate,REIT - Diversified,15.53,none,LOW,Equity
+VSHO11,Real Estate,REIT - Retail,10.9,none,LOW,Equity
+NSDV11,,,N/A,none,LOW,Equity
+SAPR11,Utilities,Utilities - Regulated Water,7.39,none,LOW,Equity
+EQPA3,Utilities,Utilities - Regulated Electric,11.66,none,LOW,Equity
+TUPY3,Industrials,Metal Fabrication,9.89,none,LOW,Equity
+SAPR4,Utilities,Utilities - Regulated Water,7.6,none,LOW,Equity
+BGIP4,Financial Services,Banks - Regional,15.08,none,LOW,Equity
+IBEE,N/A,N/A,N/A,N/A,LOW,Index
+INEP4,Industrials,Specialty Industrial Machinery,N/A,none,LOW,Equity
+SPGM11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
+HGFF11,Real Estate,REIT - Specialty,12.02,none,LOW,Equity
+IFCM3,Industrials,Specialty Business Services,N/A,none,LOW,Equity
+VTLT11,Real Estate,REIT - Specialty,13.1,none,LOW,Equity
+PLPL3,Real Estate,Real Estate - Development,12.82,strong_buy,LOW,Equity
+PIBB11,,,N/A,none,LOW,Equity
+EGYR11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+RBVA11,Financial,Asset Management,10.75,none,LOW,Equity
+IBSD,N/A,N/A,N/A,N/A,LOW,Index
+EAGL11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+PMIS11,Real Estate,REIT - Specialty,13.27,none,LOW,Equity
+VTPL11,Real Estate,REIT - Specialty,N/A,none,LOW,Equity
+DVLP11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+VIMO11,N/A,N/A,N/A,N/A,N/A,N/A
+FLCR11,Real Estate,REIT - Diversified,14.35,none,LOW,Equity
+CPLG11,Real Estate,REIT - Diversified,6.56,none,LOW,Equity
+KNRE11,Real Estate,REIT - Residential,49.92,none,LOW,Equity
+FLRP11,Real Estate,REIT - Retail,7.88,none,LOW,Equity
+DEXP3,Basic Materials,Chemicals,9.89,none,LOW,Equity
+BINR11,N/A,N/A,N/A,N/A,NONE,N/A
+CRPG3,Basic Materials,Chemicals,24.88,none,LOW,Equity
+CMIN3,Basic Materials,Steel,19.92,underperform,LOW,Equity
+ALLD3,Technology,Software - Application,47.47,none,LOW,Equity
+IBBE,N/A,N/A,N/A,N/A,LOW,Index
+CXCO11,Real Estate,REIT - Diversified,12.64,none,LOW,Equity
+LVBI11,Real Estate,Real Estate Services,8.75,none,LOW,Equity
+VLJS11,N/A,N/A,N/A,N/A,NONE,N/A
+HBRE3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+ATSA11,Real Estate,REIT - Diversified,2.88,none,LOW,Equity
+MGLU3,Consumer Cyclical,Specialty Retail,3.1,hold,LOW,Equity
+STBP3,Industrials,Marine Shipping,4.24,buy,LOW,Equity
 DVLT11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+SAPI11,Financial Services,Asset Management,15.26,none,LOW,Equity
+VVCO11,Real Estate,REIT - Diversified,N/A,none,LOW,Equity
+KFOF11,Financial Services,Asset Management,11.09,none,LOW,Equity
+SBFG3,Consumer Cyclical,Specialty Retail,4.49,none,LOW,Equity
+KNUQ11,Real Estate,REIT - Diversified,15.46,none,LOW,Equity
+LOGG3,Real Estate,Real Estate Services,9.32,buy,LOW,Equity
+DRIT11,Real Estate,REIT - Diversified,7.19,none,LOW,Equity
+JCIN11,Real Estate,REIT - Specialty,4.4,none,LOW,Equity
+YUFI11,Real Estate,REIT - Residential,4.92,none,LOW,Equity
+ENEV3,Utilities,Utilities - Diversified,N/A,buy,LOW,Equity
+BRSR3,Financial Services,Banks - Regional,9.44,none,LOW,Equity
+EVEN3,Real Estate,Real Estate - Development,21.45,hold,LOW,Equity
+FMOF11,Real Estate,REIT - Office,6.46,none,LOW,Equity
+PRSV11,Financial,REIT - Diversified,7.12,none,LOW,Equity
+YDUQ3,Consumer Defensive,Education & Training Services,3.46,buy,LOW,Equity
+MEAL3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
+MCEM11,Real Estate,REIT - Specialty,2.86,none,LOW,Equity
+RECM11,,,N/A,none,LOW,Equity
+ZAMP3,Consumer Cyclical,Restaurants,N/A,none,LOW,Equity
+BNBR3,Financial Services,Banks - Regional,6.99,none,LOW,Equity
+IBBP11,Real Estate,REIT - Industrial,10.1,none,LOW,Equity
+CAML3,Consumer Defensive,Packaged Foods,5.73,buy,LOW,Equity
+MILS3,Industrials,Rental & Leasing Services,5.4,buy,LOW,Equity
+BCIC11,,,N/A,none,LOW,Equity
+MATB11,,,N/A,none,LOW,Equity
+BBIG11,Real Estate,REIT - Retail,12.99,none,LOW,Equity
+MMPD11,N/A,N/A,N/A,N/A,NONE,Fund
+LPSB3,Real Estate,Real Estate Services,2.01,none,LOW,Equity
+IDIV,N/A,N/A,N/A,N/A,LOW,Index
+GPUS11,,,N/A,none,LOW,Equity
+POSI3,Technology,Computer Hardware,6.07,none,LOW,Equity
+CFHI11,Real Estate,REIT - Diversified,96.35,none,LOW,Equity
+ESTQ11,N/A,N/A,N/A,N/A,N/A,N/A
+INTB3,Technology,Communication Equipment,3.66,buy,LOW,Equity
+SOND6,Industrials,Engineering & Construction,16.57,none,LOW,Equity
+MWET3,Consumer Cyclical,Auto Parts,N/A,none,LOW,Equity
+CJCT11,Real Estate,REIT - Diversified,3.88,none,LOW,Equity
+FIND11,,,N/A,none,LOW,Equity
+NVHO11,Real Estate,REIT - Diversified,8.06,none,LOW,Equity
+IRBR3,Financial Services,Insurance - Reinsurance,N/A,none,LOW,Equity
+CXTL11,Financial,REIT - Diversified,6.74,none,LOW,Equity
+CORN11,,,N/A,none,LOW,Equity
+PEVC11,,,N/A,none,LOW,Equity
+SMFT3,Consumer Cyclical,Leisure,2.66,strong_buy,LOW,Equity
+ENGI4,Utilities,Utilities - Regulated Electric,6.38,none,LOW,Equity
+URET11,N/A,N/A,N/A,N/A,N/A,N/A
+CTSA4,Consumer Cyclical,Textile Manufacturing,N/A,none,LOW,Equity
+INDX,N/A,N/A,N/A,N/A,LOW,Index
+INRD11,Real Estate,REIT - Residential,9.62,none,LOW,Equity
+CSAN3,Energy,Oil & Gas Refining & Marketing,5.62,buy,LOW,Equity
+VGII11,Real Estate,REIT - Diversified,18.61,none,LOW,Equity
+JFEN3,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+GSHP3,Real Estate,Real Estate - Diversified,N/A,none,LOW,Equity
+WRLD11,,,N/A,none,LOW,Equity
+ITRI11,Real Estate,REIT - Diversified,12.08,none,LOW,Equity
+HSAF11,Real Estate,REIT - Diversified,14.3,none,LOW,Equity
+BTRA11,Real Estate,REIT - Specialty,7.29,none,LOW,Equity
+RANI3,Consumer Cyclical,Packaging & Containers,8.53,strong_buy,LOW,Equity
+HCRI11,Real Estate,REIT - Healthcare Facilities,12.32,none,LOW,Equity
+DOHL4,Consumer Cyclical,Textile Manufacturing,0.28,none,LOW,Equity
 MNDL3,Consumer Defensive,Household & Personal Products,N/A,none,LOW,Equity
-CACR11,Real Estate,REIT - Diversified,16.75,none,LOW,Equity
+HTMX11,Real Estate,REIT - Hotel & Motel,12.72,none,LOW,Equity
+CXSE3,Financial Services,Insurance - Diversified,8.0,buy,LOW,Equity
+AVLL3,Real Estate,Real Estate - Development,N/A,none,LOW,Equity
+N4V111,N/A,N/A,N/A,N/A,N/A,N/A
+BCIA11,Real Estate,REIT - Diversified,11.61,none,LOW,Equity
+RECV3,Energy,Oil & Gas E&P,6.28,buy,LOW,Equity
+RDOR3,Healthcare,Medical Care Facilities,2.3,buy,LOW,Equity
+CURY3,Real Estate,Real Estate - Development,6.4,strong_buy,LOW,Equity
+CPTS11,Real Estate,REIT - Diversified,13.98,none,LOW,Equity
+OPCT3,Industrials,Specialty Business Services,N/A,buy,LOW,Equity
+HYPE3,Healthcare,Drug Manufacturers - Specialty & Generic,4.3,buy,LOW,Equity
+PNVL3,Healthcare,Drug Manufacturers - General,3.63,none,LOW,Equity
+VTXI11,N/A,N/A,N/A,N/A,N/A,N/A
+PETZ3,Consumer Cyclical,Specialty Retail,14.75,none,LOW,Equity
+RBFF11,Real Estate,REIT - Mortgage,11.7,none,LOW,Equity
+AZPE11,N/A,N/A,N/A,N/A,NONE,N/A
+BLMO11,Real Estate,REIT - Diversified,8.19,none,LOW,Equity
+PATB11,N/A,N/A,N/A,N/A,N/A,N/A
+IVVB11,,,N/A,none,LOW,Equity
+EPAR3,Basic Materials,Lumber & Wood Production,42.06,none,LOW,Equity
+PABY11,Real Estate,Real Estate Services,N/A,none,LOW,Equity
+FYTO11,Real Estate,REIT - Diversified,15.71,none,LOW,Equity
+NASD11,,,N/A,none,LOW,Equity
+BROF11,Real Estate,REIT - Diversified,13.85,none,LOW,Equity
+HSLG11,Real Estate,REIT - Diversified,9.45,none,LOW,Equity
+TRXF11,Real Estate,REIT - Diversified,10.87,none,LOW,Equity
+BAUH4,Consumer Defensive,Packaged Foods,1.47,none,LOW,Equity
+HAPV3,Financial Services,Insurance - Life,N/A,buy,LOW,Equity
+PTNT3,Consumer Cyclical,Apparel Manufacturing,2.98,none,LOW,Equity
+IRIM11,Real Estate,REIT - Diversified,14.45,none,LOW,Equity
+MXRF11,Real Estate,REIT - Diversified,12.61,none,LOW,Equity
+COIN11,,,N/A,none,LOW,Equity
+ENMT4,Utilities,Utilities - Regulated Electric,5.1,none,LOW,Equity
+FLMA11,Real Estate,REIT - Diversified,11.64,none,LOW,Equity
+PORD11,Real Estate,REIT - Diversified,13.34,none,LOW,Equity
+ISEE,N/A,N/A,N/A,N/A,LOW,Index
+WHGR11,Real Estate,REIT - Specialty,13.53,none,LOW,Equity
+BIME11,Real Estate,REIT - Diversified,15.21,none,LOW,Equity
+ANCR11,Real Estate,REIT - Retail,3.37,none,LOW,Equity
+EDFO11,Real Estate,REIT - Diversified,10.76,none,LOW,Equity
+GGBR4,Basic Materials,Steel,4.0,buy,LOW,Equity
+TTEN3,Basic Materials,Agricultural Inputs,1.26,buy,LOW,Equity
+KORE11,Real Estate,REIT - Diversified,17.99,none,LOW,Equity
+NVIF11,N/A,N/A,N/A,N/A,N/A,N/A
+PPLA11,Financial Services,Asset Management,N/A,none,LOW,Equity
+DOLB11,,,N/A,none,LOW,Equity
+STRX11,,,N/A,none,LOW,Equity
+HGRU11,Real Estate,REIT - Diversified,8.65,none,LOW,Equity
+RBTS11,Financial Services,Capital Markets,126.08,none,LOW,Equity
+GGPS3,Industrials,Specialty Business Services,1.46,none,LOW,Equity
+BMEB4,Financial Services,Banks - Regional,5.51,none,LOW,Equity
