@@ -40,46 +40,50 @@ def definir_ticker():
     # Lê lista_setores.csv com cabeçalho
     setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
 
-    # Filtrar por tipo de ticker - Equity (ações) e Index
-    tipo = setores_df['tipo'].dropna().unique().tolist()
-    tipo_selecionado = st.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
-
-    # Filtrar por setor
-    setores = setores_df['setor'].dropna().unique().tolist()
-    col1, col2, col3 = st.columns([0.35, 0.45, 0.2])
-
-    setor_selecionado = col1.selectbox('Setor', options=['Todos'] + setores, key='setor_select')
-
-    # Filtra subsetores conforme setor
-    if setor_selecionado != 'Todos':
+    # Primeira linha de filtros
+    col1, col2, col3 = st.columns([0.20, 0.35, 0.45])
+    tipo = setores_df['tipo'].unique().tolist() # Filtrar por tipo de ticker - Equity (ações), Funds e Index
+    tipo_selecionado = col1.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
+    if tipo_selecionado != 'Todos':
+        setores_filtrados = setores_df[setores_df['setor'] == tipo_selecionado]['setor'].dropna().unique().tolist()
+    else:
+        setores_filtrados = setores_df['setor'].unique().tolist() # Filtrar por setor
+    setor_selecionado = col2.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
+    if setor_selecionado != 'Todos': # Filtra subsetores conforme setor
         industrias_filtradas = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
     else:
         industrias_filtradas = setores_df['industria'].dropna().unique().tolist()
+    industria_selecionada = col3.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
 
-    industria_selecionada = col2.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
-
-    # Filtra tickers conforme subsetor e setor
+    
+    # Segunda linha de filtros por nome ou ticker
+    # Filtragem apenas pelos selects
+    setores_filtrados_df = setores_df.copy()
     if tipo_selecionado != 'Todos':
-        tickers_filtrados = setores_df[setores_df['tipo'] == tipo_selecionado]['ticker'].dropna().unique().tolist()  
-    elif setor_selecionado != 'Todos' and industria_selecionada != 'Todos':
-        tickers_filtrados = setores_df[
-            (setores_df['setor'] == setor_selecionado) &
-            (setores_df['industria'] == industria_selecionada)
-        ]['ticker'].dropna().unique().tolist()
-    elif setor_selecionado != 'Todos':
-        tickers_filtrados = setores_df[setores_df['setor'] == setor_selecionado]['ticker'].dropna().unique().tolist()
-    elif industria_selecionada != 'Todos':
-        tickers_filtrados = setores_df[setores_df['industria'] == industria_selecionada]['ticker'].dropna().unique().tolist()
-    else:
-        tickers_filtrados = setores_df['ticker'].dropna().unique().tolist()
+        setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['tipo'] == tipo_selecionado]
+    if setor_selecionado != 'Todos':
+        setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor'] == setor_selecionado]
+    if industria_selecionada != 'Todos':
+        setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria'] == industria_selecionada]
 
-    st.session_state.ticker = col3.selectbox(
+    # Cria coluna de busca concatenada
+    setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(
+        lambda linha: f"{str(linha['ticker'])} {str(linha.get('nome',''))} {str(linha.get('nome completo',''))}", axis=1
+    )
+
+    # Cria dicionário para mapear o texto exibido ao ticker real
+    opcoes_dict = {row['ticker_busca']: row['ticker'] for _, row in setores_filtrados_df.iterrows()}
+    opcoes_lista = ['Nenhum'] + list(opcoes_dict.keys())
+
+    selecionado = st.selectbox(
         "Ticker da ação",
-        options=['Nenhum'] + tickers_filtrados,
+        options=opcoes_lista,
         key="ticker_select"
     )
-    
-    ticker = st.session_state.ticker + '.SA'
+    st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
+
+
+    ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
     return ticker.upper()  # Convertendo para maiúsculas para padronização
 
 def baixar_dados(ticker = None):
