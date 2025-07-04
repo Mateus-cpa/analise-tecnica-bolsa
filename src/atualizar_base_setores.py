@@ -18,21 +18,28 @@ def atualizar_base_setores():
     for i, ticker in enumerate(lista_tickers):
         try:
             info = yf.Ticker(ticker + '.SA').info
+            nome = info.get('shortName','N/A')
+            nome_completo = info.get('longName','N/A')
             setor = info.get('sector', 'N/A')
             industria = info.get('industry', 'N/A')
             rendimento = info.get('dividendYield','N/A')
             recomendacao = info.get('recommendationKey','N/A')
             confianca_alerta = info.get('customPriceAlertConfidence','N/A')
             tipo = info.get('typeDisp','N/A')
-            status_text.text(f"Ticker: {ticker} | Setor: {setor} | Indústria: {industria}")
+            status_text.text(f"Ticker: {ticker} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
         except Exception:
+            nome = 'N/A'
+            nome_completo = 'N/A'
             setor = 'N/A'
             industria = 'N/A'
             rendimento = 'N/A'
             recomendacao = 'N/A'
             confianca_alerta = 'N/A'
             tipo = 'N/A'
+
         setores.append({'ticker': ticker, 
+                        'nome': nome,
+                        'nome completo' : nome_completo,
                         'setor': setor, 
                         'industria': industria,
                         'rendimento': rendimento,
