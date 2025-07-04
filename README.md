@@ -53,7 +53,12 @@ python -m venv .venv              # Crie o ambiente virtual
 source .venv/Scripts/activate     # No Windows
 poetry init
 poetry shell
+```
+
+Iniciar aplicativo
+```bash
 poetry install
+poetry run streamlit run src/main.py
 ```
 
 
