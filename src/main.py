@@ -225,7 +225,7 @@ def marcador_hoje(acao):
     # Adiciona marcador no último dia útil real (não previsão)
     acao['marcador_hoje'] = None
     # Encontra o último índice onde Close não é nulo
-    ultimo_util = acao[acao['Close'].notnull()].index[-11]
+    ultimo_util = acao[acao['Close'].notnull()].index.max()
     acao.at[ultimo_util, 'marcador_hoje'] = 'hoje'
     return acao
 
@@ -266,7 +266,7 @@ def plotar_grafico(acao, ticker):
     col1, col2, col3, col4, col5 = st.columns(5)
     if col1.checkbox('MM5', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
-    if col1.checkbox('Candles', value=False):
+    if col1.checkbox('Candles', value=True):
         fig.add_trace(
         go.Candlestick(
             x=acao.index,

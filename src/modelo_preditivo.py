@@ -289,6 +289,10 @@ def acao_com_preditivo(acao):
     acao_concat = pd.concat([acao_concat, df_prev_10_dias], axis=0)
     acao_concat = acao_concat[~acao_concat.index.duplicated(keep='first')]
 
+    # Apaga valores de 'Close' nos dias de previsão futura (após o último índice real)
+    ultimo_indice_real = acao.index[-1]
+    acao_concat.loc[acao_concat.index > ultimo_indice_real, 'Close'] = np.nan
+
     return acao_concat
 
 if __name__ == "__main__":
