@@ -12,13 +12,14 @@ import yfinance as yf # API da Yahoo Finance
 import streamlit as st # Streamlit para interface web
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from dateutil.relativedelta import relativedelta
-from pandas.tseries.offsets import BDay
+#from dateutil.relativedelta import relativedelta
+#from pandas.tseries.offsets import BDay
 
 
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
+from baixar_dados import baixar_dados
 from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
 from atualizar_base_setores import atualizar_base_setores
 from modelo_preditivo import acao_com_preditivo
@@ -35,79 +36,56 @@ def definir_ticker():
     Returns:
         str: O ticker da ação a ser analisada.
     """
-    st.header("Definir Ticker")
+    with st.sidebar:
+        st.header("Definir Ticker")
     
-    # Lê lista_setores.csv com cabeçalho
-    setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
+        # Lê lista_setores.csv com cabeçalho
+        setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
 
-    # Primeira linha de filtros
-    col1, col2, col3 = st.columns([0.20, 0.35, 0.45])
-    tipo = setores_df['tipo'].unique().tolist() # Filtrar por tipo de ticker - Equity (ações), Funds e Index
-    tipo_selecionado = col1.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
-    if tipo_selecionado != 'Todos':
-        setores_filtrados = setores_df[setores_df['setor'] == tipo_selecionado]['setor'].dropna().unique().tolist()
-    else:
-        setores_filtrados = setores_df['setor'].unique().tolist() # Filtrar por setor
-    setor_selecionado = col2.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
-    if setor_selecionado != 'Todos': # Filtra subsetores conforme setor
-        industrias_filtradas = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
-    else:
-        industrias_filtradas = setores_df['industria'].dropna().unique().tolist()
-    industria_selecionada = col3.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
+        # Primeira linha de filtros
+        tipo = setores_df['tipo'].unique().tolist() # Filtrar por tipo de ticker - Equity (ações), Funds e Index
+        tipo_selecionado = st.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
+        if tipo_selecionado != 'Todos':
+            setores_filtrados = setores_df[setores_df['setor'] == tipo_selecionado]['setor'].dropna().unique().tolist()
+        else:
+            setores_filtrados = setores_df['setor'].unique().tolist() # Filtrar por setor
+        setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
+        if setor_selecionado != 'Todos': # Filtra subsetores conforme setor
+            industrias_filtradas = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
+        else:
+            industrias_filtradas = setores_df['industria'].dropna().unique().tolist()
+        industria_selecionada = st.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
 
-    
-    # Segunda linha de filtros por nome ou ticker
-    # Filtragem apenas pelos selects
-    setores_filtrados_df = setores_df.copy()
-    if tipo_selecionado != 'Todos':
-        setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['tipo'] == tipo_selecionado]
-    if setor_selecionado != 'Todos':
-        setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor'] == setor_selecionado]
-    if industria_selecionada != 'Todos':
-        setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria'] == industria_selecionada]
+        
+        # Segunda linha de filtros por nome ou ticker
+        # Filtragem apenas pelos selects
+        setores_filtrados_df = setores_df.copy()
+        if tipo_selecionado != 'Todos':
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['tipo'] == tipo_selecionado]
+        if setor_selecionado != 'Todos':
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor'] == setor_selecionado]
+        if industria_selecionada != 'Todos':
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria'] == industria_selecionada]
 
-    # Cria coluna de busca concatenada
-    setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(
-        lambda linha: f"{str(linha['ticker'])} {str(linha.get('nome',''))} {str(linha.get('nome completo',''))}", axis=1
-    )
+        # Cria coluna de busca concatenada
+        setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(
+            lambda linha: f"{str(linha['ticker'])} {str(linha.get('nome',''))} {str(linha.get('nome completo',''))}", axis=1
+        )
 
-    # Cria dicionário para mapear o texto exibido ao ticker real
-    opcoes_dict = {row['ticker_busca']: row['ticker'] for _, row in setores_filtrados_df.iterrows()}
-    opcoes_lista = ['Nenhum'] + list(opcoes_dict.keys())
+        # Cria dicionário para mapear o texto exibido ao ticker real
+        opcoes_dict = {row['ticker_busca']: row['ticker'] for _, row in setores_filtrados_df.iterrows()}
+        opcoes_lista = ['Nenhum'] + list(opcoes_dict.keys())
 
-    selecionado = st.selectbox(
-        "Ticker da ação",
-        options=opcoes_lista,
-        key="ticker_select"
-    )
-    st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
+        selecionado = st.selectbox(
+            "Ticker da ação",
+            options=opcoes_lista,
+            key="ticker_select"
+        )
+        st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
 
 
-    ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
-    return ticker.upper()  # Convertendo para maiúsculas para padronização
-
-def baixar_dados(ticker = None):
-    """Baixa os dados do Yahoo Finance para o ticker especificado.
-    Args:
-        ticker (str): O ticker da ação a ser analisada.
-        tempo_anos (int): O número de anos de dados a serem baixados.
-    Returns:
-        pd.DataFrame: DataFrame contendo os dados de preços da ação.
-    """
-    # Definindo o período de análise
-    tempo_anos = st.select_slider('Qtde. de anos de download',range(1,20,1),19)
-    start_date = date.today() - timedelta(days=tempo_anos*365)  # Últimos 365 dias
-    end_date = date.today()  # Até hoje
-    #intervalo = st.selectbox('Tempo gráfico',   # Lista Intervalos
-    #                         ['1m','2m','5m','15m','30m','60m','90m','1h','1d','5d','1wk','1mo','3mo'],
-    #                         placeholder='1d')
-    intervalo = '1d'
-    # Carregando os dados do Yahoo Finance
-    df = yf.download(ticker, start=start_date, end=end_date, interval=intervalo)
-    # Corrige MultiIndex nas colunas, se houver
-    if isinstance(df.columns, pd.MultiIndex):
-        df.columns = [col[0] for col in df.columns.values]  # Mantém só o 1º nível (ex: 'Close')
-    return df
+        ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
+        return ticker.upper()  # Convertendo para maiúsculas para padronização
 
 def detectar_mudanca_tendencia(row, previous_row):
     """Detecta mudanças de tendência com base nas médias móveis.
@@ -244,13 +222,11 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
             st.write(f"{col}: {fundamentos[col].values[0]}")
 
 def marcador_hoje(acao):
-    #adicionar marcador de data de hoje
+    # Adiciona marcador no último dia útil real (não previsão)
     acao['marcador_hoje'] = None
-    hoje = pd.Timestamp(date.today() - timedelta(days=1)) # Garante que o índice está no formato datetime
-    acao.index = pd.to_datetime(acao.index) # Marca a linha correspondente à data de hoje (se existir)
-    if hoje in acao.index:
-        acao.at[hoje, 'marcador_hoje'] = 'hoje' 
-    
+    # Encontra o último índice onde Close não é nulo
+    ultimo_util = acao[acao['Close'].notnull()].index[-11]
+    acao.at[ultimo_util, 'marcador_hoje'] = 'hoje'
     return acao
 
 def plotar_grafico(acao, ticker):
@@ -269,14 +245,16 @@ def plotar_grafico(acao, ticker):
         st.error("Coluna 'Close' não encontrada nos dados.")
         return
 
-    data_inicio, data_fim = st.slider(
-        "Selecione o período de análise",
-        min_value=acao.index.min().date(),
-        max_value=acao.index.max().date(),
-        value=(acao.index.max().date() - timedelta(days=17), acao.index.max().date() - timedelta(days=1)),
-        format="DD/MM/YYYY",
-        key="data_slider")
-    
+    with st.sidebar: #seleciona dia inicial
+        data_inicio = st.date_input(
+            "Selecione a data de início",
+            value=acao.index.max().date() - timedelta(days=37),
+            min_value=acao.index.min().date(),
+            max_value=acao.index.max().date(),
+            key="data_inicio_calendario"
+        )
+    data_fim = acao.index.max().date()
+
     # Filtra o DataFrame conforme o período selecionado
     acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
 
@@ -452,9 +430,8 @@ def lancar_dataframe(acao, ticker):
     
     st.dataframe(acao.describe())
 
-def mostrar_dados():
+def tela_streamlit():
     configuracoes_iniciais()
-    
     col1, col2 = st.columns(2)
     if col1.button('Importar tickers'):
         importar_tickers()  # Importa os tickers disponíveis
@@ -470,7 +447,9 @@ def mostrar_dados():
             mostrar_fundamentos(fundamentos)
         #else:
         #    analise_setor
-        acao = baixar_dados(ticker)
+        with st.sidebar:
+            tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
+        acao = baixar_dados(ticker, tempo_anos)
         acao = enriquecer_dados(acao)
         st.header("Dados de treino de ML")
         acao = acao_com_preditivo(acao)
@@ -481,5 +460,4 @@ def mostrar_dados():
         
 
 if __name__ == "__main__":
-    configuracoes_iniciais()
-    mostrar_dados()
+    tela_streamlit()
