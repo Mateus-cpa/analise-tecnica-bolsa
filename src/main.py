@@ -451,8 +451,7 @@ def tela_streamlit():
             tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
         acao = baixar_dados(ticker, tempo_anos)
         acao = enriquecer_dados(acao)
-        st.header("Dados de treino de ML")
-        acao = acao_com_preditivo(acao)
+        acao = acao_com_preditivo(acao) #dados ML
         acao = marcador_hoje(acao)
         plotar_grafico(acao, ticker)
         if st.checkbox("Tabelas:"):

@@ -130,9 +130,7 @@ def acao_com_preditivo(acao):
     labels = acao_prev['Close']
 
     melhores_colunas, k_best_features_filtrado = selecionar_colunas(features, labels)
-    st.write(f'encontradas {len(melhores_colunas)} colunas de dataframe com k-means acima de 50:')
-    st.write(k_best_features_filtrado)
-
+    
     features = acao_prev.loc[:, melhores_colunas]
     scaler, features_scale = normalizar_features(features)
 
@@ -140,11 +138,13 @@ def acao_com_preditivo(acao):
     X_test = features_scale[qtd_linhas_treino:qtd_linhas_treino + qtd_linhas_teste]
     y_train = labels[:qtd_linhas_treino]
     y_test = labels[qtd_linhas_treino:qtd_linhas_treino + qtd_linhas_teste]
-
-    st.write(f'Divisão das linhas /// FEATURES: {features_scale.shape}, TREINO: {len(X_train)}, TESTE: {len(X_test)}')
-
+    
     modelos = {}
     st.subheader('Modelos de Machine Learning')
+    if st.checkbox(f"Dados de treino de ML das {len(melhores_colunas)} colunas de dataframe com k-means acima de 50:"):
+        st.write(k_best_features_filtrado)
+        st.write(f'Divisão das linhas /// FEATURES: {features_scale.shape}, TREINO: {len(X_train)}, TESTE: {len(X_test)}')
+
     col1, col2, col3, col4 = st.columns(4)
     coeficientes_modelos = {}
     #atribuir valor 0 a todos modelos
