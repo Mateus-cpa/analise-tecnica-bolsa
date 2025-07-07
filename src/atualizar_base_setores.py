@@ -9,13 +9,15 @@ def atualizar_base_setores():
     tickers_path = os.path.join(raw_data_dir, 'tickers.csv')
     setores_path = os.path.join(raw_data_dir, 'lista_setores.csv')
 
-    lista_tickers = pd.read_csv(tickers_path, header=None)[0].tolist()
+    df_tickers = pd.read_csv(tickers_path)
     setores = []
 
     progress_bar = st.progress(0)
     status_text = st.empty()
 
-    for i, ticker in enumerate(lista_tickers):
+    for i, row in df_tickers.iterrows():
+        ticker = row['ticker']
+        grupo = row['grupo']
         try:
             info = yf.Ticker(ticker + '.SA').info
             nome = info.get('shortName','N/A')
@@ -26,7 +28,7 @@ def atualizar_base_setores():
             recomendacao = info.get('recommendationKey','N/A')
             confianca_alerta = info.get('customPriceAlertConfidence','N/A')
             tipo = info.get('typeDisp','N/A')
-            status_text.text(f"Ticker: {ticker} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
+            status_text.text(f"Ticker: {ticker} | Grupo: {grupo} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
         except Exception:
             nome = 'N/A'
             nome_completo = 'N/A'
@@ -38,6 +40,7 @@ def atualizar_base_setores():
             tipo = 'N/A'
 
         setores.append({'ticker': ticker, 
+                        'grupo': grupo,
                         'nome': nome,
                         'nome completo' : nome_completo,
                         'setor': setor, 
@@ -46,7 +49,7 @@ def atualizar_base_setores():
                         'recomendação': recomendacao,
                         'confiança do alerta': confianca_alerta,
                         'tipo': tipo})
-        progress_bar.progress((i + 1) / len(lista_tickers))
+        progress_bar.progress((i + 1) / len(df_tickers))
 
     df_setores = pd.DataFrame(setores)
     df_setores.to_csv(setores_path, index=False)

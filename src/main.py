@@ -10,8 +10,6 @@ import streamlit as st # Streamlit para interface web
 #from dateutil.relativedelta import relativedelta
 #from pandas.tseries.offsets import BDay
 
-
-
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
 from baixar_dados import baixar_dados, definir_ticker, mostrar_fundamentos

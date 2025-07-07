@@ -35,7 +35,7 @@ def definir_ticker():
         setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
 
         # Primeira linha de filtros
-        tipo = setores_df['tipo'].unique().tolist() # Filtrar por tipo de ticker - Equity (ações), Funds e Index
+        tipo = setores_df['grupo'].unique().tolist() # Filtrar por tipo de ticker - Equity (ações), Funds e Index
         tipo_selecionado = st.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
         if tipo_selecionado != 'Todos':
             setores_filtrados = setores_df[setores_df['setor'] == tipo_selecionado]['setor'].dropna().unique().tolist()
@@ -53,7 +53,7 @@ def definir_ticker():
         # Filtragem apenas pelos selects
         setores_filtrados_df = setores_df.copy()
         if tipo_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['tipo'] == tipo_selecionado]
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == tipo_selecionado]
         if setor_selecionado != 'Todos':
             setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor'] == setor_selecionado]
         if industria_selecionada != 'Todos':
