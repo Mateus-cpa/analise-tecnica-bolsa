@@ -86,6 +86,11 @@ def marcador_hoje(acao):
     acao.at[ultimo_util, 'marcador_hoje'] = 'hoje'
     return acao
 
+def adicionar_target_median_price(acao, target_median_price):
+    """Adiciona o valor de targetMedianPrice na última linha do DataFrame."""
+    acao['targetMedianPrice'] = None
+    acao.iloc[-1, acao.columns.get_loc('targetMedianPrice')] = target_median_price
+    return acao
 
 if __name__ == "main":
     detectar_mudanca_tendencia()

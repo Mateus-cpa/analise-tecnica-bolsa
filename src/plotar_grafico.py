@@ -1,6 +1,7 @@
 from datetime import timedelta
 import json
 
+import pandas as pd
 import streamlit as st
 from datetime import timedelta
 from plotly.subplots import make_subplots
@@ -172,6 +173,19 @@ def plotar_grafico(acao, ticker):
             name='Início previsão',
             marker=dict(color='blue', size=20, symbol='hourglass')
         ))
+    
+    # Adiciona ponto diamante para targetMedianPrice na última linha, se existir
+    if 'targetMedianPrice' in acao.columns and pd.notnull(acao['targetMedianPrice'].iloc[-1]):
+        fig.add_trace(go.Scatter(
+            x=[acao.index[-1]],
+            y=[acao['targetMedianPrice'].iloc[-1]],
+            mode='markers',
+            name='Previsão dos analistas',
+            marker=dict(color='purple', size=10, symbol='diamond')
+        ))
+    
+    # Adiciona seta do último fechamento para o targetMedianPrice
+        
     
     fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
  

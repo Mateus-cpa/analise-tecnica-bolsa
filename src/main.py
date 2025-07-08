@@ -16,7 +16,7 @@ from baixar_dados import baixar_dados, definir_ticker, mostrar_fundamentos
 from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
 from atualizar_base_setores import atualizar_base_setores
 from modelo_preditivo import acao_com_preditivo
-from tratamento_ativo import enriquecer_dados, detectar_mudanca_tendencia, marcador_hoje
+from tratamento_ativo import enriquecer_dados, detectar_mudanca_tendencia, marcador_hoje, adicionar_target_median_price
 from plotar_grafico import plotar_grafico
 
 def configuracoes_iniciais():
@@ -77,6 +77,10 @@ def tela_streamlit():
         acao = enriquecer_dados(acao)
         acao = acao_com_preditivo(acao) #dados ML
         acao = marcador_hoje(acao)
+        # Obtém o targetMedianPrice do DataFrame fundamentos
+        target_median_price = fundamentos['targetMedianPrice'].iloc[0] if 'targetMedianPrice' in fundamentos.columns else None
+        acao = adicionar_target_median_price(acao=acao,
+                                             target_median_price=target_median_price)
         plotar_grafico(acao, ticker)
         if st.checkbox("Tabelas:"):
             lancar_dataframe(acao, ticker)
