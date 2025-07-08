@@ -184,8 +184,27 @@ def plotar_grafico(acao, ticker):
             marker=dict(color='purple', size=10, symbol='diamond')
         ))
     
-    # Adiciona seta do último fechamento para o targetMedianPrice
-        
+        # Adiciona seta do último fechamento para o targetMedianPrice
+        # Encontra o último índice com Close não nulo
+        ultimo_close_idx = acao[acao['Close'].notnull()].index[-1]
+        ultimo_close_val = acao.loc[ultimo_close_idx, 'Close']
+
+        # Adiciona seta do último fechamento real para o targetMedianPrice
+        fig.add_annotation(
+            x=acao.index[-1],
+            y=acao['targetMedianPrice'].iloc[-1],
+            ax=ultimo_close_idx,
+            ay=ultimo_close_val,
+            xref="x", yref="y",
+            axref="x", ayref="y",
+            showarrow=True,
+            arrowhead=3,
+            arrowsize=1.5,
+            arrowwidth=2,
+            arrowcolor="purple",
+            opacity=0.8,
+            text="",
+        )
     
     fig.update_layout(title=f"Gráfico de Preços - {ticker.split('.')[0]}", xaxis_title='Data', yaxis_title='Preço (R$)')
  
