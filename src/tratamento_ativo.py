@@ -86,6 +86,7 @@ def marcador_hoje(acao):
     acao.at[ultimo_util, 'marcador_hoje'] = 'hoje'
     return acao
 
+
 if __name__ == "main":
     detectar_mudanca_tendencia()
     enriquecer_dados()
