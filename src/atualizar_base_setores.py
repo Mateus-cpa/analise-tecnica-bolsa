@@ -1,5 +1,5 @@
 import os
-import pandas as pd
+import pandas as pd 
 import yfinance as yf
 import streamlit as st  # Adicione esta linha
 
@@ -25,6 +25,7 @@ def atualizar_base_setores():
             setor = info.get('sector', 'N/A')
             industria = info.get('industry', 'N/A')
             rendimento = info.get('dividendYield','N/A')
+            variacao_valor = info.get('regularMarketChangePercent','N/A')
             recomendacao = info.get('recommendationKey','N/A')
             confianca_alerta = info.get('customPriceAlertConfidence','N/A')
             tipo = info.get('typeDisp','N/A')
@@ -35,6 +36,7 @@ def atualizar_base_setores():
             setor = 'N/A'
             industria = 'N/A'
             rendimento = 'N/A'
+            variacao_valor = 'N/A'
             recomendacao = 'N/A'
             confianca_alerta = 'N/A'
             tipo = 'N/A'
@@ -46,6 +48,7 @@ def atualizar_base_setores():
                         'setor': setor, 
                         'industria': industria,
                         'rendimento': rendimento,
+                        'variacao_valor' : variacao_valor,
                         'recomendação': recomendacao,
                         'confiança do alerta': confianca_alerta,
                         'tipo': tipo})

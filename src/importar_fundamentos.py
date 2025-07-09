@@ -1,5 +1,5 @@
-import pandas as pd
-import yfinance as yf
+import pandas as pd  #type: ignore
+import yfinance as yf #type: ignore
 
 
 
@@ -10,7 +10,7 @@ def importar_fundamentos(ticker):
     #st.write(dados.columns)
     colunas = ['address1','address2','sector','industry','longBusinessSummary',
                 'dividendYield','profitMargins','lastDividendValue','lastDividendDate',
-                'previousClose','quoteType',
+                'previousClose','regularMarketChangePercent','quoteType',
                 'recommendationKey','targetHighPrice','targetLowPrice',
                 'targetMeanPrice','targetMedianPrice','numberOfAnalystOpinions', 
                 'customPriceAlertConfidence',
