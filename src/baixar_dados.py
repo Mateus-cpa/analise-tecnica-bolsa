@@ -97,7 +97,13 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
     with col1:
         #kpis
         if fundamentos['previousClose'].values[0] is not None:
-            st.metric("Último Fechamento", f"R$ {fundamentos['previousClose'].values[0]:.2f}")
+            variacao = fundamentos['regularMarketChangePercent'].values[0]
+            st.metric(
+                "Último Fechamento",
+                f"R$ {fundamentos['previousClose'].values[0]:.2f}",
+                delta=f"{variacao:.2f}%",
+                delta_color="normal"
+            )
         if fundamentos['dividendYield'].values[0] is not None:
             st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
         if fundamentos['lastDividendValue'].values[0] is not None:
