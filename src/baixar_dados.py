@@ -52,17 +52,8 @@ def definir_ticker():
         # Filtro condicional por rendimento
         aplicar_filtro_rendimento = st.checkbox('Filtrar por Dividend Yield')
         if aplicar_filtro_rendimento and 'rendimento' in setores_df.columns:
-            min_var, max_var = float(setores_df['rendimento'].min()), float(setores_df['rendimento'].max())
-            faixa_rendimento = st.slider(
-                'Variação (%)',
-                min_value=min_var,
-                max_value=max_var,
-                value=(min_var, max_var),
-                step=0.1,
-                key='variacao_slider')
-            setores_df = setores_df[
-                (setores_df['rendimento'] >= faixa_rendimento[0]) &
-                (setores_df['rendimento'] <= faixa_rendimento[1])]  
+            dy_minino = float(st.text_input('Informe o Rendimento anual (DY) mínimo'))
+            setores_df = setores_df[setores_df['rendimento'] >= dy_minino]
         
         # Filtro por grupo
         grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
