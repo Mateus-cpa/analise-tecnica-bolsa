@@ -12,12 +12,13 @@ import streamlit as st # Streamlit para interface web
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
-from baixar_dados import baixar_dados, definir_ticker, mostrar_fundamentos
+from baixar_dados import baixar_dados, definir_ticker
 from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
 from atualizar_base_setores import atualizar_base_setores
 from modelo_preditivo import acao_com_preditivo
 from tratamento_ativo import enriquecer_dados, detectar_mudanca_tendencia, marcador_hoje, adicionar_target_median_price
 from plotar_grafico import plotar_grafico
+from mostrar_fundamentos import mostrar_fundamentos
 
 def configuracoes_iniciais():
     # Configurações iniciais

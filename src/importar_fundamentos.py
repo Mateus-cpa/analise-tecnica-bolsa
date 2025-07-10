@@ -14,6 +14,7 @@ def importar_fundamentos(ticker):
                 'recommendationKey','targetHighPrice','targetLowPrice',
                 'targetMeanPrice','targetMedianPrice','numberOfAnalystOpinions', 
                 'customPriceAlertConfidence',
+                'symbol',
                 'shortName','longName','website']
     for coluna in colunas:
         if coluna not in dados.columns:

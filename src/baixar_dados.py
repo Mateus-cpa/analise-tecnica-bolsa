@@ -44,13 +44,26 @@ def definir_ticker():
                 max_value=max_var,
                 value=(min_var, max_var),
                 step=0.1,
-                key='variacao_slider'
-            )
+                key='variacao_slider')
             setores_df = setores_df[
                 (setores_df['variacao_valor'] >= faixa_variacao[0]) &
-                (setores_df['variacao_valor'] <= faixa_variacao[1])
-            ]                             
+                (setores_df['variacao_valor'] <= faixa_variacao[1])]                             
 
+        # Filtro condicional por rendimento
+        aplicar_filtro_rendimento = st.checkbox('Filtrar por Dividend Yield')
+        if aplicar_filtro_rendimento and 'rendimento' in setores_df.columns:
+            min_var, max_var = float(setores_df['rendimento'].min()), float(setores_df['rendimento'].max())
+            faixa_rendimento = st.slider(
+                'Variação (%)',
+                min_value=min_var,
+                max_value=max_var,
+                value=(min_var, max_var),
+                step=0.1,
+                key='variacao_slider')
+            setores_df = setores_df[
+                (setores_df['rendimento'] >= faixa_rendimento[0]) &
+                (setores_df['rendimento'] <= faixa_rendimento[1])]  
+        
         # Filtro por grupo
         grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
         grupo_selecionado = st.selectbox('Tipo', options=['Todos'] + grupo, key='grupo_select')
@@ -100,66 +113,6 @@ def definir_ticker():
         ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
         return ticker.upper()  # Convertendo para maiúsculas para padronização
 
-def mostrar_fundamentos(fundamentos: pd.DataFrame):
-    """Mostra os fundamentos da ação no Streamlit.
-    Args:
-        ticker (str): O ticker da ação.
-        fundamentos (pd.DataFrame): DataFrame contendo os fundamentos da ação.
-    """
-    st.header(f"{fundamentos['shortName'].values[0]}")
-    st.subheader(f"{fundamentos['longName'].values[0]}")
 
-    st.subheader("Fundamentos")
-    if fundamentos.empty:
-        st.error("Nenhum dado fundamental disponível para o ticker selecionado.")
-        return
-    # Exibe os fundamentos no Streamlit
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        #kpis
-        if fundamentos['previousClose'].values[0] is not None:
-            variacao = fundamentos['regularMarketChangePercent'].values[0]
-            st.metric(
-                "Último Fechamento",
-                f"R$ {fundamentos['previousClose'].values[0]:.2f}",
-                delta=f"{variacao:.2f}%",
-                delta_color="normal"
-            )
-        if fundamentos['dividendYield'].values[0] is not None:
-            st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
-        if fundamentos['lastDividendValue'].values[0] is not None:
-            st.metric("Último Dividendo", f"R$ {fundamentos['lastDividendValue'].values[0]:.2f}")
-        try:
-            st.metric("Data do Último Dividendo", f"{pd.to_datetime(fundamentos['lastDividendDate'].values[0], unit='s').strftime('%d/%m/%Y')}")
-        except Exception as e:
-            st.error(f"Erro ao exibir a data do último dividendo: {e}")
-
-    with col2:
-        if fundamentos['profitMargins'].values[0] is not None:
-            st.metric("Margem de Lucro", f"{fundamentos['profitMargins'].values[0]:.2%}")
-        if fundamentos['recommendationKey'].values[0] is not None:
-            if 'buy' in fundamentos['recommendationKey'].values[0]:
-                st.metric("Recomendação", "Comprar", delta_color="normal")
-                #st.metric("Recomendação", ":cow: [Comprar]", delta_color="normal")
-            elif 'sell' in fundamentos['recommendationKey'].values[0]:
-                st.metric("Recomendação", "Vender", delta_color="inverse")
-                #st.metric("Recomendação", ":bear: [Vender]", delta_color="inverse")
-        if fundamentos['numberOfAnalystOpinions'].values[0] is not None:
-            st.metric('Nº de Opiniões de Analistas', fundamentos['numberOfAnalystOpinions'].values[0])
-        if fundamentos['targetMedianPrice'].values[0] is not None:
-            st.metric('Mediana de Preço alvo', f"R$ {fundamentos['targetMedianPrice'].values[0]:.2f}")
-
-    with col3:
-        if fundamentos['targetHighPrice'].values[0] is not None:
-            st.metric('Preço alvo máximo', f"R$ {fundamentos['targetHighPrice'].values[0]:.2f}")
-        if fundamentos['targetLowPrice'].values[0] is not None:
-            st.metric('Preço alvo mínimo', f"R$ {fundamentos['targetLowPrice'].values[0]:.2f}")
-        if fundamentos['targetMeanPrice'].values[0] is not None:
-            st.metric('Média de Preço alvo', f"R$ {fundamentos['targetMeanPrice'].values[0]:.2f}")
-
-    mostrar_fundamentos = st.checkbox('Mostrar todos fundamentos')
-    if mostrar_fundamentos:
-        for col in fundamentos.columns:
-            st.write(f"{col}: {fundamentos[col].values[0]}")
 
 
