@@ -34,14 +34,35 @@ def definir_ticker():
         # Lê lista_setores.csv com cabeçalho
         setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
 
-        # Primeira linha de filtros
-        tipo = setores_df['grupo'].unique().tolist() # Filtrar por tipo de ticker - Equity (ações), Funds e Index
-        tipo_selecionado = st.selectbox('Tipo', options=['Todos'] + tipo, key='tipo_select')
-        if tipo_selecionado != 'Todos':
-            setores_filtrados = setores_df[setores_df['setor'] == tipo_selecionado]['setor'].dropna().unique().tolist()
+        # Filtro condicional por variação
+        aplicar_filtro_variacao = st.checkbox('Filtrar por variação de valor de mercado')
+        if aplicar_filtro_variacao and 'variacao_valor' in setores_df.columns:
+            min_var, max_var = float(setores_df['variacao_valor'].min()), float(setores_df['variacao_valor'].max())
+            faixa_variacao = st.slider(
+                'Variação (%)',
+                min_value=min_var,
+                max_value=max_var,
+                value=(min_var, max_var),
+                step=0.1,
+                key='variacao_slider'
+            )
+            setores_df = setores_df[
+                (setores_df['variacao_valor'] >= faixa_variacao[0]) &
+                (setores_df['variacao_valor'] <= faixa_variacao[1])
+            ]                             
+
+        # Filtro por grupo
+        grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
+        grupo_selecionado = st.selectbox('Tipo', options=['Todos'] + grupo, key='grupo_select')
+        
+        # Filtro por setor
+        if grupo_selecionado != 'Todos':
+            setores_filtrados = setores_df[setores_df['setor'] == grupo_selecionado]['setor'].dropna().unique().tolist()
         else:
             setores_filtrados = setores_df['setor'].unique().tolist() # Filtrar por setor
         setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
+        
+        # Filtro por Indústria
         if setor_selecionado != 'Todos': # Filtra subsetores conforme setor
             industrias_filtradas = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
         else:
@@ -52,8 +73,8 @@ def definir_ticker():
         # Segunda linha de filtros por nome ou ticker
         # Filtragem apenas pelos selects
         setores_filtrados_df = setores_df.copy()
-        if tipo_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == tipo_selecionado]
+        if grupo_selecionado != 'Todos':
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == grupo_selecionado]
         if setor_selecionado != 'Todos':
             setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor'] == setor_selecionado]
         if industria_selecionada != 'Todos':
