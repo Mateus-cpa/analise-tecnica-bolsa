@@ -4,7 +4,6 @@ import streamlit as st
 def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """Mostra os fundamentos da ação no Streamlit.
     Args:
-        ticker (str): O ticker da ação.
         fundamentos (pd.DataFrame): DataFrame contendo os fundamentos da ação.
     """
     st.header(f"{fundamentos['shortName'].values[0]} - {fundamentos['symbol'].values[0]}")

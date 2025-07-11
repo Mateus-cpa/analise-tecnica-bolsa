@@ -25,7 +25,7 @@ def plotar_grafico(acao, ticker):
 
     with st.sidebar: #seleciona dia inicial
         data_inicio = st.date_input(
-            "Selecione a data de início",
+            "Selecione o início do gráfico",
             value=acao.index.max().date() - timedelta(days=67),
             min_value=acao.index.min().date(),
             max_value=acao.index.max().date(),
