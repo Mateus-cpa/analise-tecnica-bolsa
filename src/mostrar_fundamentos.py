@@ -31,10 +31,15 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
             st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
         if fundamentos['lastDividendValue'].values[0] is not None:
             st.metric("Último Dividendo", f"R$ {fundamentos['lastDividendValue'].values[0]:.2f}")
-        try:
-            st.metric("Data do Último Dividendo", f"{pd.to_datetime(fundamentos['lastDividendDate'].values[0], unit='s').strftime('%d/%m/%Y')}")
-        except Exception as e:
-            st.error(f"Erro ao exibir a data do último dividendo: {e}")
+        last_div_date = fundamentos['lastDividendDate'].values[0]
+        if pd.notnull(last_div_date):
+            try:
+                data_formatada = pd.to_datetime(last_div_date, unit='s').strftime('%d/%m/%Y')
+                st.metric("Data do Último Dividendo", data_formatada)
+            except Exception as e:
+                st.error(f"Erro ao exibir a data do último dividendo: {e}")
+        else:
+            st.metric("Data do Último Dividendo", "N/A")
 
     with col2:
         if fundamentos['profitMargins'].values[0] is not None:
