@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
+import json
 
 # bibliotecas de terceiros
 #from talib import RSI # Technical Analysis - TA-Lib
@@ -76,7 +77,23 @@ def tela_streamlit():
             tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
         acao = baixar_dados(ticker, tempo_anos)
         acao = enriquecer_dados(acao)
-        acao = acao_com_preditivo(acao) #dados ML
+        try:
+            acao = acao_com_preditivo(acao) #dados ML
+        except ValueError:
+            st.warning('Não foram calculados dados de previsão com Machine Learning.')
+            with open('bronze_data/coeficientes_modelos.json', mode='w') as coef_file:
+                file_coef = {
+                    "regressao_linear": 0.0,
+                    "rede_neural": 0.0,
+                    "hiper_parametro": 0.0,
+                    "random_forest": 0.0,
+                    "gradient_boosting": 0.0,
+                    "svr": 0.0,
+                    "ridge": 0.0,
+                    "lasso": 0.0
+                }
+                json.dump(file_coef, coef_file, indent=4)  # Esta linha grava o dicionário no arquivo
+
         acao = marcador_hoje(acao)
         # Obtém o targetMedianPrice do DataFrame fundamentos
         target_median_price = fundamentos['targetMedianPrice'].iloc[0] if 'targetMedianPrice' in fundamentos.columns else None

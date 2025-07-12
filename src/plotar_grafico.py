@@ -60,7 +60,7 @@ def plotar_grafico(acao, ticker):
     if col4.checkbox('MM200', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200', marker_color='rgba(40,40,40,0.5)'))
 
-    #adicionando marcadores de topos e fundos com scatter
+    #adicionando marcadores de topos e fundos com gráfico
     if col5.checkbox('Topos e Fundos', value=False):
         fig.add_trace(go.Scatter(
             x=acao[acao['marcador'] == 'topo'].index,
