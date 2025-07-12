@@ -24,18 +24,20 @@ def plotar_grafico(acao, ticker):
         return
 
     with st.sidebar: #seleciona dia inicial
-        data_inicio = st.date_input(
-            "Selecione o início do gráfico",
-            value=acao.index.max().date() - timedelta(days=67),
-            min_value=acao.index.min().date(),
-            max_value=acao.index.max().date(),
-            key="data_inicio_calendario"
-        )
-    data_fim = acao.index.max().date()
+        try:
+            data_inicio = st.date_input(
+                "Selecione o início do gráfico",
+                value=acao.index.max().date() - timedelta(days=67),
+                min_value=acao.index.min().date(),
+                max_value=acao.index.max().date(),
+                key="data_inicio_calendario"
+            )
+            data_fim = acao.index.max().date()
 
-    # Filtra o DataFrame conforme o período selecionado
-    acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
-
+            # Filtra o DataFrame conforme o período selecionado
+            acao = acao.loc[(acao.index.date >= data_inicio) & (acao.index.date <= data_fim)]
+        except ValueError:
+                st.warning('Não foi possível definir datas.')
     
     # Plotando o gráfico de preços
     fig = make_subplots(rows=1, cols=1)

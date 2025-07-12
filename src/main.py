@@ -76,9 +76,14 @@ def tela_streamlit():
         with st.sidebar:
             tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
         acao = baixar_dados(ticker, tempo_anos)
-        acao = enriquecer_dados(acao)
+        try:
+            acao = enriquecer_dados(acao)
+        except IndexError:
+            st.warning('Não foi possível calcular indicadores.')
         try:
             acao = acao_com_preditivo(acao) #dados ML
+        except KeyError:
+            st.warning('Não foram calculados dados de previsão com Machine Learning.')
         except ValueError:
             st.warning('Não foram calculados dados de previsão com Machine Learning.')
             with open('bronze_data/coeficientes_modelos.json', mode='w') as coef_file:
