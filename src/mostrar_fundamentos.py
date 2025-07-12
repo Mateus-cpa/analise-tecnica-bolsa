@@ -8,8 +8,10 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """
     st.header(f"{fundamentos['shortName'].values[0]} - {fundamentos['symbol'].values[0]}")
     st.write(f"Nome completo: {fundamentos['longName'].values[0]}")
-    st.write(f"Setor: {fundamentos['sector'].values[0]}")
-    st.write(f"Indústria: {fundamentos['industry'].values[0]}")
+    if fundamentos['sector'].values[0] == None:
+        st.write(f"Setor: {fundamentos['sector'].values[0]}")
+    if fundamentos['industry'].values[0] == None:
+        st.write(f"Indústria: {fundamentos['industry'].values[0]}")
 
     st.subheader("Fundamentos")
     if fundamentos.empty:
@@ -27,8 +29,9 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
                 delta=f"{variacao:.2f}%",
                 delta_color="normal"
             )
-        if fundamentos['dividendYield'].values[0] is not None:
-            st.metric("Dividend Yield", f"{fundamentos['dividendYield'].values[0]/100:.2%}")
+        dy = fundamentos['dividendYield'].values[0]
+        if pd.notnull(dy) and dy != 'N/A':
+            st.metric("Dividend Yield", f"{float(dy)/100:.2%}")
         if fundamentos['lastDividendValue'].values[0] is not None:
             st.metric("Último Dividendo", f"R$ {fundamentos['lastDividendValue'].values[0]:.2f}")
         last_div_date = fundamentos['lastDividendDate'].values[0]
