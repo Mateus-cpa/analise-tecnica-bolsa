@@ -2,6 +2,8 @@
 
 Este projeto tem como objetivo explorar técnicas de ciência de dados e machine learning aplicadas à análise técnica de ativos negociados na bolsa de valores. Utiliza bibliotecas populares para importar, processar, visualizar e prever cotações de ativos financeiros.
 
+A versão ainda não finalizada já pode ser testada na [publicação em Streamlit](https://bolsa-valores-ml.streamlit.app/).
+
 ## Objetivos
 
 - Importar dados históricos de ativos financeiros.
@@ -11,7 +13,7 @@ Este projeto tem como objetivo explorar técnicas de ciência de dados e machine
 
 ## Entrada de Dados
 
-Os dados históricos dos ativos são importados diretamente do Yahoo Finance e processados em formato de tabela utilizando bibliotecas como `pandas` e `yfinance`.
+Os dados históricos dos ativos são importados diretamente do Yahoo Finance e outras páginas e processados em formato de tabela utilizando bibliotecas como `pandas` e `yfinance`.
 
 ## Visualização dos Dados
 
@@ -23,12 +25,9 @@ O projeto tenta prever a cotação futura baseada em dados passados, utilizando 
 
 ## Estrutura do Projeto
 
-
 Workspace
-(rerun without)
-Collecting workspace information
 ```
-├── Análise_técnica_de_ações.ipynb # Notebook de origem com análises e experimentos 
+├── Análise_técnica_de_ações.ipynb # Notebook de origem da idéia com análises e experimentos 
 ├── pyproject.toml # Configuração do Poetry e dependências 
 ├── poetry.lock # Lockfile de dependências 
 ├── .python-version # Versão do Python utilizada 
