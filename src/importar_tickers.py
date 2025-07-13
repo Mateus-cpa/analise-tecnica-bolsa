@@ -22,6 +22,7 @@ def importar_tickers():
     tickers_dict = {}
 
     # -- ETFs --
+    #https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/etf/renda-variavel/etfs-listados/
     print('Importando ETFs')
     lista_etfs = pd.read_csv('raw_data/etfsListados.csv', 
                                encoding='latin-1', 
@@ -32,6 +33,7 @@ def importar_tickers():
         tickers_dict[ticker] = 'ETF'
 
     # -- FIIs --
+    #https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/fundos-de-investimentos/fii/fiis-listados/
     print('Importando FIIs')
     lista_fiis = pd.read_csv('raw_data/fiisListados.csv', 
                                encoding='latin-1', 

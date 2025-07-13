@@ -546,6 +546,7 @@ Nível Territorial (Código),Nível Territorial,Unidade de Medida (Código),Unid
 1,Brasil,30,Número-índice,7245.3800000000000,1,Brasil,2266,IPCA - Número-índice (base: dezembro de 1993 = 100),202503,março 2025
 1,Brasil,30,Número-índice,7276.5400000000000,1,Brasil,2266,IPCA - Número-índice (base: dezembro de 1993 = 100),202504,abril 2025
 1,Brasil,30,Número-índice,7295.4600000000000,1,Brasil,2266,IPCA - Número-índice (base: dezembro de 1993 = 100),202505,maio 2025
+1,Brasil,30,Número-índice,7312.9700000000000,1,Brasil,2266,IPCA - Número-índice (base: dezembro de 1993 = 100),202506,junho 2025
 1,Brasil,,,...,1,Brasil,63,IPCA - Variação mensal,197912,dezembro 1979
 1,Brasil,2,%,6.62,1,Brasil,63,IPCA - Variação mensal,198001,janeiro 1980
 1,Brasil,2,%,4.62,1,Brasil,63,IPCA - Variação mensal,198002,fevereiro 1980
@@ -1092,6 +1093,7 @@ Nível Territorial (Código),Nível Territorial,Unidade de Medida (Código),Unid
 1,Brasil,2,%,0.56,1,Brasil,63,IPCA - Variação mensal,202503,março 2025
 1,Brasil,2,%,0.43,1,Brasil,63,IPCA - Variação mensal,202504,abril 2025
 1,Brasil,2,%,0.26,1,Brasil,63,IPCA - Variação mensal,202505,maio 2025
+1,Brasil,2,%,0.24,1,Brasil,63,IPCA - Variação mensal,202506,junho 2025
 1,Brasil,,,...,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,197912,dezembro 1979
 1,Brasil,,,...,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,198001,janeiro 1980
 1,Brasil,,,...,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,198002,fevereiro 1980
@@ -1638,6 +1640,7 @@ Nível Territorial (Código),Nível Territorial,Unidade de Medida (Código),Unid
 1,Brasil,2,%,2.04,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,202503,março 2025
 1,Brasil,2,%,2.32,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,202504,abril 2025
 1,Brasil,2,%,1.26,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,202505,maio 2025
+1,Brasil,2,%,0.93,1,Brasil,2263,IPCA - Variação acumulada em 3 meses,202506,junho 2025
 1,Brasil,,,...,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,197912,dezembro 1979
 1,Brasil,,,...,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,198001,janeiro 1980
 1,Brasil,,,...,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,198002,fevereiro 1980
@@ -2184,6 +2187,7 @@ Nível Territorial (Código),Nível Territorial,Unidade de Medida (Código),Unid
 1,Brasil,2,%,3.55,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,202503,março 2025
 1,Brasil,2,%,3.41,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,202504,abril 2025
 1,Brasil,2,%,3.28,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,202505,maio 2025
+1,Brasil,2,%,2.99,1,Brasil,2264,IPCA - Variação acumulada em 6 meses,202506,junho 2025
 1,Brasil,,,...,1,Brasil,69,IPCA - Variação acumulada no ano,197912,dezembro 1979
 1,Brasil,2,%,6.62,1,Brasil,69,IPCA - Variação acumulada no ano,198001,janeiro 1980
 1,Brasil,2,%,11.54,1,Brasil,69,IPCA - Variação acumulada no ano,198002,fevereiro 1980
@@ -2730,6 +2734,7 @@ Nível Territorial (Código),Nível Territorial,Unidade de Medida (Código),Unid
 1,Brasil,2,%,2.04,1,Brasil,69,IPCA - Variação acumulada no ano,202503,março 2025
 1,Brasil,2,%,2.48,1,Brasil,69,IPCA - Variação acumulada no ano,202504,abril 2025
 1,Brasil,2,%,2.75,1,Brasil,69,IPCA - Variação acumulada no ano,202505,maio 2025
+1,Brasil,2,%,2.99,1,Brasil,69,IPCA - Variação acumulada no ano,202506,junho 2025
 1,Brasil,,,...,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,197912,dezembro 1979
 1,Brasil,,,...,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,198001,janeiro 1980
 1,Brasil,,,...,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,198002,fevereiro 1980
@@ -3276,3 +3281,4 @@ Nível Territorial (Código),Nível Territorial,Unidade de Medida (Código),Unid
 1,Brasil,2,%,5.48,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,202503,março 2025
 1,Brasil,2,%,5.53,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,202504,abril 2025
 1,Brasil,2,%,5.32,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,202505,maio 2025
+1,Brasil,2,%,5.35,1,Brasil,2265,IPCA - Variação acumulada em 12 meses,202506,junho 2025
