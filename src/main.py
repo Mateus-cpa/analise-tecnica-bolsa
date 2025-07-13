@@ -6,10 +6,7 @@ warnings.filterwarnings('ignore')
 import json
 
 # bibliotecas de terceiros
-#from talib import RSI # Technical Analysis - TA-Lib
 import streamlit as st # Streamlit para interface web
-#from dateutil.relativedelta import relativedelta
-#from pandas.tseries.offsets import BDay
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
