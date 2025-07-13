@@ -1,5 +1,6 @@
 # Estudos de Ciência de Dados para Análise Técnica de Ativos da Bolsa
 
+
 Este projeto tem como objetivo explorar técnicas de ciência de dados e machine learning aplicadas à análise técnica de ativos negociados na bolsa de valores. Utiliza bibliotecas populares para importar, processar, visualizar e prever cotações de ativos financeiros.
 
 A versão ainda não finalizada já pode ser testada na [publicação em Streamlit](https://bolsa-valores-ml.streamlit.app/).

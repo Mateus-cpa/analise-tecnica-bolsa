@@ -1,0 +1,4 @@
+[compatibility]
+# Use uma versão do Python anterior a 3.13
+# Por exemplo, 3.10, 3.11 ou 3.12
+pythonVersion = "3.10.11"
