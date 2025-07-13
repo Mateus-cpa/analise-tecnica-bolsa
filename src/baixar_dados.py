@@ -32,7 +32,7 @@ def definir_ticker():
         st.header("Definir Ticker")
     
         # Lê lista_setores.csv com cabeçalho
-        setores_df = pd.read_csv('raw_data/lista_setores.csv')  # Espera colunas: ticker, setor, industria
+        setores_df = pd.read_csv('raw_data/lista_setores_traduzido.csv')  # Espera colunas: ticker, setor, industria
 
         # Filtro condicional por variação
         aplicar_filtro_variacao = st.checkbox('Filtrar por variação de valor de mercado')
@@ -61,16 +61,16 @@ def definir_ticker():
         
         # Filtro por setor
         if grupo_selecionado != 'Todos':
-            setores_filtrados = setores_df[setores_df['setor'] == grupo_selecionado]['setor'].dropna().unique().tolist()
+            setores_filtrados = setores_df[setores_df['setor_pt'] == grupo_selecionado]['setor_pt'].dropna().unique().tolist()
         else:
-            setores_filtrados = setores_df['setor'].unique().tolist() # Filtrar por setor
+            setores_filtrados = setores_df['setor_pt'].unique().tolist() # Filtrar por setor
         setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
         
         # Filtro por Indústria
         if setor_selecionado != 'Todos': # Filtra subsetores conforme setor
-            industrias_filtradas = setores_df[setores_df['setor'] == setor_selecionado]['industria'].dropna().unique().tolist()
+            industrias_filtradas = setores_df[setores_df['setor_pt'] == setor_selecionado]['industria_pt'].dropna().unique().tolist()
         else:
-            industrias_filtradas = setores_df['industria'].dropna().unique().tolist()
+            industrias_filtradas = setores_df['industria_pt'].dropna().unique().tolist()
         industria_selecionada = st.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
 
         
@@ -80,9 +80,9 @@ def definir_ticker():
         if grupo_selecionado != 'Todos':
             setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == grupo_selecionado]
         if setor_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor'] == setor_selecionado]
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor_pt'] == setor_selecionado]
         if industria_selecionada != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria'] == industria_selecionada]
+            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria_pt'] == industria_selecionada]
 
         # Cria coluna de busca concatenada
         setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(

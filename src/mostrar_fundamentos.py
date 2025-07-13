@@ -1,5 +1,7 @@
 import pandas as pd
 import streamlit as st
+from googletrans import Translator
+
 
 def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """Mostra os fundamentos da ação no Streamlit.
@@ -8,11 +10,18 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """
     st.header(f"{fundamentos['shortName'].values[0]} - {fundamentos['symbol'].values[0]}")
     st.write(f"Nome completo: {fundamentos['longName'].values[0]}")
-    if fundamentos['sector'].values[0] == None:
+    if fundamentos['setor_pt'].values[0] == None:
         st.write(f"Setor: {fundamentos['sector'].values[0]}")
-    if fundamentos['industry'].values[0] == None:
+    if fundamentos['industria_pt'].values[0] == None:
         st.write(f"Indústria: {fundamentos['industry'].values[0]}")
-
+    if fundamentos['longBusinessSummary'].values[0] == None:
+        try:
+            resumo = fundamentos['longBusinessSummary'].values[0]
+            translator = Translator()
+            resumo_pt = translator.translate(resumo, src='en', dest='pt').text
+            st.write(f"Descrição: {resumo_pt}")
+        except Exception as e:
+            st.write(f"Descrição: {fundamentos['longBusinessSummary'].values[0]}")
     st.subheader("Fundamentos")
     if fundamentos.empty:
         st.error("Nenhum dado fundamental disponível para o ticker selecionado.")
