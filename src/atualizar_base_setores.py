@@ -3,7 +3,7 @@ import pandas as pd
 import yfinance as yf
 import streamlit as st  # Adicione esta linha
 
-from traducao_base import traduzir_base  # Adicione no topo do arquivo
+#from traducao_base import traduzir_base  # Adicione no topo do arquivo
 
 
 def atualizar_base_setores():
@@ -69,7 +69,7 @@ def atualizar_base_setores():
     df_setores = pd.DataFrame(setores)
     df_setores.to_csv(setores_path, index=False)
     st.success("Importação realizada com sucesso.")
-    traduzir_base()
+    #traduzir_base()
     st.success("Base de dados traduzida com sucesso.")
 
 

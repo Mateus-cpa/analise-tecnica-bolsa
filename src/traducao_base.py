@@ -1,4 +1,4 @@
-import json
+"""import json
 import os
 import time
 
@@ -69,6 +69,4 @@ def traduzir_base(colunas=['setor', 'industria']):
 
     # Salva o DataFrame atualizado em um novo arquivo (mantendo o original intocado se desejar)
     df.to_csv(os.path.join(raw_data_dir, 'lista_setores_traduzido.csv'), index=False, encoding='utf-8-sig')
-
-if __name__ == '__main__':
-    traduzir_base()
+"""
