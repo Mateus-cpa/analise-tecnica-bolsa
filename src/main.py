@@ -4,6 +4,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 import json
+import asyncio
 
 # bibliotecas de terceiros
 import streamlit as st # Streamlit para interface web
@@ -67,7 +68,7 @@ def tela_streamlit():
     else:
         fundamentos = importar_fundamentos(ticker)
         if ticker != 'Nenhum':
-            mostrar_fundamentos(fundamentos)
+            asyncio.run(mostrar_fundamentos(fundamentos))
         #else:
         #    analise_setor
         with st.sidebar:
