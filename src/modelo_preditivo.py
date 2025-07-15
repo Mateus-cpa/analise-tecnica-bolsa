@@ -16,7 +16,6 @@ from sklearn.metrics import r2_score
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.svm import SVR
 from sklearn.linear_model import Ridge, Lasso
-#from talib import RSI # Technical Analysis - TA-Lib
 
 @st.cache_data
 def selecionar_colunas(features, labels):

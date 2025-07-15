@@ -4,10 +4,12 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 import json
-import asyncio
 
 # bibliotecas de terceiros
+#from talib import RSI # Technical Analysis - TA-Lib
 import streamlit as st # Streamlit para interface web
+#from dateutil.relativedelta import relativedelta
+#from pandas.tseries.offsets import BDay
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
@@ -15,7 +17,7 @@ from baixar_dados import baixar_dados, definir_ticker
 from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
 from atualizar_base_setores import atualizar_base_setores
 from modelo_preditivo import acao_com_preditivo
-from tratamento_ativo import enriquecer_dados, marcador_hoje, adicionar_target_median_price
+from tratamento_ativo import enriquecer_dados, detectar_mudanca_tendencia, marcador_hoje, adicionar_target_median_price
 from plotar_grafico import plotar_grafico
 from mostrar_fundamentos import mostrar_fundamentos
 
@@ -68,7 +70,7 @@ def tela_streamlit():
     else:
         fundamentos = importar_fundamentos(ticker)
         if ticker != 'Nenhum':
-            asyncio.run(mostrar_fundamentos(fundamentos))
+            mostrar_fundamentos(fundamentos)
         #else:
         #    analise_setor
         with st.sidebar:

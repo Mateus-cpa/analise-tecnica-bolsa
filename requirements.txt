@@ -1,9 +1,0 @@
-#googletrans==4.0.0rc1
-pandas
-streamlit
-yfinance
-matplotlib
-plotly
-scikit-learn
-#curl-cffi
-certifi
