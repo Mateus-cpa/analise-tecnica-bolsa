@@ -67,7 +67,9 @@ def definir_ticker():
         setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
         
         # Filtro por Indústria
-        if setor_selecionado != 'Todos': # Filtra subsetores conforme setor
+        if grupo_selecionado != 'Todos':
+            industrias_filtradas = setores_df[setores_df['grupo'] == grupo_selecionado]['industria_pt'].dropna().unique().tolist()
+        elif setor_selecionado != 'Todos': # Filtra subsetores conforme setor
             industrias_filtradas = setores_df[setores_df['setor_pt'] == setor_selecionado]['industria_pt'].dropna().unique().tolist()
         else:
             industrias_filtradas = setores_df['industria_pt'].dropna().unique().tolist()
