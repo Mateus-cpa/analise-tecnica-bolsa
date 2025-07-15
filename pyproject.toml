@@ -18,7 +18,8 @@ yfinance = "^0.2.62"
 streamlit = "^1.45.1"
 scikit-learn = "^1.7.0"
 certifi = "^2025.7.9"
-curl-cffi = "^0.12.0"
+curl-cffi = "0.11.3"
+googletrans = "^4.0.2"
 
 
 [build-system]
