@@ -1,6 +1,6 @@
 import pandas as pd  #type: ignore
 import yfinance as yf #type: ignore
-
+import json
 
 
 def importar_fundamentos(ticker):
@@ -19,6 +19,25 @@ def importar_fundamentos(ticker):
     for coluna in colunas:
         if coluna not in dados.columns:
             dados[coluna] = None
+    # Adiciona a coluna setor_pt usando o dicionário de tradução
+    try:
+        with open('bronze_data/traducao_setor.json', encoding='utf-8') as f:
+            traducao_setor = json.load(f)
+        setor_en = dados['sector'].values[0]
+        setor_pt = traducao_setor.get(setor_en, setor_en)
+        dados['setor_pt'] = setor_pt
+    except Exception as e:
+        dados['setor_pt'] = dados['sector']
+    # Adiciona a coluna industria_pt usando o dicionário de tradução
+    try:
+        with open('bronze_data/traducao_industria.json', encoding='utf-8') as f:
+            traducao_industria = json.load(f)
+        industria_en = dados['industry'].values[0]
+        industria_pt = traducao_industria.get(industria_en, industria_en)
+        dados['industria_pt'] = industria_pt
+    except Exception as e:
+        dados['industria_pt'] = dados['industry']
+
     return dados
 
 
