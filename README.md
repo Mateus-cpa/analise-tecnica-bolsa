@@ -1,4 +1,5 @@
 # Estudos de Ciência de Dados para Análise Técnica de Ativos da Bolsa
+`Em construção`
 
 
 Este projeto tem como objetivo explorar técnicas de ciência de dados e machine learning aplicadas à análise técnica de ativos negociados na bolsa de valores. Utiliza bibliotecas populares para importar, processar, visualizar e prever cotações de ativos financeiros.
@@ -15,10 +16,13 @@ A versão ainda não finalizada já pode ser testada na [publicação em Streaml
 ## Entrada de Dados
 
 Os dados históricos dos ativos são importados diretamente do Yahoo Finance e outras páginas e processados em formato de tabela utilizando bibliotecas como `pandas` e `yfinance`.
+1. Os Tickers são importados de fontes mistas, parte utilizando a biblioteca Request e parte baixando o csv da B3.
+2. Após, os dados históricos do ativo selecionado são importados diretamente do Yahoo Finance e processados em formato de tabela utilizando bibliotecas como `pandas` e `yfinance`.
+
 
 ## Visualização dos Dados
 
-Os dados são plotados em gráficos de candlestick para facilitar a análise visual dos movimentos de preço. Para isso, são utilizadas bibliotecas como `matplotlib` e `mplfinance`.
+Os dados são plotados em gráficos de candlestick para facilitar a análise visual dos movimentos de preço. Para isso, são utilizadas bibliotecas como `streamlit` e `plotly`.
 
 ## Previsão e Avaliação
 
