@@ -48,18 +48,20 @@ cd analise-tecnica-bolsa
 Configure o ambiente virtual com as dependências necessárias:
 
 ```bash
-pyenv install 3.10.11             # Instale o Python 3.10.11 se ainda não tiver
+pyenv install 3.10.11             # Instale o Python 3.10.11 se ainda não tiver 
 pyenv local 3.10.11               # Defina a versão local do projeto
 python -m venv .venv              # Crie o ambiente virtual
 source .venv/Scripts/activate     # No Windows
 poetry init
 poetry shell
+
 ```
 
 Iniciar aplicativo
 ```bash
 poetry install
 poetry run streamlit run src/main.py
+
 ```
 
 
