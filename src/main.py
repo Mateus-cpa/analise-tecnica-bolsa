@@ -5,6 +5,7 @@ import warnings
 warnings.filterwarnings('ignore')
 import json
 import asyncio
+import sys
 
 # bibliotecas de terceiros
 import streamlit as st # Streamlit para interface web
@@ -105,7 +106,8 @@ def tela_streamlit():
         plotar_grafico(acao, ticker)
         if st.checkbox("Tabelas:"):
             lancar_dataframe(acao, ticker)
-        
+    st.write(f"Versão do python: {str(sys.version).split('(')[0]}")
+
 
 if __name__ == "__main__":
     tela_streamlit()
