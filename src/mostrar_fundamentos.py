@@ -33,8 +33,12 @@ async def mostrar_fundamentos(fundamentos: pd.DataFrame):
     st.write(f"Nome completo: {fundamentos['longName'].values[0]}")
     if fundamentos['setor_pt'].values[0] == None:
         st.write(f"Setor: {fundamentos['sector'].values[0]}")
+    else:
+        st.write(f"Setor: {fundamentos['setor_pt'].values[0]}")
     if fundamentos['industria_pt'].values[0] == None:
         st.write(f"Indústria: {fundamentos['industry'].values[0]}")
+    else:
+        st.write(f"Indústria: {fundamentos['industria_pt'].values[0]}")
     if fundamentos['longBusinessSummary'].values[0] != None:
         #mostrar tradução da descrição do negócio
         st.subheader("Descrição do Negócio")
