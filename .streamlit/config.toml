@@ -1,0 +1,14 @@
+[general]
+# Comando de inicialização personalizado para Streamlit
+command = "poetry run streamlit run src/main.py"
+
+[tool]
+python = "3.10"
+
+[server]
+port = 8501
+
+[compatibility]
+# Use uma versão do Python anterior a 3.13
+# Por exemplo, 3.10, 3.11 ou 3.12
+pythonVersion = "3.10.11"
