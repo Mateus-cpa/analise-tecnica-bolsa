@@ -1,0 +1,1029 @@
+﻿ticker,grupo,nome,nome completo,setor,industria,rendimento,variacao_valor,recomendação,confiança do alerta,tipo,setor_pt,industria_pt
+AGRI11,ETF,BB ETF IAGROCI,Bb Etf Iagro Ffs B3 Fundo De Indice,,,,-2.6242228,none,LOW,Equity,,
+BBOV11,ETF,BB ETF IBOV CI,Bb Etf Ibovespa Fundo De Indice,,,,-3.6941857,none,LOW,Equity,,
+BRAZ11,ETF,BB ETF BRAZ CI,Bb Etf Ibovespa B3 Br+ Fundo De Indice Responsabilidade Limitada,,,,-3.5414648,none,LOW,Equity,,
+DVER11,ETF,BB ETF DVER CI,Bb Etf Indice Diversidade B3 Investimento Sustentavel Fundo De Indice,,,,-4.1315327,none,LOW,Equity,,
+BBOI11,ETF,BB ETF BOI GCI,Bb Etf Indice Futuro De Boi Gordo B3 Fundo De Indice,,,,-0.53476137,none,LOW,Equity,,
+DOLA11,ETF,BB ETF DOLARCI,BB ETF Indice Futuro De Dolar S&P B3 Fundo De Indice Responsabilidade Limitada,,,,2.955667,none,LOW,Equity,,
+CORN11,ETF,BB ETF MILHOCI,Bb Etf Indice Futuro De Milho B3 Fundo De Indice,,,,0.44776434,none,LOW,Equity,,
+BBSD11,ETF,BB ETF SP DVCI,BB ETF S&P Dividendos Brasil Fundo de Indice,,,,-3.983791,none,LOW,Equity,,
+TECX11,ETF,B INDEX TECXCI,B-Index Etf Connect China Amc Chinext Fundo De Indice Responsabilidade Limitada,,,,3.5191443,none,LOW,Equity,,
+PKIN11,ETF,B INDEX PKINCI,Bindex Etf Connect China Universal Csi 300 Fundo De Indice Responsabilidade Limitada,,,,0.28666794,none,LOW,Equity,,
+BREW11,ETF,B INDEX BREWCI,B-Index Morningstar Brasil Pesos Iguais Fundo De Indice,,,,-3.6619325,none,LOW,Equity,,
+IBOB11,ETF,PACTUAL IBOVCI,Btg Pactual B3 Ibovespa Fundo De Indice,,,,-3.665779,none,LOW,Equity,,
+ESGB11,ETF,ETF ESG BTG CI,Btg Pactual Esg Fundo De Indice S P Brazil Esg,,,,-4.2907834,none,LOW,Equity,,
+DOLB11,ETF,BTG SP DOLARCI,,,,,2.407773,none,LOW,Equity,,
+SPXB11,ETF,BTG S&P 500 CI,Btg Pactual S&P 500 Fundo De Indice,,,,2.2849472,none,LOW,Equity,,
+GENB11,ETF,ETF BTG GENBCI,Btg Pactual S&P B3 Ingenius Fundo De Indice,,,,-0.052047487,none,LOW,Equity,,
+SMAB11,ETF,BTG SMLL CAPCI,Btg Pactual Smll B3 Fundo De Indice,,,,-3.482584,none,LOW,Equity,,
+CMDB11,ETF,BTG COMMODITCI,Btg Pactual Teva Acoes Commodities Brasil Fundo De Indice,,,,0.14992131,none,LOW,Equity,,
+AUVP11,ETF,BTGTEVA AUVPCI,Btg Pactual Teva Auvp Acoes Fundamentos Fundo De Indice,,,,-5.208941,none,LOW,Equity,,
+TIRB11,ETF,BTG DIV REALCI,Btg Pactual Teva Dividendos Ativos Reais Listados Fundo De Indice - Responsabilidade Limitada,,,,-4.891304,none,LOW,Equity,,
+BRXC11,ETF,BTGIABRSELECCI,,,,,-4.7104144,none,LOW,Equity,,
+RICO11,ETF,ETF RICO    CI,Buena Vista Viii Fundo De Indice,,,,1.3119043,,LOW,Equity,,
+QQQQ11,ETF,ETF QQQQ    CI,Buena Vista V Fundo De Indice,,,,1.9842601,none,LOW,Equity,,
+QQQI11,ETF,ETF BV QQQI CI,Buena Vista Nasdaq-100 Neos High Income Etf Index (Ndxhien) Fundo De Indic - RL - Buena Vista II FI,,,,1.9971626,none,LOW,Equity,,
+COIN11,ETF,ETF BV COIN CI,Buena Vista Neos Bitcoin High Income Index Fundo De Indice Responsabilidade Limitada,,,,7.6105433,none,LOW,Equity,,
+FIXX11,ETF,ETF FIXX    CI,Buena Vista Neos Enchanced Income 1-3 Month T-Bill Index Fundo De Indice - Responsabilidade Limitada,Real Estate,REIT - Diversified,,-1.5284519,none,LOW,Equity,Imobiliária,REIT - diversificado
+CASA11,ETF,ETF CASA    CI  ATZ,Buena Vista Neos Real Estate High Income Index Fundo De Indice - Responsabilidade Limitada,,,,1.6079214,none,LOW,Equity,,
+IWMI11,ETF,ETF BV IWMI CI,Buena Vista Gestora De Recursos Ltda- Neos Russell 2000 High Income Ind Fundo De Indice,,,,0.90056443,none,LOW,Equity,,
+SPYI11,ETF,ETF BV SPYI CI,Buena Vista Us High Income Etf Fundo De Indice Neos U.S Equity High Income Index,,,,2.0774684,none,LOW,Equity,,
+XBOV11,ETF,CAIXAETFXBOVCI,CAIXA ETF Ibovespa Fundo de Índice - Cotas Fund,,,,-3.5409803,none,LOW,Equity,,
+GLDX11,ETF,INVESTO GLDXCI,Investo ETF Solactive Gold Spot Index Fundo De Indice,,,,2.9097683,none,LOW,Equity,,
+TRIG11,ETF,TRG SMIC CAPCI,Etf Trigono Teva Acoes Micro Cap / Small Cap Fundo De Indice,,,,-3.5366983,none,LOW,Equity,,
+BDEF11,ETF,B INDEX DEFECI,B-Index Morningstar Setores Defensivos Brasil Fundo De Indice,,,,-3.1640496,none,LOW,Equity,,
+BMMT11,ETF,B INDEX MOMECI,B - Index Morningstar Brasil Momento Fundo,,,,-3.1104689,none,LOW,Equity,,
+BCIC11,ETF,B INDEX CICLCI,B-Index Morningstar Setores Ciclicos Brasil Fundo De Indice,,,,-3.9131773,none,LOW,Equity,,
+BOVB11,ETF,ETF BRA IBOVCI,ETF Bradesco Ibovespa Fundo De Indice,,,,-3.60542,none,LOW,Equity,,
+PEVC11,ETF,INVESTO PEVCCI,Investo Bluestar Top 10 Us Listed Alternative Asset Managers Etf FII Investimento No Exterior,,,,3.9528203,none,LOW,Equity,,
+JOGO11,ETF,INVESTO JOGOCI,Investo Etf Global Video Gaming & Esports Fundo De Investimento De Indice - Ie,,,,0.6368561,none,LOW,Equity,,
+USTK11,ETF,INVESTO USTKCI,Investo ETF MSCI US Technology Fundo De Investimento De Indice – Investimento No Exterior,,,,1.3905655,none,LOW,Equity,,
+SVAL11,ETF,INVESTO SVALCI,Investo ETF S&P Smallcap 600 Value Fundo De Investimento De Indice - Investimento No Exterior,,,,2.7755115,none,LOW,Equity,,
+CHIP11,ETF,INVESTO CHIPCI,Investo Etf Bluestar 5G Communications Index Fundo De Indice - Investimento No Exterior,,,,3.6561978,none,LOW,Equity,,
+WRLD11,ETF,INVESTO WRLDCI,Investo Ftse Global Equities Etf Fundo De Investimento De Indice Investimento Exterior,,,,1.3008587,none,LOW,Equity,,
+GPUS11,ETF,INVESTOGPS&PCI,Investo Gp Etf S&P 500 Fundo De Indice,,,,1.6972352,none,LOW,Equity,,
+BDOM11,ETF,INVESTO BDOMCI,Investo Marketvector Brazil Domestic Exposure Etf - Fundo De Investimento De Indice,,,,-4.2546206,none,LOW,Equity,,
+BXPO11,ETF,INVESTO BXPOCI,Investo Marketvector Brazil Global Exposure Etf – Fundo De Investimento De Indice,,,,-1.392141,none,LOW,Equity,,
+SCVB11,ETF,INVESTO SCVBCI,Investo Marketvector Brazil Small Cap Value Etf - Fundo De Investimento De Andice,,,,-3.6347442,none,LOW,Equity,,
+ALUG11,ETF,INVESTO ALUGCI,Investo Msci US Real Estate ETF Fundo De Investimento De Indice Investimento Exterior,,,,1.4334309,none,LOW,Equity,,
+NUCL11,ETF,INVESTO NUCLCI,Investo MVIS Global Uranium & Nuclear Energy ETF Fundo De Indice,,,,1.4303552,none,LOW,Equity,,
+BIZD11,ETF,INVESTO BIZDCI  ER,Investo Mvis®Us Business Development Companies Index ETF Fundo De Indice,,,,4.18198,none,LOW,Equity,,
+SMAL11,ETF,ISHARES SMALCI,iShares BM&FBovespa Small Cap Fundo de Índice,,,,-3.2169118,none,LOW,Equity,,
+CAPE11,ETF,ISHARES CAP5CI,,,,,-3.9452267,none,LOW,Equity,,
+EWBZ11,ETF,ISHARES EQWECI,,,,,-4.2037396,none,LOW,Equity,,
+BOVA11,ETF,ISHARES BOVACI,iShares Ibovespa Index Fund,,,,-3.3519182,none,LOW,Equity,,
+BRAX11,ETF,ISHARES BRAXCI,iShares IBrX-Índice Brasil (IBrX-100) Index Fund,,,,-3.7393436,none,LOW,Equity,,
+ECOO11,ETF,ISHARES ECOOCI,iShares Índice Carbono Eficiente (ICO2) Brasil - Fundo de Índice,,,,-5.503044,none,LOW,Equity,,
+IVVB11,ETF,ISHARE SP500CI,iShares S&P 500 Fundo de Investimento - Investimento No Exterior,,,,2.4775946,none,LOW,Equity,,
+B3BR11,ETF,IT NOW B3BR+CI,,,,,-2.158404,none,LOW,Equity,,
+BOVV11,ETF,IT NOW IBOV CI,It Now Ibovespa Fundo de Indice,,,,-3.5558994,none,LOW,Equity,,
+DIVO11,ETF,IT NOW IDIV CI,It Now IDIV Index Fund,,,,-3.0215843,none,LOW,Equity,,
+DIVD11,ETF,IT NOW DIVD CI  ER,It Now Idiv Renda Dividendos Fundo De Indice – Responsabilidade Limitada,,,,-3.2341678,none,LOW,Equity,,
+FIND11,ETF,IT NOW IFNC CI,It Now IFNC Index Fund,,,,-5.394596,none,LOW,Equity,,
+GOVE11,ETF,IT NOW IGCT CI,It Now IGCT Index Fund,,,,-3.891053,none,LOW,Equity,,
+MATB11,ETF,IT NOW IMAT CI,It Now IMAT Index Fund,,,,-1.880941,none,LOW,Equity,,
+ISUS11,ETF,IT NOW ISE  CI,It Now ISE Index Fund,,,,-4.6553087,none,LOW,Equity,,
+MILL11,ETF,DIGITAL LIFECI,It Now Msci Usa Imi Millenials Select 50 Fundo De Indice,,,,0.6183918,none,LOW,Equity,,
+HTEK11,ETF,IT NOW HCARECI,Htek - It Now Morningstar Xt Us Healthcare Fundo De Indice,,,,4.2618895,none,LOW,Equity,,
+SILK11,ETF,IT NOW CHINACI,,,,,-0.12000274,,LOW,Equity,,
+TECK11,ETF,IT NOW TECK CI,It Now Nyse Fang+ Fundo De Indice,,,,-0.0280015,none,LOW,Equity,,
+PIBB11,ETF,IT NOW PIBB CI,It Now PIBB IBrX-50 Index Fund,,,,-3.3956249,none,LOW,Equity,,
+REVE11,ETF,IT NOW GREENCI,It Now Russell® 1000 Green Revenues 50 Fundo De Indice,,,,1.0068177,none,LOW,Equity,,
+SPXR11,ETF,IT NOW SP BRCI,IT Now S&P 500 Futures Quanto Brl Fundo De Indice - Responsabilidade Limitada,,,,0.49216267,none,LOW,Equity,,
+YDRO11,ETF,IT NOW HYDROCI,It Now S&P Kensho Hydrogen Fundo De Indice,,,,6.538459,none,LOW,Equity,,
+SPXI11,ETF,IT NOW SPXI CI,It Now S&P500 TRN Fundo de Índice,,,,2.0576034,none,LOW,Equity,,
+SMAC11,ETF,IT NOW SMALLCI,It Now Small Cap Fundo De Indice Fund,,,,-4.195807,none,LOW,Equity,,
+NSDV11,ETF,NU IBOV DIV CI,Nu Ibov Smart Dividendos Fundo De Indice,,,,-2.7827518,none,LOW,Equity,,
+HIGH11,ETF,NUIBOVHIGHBTCI,Nu Ibov Smart High Beta B3 Classe De Indice,,,,-5.389785,none,LOW,Equity,,
+LVOL11,ETF,NUIBOVLOWVOLCI,Nu Ibov Smart Low Volatility B3 Classe De Indice - Responsabilidade Limitada,,,,-4.2747936,none,LOW,Equity,,
+NBOV11,ETF,NUIBOVBRMAISCI,Nu Ibovespa B3 BR + Classe De Indice Ibovespa B3 BR + Responsabilidade Limitada,,,,-3.679594,none,LOW,Equity,,
+NDIV11,ETF,NU REND IBOVCI  ER,Nu Renda Ibov Smart Dividendos Fundo De Indice,,,,-3.3145185,none,LOW,Equity,,
+SPUB11,ETF,SAFRAIBOVESTCI,Safra Etf Ibovespa Empresas Estatais Fundo De Indice - Responsabilidade Limitada,,,,-2.8603697,none,LOW,Equity,,
+SPVT11,ETF,SAFRAIBOVPVTCI,Safra ETF Ibovespa Empresas Privadas Fundo De Indice - Responsabilidade Limitada,,,,-4.187908,none,LOW,Equity,,
+BOVS11,ETF,SAFRAETFIBOVCI,Safra Ibovespa Fundo De Indice,,,,-3.611692,none,LOW,Equity,,
+ELAS11,ETF,SAFRAETFELASCI,Safra ETF Mulheres Na Lideranca Fundo De Indice De Acoes,,,,-4.032023,none,LOW,Equity,,
+ACWI11,ETF,XPETFACWI   CI,Trend Etf Msci Acwi Fundo De Indice,,,,1.9687775,none,LOW,Equity,,
+XINA11,ETF,XPETFCHINA  CI,Trend Etf Msci China Fundo De Indice,,,,2.352939,none,LOW,Equity,,
+UTEC11,ETF,XPETFUSTECH CI,Trend Etf Msci Us Technology Fundo De Investimento De Indice,,,,1.6589801,none,LOW,Equity,,
+USAL11,ETF,TREND US LRGCI,Trend Etf Crsp Us Large Cap Fiim Ie,,,,1.9165003,none,LOW,Equity,,
+URET11,ETF,,,,,,,,,,,
+BOVX11,ETF,TREND IBOVX CI,Trend ETF Ibovespa Fundo De Indice,,,,-3.7447984,none,LOW,Equity,,
+GOLD11,ETF,TREND OURO  CI,Trend Etf Lbma Ouro Fundo Investimento Cotas De Fundo De Andice Investimento Exterior,,,,3.0142765,none,LOW,Equity,,
+ESGU11,ETF,,,,,,,,,,,
+NASD11,ETF,TREND NASDAQCI,Trend Etf Nasdaq 100 Fundo De Investimento De Indice - Investimento No Exterior,,,,2.5611207,none,LOW,Equity,,
+AFHI11,FII,FII AFHI CRICI,Af Invest Cri Fundo De Investimento Imobiliario – Recebiveis Imobiliarios,Real Estate,REIT - Diversified,13.03,-0.5617941,none,LOW,Equity,Imobiliária,REIT - diversificado
+AFHF11,FII,FII AFHF    CI,,,,,0.29999733,,LOW,Equity,,
+ATWN11,FII,,,,,,,,,,,
+AJFI11,FII,FII AJ MALLSCI  ER,Capitania Malls Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,9.8,-1.6415854,none,LOW,Equity,Imobiliária,REIT - diversificado
+ALZC11,FII,FII ALIANZACCI,Alianza Crédito Imobiliário Fundo De Investimento Imobiliário,Real Estate,REIT - Diversified,16.81,0.11861536,none,LOW,Equity,Imobiliária,REIT - diversificado
+MTOF11,FII,,,,,,,,NONE,,,
+ALZR11,FII,FII ALIANZA CI,Alianza Trust Renda Imobiliaria Fundo Investimento Imobiliario,Real Estate,Real Estate Services,9.29,-0.39062464,none,LOW,Equity,Imobiliária,Serviços imobiliários
+AURB11,FII,FII ALI URB CI,,Real Estate,REIT - Diversified,,2.1007545e-05,none,LOW,Equity,Imobiliária,REIT - diversificado
+APXM11,FII,FII APEX MS CI,Fundo De Investimento Imobiliario Apex Malls - FII,Real Estate,REIT - Retail,4.78,0.12631868,none,LOW,Equity,Imobiliária,REIT - varejo
+APXU11,FII,,,,,,,,,,,
+AIEC11,FII,FII AUTONOMYCI,Autonomy Edifícios Corporativos Fundo de Investimento Imobiliario,Real Estate,REIT - Specialty,8.42,1.9538127,none,LOW,Equity,Imobiliária,REIT - Especialidade
+AROA11,FII,FII AROA    CI,,Real Estate,REIT - Diversified,7.56,,none,LOW,Equity,Imobiliária,REIT - diversificado
+EIRA11,FII,FII EIRA    CI  ER,,Real Estate,REIT - Diversified,,-1.1269222,none,LOW,Equity,Imobiliária,REIT - diversificado
+ARTE11,FII,,,,,,,,,,,
+ARXD11,FII,FII ARXD R  CI,Arx Dover Recebiveis Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.69,2.6702309,none,LOW,Equity,Imobiliária,REIT - diversificado
+AZPE11,FII,,,,,,,,NONE,,,
+AZPL11,FII,FII AZPL    CI,,Real Estate,REIT - Industrial,14.5,-0.52910006,none,LOW,Equity,Imobiliária,REIT - Industrial
+CEBB11,FII,,,,,,,,,,,
+BCRI11,FII,FII BEES CRICI,Banestes Recebiveis Imobiliarios Fundo Investimento Imobiliario FII,Real Estate,REIT - Diversified,15.92,-1.302242,none,LOW,Equity,Imobiliária,REIT - diversificado
+BNFS11,FII,FII BANRISULCI,Banrisul N Front Fund Investment IMO FII Fund,Real Estate,REIT - Diversified,14.47,0.7432474,none,LOW,Equity,Imobiliária,REIT - diversificado
+BTML11,FII,"BTML11.SA,0P0001PUB1,0",Barra Malls Fundo De Investimento Imobiliario,,,,,,NONE,Fund,,
+BZEL11,FII,,,,,,,,,,,
+BPDR11,FII,,,,,,,,,,,
+BPLC11,FII,,,,,,,,,,,
+BPMW11,FII,,,,,,,,,,,
+BBFO11,FII,FII BB FOF  CI,BB Fundos De Fundos - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.07,1.1885896,none,LOW,Equity,Imobiliária,REIT - diversificado
+BBFI11,FII,FII BB PROGRCI,BB Fundo De Investimento Imobiliario Progressivo,Real Estate,REIT - Office,2013.43,-2.927989,none,LOW,Equity,Imobiliária,REIT - Escritório
+BBIG11,FII,FII BBIG    CI,Bb Premium Malls Fundo De Investimento Imobiliário De Responsabilidade Limitada,Real Estate,REIT - Retail,12.99,-0.8462615,none,LOW,Equity,Imobiliária,REIT - varejo
+BBRC11,FII,FII BB CORP CI,BB Renda Corporativa Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Diversified,11.98,0.87896043,none,LOW,Equity,Imobiliária,REIT - diversificado
+BINR11,FII,,,,,,,,NONE,,,
+BGRB11,FII,FII BGRB    CI,,Real Estate,REIT - Diversified,11.94,1.8179022,none,LOW,Equity,Imobiliária,REIT - diversificado
+BLOG11,FII,FII BLOG    CI,,Real Estate,REIT - Diversified,4.45,-2.0018137,none,LOW,Equity,Imobiliária,REIT - diversificado
+BLMG11,FII,FII BLUE LOGCI  ER,Bluemacaw Logastica Fundo De Investimento ImobiliaRio,Real Estate,REIT - Industrial,11.05,-3.7659023,none,LOW,Equity,Imobiliária,REIT - Industrial
+BMLC11,FII,FII BMBRC LCCI  ER,Fundo de Investimento Imobiliário Rio Bravo Renda Corporativa,,,8.85,0.0102966195,none,LOW,Equity,,
+BRSE11,FII,,,,,,,,,,,
+BCIA11,FII,FII BCIA    CI,Bradesco Carteira Imobiliaria Ativa Fundos de Investimento Imobiliario,Real Estate,REIT - Diversified,11.61,-0.23529053,none,LOW,Equity,Imobiliária,REIT - diversificado
+BPFF11,FII,FII ABSOLUTOCI,Fundo de Investimento Imobiliário - FII Brasil Plural Absoluto Fundo de Fundos,Real Estate,REIT - Diversified,10.81,-2.4482727,none,LOW,Equity,Imobiliária,REIT - diversificado
+BVAR11,FII,FII B VAREJOCI,Fundo De Investimento Imobiliário Brasil Varejo,Real Estate,REIT - Diversified,5.12,,none,LOW,Equity,Imobiliária,REIT - diversificado
+CARE11,FII,FII DEA CARECI,Brazilian Graveyard Death Care Services Fundo Investimento Imobiliario - Fii,Real Estate,REIT - Retail,,,none,LOW,Equity,Imobiliária,REIT - varejo
+FATN11,FII,FII ATHENA ICI  ER,BRC Renda Corporativa FII - FII Athena I,Real Estate,REIT - Specialty,12.6,7.3248906,none,LOW,Equity,Imobiliária,REIT - Especialidade
+RTEL11,FII,,,,,,,,,,,
+BRCD11,FII,,,,,,,,,,,
+BRCO11,FII,FII BRESCO  CI,Bresco - Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,9.47,0.855094,none,LOW,Equity,Imobiliária,REIT - Industrial
+BICE11,FII,FII BRIO CRECI,,Real Estate,REIT - Diversified,4.76,,none,LOW,Equity,Imobiliária,REIT - diversificado
+BIME11,FII,FII BRIO ME CI  ER,Brio Multiestrategia - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.21,,none,LOW,Equity,Imobiliária,REIT - diversificado
+BRIM11,FII,FII BRIO II CI,Brio Real Estate II - Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,90.5,-0.10633222,none,LOW,Equity,Imobiliária,REIT - diversificado
+BRIP11,FII,FII BRIO IIICI  EA,Brio Real Estate III - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,17.55,-12.902133,none,LOW,Equity,Imobiliária,REIT - diversificado
+BIPD11,FII,"BIPD11.SA,0P0001PYPD,0",Brio Real Estate IV - Fundo De Investimento Imobiliario - Fund,,,,,,NONE,Fund,,
+BIPE11,FII,FII BRIO V  CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+BROF11,FII,FII BROF    CI,Brpr Corporate Offices Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.85,-0.32258442,none,LOW,Equity,Imobiliária,REIT - diversificado
+BETW11,FII,,,,,,,,,,,
+LLAO11,FII,FII BS2     CI,Bs2 Allinvestments Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,29.74,,none,LOW,Equity,Imobiliária,REIT - Especialidade
+BTHR11,FII,,,,,,,,,,,
+BTHI11,FII,BTG HOTEL FICI  ER,Btg Pactual Hoteis Fundo De Investimento Imobiliario,,,,-3.4639292,none,LOW,Equity,,
+BTAL11,FII,FII BTG AGROCI,FII Btg Pactual Agro Logistica,Real Estate,REIT - Industrial,13.28,1.1446158,none,LOW,Equity,Imobiliária,REIT - Industrial
+BRCR11,FII,FII BC FUND CI  ER,Fundo de Investimento Imobiliário - FII BTG Pactual Corporate Office Fund,Real Estate,REIT - Office,11.64,-0.46327767,none,LOW,Equity,Imobiliária,REIT - Escritório
+BTCI11,FII,FII BTG CRI CI  ER,Fundo Infestimento Imobiliario Btg Pactual Credito Imobiliario,Financial Services,Asset Management,12.75,-0.65076375,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+BTLG11,FII,FII BTLG    CI,BTG Pactual Logística Fundo de Investimento Imobiliário,Real Estate,REIT - Industrial,9.12,0.06990183,none,LOW,Equity,Imobiliária,REIT - Industrial
+BTHF11,FII,FII BTHF    CI  ER,Btg Pactual Real Estate Hedge Fund Fii Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,12.57,-1.8264823,none,LOW,Equity,Imobiliária,REIT - diversificado
+BPML11,FII,FII BTG SHOPCI,Fundo De Investimento Imobiliario BTG Pactual Shoppings,Real Estate,REIT - Retail,13.8,2.6675076,none,LOW,Equity,Imobiliária,REIT - varejo
+BTRA11,FII,FII BTG TAGRCI,Fundo De Investimento Imobiliario Btg Pactual Terras Agricolas,Real Estate,REIT - Specialty,7.29,-3.0630643,none,LOW,Equity,Imobiliária,REIT - Especialidade
+BTYU11,FII,FII BTYU    CI,,Real Estate,REIT - Diversified,15.27,0.9900933,none,LOW,Equity,Imobiliária,REIT - diversificado
+BTWR11,FII,FII BTOWERS CI,Btowers Fundo Investimento Imobiliario,Real Estate,REIT - Diversified,7.56,0.58467984,none,LOW,Equity,Imobiliária,REIT - diversificado
+BTSG11,FII,FII BTSP I  CI,Imob IV Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,7.17,1.2090418,none,LOW,Equity,Imobiliária,REIT - Industrial
+BTSI11,FII,FII BTSP II CI,Btsp II Fundo De Investimento Imobiliario - Fii,Real Estate,REIT - Industrial,8.41,0.6625443,none,LOW,Equity,Imobiliária,REIT - Industrial
+CXCO11,FII,FII CEF CORPCI,Fundo De Investimento Imobiliario Caixa Imoveis Corporativos,Real Estate,REIT - Diversified,12.64,4.3397493,none,LOW,Equity,Imobiliária,REIT - diversificado
+CXRI11,FII,FII CX RBRAVCI  ER,CXFI - Caixa Rio Bravo Fundo Fundos,Real Estate,REIT - Diversified,11.08,-3.0696933,none,LOW,Equity,Imobiliária,REIT - diversificado
+CRFF11,FII,FII CX RBRA2CI  ER,Caixa Rio Bravo Fundo De Fundos De Investimento Imobiliario II-Cotas,Real Estate,REIT - Specialty,10.18,-11.476915,none,LOW,Equity,Imobiliária,REIT - Especialidade
+CCME11,FII,FII CANUMA  CI  ER,Canuma Capital Multiestrategia Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,11.3,-0.5574157,none,LOW,Equity,Imobiliária,REIT - diversificado
+CCVA11,FII,FII CCVA    CI  ER,Canuma Capital Renda Varejo Fundo De Investimento Imobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,,0.44707474,none,LOW,Equity,Imobiliária,REIT - diversificado
+CPUR11,FII,FII CPHBC URCI,Capitania HBC Renda Urbana Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,11.1,,none,LOW,Equity,Imobiliária,REIT - diversificado
+CPLG11,FII,FII CPLG    CI  ER,Capitania Logistica Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,6.56,,none,LOW,Equity,Imobiliária,REIT - diversificado
+CPOF11,FII,FII CPOF    CI,Capitania Office Properties FII - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,7.19,,none,LOW,Equity,Imobiliária,REIT - diversificado
+CPFF11,FII,FII CAP REITCI,Capitania Reit FOF - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,8.58,0.6479554,none,LOW,Equity,Imobiliária,REIT - diversificado
+CPHH11,FII,,,,,,,,,,,
+CPTS11,FII,FII CAPI SECCI,Capitania Securities II Fundo Investimento Imobiliario FII,Real Estate,REIT - Diversified,13.98,-2.5198948,none,LOW,Equity,Imobiliária,REIT - diversificado
+CPSH11,FII,FII CPSH    CI,Capitania Shoppings Fundo De Investimento Imobiliario,Real Estate,REIT - Retail,12.38,0.9221327,none,LOW,Equity,Imobiliária,REIT - varejo
+CACR11,FII,CARTESIA FIICI,Supernova Fundo De Investimento Imobiliario - Recebiveis Imobiliarios,Real Estate,REIT - Diversified,16.65,-2.108432,none,LOW,Equity,Imobiliária,REIT - diversificado
+CBOP11,FII,FII CBOP PAXCI,Castello Branco Off Park Fund In Im,Real Estate,REIT - Diversified,5.33,-2.798761,none,LOW,Equity,Imobiliária,REIT - diversificado
+BLCA11,FII,FII BLCA VBICI  ER,Bluemacaw Catuai Triple A Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,6.2,-0.02072191,none,LOW,Equity,Imobiliária,REIT - diversificado
+CNES11,FII,FII CENESP  CI,Fundo De Investimento Imobiliario Bm Cenesp - Fii - Inicio De Negociacao,Real Estate,REIT - Office,4.16,1.7699099,none,LOW,Equity,Imobiliária,REIT - Escritório
+CDHY11,FII,,,,,,,,,,,
+CTXT11,FII,FII C TEXTILCI,Fundo Invest Imobiliario Centro Textil Internacional - Cotas Fund,Real Estate,REIT - Diversified,10.1,-1.0563371,none,LOW,Equity,Imobiliária,REIT - diversificado
+CENU11,FII,"CENU11.SA,0P0001SAKM,0",,,,,,,NONE,Fund,,
+CFHI11,FII,FII CF2     CI,Cf2 Real Estate Investment Fund,Real Estate,REIT - Diversified,96.35,,none,LOW,Equity,Imobiliária,REIT - diversificado
+CFII11,FII,FII CF3 IMOBCI,,Real Estate,REIT - Diversified,40.53,4.2614307,none,LOW,Equity,Imobiliária,REIT - diversificado
+CJCT11,FII,FII CJCTOWERCI,Cidade Jardim Continental Tower Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,3.88,1.6365216,none,LOW,Equity,Imobiliária,REIT - diversificado
+CIXM11,FII,,,,,,,,,,,
+CIXF11,FII,FII CIXF    CI,,Real Estate,REIT - Diversified,,1.2330065,none,LOW,Equity,Imobiliária,REIT - diversificado
+CLIN11,FII,FII CLAVE INCI  ER,Clave Indices De Precos Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.84,0.4612407,none,LOW,Equity,Imobiliária,REIT - diversificado
+CSMC11,FII,,,,,,,,,,,
+RENV11,FII,FII RENV    CI,Cpv Energia Fundo De Investimento Imobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,3.97,,none,LOW,Equity,Imobiliária,REIT - diversificado
+IBCR11,FII,FII BREI    CI  ER,Fundo De Investimento Imobiliario De Cri Integral Brei,Real Estate,REIT - Diversified,18.52,-2.3905756,none,LOW,Equity,Imobiliária,REIT - diversificado
+CVPR11,FII,,,,,,,,,,,
+CYCR11,FII,FII CYRELA  CI,Cyrela Credito - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.38,,none,LOW,Equity,Imobiliária,REIT - diversificado
+CYLD11,FII,FII CYLD    CI,,Real Estate,REIT - Industrial,,,none,LOW,Equity,Imobiliária,REIT - Industrial
+DAMA11,FII,FII DAMA    CI  ER,,Real Estate,REIT - Diversified,14.74,-0.99857587,none,LOW,Equity,Imobiliária,REIT - diversificado
+DAYM11,FII,FII DAYC REMCI,Daycoval Real Estate Multiestrategia Fundo De Investimento Imobiliario De Resp Ltd.,Real Estate,REIT - Specialty,,-6.250004,none,LOW,Equity,Imobiliária,REIT - Especialidade
+ASRF11,FII,FII ASA RET CI,Asa Retrofits I Fundo De Investimento Imobiliario,Financial Services,Asset Management,,,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+DLMT11,FII,,,,,,,,,,,
+DPRO11,FII,FII DEVA PROCI  ER,Devant Properties Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,11.13,-3.721683,none,LOW,Equity,Imobiliária,REIT - Industrial
+DEVA11,FII,FII DEVANT  CI  ER,Devant Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,16.15,-2.6124864,none,LOW,Equity,Imobiliária,REIT - diversificado
+DAMT11,FII,FII DIAMANTECI,,Real Estate,REIT - Industrial,,14.503813,none,LOW,Equity,Imobiliária,REIT - Industrial
+DOVL11,FII,FII DOVEL   CI  ER,Dovel Fundo de Investimento Imobiliário,,,,1.4924881,none,LOW,Equity,,
+EDGE11,FII,FII EDGE    CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+EMET11,FII,FII EMET    CI,Emet Multiestrategia Fundo De Investimento I Mobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,,-5.052627,none,LOW,Equity,Imobiliária,REIT - diversificado
+EGYR11,FII,FII ENERGY  CI,Energy Resort Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,,-1.986753,none,LOW,Equity,Imobiliária,REIT - diversificado
+EQIR11,FII,FII EQI RECECI,Eqi Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.23,,none,LOW,Equity,Imobiliária,REIT - diversificado
+ERCR11,FII,FII ESTOQ RJCI,Estoque Residencial E Comercial Rio De Janeiro Fundo De Investimento Imobiliario,,,,81.35207,none,LOW,Equity,,
+ERPA11,FII,FII EUROPA  CI  ER,Europa 105 Fundo Investimento Imobiliario,Real Estate,REIT - Diversified,8.84,-0.7344283,none,LOW,Equity,Imobiliária,REIT - diversificado
+KEVE11,FII,FII EVEN II CI,Even II Kinea Fundo De Investimento Imobiliario,Real Estate,REIT - Residential,51.34,4.9075623,none,LOW,Equity,Imobiliária,REIT - Residencial
+EXES11,FII,FII EXES    CI,Exes Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,16.6,,none,LOW,Equity,Imobiliária,REIT - diversificado
+FLCR11,FII,FII FL RECEBCI  ER,Faria Lima Capital Recebiveis Imobiliarios I FII,Real Estate,REIT - Diversified,14.35,-1.979992,none,LOW,Equity,Imobiliária,REIT - diversificado
+FARU11,FII,,,,,,,,,,,
+VRTA11,FII,FII FATOR VECI,Fator Veritá Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Diversified,9.55,-0.4374981,none,LOW,Equity,Imobiliária,REIT - diversificado
+VRTM11,FII,FII VRTM    CI,,Real Estate,REIT - Diversified,15.21,0.14224398,none,LOW,Equity,Imobiliária,REIT - diversificado
+FTRE11,FII,,,,,,,,,,,
+ANCR11,FII,FII ANCAR ICCI,Fundo de Investimento Imobiliário - FII Ancar IC,Real Estate,REIT - Retail,3.37,0.99999744,none,LOW,Equity,Imobiliária,REIT - varejo
+FLMA11,FII,FII S F LIMACI  ER,Unitas DTVM S.A.,Real Estate,REIT - Diversified,11.64,-1.1004684,none,LOW,Equity,Imobiliária,REIT - diversificado
+EGDB11,FII,FII EGDB    CI,,Real Estate,REIT - Office,,0.19585615,none,LOW,Equity,Imobiliária,REIT - Escritório
+ELDO11,FII,"ELDO11.SA,0P00013U3L,0",,,,,,,NONE,Fund,,
+EURO11,FII,FII EUROPAR CI,Coinvalores Dtvm Ltda.,Real Estate,REIT - Diversified,9.83,4.945873,none,LOW,Equity,Imobiliária,REIT - diversificado
+HYPI11,FII,FII HYPI    CI  ER,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+HRES11,FII,FII HIRE RESCI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+FMOF11,FII,FII MEMORIALCI,Fundos de Investimento Imobiliário Memorial Office Of Cotas,Real Estate,REIT - Office,6.46,,none,LOW,Equity,Imobiliária,REIT - Escritório
+OPTM11,FII,,,,,,,,NONE,,,
+ALMI11,FII,FII TORRE ALCI,Fundo De Investimento Imobiliario Torre Almirante,Real Estate,REIT - Office,6.69,3.4869545,none,LOW,Equity,Imobiliária,REIT - Escritório
+FLNR11,FII,,,,,,,,NONE,,,
+JCIN11,FII,FII JCIN    CI,Fof Jhsf Capital Institucional - Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,4.4,,none,LOW,Equity,Imobiliária,REIT - Especialidade
+HLMB11,FII,,,,,,,,,,,
+KFOF11,FII,FII KINEAFOFCI,Kinea Fundo Fundos De Investimento Imobiliario FII,Financial Services,Asset Management,11.09,-0.98075837,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+CVBI11,FII,FII CVBI VBICI  ER,Fundo De Investimento Imobiliario VBI Credito,Real Estate,REIT - Residential,14.94,-1.7998178,none,LOW,Equity,Imobiliária,REIT - Residencial
+BLUR11,FII,FII BLUE RECCI,Fundo De Investimento Imobiliario - Blue Recebiveis Imobiliarios,,,,,none,LOW,Equity,,
+DVFF11,FII,FII DEVA FOFCI  ER,Fundo De Investimento Imobiliario - Devant Fundo De Fundos Imobiliarios,Real Estate,REIT - Diversified,12.54,-6.2893095,none,LOW,Equity,Imobiliária,REIT - diversificado
+FAED11,FII,FII ANH EDUCCI  ER,Fundo de Investimento Imobiliário - FII Anhanguera Educacional,Real Estate,REIT - Diversified,13.97,1.5753446,none,LOW,Equity,Imobiliária,REIT - diversificado
+FCFL11,FII,FII CAMPUSFLCI,Fundo De Investimento Imobiliario Campus Faria Lima - Inicio De Negociacao,Real Estate,REIT - Diversified,8.6,-1.1288288,none,LOW,Equity,Imobiliária,REIT - diversificado
+CEOC11,FII,FII CEO CCP CI  ER,Fundo de Investimento Imobiliário FII CEO Cyrela Fund,Real Estate,REIT - Office,13.68,-1.8404968,none,LOW,Equity,Imobiliária,REIT - Escritório
+FAMB11,FII,FII ALMIRANTCI,Fundo de Investimento Imobiliario Edificio Almirante Barroso,Real Estate,REIT - Office,32.37,-7.5435734,none,LOW,Equity,Imobiliária,REIT - Escritório
+EDGA11,FII,FII GALERIA CI,Fundo de Investimento Imobiliario - FII Edificio Galeria,Real Estate,REIT - Office,5.82,-0.2419898,none,LOW,Equity,Imobiliária,REIT - Escritório
+FYTO11,FII,FII FYTO    CI  ER,Fii Nch Brasil Recebiveis Imobiliarios Para Fii Fyto Recebiveis Imob,Real Estate,REIT - Diversified,15.71,-2.5912757,none,LOW,Equity,Imobiliária,REIT - diversificado
+HCRI11,FII,FII CRIANCA CI,Fundo de Investimento Imobiliário - FII Hospital da Criança,Real Estate,REIT - Healthcare Facilities,12.32,-3.0037413,none,LOW,Equity,Imobiliária,REIT - Instalações de saúde
+NSLU11,FII,FII LOURDES CI,Hospital Nossa Senhora De Lourde Fund,Real Estate,REIT - Healthcare Facilities,11.21,0.54119897,none,LOW,Equity,Imobiliária,REIT - Instalações de saúde
+MAXR11,FII,FII MAX RET CI  ER,Fundo De Investimentos Imobiliarios - Max Ret,Real Estate,REIT - Retail,5.92,1.1694139,none,LOW,Equity,Imobiliária,REIT - varejo
+PQDP11,FII,FII D PEDRO CI,Parque Dom Pedro Shopping Center Fund,Real Estate,REIT - Retail,12.08,-0.64556754,none,LOW,Equity,Imobiliária,REIT - varejo
+RBRI11,FII,FII RBR III CI,Fundo De Investimento Imobiliario - FII RBR Desenvolvimento III,Real Estate,REIT - Residential,49.91,,none,LOW,Equity,Imobiliária,REIT - Residencial
+RDIV11,FII,,,,,,,,,,,
+RBRR11,FII,FII RBRHGRADCI  ER,Fundo Investimento Imobiliario - FII RBR Rendimento High Grade,Financial Services,Asset Management,12.14,-1.2468026,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+RECR11,FII,FII REC RECECI  ER,Fundo Investimento Imobiliario Fii Ubs (Br) Recebveis Imobiliarios,Real Estate,REIT - Diversified,14.71,-2.104776,none,LOW,Equity,Imobiliária,REIT - diversificado
+RECT11,FII,FII REC RENDCI  ER,Fundo De Investimento Imobiliario - FII UBS Office,Financial Services,Asset Management,14.13,-0.7800312,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+SHDP11,FII,"SHDP11.SA,0P00013U2O,0",,,,,,,NONE,Fund,,
+TRNT11,FII,FII TORRE NOCI,Fundo de Investimento Imobiliário - FII Torre Norte,Real Estate,REIT - Diversified,0.86,1.5625,none,LOW,Equity,Imobiliária,REIT - diversificado
+APXR11,FII,FII APXR    CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+BRHT11,FII,,,,,,,,,,,
+CXAG11,FII,FII CAIXA AGCI,Fundo De Investimento Imobiliario Caixa Agencias,Real Estate,REIT - Specialty,11.11,0.4501967,none,LOW,Equity,Imobiliária,REIT - Especialidade
+CXCI11,FII,FII CAIXA CICI  ER,Fundo De Investimento Imobiliario Caixa Carteira Imobiliaria,Real Estate,REIT - Specialty,13.29,-1.0635061,none,LOW,Equity,Imobiliária,REIT - Especialidade
+CXCE11,FII,FII CX CEDAECI,Fundo de Investimento Caixa Cedae,Real Estate,REIT - Specialty,13.47,2.1025634,none,LOW,Equity,Imobiliária,REIT - Especialidade
+CXTL11,FII,FII CX TRX  CI,Fundo De Investimento Imobiliário Caixa Trx Logística Renda,Financial,REIT - Diversified,6.74,-6.2744217,none,LOW,Equity,Financial,REIT - diversificado
+IDUA11,FII,,,,,,,,NONE,,,
+LKDV11,FII,FII DEV ONE CI,Fundo De Investimento Imobiliario Development V1,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+EDFO11,FII,FII OURINVESCI,Fundo de Investimento Imobiliário Edifício Ourinvest,Real Estate,REIT - Diversified,10.76,1.6752746,none,LOW,Equity,Imobiliária,REIT - diversificado
+NVHO11,FII,FII NOVOHORICI,Fundo De Investimento Imobiliario Novo Horizonte,Real Estate,REIT - Diversified,8.06,-0.46188965,none,LOW,Equity,Imobiliária,REIT - diversificado
+GTWR11,FII,FII G TOWERSCI,Fundo Investimento Imobiliario Green Towers,Real Estate,REIT - Office,13.36,-0.805293,none,LOW,Equity,Imobiliária,REIT - Escritório
+HBCR11,FII,FII HBC REN CI,Fundo De Investimento Imobiliario Hbc Renda Urbana,Real Estate,REIT - Diversified,11.88,,none,LOW,Equity,Imobiliária,REIT - diversificado
+HUCG11,FII,FII UNIMED CCI,Fundo De Investimento Imobiliario Hospital Unimed Campina Grande,Real Estate,REIT - Healthcare Facilities,,-4.1187234,none,LOW,Equity,Imobiliária,REIT - Instalações de saúde
+HUSC11,FII,FII H UNIMEDCI,Fundo Investimento Imobiliario Hospital Unimed Sul Capixaba,Real Estate,REIT - Healthcare Facilities,10.98,2.348885,none,LOW,Equity,Imobiliária,REIT - Instalações de saúde
+HOSI11,FII,FII HOUSI   CI,Fundo De Investimento Imobiliario Housi,Real Estate,REIT - Residential,9.69,-3.413283,none,LOW,Equity,Imobiliária,REIT - Residencial
+FIIB11,FII,FII INDL BR CI,Real Estate Investment Fund Industry in Brazil,Real Estate,REIT - Industrial,9.18,0.9046397,none,LOW,Equity,Imobiliária,REIT - Industrial
+FINF11,FII,,,,,,,,,,,
+IRDM11,FII,FII IRIDIUM CI  ER,Fundo Investimento Imobiliario Iridium Recebiveis Imobiliarios,Real Estate,REIT - Diversified,14.28,-2.123944,none,LOW,Equity,Imobiliária,REIT - diversificado
+BLUE11,FII,FII BLUE    CI,,Real Estate,REIT - Diversified,,16.722408,none,LOW,Equity,Imobiliária,REIT - diversificado
+MMPD11,FII,"MMPD11.SA,0P0001R8JN,0",Fundo De Investimento Imobiliario Maua Capital MPD Desenvolvimento Residencial,,,,,,NONE,Fund,,
+MCCI11,FII,FII MAUA    CI,Fundo De Investimento Imobiliario Maua Capital Recebiveis Imobiliarios,Real Estate,REIT - Diversified,12.09,-1.2800151,none,LOW,Equity,Imobiliária,REIT - diversificado
+OULG11,FII,FII OURILOG CI,Pedra Dourada Fundo De Investimento Imobiliário - FII,Financial Services,Asset Management,23.84,-0.46777627,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+WTSP11,FII,FII WTC SP  CI,Fundo De Investimento Imobiliario Ourinvest Re I,Real Estate,REIT - Diversified,5.69,,none,LOW,Equity,Imobiliária,REIT - diversificado
+PABY11,FII,FII PANAMBY CI,Fundo de Investimento Imobiliário Panamby,Real Estate,Real Estate Services,,-2.2045856,none,LOW,Equity,Imobiliária,Serviços imobiliários
+VTPA11,FII,,,,,,,,,,,
+FPNG11,FII,FII P NEGRA CI,Fundo Investimento Imobiliario Pedra Negra Renda Imobiliaria,Real Estate,REIT - Diversified,17.98,10.250753,none,LOW,Equity,Imobiliária,REIT - diversificado
+VTPL11,FII,FII PLUS    CI,Fundo De Investimento Imobiliário Votorantim Plus,Real Estate,REIT - Specialty,,,none,LOW,Equity,Imobiliária,REIT - Especialidade
+ESTQ11,FII,,,,,,,,,,,
+VPSI11,FII,FII POLO SHOCI  ER,Fundo De Investimento Multimercado Veritas - Crédito Privado Investimento No Exterior,Real Estate,REIT - Diversified,10.33,0.8617636,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBRY11,FII,FII RBR PCRICI  ER,Fundo Investimeto Imobiliario Rbr Private Credito Imobiliario,Financial Services,Asset Management,13.83,-1.0928369,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+PULV11,FII,FII PULV    CI,,Real Estate,REIT - Diversified,13.53,-1.5306169,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBRP11,FII,FII RBR PROPCI  ER,Fundo Investimento Imobiliario Rbr Properties Fii,Financial Services,Asset Management,9.47,0.45953956,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+RELG11,FII,FII REC LOG CI  ER,Fundo De Investimento Imobiliario Rec Logistaca,Real Estate,REIT - Diversified,11.47,-1.1635948,none,LOW,Equity,Imobiliária,REIT - diversificado
+RZTR11,FII,FII RIZA TX CI,Fundo De Investimento Imobiliario Riza Terrax,Real Estate,REIT - Diversified,13.26,-0.021225605,none,LOW,Equity,Imobiliária,REIT - diversificado
+ROOF11,FII,FII ROOFTOPICI,Fundo De Investimento Imobiliario Rooftop I,Real Estate,REIT - Residential,41.41,,none,LOW,Equity,Imobiliária,REIT - Residencial
+HOMS11,FII,FII HOMS    CI,,Real Estate,REIT - Diversified,,0.28062764,none,LOW,Equity,Imobiliária,REIT - diversificado
+FISC11,FII,FII SC 401  CI  ER,Fundo De Investimento Imobiliário SC  401,Real Estate,REIT - Diversified,9.02,1.5550611,none,LOW,Equity,Imobiliária,REIT - diversificado
+SAIC11,FII,FII SIA CORPCI,Fundo Investimento Imobiliario FII,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+SMRE11,FII,FII SMRE    CI,,Real Estate,REIT - Diversified,15.15,-0.012502671,none,LOW,Equity,Imobiliária,REIT - diversificado
+SOFF11,FII,FII SOFF    CI,Fundo De Investimento Imobiliario Sofia,,,,,none,LOW,Equity,,
+SPVJ11,FII,,,,,,,,,,,
+TGAR11,FII,FII TG ATIVOCI,Fundo Investimento Imobiliario TG Ativo Real,Real Estate,REIT - Diversified,13.02,-2.4123995,none,LOW,Equity,Imobiliária,REIT - diversificado
+TGRU11,FII,,,,,,,,,,,
+LVBI11,FII,FII LVBI VBICI,Fundo De Investimento Imobiliario - VBI Logistico - Cota Fund,Real Estate,Real Estate Services,8.75,2.3529427,none,LOW,Equity,Imobiliária,Serviços imobiliários
+PVBI11,FII,FII PVBI VBICI,Fundo De Investimento ImobiliarRio Vbi Prime Properties,Real Estate,REIT - Diversified,7.88,0.051821366,none,LOW,Equity,Imobiliária,REIT - diversificado
+BARI11,FII,FII BARI VBICI,Fundo De Investimento Imobiliario Barigui Rendimentos Imobiliario I Fii,Real Estate,REIT - Diversified,14.73,0.69664735,none,LOW,Equity,Imobiliária,REIT - diversificado
+VERE11,FII,"VERE11.SA,0P00013U3H,0",Vc6 Fundo Invest Imobiliario FII,Real Estate,REIT - Diversified,,3.460265,none,LOW,Equity,Imobiliária,REIT - diversificado
+FIVN11,FII,FII VIDANOVACI,Vida Nova Fundo Investimento Immobiliere,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+VTLT11,FII,FII VOT LOG CI,Fundo Investimento Imobiliario Votorantim Logistica,Real Estate,REIT - Specialty,13.1,1.2175894,none,LOW,Equity,Imobiliária,REIT - Especialidade
+VTXI11,FII,,,,,,,,,,,
+VSHO11,FII,FII VOT SHOPCI,FII Votorantim shopping,Real Estate,REIT - Retail,10.9,-0.0138899265,none,LOW,Equity,Imobiliária,REIT - varejo
+XPRE11,FII,,,,,,,,,,,
+BMLT11,FII,FII BMLT    CI,Fundo De Investimentos Imobiliarios De Permuta Financeira Lote5 Mezanino Rl,Real Estate,REIT - Diversified,,0.2382425,none,LOW,Equity,Imobiliária,REIT - diversificado
+FIIC11,FII,,,,,,,,,,,
+BSLT11,FII,FII BSLT    CI,Fundo De Investimentos Imobiliarios De Permuta Financeira Lote5 Senior Responsabilidade Limitada,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+TCIN11,FII,FII TOUR V  CI,Fundo De Investimento Imobiliario Tourmalet V Edificio Cidade Nova,Real Estate,REIT - Residential,,,none,LOW,Equity,Imobiliária,REIT - Residencial
+GLCR11,FII,FII GLCR    CI,,Real Estate,REIT - Diversified,11.91,-0.29606536,none,LOW,Equity,Imobiliária,REIT - diversificado
+GCDL11,FII,FII GCDL    CI,,Real Estate,REIT - Diversified,,0.11679534,none,LOW,Equity,Imobiliária,REIT - diversificado
+GFDL11,FII,FII GFDL    CI,,Real Estate,REIT - Diversified,,0.21115388,none,LOW,Equity,Imobiliária,REIT - diversificado
+GLPF11,FII,FII GLPF    CI  ER,Galapagos Feeder Logistico Fundo De Investimento ImobiliãRio Responsabilidade Limitada,Real Estate,REIT - Diversified,10.29,-0.60836446,none,LOW,Equity,Imobiliária,REIT - diversificado
+GCRI11,FII,FII GLPG CRICI,Galapagos Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,16.09,1.9300344,none,LOW,Equity,Imobiliária,REIT - Especialidade
+GCOI11,FII,FII GALAP SPCI,Galapagos Special Oportunities Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+GZIT11,FII,FII GAZIT   CI,Gazit Malls Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,20.35,0.7588948,none,LOW,Equity,Imobiliária,REIT - Especialidade
+FIGS11,FII,FII GEN SHOPCI,Fundo de Investimento Imobiliário General Shopping Ativo e Renda - FII,Real Estate,REIT - Diversified,8.85,0.30864063,none,LOW,Equity,Imobiliária,REIT - diversificado
+GSFI11,FII,FII GENERAL CI,General Shopping E Outlets Do Brasil Fundo De Investimento Imobiliario FII,Financial Services,Capital Markets,,,none,LOW,Equity,Serviços financeiros,Mercados de capitais
+VXXV11,FII,FII VX XVI  CI,VX XVI - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,628.06,,none,LOW,Equity,Imobiliária,REIT - diversificado
+GLOG11,FII,FII PLURAL LCI,Genial Logistica Fundo De Investimento Imobiliario,,,,7.3564663,none,LOW,Equity,,
+MALL11,FII,FII MALLS BPCI,Malls Brasil Fundo Investimento Imobiliario,Real Estate,REIT - Retail,10.05,-0.9753673,none,LOW,Equity,Imobiliária,REIT - varejo
+GGRC11,FII,FII GGRCOVEPCI  ER,Ggr Covipe Renda Fundo Investimento Imobiliario,Real Estate,REIT - Industrial,11.89,-0.09990238,none,LOW,Equity,Imobiliária,REIT - Industrial
+ABCP11,FII,FII ABC IMOBCI,FII ABC Plaza Shopping Fund,Real Estate,REIT - Retail,11.08,1.7368237,none,LOW,Equity,Imobiliária,REIT - varejo
+RCFA11,FII,FII GP RCFA CI,Grupo Rcfa Fundo De Investimento,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+GAME11,FII,FII GUARD MUCI  ER,Fundo De Investimento Imobiliario Guardian Multiestrategia Imobiliaria I,Real Estate,REIT - Diversified,13.0,-2.5462992,none,LOW,Equity,Imobiliária,REIT - diversificado
+GARE11,FII,FII GUARDIANCI,Guardian Logistica Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,11.1,-0.77863955,none,LOW,Equity,Imobiliária,REIT - Especialidade
+HABT11,FII,FII HABIT IICI,Habitat Ii - Fundo De Investimento Imobiliario,Financial Services,Asset Management,16.68,-0.2698408,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+ATCR11,FII,,,,,,,,,,,
+AERO11,FII,,,,,,,,,,,
+HCTR11,FII,FII HECTARE CI  ER,Fundo De Investimento Imobiliario Hectare Ce,Financial Services,Asset Management,19.67,0.8240579,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+HCST11,FII,FII HECT DESCI,Hectare Student Housing I - Fundo De Investimento Em Participacoes Multiestrategia,Real Estate,REIT - Residential,,,none,LOW,Equity,Imobiliária,REIT - Residencial
+HCHG11,FII,FII HECT CRICI,Hectare Recebiveis High Grade Fundo De Investimento Imobiliario  Fii,Real Estate,REIT - Diversified,14.41,-0.10016506,none,LOW,Equity,Imobiliária,REIT - diversificado
+HAAA11,FII,FII HEDGEAAACI,Hedge Aaa Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,1.93,-1.0001936,none,LOW,Equity,Imobiliária,REIT - diversificado
+ATSA11,FII,FII HATRIUM CI,Cshg Atrium Shopping Santo Andr Fundo De Investimento Imobilirio Fii,Real Estate,REIT - Diversified,2.88,1.9791905,none,LOW,Equity,Imobiliária,REIT - diversificado
+HGBL11,FII,FII HGBL    CI,,Real Estate,REIT - Industrial,10.07,,none,LOW,Equity,Imobiliária,REIT - Industrial
+HGBS11,FII,FII HEDGEBS CI,HEDGE Brasil Shopping Fundo de Investimento Imobiliário,Real Estate,REIT - Retail,9.65,-0.41004574,none,LOW,Equity,Imobiliária,REIT - varejo
+HDEL11,FII,FII HEDGE DVCI,Hedge Desenvolvimento Logistico Fundo De Investimento Imobiliario,Financial Services,Asset Management,139.19,,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+FLRP11,FII,FII FLORIPA CI,Fundo de Investimento Imobiliário - FII Floripa Shopping,Real Estate,REIT - Retail,7.88,-1.2524096,none,LOW,Equity,Imobiliária,REIT - varejo
+HLOG11,FII,FII HEDGELOGCI,Hedge Logistica Fundo Investimento Imobiliario,Real Estate,REIT - Industrial,9.4,-1.4457817,none,LOW,Equity,Imobiliária,REIT - Industrial
+HOFC11,FII,FII HOFFICEICI,Hedge Office Income Fundo De Investimento Imobiliario,Real Estate,REIT - Office,6.1,5.2086935,none,LOW,Equity,Imobiliária,REIT - Escritório
+HDOF11,FII,FII HEDGE OFCI,Hedge Paladin Design Offices Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,,-10.0,none,LOW,Equity,Imobiliária,REIT - diversificado
+HRDF11,FII,FII HREALTY CI,Hedge Realty Development Fundo Investimento Imobiliario FII,Real Estate,REIT - Diversified,,8.333334,none,LOW,Equity,Imobiliária,REIT - diversificado
+HREC11,FII,FII HEDGERECCI,Hedge Recebiveis Fundo De Investimento Imobiliario,Real Estate,Real Estate - Diversified,12.87,-0.36231562,none,LOW,Equity,Imobiliária,Imóvel - diversificado
+SEED11,FII,FII HEDGE SDCI,Hedge Seed Fundo De Investimeto Imobiliario,Real Estate,REIT - Specialty,12.0,0.8064548,none,LOW,Equity,Imobiliária,REIT - Especialidade
+HPDP11,FII,FII HEDGEPDPCI,Hedge Real Estate I Fundo De Investimento Imobliario,Real Estate,REIT - Retail,7.57,3.3738513,none,LOW,Equity,Imobiliária,REIT - varejo
+HFOF11,FII,FII HTOPFOF3CI,Hedge Top Fofii 3 Fundo Investimento Imobilirio,Real Estate,REIT - Specialty,11.29,-2.5000014,none,LOW,Equity,Imobiliária,REIT - Especialidade
+YEES11,FII,FII YEES    CI,,Real Estate,REIT - Residential,,,none,LOW,Equity,Imobiliária,REIT - Residencial
+HGIC11,FII,FII HGI CRI CI  ER,Hgi Creditos Imobiliarios Fundo De Investimento,Real Estate,REIT - Diversified,13.52,0.833211,none,LOW,Equity,Imobiliária,REIT - diversificado
+HILG11,FII,FII HIRE LOGCI  ER,,Real Estate,REIT - Diversified,8.93,,none,LOW,Equity,Imobiliária,REIT - diversificado
+HTMX11,FII,FII HOTEL MXCI,FD Invest Imob Hotel Maxinvest,Real Estate,REIT - Hotel & Motel,12.72,-0.041725826,none,LOW,Equity,Imobiliária,REIT - Hotel & Motel
+HSAF11,FII,FII HSI CRI CI,Hsi Ativos Financeiros Fundos Investimentos Imoliarios,Real Estate,REIT - Diversified,14.3,0.36671838,none,LOW,Equity,Imobiliária,REIT - diversificado
+HSLG11,FII,FII HSI LOG CI,Hsi Logistica Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,9.45,0.5244546,none,LOW,Equity,Imobiliária,REIT - diversificado
+HSML11,FII,FII HSI MALLCI,Hsi Malls Fundo De Investimento Imobiliario,Financial Services,Asset Management,9.14,-1.3834671,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+HSRE11,FII,FII HSIRENDACI,Hsi Renda Imobiliario - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,7.88,3.0407135,none,LOW,Equity,Imobiliária,REIT - diversificado
+HUSI11,FII,FII HUSI    CI,Husi Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,8.3,0.707629,none,LOW,Equity,Imobiliária,REIT - diversificado
+IVCI11,FII,,,,,,,,NONE,,,
+GRUL11,FII,FII GRUL    CI,Icatu Vanguarda Gru Logistico Fundo De Investimento Imobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,15.71,0.49321783,none,LOW,Equity,Imobiliária,REIT - diversificado
+ICNE11,FII,,,,,,,,NONE,,,
+INDE11,FII,FII INDE    CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+INLG11,FII,FII INTER LGCI,Inter Logistico Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,12.33,-1.2002689,none,LOW,Equity,Imobiliária,REIT - diversificado
+INOI11,FII,,,,,,,,,,,
+INRD11,FII,FII INTER RDCI,Inter Residence Fundo DE Investimento Imobiliario FII,Real Estate,REIT - Residential,9.62,-3.1799707,none,LOW,Equity,Imobiliária,REIT - Residencial
+ITIP11,FII,FII INTER IPCI,Ifi D Inter Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.52,-2.7761323,none,LOW,Equity,Imobiliária,REIT - diversificado
+ITIT11,FII,FII INTER ITCI,Ifi E Inter Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,10.73,-0.4476499,none,LOW,Equity,Imobiliária,REIT - Especialidade
+IBBP11,FII,FII IBBP    CI  ER,Invista Brazilian Business Park Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,10.1,2.3456738,none,LOW,Equity,Imobiliária,REIT - Industrial
+ISCJ11,FII,FII ISCJ    CI,,Real Estate,REIT - Diversified,14.41,,none,LOW,Equity,Imobiliária,REIT - diversificado
+IRIM11,FII,FII IRIM    CI  ER,Iridium Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.45,-1.2089866,none,LOW,Equity,Imobiliária,REIT - diversificado
+ICRI11,FII,FII CI IPCA CI,,Real Estate,REIT - Diversified,13.01,-0.06351637,none,LOW,Equity,Imobiliária,REIT - diversificado
+TMPS11,FII,FII ITAU TEMCI,Itau Tempus Fundo De Investimento Imobiliario,Real Estate,Real Estate - Diversified,12.06,-2.7216644,none,LOW,Equity,Imobiliária,Imóvel - diversificado
+ITRI11,FII,FII ITRI    CI,Itau Total Return Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,12.08,0.2767659,none,LOW,Equity,Imobiliária,REIT - diversificado
+JCDB11,FII,,,,,,,,,,,
+JCDA11,FII,,,,,,,,,,,
+JASC11,FII,FII JASC RENCI,Jasc Renda Varejo Essencial Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Specialty,7.67,-3.9515755,none,LOW,Equity,Imobiliária,REIT - Especialidade
+JBFO11,FII,"JBFO11.SA,0P0001OH6Y,0",Jbfo Fof Fundo De Investimento Imobiliario,,,,,,NONE,Fund,,
+VJFD11,FII,FII JFDCAM  CI,,Real Estate,REIT - Diversified,5.81,0.48616064,none,LOW,Equity,Imobiliária,REIT - diversificado
+JFLL11,FII,FII JFL LIV CI,JFL Living Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,8.57,0.11474732,none,LOW,Equity,Imobiliária,REIT - diversificado
+JCCJ11,FII,FII JHSF CJ CI,FOF JHSF Capital Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,2.7,1.5037556,none,LOW,Equity,Imobiliária,REIT - diversificado
+JPPC11,FII,FII JPP CAPICI  EA,JPP Capital Fundo Invest Imobiliario FII,Real Estate,REIT - Diversified,241.37,0.015747868,none,LOW,Equity,Imobiliária,REIT - diversificado
+JPPA11,FII,FII JPPA CRICI,JPP Capital Recebíveis Imobiliários Fundo de Investimento Imobiliário,Real Estate,REIT - Residential,15.78,-0.5243423,none,LOW,Equity,Imobiliária,REIT - Residencial
+JSAF11,FII,FII JS A FINCI,Js Ativos Financeiros Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.82,-1.2870001,none,LOW,Equity,Imobiliária,REIT - diversificado
+JSRE11,FII,FII JS REAL CI,JS Real Estate multigestão - FII fund,Financial,REIT - Diversified,7.6,-0.98634523,none,LOW,Equity,Financial,REIT - diversificado
+JSCR11,FII,FII JSCR    CI,,Real Estate,REIT - Diversified,13.59,-1.6706486,none,LOW,Equity,Imobiliária,REIT - diversificado
+JTPR11,FII,,,,,,,,,,,
+BGS111,FII,,,,,,,,,,,
+KISU11,FII,FII KILIMA  CI,Kilima Fundo De Investimento Em Cotas De Fundos Imobiliarios Suno 30,Real Estate,REIT - Diversified,12.09,0.29239738,none,LOW,Equity,Imobiliária,REIT - diversificado
+KIVO11,FII,FII KIVO    CI,Kilima Volkano Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,17.07,0.29095808,none,LOW,Equity,Imobiliária,REIT - diversificado
+KRES11,FII,,,,,,,,,,,
+KCRE11,FII,FII KINEA CRCI,Kinea Creditas Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Specialty,12.94,1.0250587,none,LOW,Equity,Imobiliária,REIT - Especialidade
+KNGR11,FII,,,,,,,,,,,
+KGUJ11,FII,,,,,,,,,,,
+KLOG11,FII,,,,,,,,,,,
+KFEN11,FII,FII KFEN    CI,,Real Estate,REIT - Diversified,12.69,,none,LOW,Equity,Imobiliária,REIT - diversificado
+KNHF11,FII,FII KINEA HFCI,Kinea Hedge Fund Fundo De Investimento Imobiliario,Financial Services,Asset Management,12.77,1.844981,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+KNHY11,FII,FII KINEA HYCI,Kinea High Yield Cri Fundo Investimento Imobiliario FII,Financial Services,Asset Management,15.81,-0.33530962,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+KNRE11,FII,FII KII REALCI,Kinea II Real Estate Equity Fundo de Investimento Imobiliário,Real Estate,REIT - Residential,49.92,,none,LOW,Equity,Imobiliária,REIT - Residencial
+KNIP11,FII,FII KINEA IPCI,Kinea Indices Precos Fundo Investimento Imobiliario - FII,Real Estate,REIT - Diversified,13.72,-1.220464,none,LOW,Equity,Imobiliária,REIT - diversificado
+KOPI11,FII,,,,,,,,,,,
+KORE11,FII,FII KORE    CI,Kinea Oportunidades Real Estate Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,17.99,-0.81926024,none,LOW,Equity,Imobiliária,REIT - diversificado
+KNPR11,FII,,,,,,,,,,,
+KPMR11,FII,,,,,,,,,,,
+KPRP11,FII,,,,,,,,,,,
+KNRI11,FII,FII KINEA   CI,Kinea Renda Imobiliária Fundo de Investimento Imobiliário,Financial,REIT - Diversified,7.57,-0.14462222,none,LOW,Equity,Financial,REIT - diversificado
+KNCR11,FII,FII KINEA RICI,Kinea Rendimentos Imobiliários Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Mortgage,13.69,-1.5435876,none,LOW,Equity,Imobiliária,REIT - hipoteca
+KNSC11,FII,FII KINEA SCCI,Kinea Securities Fundo De Investimento Imobiliario – Fii,Real Estate,REIT - Residential,13.41,-0.22497702,none,LOW,Equity,Imobiliária,REIT - Residencial
+KNUQ11,FII,FII KINEA UNCI,,Real Estate,REIT - Diversified,15.46,1.0689529,none,LOW,Equity,Imobiliária,REIT - diversificado
+LPLP11,FII,FII LAGO PDRCI  ERA,,Real Estate,REIT - Diversified,35.09,5.8425083,none,LOW,Equity,Imobiliária,REIT - diversificado
+SLDZ11,FII,,,,,,,,,,,
+LRED11,FII,,,,,,,,,,,
+LSOI11,FII,,,,,,,,,,,
+LRDI11,FII,FII LEBLON  CI,,Real Estate,REIT - Residential,6.88,0.011795029,none,LOW,Equity,Imobiliária,REIT - Residencial
+LASC11,FII,FII LEGATUS CI,Legatus Shoppings Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,10.2,-4.9344006,none,LOW,Equity,Imobiliária,REIT - diversificado
+LIFE11,FII,FII LIFE    CI,Life Capital Partners Fundo De Investimentos Imobiliarios,Real Estate,REIT - Diversified,16.07,0.22447202,none,LOW,Equity,Imobiliária,REIT - diversificado
+LOFT11,FII,,,,,,,,,,,
+LFTT11,FII,FII LOFT II CI  EA,Loft II Fundo De Investimento Imobiliario,Real Estate,REIT - Residential,387.55,2.671124,none,LOW,Equity,Imobiliária,REIT - Residencial
+MAGM11,FII,,,,,,,,,,,
+MANA11,FII,FII MANATI  CI,Manati Capital Hedge Fund Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,14.85,-0.34013304,none,LOW,Equity,Imobiliária,REIT - Especialidade
+MMVE11,FII,FII MMVE OP CI,Mmve Oportunidades Imobiliarias Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+MCLO11,FII,FII MCLO    CI  ER,,Real Estate,REIT - Diversified,11.25,-0.9433998,none,LOW,Equity,Imobiliária,REIT - diversificado
+MCRE11,FII,FII MAUA RE CI,Maua Capital Real Estate Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.53,2.1176505,none,LOW,Equity,Imobiliária,REIT - diversificado
+MXRF11,FII,FII MAXI RENCI,Maxi Renda Fundo De Investimento Imobiliaro - FII,Real Estate,REIT - Diversified,12.61,-0.105265565,none,LOW,Equity,Imobiliária,REIT - diversificado
+MCEM11,FII,FII MCEM    CI,,Real Estate,REIT - Specialty,2.86,-0.015270446,none,LOW,Equity,Imobiliária,REIT - Especialidade
+MFII11,FII,FII MERITO ICI,Mérito Desenvolvimento Imobiliário I FII - Fundo de Investimento Imobiliário,Real Estate,REIT - Diversified,16.11,-0.087042645,none,LOW,Equity,Imobiliária,REIT - diversificado
+MCFY11,FII,,,,,,,,,,,
+MGHT11,FII,FII MOGNO HTCI,Fundo De Investimento Imobiliario Mogno Hoteis,Real Estate,REIT - Hotel & Motel,34.14,-9.802782,none,LOW,Equity,Imobiliária,REIT - Hotel & Motel
+MGRI11,FII,,,,,,,,NONE,,,
+MOSO11,FII,,,,,,,,,,,
+SHOP11,FII,FII MULTSHOPCI,Multi Shoppings Fundo Investimento Imobiliario Fii,Real Estate,REIT - Diversified,,18.367348,none,LOW,Equity,Imobiliária,REIT - diversificado
+DRIT11,FII,FII MTGESTAOCI  EB,Multigestao Renda Comercial Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,7.19,0.34682876,none,LOW,Equity,Imobiliária,REIT - diversificado
+MOFF11,FII,,,,,,,,,,,
+NCRI11,FII,FII NAVI CRICI  ER,Navi Credito Imobiliario - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.07,-8.225014,none,LOW,Equity,Imobiliária,REIT - diversificado
+NAVT11,FII,FII NAVI TOTCI,Navi Imobiliario Total Return Fundos De Investimento Imobiliario,Financial Services,Asset Management,11.51,-0.013701556,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+N4V111,FII,,,,,,,,,,,
+APTO11,FII,FII NAVI RSDCI,Navi Residencial Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,12.83,0.58962494,none,LOW,Equity,Imobiliária,REIT - Especialidade
+EAGL11,FII,,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+NEWL11,FII,FII NEWPORT CI,Newport Logastica Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,10.74,-2.3565466,none,LOW,Equity,Imobiliária,REIT - Industrial
+NEWU11,FII,FII NEWRU   CI,Renda de Escritorios Fundo de Investimento Imobiliario - Cotas Fundo,Real Estate,REIT - Diversified,3.27,1.794126,none,LOW,Equity,Imobiliária,REIT - diversificado
+NVIF11,FII,,,,,,,,,,,
+OCRE11,FII,FII OCTO    CI,Octo Fundo De Investimento Imobiliario,Financial Services,Asset Management,9.88,-4.7493005,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+ONDV11,FII,,,,,,,,,,,
+ARRI11,FII,FII ATRIO   CI,Fundo De Investimento Imobiliario Atrio Reit Recebiveis Imobiliarios,Real Estate,REIT - Residential,15.13,-0.9901014,none,LOW,Equity,Imobiliária,REIT - Residencial
+OBAL11,FII,FII OPPBAL  CI,,Real Estate,REIT - Diversified,13.23,,none,LOW,Equity,Imobiliária,REIT - diversificado
+FTCE11,FII,FII OPPORTUNCI,Fundo de Investimento Imobiliário Trade Center,Real Estate,REIT - Diversified,2.92,,none,LOW,Equity,Imobiliária,REIT - diversificado
+OUJP11,FII,FII OURI JPPCI,Ourinvest Jpp Fundo Investimento Imobiliario - Fii,Real Estate,REIT - Diversified,16.74,-0.3590009,none,LOW,Equity,Imobiliária,REIT - diversificado
+PNCR11,FII,FII PNCR    CI,Panorama Credito Residencial Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.87,3.6037211,none,LOW,Equity,Imobiliária,REIT - diversificado
+PNDL11,FII,FII PANORAMACI,Panorama Desenvolvimento Logistico - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+PNLM11,FII,,,,,,,,NONE,,,
+PNPR11,FII,FII PAN PROPCI,Panorama Properties Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,99.03,,none,LOW,Equity,Imobiliária,REIT - diversificado
+PNRC11,FII,FII PNRC    CI,Panorama Real Estate Credito Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,,0.84713435,none,LOW,Equity,Imobiliária,REIT - diversificado
+PMIS11,FII,FII PMIS    CI,Paramis Hedge Fund Fundo De Investimento Imobiliario - Fii,Real Estate,REIT - Specialty,13.27,-1.5892435,none,LOW,Equity,Imobiliária,REIT - Especialidade
+VTVI11,FII,,,,,,,,,,,
+PQAG11,FII,FII PARQ ANHCI,Rb Capital Anhanguera Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,9.87,0.38153902,none,LOW,Equity,Imobiliária,REIT - Industrial
+PATA11,FII,FII PATA    CI,Patagonia Capital Multiestrategia Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,10.13,12.934789,none,LOW,Equity,Imobiliária,REIT - diversificado
+PATB11,FII,,,,,,,,,,,
+PATC11,FII,FII PATC VBICI,Patria Edificios Corporativos Fundo Investimento Imobiliario Fii,Real Estate,REIT - Diversified,4.71,0.9200801,none,LOW,Equity,Imobiliária,REIT - diversificado
+HGRE11,FII,FII HGRE PAXCI,CSHG Real Estate - Fundo de Investimento Imobiliario - FII,Real Estate,REIT - Diversified,7.42,0.39710525,none,LOW,Equity,Imobiliária,REIT - diversificado
+HGFF11,FII,FII HGFF PAXCI,CSHG Imobiliario Fof - Fundo De Investimento Imobiliario - Fii,Real Estate,REIT - Specialty,12.02,-1.2089516,none,LOW,Equity,Imobiliária,REIT - Especialidade
+HGLG11,FII,FII HGLG PAXCI,Cshg Logistica - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,8.29,-0.7932479,none,LOW,Equity,Imobiliária,REIT - diversificado
+PATL11,FII,FII PATL VBICI,Patria Logistica Fundo De Investimento Imobiliario,Real Estate,REIT - Industrial,12.98,9.310347,none,LOW,Equity,Imobiliária,REIT - Industrial
+HGPO11,FII,FII HGPO PAXCI,Cshg Jhsf Prime Offices Fundo De Investimento Imobiliario,Real Estate,REIT - Office,15.56,0.5171372,none,LOW,Equity,Imobiliária,REIT - Escritório
+HGCR11,FII,FII HGCR PAXCI,CSHG Recebiveis Imobiliarios BC Fundo de Investimento Imobiliario - FII,Real Estate,REIT - Diversified,13.31,0.5841005,none,LOW,Equity,Imobiliária,REIT - diversificado
+VCRR11,FII,FII VECT RENCI,Vectis Renda Residencial Fundo De Investimento Imobiliario,Real Estate,REIT - Residential,9.07,-1.6307714,none,LOW,Equity,Imobiliária,REIT - Residencial
+HGRU11,FII,FII HGRU PAXCI,Patria Renda Urbana - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,8.65,0.64412487,none,LOW,Equity,Imobiliária,REIT - diversificado
+PEMA11,FII,FII PERFORMACI,Performa Real Estate Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,18.95,0.82891214,none,LOW,Equity,Imobiliária,REIT - diversificado
+PRSN11,FII,FII PERSONALCI,Personale I Fundo Invest Imobiliario,Real Estate,REIT - Diversified,56.54,-4.310341,none,LOW,Equity,Imobiliária,REIT - diversificado
+PLCR11,FII,FII PLURAL RCI,Plural Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.69,0.45639026,none,LOW,Equity,Imobiliária,REIT - diversificado
+PORD11,FII,FII POLO CRICI,Polo Fundo de Investimento Imobiliário - Recebíveis Imobiliários II - FII,Real Estate,REIT - Diversified,13.34,-0.2361329,none,LOW,Equity,Imobiliária,REIT - diversificado
+PLRI11,FII,FII POLO I  CI,Polo Fundo de Investimento Imobiliario – FII Recebiveis Imobiliarios IMO - Cotas Fund,Real Estate,REIT - Diversified,101.46,-5.5512123,none,LOW,Equity,Imobiliária,REIT - diversificado
+PCAS11,FII,,,,,,,,,,,
+PRSV11,FII,FII P VARGASCI,Fundo de Investimento Imobiliário Presidente Vargas,Financial,REIT - Diversified,7.12,0.67889357,none,LOW,Equity,Financial,REIT - diversificado
+FPAB11,FII,FII A BRANCACI  ER,Fundo de Investimento Imobiliário Projeto Água Branca,Real Estate,REIT - Diversified,7.09,-0.26595962,none,LOW,Equity,Imobiliária,REIT - diversificado
+PBLV11,FII,,,,,,,,NONE,,,
+QTZD11,FII,,,,,,,,,,,
+RZZV11,FII,FII RZZV    CI,,Real Estate,REIT - Diversified,9.33,0.7833661,none,LOW,Equity,Imobiliária,REIT - diversificado
+RZZI11,FII,,,,,,,,,,,
+RZZR11,FII,FII RZZR    CI,Raizz Renda Logistica Fundo de Investimento Imobiliario,Real Estate,REIT - Industrial,10.02,3.2974112,none,LOW,Equity,Imobiliária,REIT - Industrial
+RBDS11,FII,FII RBRESID2CI,RB Capital Development Residential Real Estate Investment Fund II,Real Estate,REIT - Diversified,,-5.454549,none,LOW,Equity,Imobiliária,REIT - diversificado
+RSPD11,FII,FII RBRESID3CI,RB Capital Desenvolvimento Residencial III Fundo De Investimento Imobillario - FII,Real Estate,REIT - Diversified,21.75,-10.483766,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBIR11,FII,FII RBRES IVCI,Rb Capital Desenvolvimento Residencial IV Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Residential,13.27,-0.39369905,none,LOW,Equity,Imobiliária,REIT - Residencial
+RFOF11,FII,FII RB CFOF CI,Fundo De Investimento Imobiliario RB Capital I Fundo De Fundos,Real Estate,REIT - Diversified,12.38,-0.16207826,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBLG11,FII,FII RBCAP LGCI,Rb Capital Logastico Fundo De Investimento Imobiliario Fund,Real Estate,REIT - Industrial,12.0,,none,LOW,Equity,Imobiliária,REIT - Industrial
+RRCI11,FII,FII RBCAP RICI,RB Capital Recebaveis Imobiliarios Fundo De Investimento Imobiliario FII,Real Estate,REIT - Diversified,13.8,0.21682617,none,LOW,Equity,Imobiliária,REIT - diversificado
+FIIP11,FII,FII RB CAP ICI,RB Capital Renda I Fundo de Investimento Imobiliário - FII,,,,6.54658,none,LOW,Equity,,
+RBRD11,FII,FII RB II   CI,RB Capital Renda II Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Diversified,14.63,-0.56207126,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBTS11,FII,FII RB TFO  CI,Rb Capital Tfo Situs Fundo Investimento Imobiliario Fii,Financial Services,Capital Markets,126.08,-17.929293,none,LOW,Equity,Serviços financeiros,Mercados de capitais
+DRIM11,FII,,,,,,,,,,,
+MTES11,FII,,,,,,,,,,,
+RBRF11,FII,FII RBRALPHACI  ER,Fundo Investimento Imobiliario Rbr Alpha Fundos De Fundos,Real Estate,REIT - Diversified,10.27,-3.0261319,none,LOW,Equity,Imobiliária,REIT - diversificado
+RCFF11,FII,FII RBR FEEDCI,Rbr Desenvolvimento Comercial Feeder Fof Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,64.9,-0.11224552,none,LOW,Equity,Imobiliária,REIT - diversificado
+RDCI11,FII,,,,,,,,,,,
+RDLI11,FII,FII RDLI    CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+SHIP11,FII,,,,,,,,,,,
+RBRL11,FII,FII RBR LOG CI  ER,RBR Log FII,Financial Services,Asset Management,11.37,-1.6778542,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+RBRX11,FII,FII RBR MULTCI,Rbr Alpha Plus Multiestrategia Real Estate Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.38,0.37266746,none,LOW,Equity,Imobiliária,REIT - diversificado
+RPRI11,FII,FII RBR PR  CI,RBR Premium Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,16.39,1.4156431,none,LOW,Equity,Imobiliária,REIT - Especialidade
+RBRK11,FII,FII RBRK    CI,,,,,,none,LOW,Equity,,
+TOPP11,FII,FII TOPP    CI,Rbr Top Offices Fundo De Investimento Imobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,14.13,0.6514645,none,LOW,Equity,Imobiliária,REIT - diversificado
+RMAI11,FII,FII REAGMULTCI  ES,Domo Fundo de Investimento Imobiliário - FII,,,,-3.846154,none,LOW,Equity,,
+RINV11,FII,FII REAL INVCI,Real Investor Fundo De Investimento Imobiliario,Financial Services,Asset Management,12.06,0.06674266,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+RCRI11,FII,FII RCRI    CI,Real Investor Recebiveis Imobiliários Fundo De Investimento Imobiliario Responsabilidade Limitada,,,,0.019812388,,LOW,Equity,,
+RECD11,FII,FII RECD    CI  EA,,Real Estate,REIT - Diversified,13.09,3.0864196,none,LOW,Equity,Imobiliária,REIT - diversificado
+RMBS11,FII,,,,,,,,,,,
+RECM11,FII,FII RECM    CI  ER,Rec Multiestrategia Fundo De Investimento Imobiliario Responsabilidade Limitada,,,,0.8158472,none,LOW,Equity,,
+RBHG11,FII,FII RBCRI IVCI,Rio Bravo Credito Imobiliario IV Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,14.53,6.109276,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBHY11,FII,FII RB YIELDCI,Rio Bravo Credito Imobiliario High Yield Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,15.47,0.49435845,none,LOW,Equity,Imobiliária,REIT - diversificado
+RBFF11,FII,FII RIOB FF CI,Rio Bravo Ifix Fundo De Fundos Investimento Imobiliario - FII,Real Estate,REIT - Mortgage,11.7,0.11696174,none,LOW,Equity,Imobiliária,REIT - hipoteca
+RBOP11,FII,FII MERC BR CI,Fundo De Investimento Imobiliário Mercantil Do Brasil-fii -Inicio,,,,-0.08134273,none,LOW,Equity,,
+RCRB11,FII,FII RIOB RC CI,Fundo de Investimento Imobiliário Rio Bravo Renda Corporativa,,,6.15,-0.806194,none,LOW,Equity,,
+RBRS11,FII,FII RIOB RR CI,Rio Bravo Renda Residencial Fundo De Investimentos Imobiliario,Real Estate,REIT - Residential,1.91,-1.7882314,none,LOW,Equity,Imobiliária,REIT - Residencial
+RBVA11,FII,FII RIOB VA CI,Fundo Invest Imobiliario Agencias Caixa - FII Fund,Financial,Asset Management,10.75,0.59311074,none,LOW,Equity,Financial,Gestão de ativos
+RNGO11,FII,FII RIONEGROCI,Fundo de Investimento Imobiliário Rio Negro,Real Estate,REIT - Diversified,9.88,3.3555548,none,LOW,Equity,Imobiliária,REIT - diversificado
+RZAK11,FII,FII RIZA AKNCI,Riza Akin Fundo De Investimento Imobiliario – FII,Real Estate,REIT - Diversified,17.07,0.19442949,none,LOW,Equity,Imobiliária,REIT - diversificado
+RZAT11,FII,FII ARCTIUM CI,Riza Arctium Real Estate Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.15,0.33886918,none,LOW,Equity,Imobiliária,REIT - diversificado
+RZLC11,FII,FII RZLC    CI  ER,,Real Estate,REIT - Diversified,14.52,0.29826826,none,LOW,Equity,Imobiliária,REIT - diversificado
+RCKF11,FII,,,,,,,,,,,
+SADI11,FII,FII SANT PAPCI,Santander Papeis Imobiliarios Cdi Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,13.71,0.46511582,none,LOW,Equity,Imobiliária,REIT - Especialidade
+SAPI11,FII,FII SAPI    CI,Santander Títulos Imobiliarios Fundo De Investimento Imobiliario,Financial Services,Asset Management,15.26,-2.628566,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+SARE11,FII,FII SANT RENCI,Santander Renda De Alugueis Fundo Investimento Imobiliarios,Real Estate,REIT - Residential,6.74,-0.4329,none,LOW,Equity,Imobiliária,REIT - Residencial
+FISD11,FII,,Sao Domingos Fundo Ivestimento Imobiliario Fii,,,,,,NONE,Fund,,
+SCPF11,FII,FII SCP     CI,Scp Fundo De Investimento NPV,Real Estate,REIT - Diversified,28.27,-0.66666603,none,LOW,Equity,Imobiliária,REIT - diversificado
+SEQR11,FII,FII SEQUOIA CI  ER,Sequoia III Renda Imobiliaria - Fundo De Investimento Imobiliaria,Real Estate,REIT - Diversified,14.32,0.3651122,none,LOW,Equity,Imobiliária,REIT - diversificado
+SHPH11,FII,FII HIGIENOPCI,FDO INV Imob Shopping Patio Higienopolis,Real Estate,REIT - Diversified,35.48,1.0309278,none,LOW,Equity,Imobiliária,REIT - diversificado
+SHPP11,FII,FII SHPP    CI,Shopping Patio Paulista Fundo De Investimento Imobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+WPLZ11,FII,FII W PLAZA CI,Fundo Investec IMB Shopping West Plaza Fund,Real Estate,REIT - Retail,8.0,4.2315755,none,LOW,Equity,Imobiliária,REIT - varejo
+REIT11,FII,FII REIT RIVCI  ER,REIT Rivera Fundo Invest Imobiliario Cotas,Real Estate,REIT - Diversified,10.27,3.5448945,none,LOW,Equity,Imobiliária,REIT - diversificado
+SJAU11,FII,FII SJ AU   CI,Sj Au Logistica Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,228.52,26.400003,none,LOW,Equity,Imobiliária,REIT - diversificado
+SOLR11,FII,"SOLR11.SA,0P0001OH77,0",Solarium FII Fundo De Investimento Imobiliario,,,,,,NONE,Fund,,
+SPTW11,FII,FII SP DOWNTCI,Sp Downtown Fundo de Investimento Imobiliário - FII,Financial,REIT - Diversified,13.41,-2.3217251,none,LOW,Equity,Financial,REIT - diversificado
+SPAF11,FII,,,,,,,,,,,
+LTMT11,FII,FII SPECIALECI,,Real Estate,REIT - Diversified,106.37,,none,LOW,Equity,Imobiliária,REIT - diversificado
+DVLP11,FII,FII DVLP    CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+DVLT11,FII,FII DVLT    CI,,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+PMFO11,FII,FII PMFO    CI,Daycoval Ans Fundo De Investimento Em Renda Fixa Credito Privado,Financial Services,Asset Management,11.53,0.9698607,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+SPGM11,FII,FII SPGM    CI,,Real Estate,REIT - Specialty,,,none,LOW,Equity,Imobiliária,REIT - Especialidade
+SPG211,FII,FII SPG2    CI,Spgm Ii - Fundo De Investimento Imobiliario Responsabilidade Limitada,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+SPXM11,FII,,,,,,,,,,,
+SPXL11,FII,,,,,,,,,,,
+SPXG11,FII,,,,,,,,,,,
+SPXS11,FII,FII SPX SYN CI  ER,Fundo De Investimento Imobiliario - Spx Syn Multiestrategia,Financial Services,Asset Management,14.09,-1.5151528,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+STRX11,FII,FII STARX   CI  ER,,,,,0.6222959,none,LOW,Equity,,
+SURE11,FII,,,,,,,,,,,
+SNEL11,FII,FII SUNO EL CI,Fundo De Investimento Imobiliario Suno Energias Limpas,Real Estate,REIT - Specialty,14.17,-0.23584321,none,LOW,Equity,Imobiliária,REIT - Especialidade
+SNFF11,FII,FII SUNOFOFICI,Suno Fundo De Fundos De Investimento Imobiliario,Real Estate,REIT - Diversified,11.92,0.3946128,none,LOW,Equity,Imobiliária,REIT - diversificado
+SNLG11,FII,FII SUNO LG CI,Mogno Logistica Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,1344.0,5.333336,none,LOW,Equity,Imobiliária,REIT - diversificado
+SNME11,FII,FII SNME    CI,Suno Multiestrategia Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.72,-0.20724875,none,LOW,Equity,Imobiliária,REIT - diversificado
+SNCI11,FII,FII SUNO CRICI,Suno Recebiveis Imobiliarios Fundo De Investimento Imobiliario,Industrials,Consulting Services,13.54,-1.6885539,none,LOW,Equity,Industriais,Serviços de consultoria
+SPMO11,FII,"SPMO11.SA,0P0001QLSQ,0",Supremo Fundo De Investimento Imobiliario,,,,,,NONE,Fund,,
+TELD11,FII,,,,,,,,,,,
+TELM11,FII,FII TELM    CI,Tellus Multiestrategia Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,11.94,,none,LOW,Equity,Imobiliária,REIT - diversificado
+TEPP11,FII,FII TEL PROPCI,SDI Properties Fundo De Investimento Imobiliario,Real Estate,REIT - Residential,13.5,1.8116851,none,LOW,Equity,Imobiliária,REIT - Residencial
+TRBL11,FII,FII SDI LOG CI,SDI Logística Rio - Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Industrial,8.73,0.033927836,none,LOW,Equity,Imobiliária,REIT - Industrial
+NAUI11,FII,FII NAUI    CI,Ten Desenvolvimento Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,21.12,,none,LOW,Equity,Imobiliária,REIT - diversificado
+TSER11,FII,FII TISHMAN CI,Tishman Speyer Renda Corporativa Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,11.31,0.9615452,none,LOW,Equity,Imobiliária,REIT - diversificado
+TVRI11,FII,FII TIVIO RICI,BB Progressivo II Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Diversified,13.12,-0.031903412,none,LOW,Equity,Imobiliária,REIT - diversificado
+VOTS11,FII,FII V MASTERCI,Votorantim Securities Master Fundo Investimento Imobiliario Fii,Real Estate,REIT - Specialty,9.54,,none,LOW,Equity,Imobiliária,REIT - Especialidade
+TJKB11,FII,FII TJK RENDCI,Tjk Renda Imobiliaria Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.66,1.1653066,none,LOW,Equity,Imobiliária,REIT - diversificado
+TORD11,FII,FII TORDE EICI  ER,Tordesilhas Ei Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,12.74,2.9411736,none,LOW,Equity,Imobiliária,REIT - diversificado
+TSNC11,FII,FII TRANSINCCI,Transinc Fundo,Financial Services,Asset Management,20.05,-0.72727084,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+TCPF11,FII,,,,,,,,NONE,,,
+TRXY11,FII,FII TRXY    CI,TRX Hedge Fund Fundo De Investimento Imobiliario - Responsabilidade Limitada,Real Estate,REIT - Diversified,13.75,-0.7164856,none,LOW,Equity,Imobiliária,REIT - diversificado
+TRXF11,FII,FII TRX REALCI,TRX Renda Fundo Investimento Imobiliario,Real Estate,REIT - Diversified,10.87,-0.8185422,none,LOW,Equity,Imobiliária,REIT - diversificado
+TRXB11,FII,FII TRX R IICI,Trx Real Estate II Fundo De Investimento Imobiliario - Fii,Real Estate,Real Estate - Diversified,8.7,-2.696791,none,LOW,Equity,Imobiliária,Imóvel - diversificado
+URHF11,FII,FII URHF    CI,Urca Hedge Fund Estrategia Imobiliaria Fundo De Investimento Imobiliario – Responsabilidade Ltd.,Real Estate,REIT - Diversified,17.34,-0.5445026,none,LOW,Equity,Imobiliária,REIT - diversificado
+URPR11,FII,FII URCA RENCI,Urca Prime Renda Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Residential,13.38,-0.44966355,none,LOW,Equity,Imobiliária,REIT - Residencial
+VVCO11,FII,FII V2EDCORPCI,XTED - TRX Edificios Corporativos Fundo Invest Imobiliario FII Fund,Real Estate,REIT - Diversified,,,none,LOW,Equity,Imobiliária,REIT - diversificado
+VVMR11,FII,FII MULT RENCI,Fundo De Investimento ImobiliaRio Multi Renda Urbana,Real Estate,REIT - Diversified,1.84,0.28017494,none,LOW,Equity,Imobiliária,REIT - diversificado
+VPPR11,FII,FII V2 PRIMECI,Xp Properties Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,6.51,1.5999984,none,LOW,Equity,Imobiliária,REIT - diversificado
+VVCR11,FII,FII V2 RECE CI,V2 Recebíveis Imobiliários Fundo de Investimento Imobiliário,Real Estate,REIT - Specialty,14.19,0.89108115,none,LOW,Equity,Imobiliária,REIT - Especialidade
+VVRI11,FII,FII V2 RENDACI,V2 Renda Imobiliaria Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Diversified,12.9,-2.0778575,none,LOW,Equity,Imobiliária,REIT - diversificado
+VGIR11,FII,FII VALREIIICI,Valora Re III Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.91,-3.1794913,none,LOW,Equity,Imobiliária,REIT - diversificado
+VGIP11,FII,FII VALORAIPCI  ER,Valora Cri Indice De Preco Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,29.01,-1.2828103,none,LOW,Equity,Imobiliária,REIT - diversificado
+VGII11,FII,FII VGII    CI,,Real Estate,REIT - Diversified,18.61,,none,LOW,Equity,Imobiliária,REIT - diversificado
+VGHF11,FII,FII VALOR HECI,Valora Hedge Fund Fundo De Investimento Imobiliario - Fii,Real Estate,REIT - Diversified,13.92,-1.0309329,none,LOW,Equity,Imobiliária,REIT - diversificado
+VGRI11,FII,FII VGRI    CI,Valora Renda Imobiliaria Fundo De Investimento Imobiliario - Responsabilidade Limitada,Real Estate,REIT - Diversified,16.88,-0.23922853,none,LOW,Equity,Imobiliária,REIT - diversificado
+PLAG11,FII,FII PLAG    CI  ER,Vbi Agro - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,11.33,0.6446275,none,LOW,Equity,Imobiliária,REIT - diversificado
+BLMO11,FII,FII BLMO VBICI,Bluemacaw Office Fund Ii - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,8.19,0.011908723,none,LOW,Equity,Imobiliária,REIT - diversificado
+RVBI11,FII,FII RVBI VBICI  ER,Vbr Reits Fof Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,12.84,-1.6270226,none,LOW,Equity,Imobiliária,REIT - diversificado
+VCJR11,FII,FII VECTIS  CI,Vectis Juros Real Fundo De Investimento Imobiliario - Fii,Real Estate,REIT - Diversified,15.31,2.8510678,none,LOW,Equity,Imobiliária,REIT - diversificado
+VLJS11,FII,,,,,,,,NONE,,,
+SALI11,FII,,,,,,,,,,,
+VCHG11,FII,,,,,,,,,,,
+VCTH11,FII,,,,,,,,,,,
+VSLH11,FII,FII VERS CRICI  ER,Versalhes Recebiveis Imobiliarios - Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,13.61,-1.6891876,none,LOW,Equity,Imobiliária,REIT - diversificado
+FVPQ11,FII,FII V PARQUECI,FVPQ - Fii V Parque,Real Estate,REIT - Retail,17.08,0.81990546,none,LOW,Equity,Imobiliária,REIT - varejo
+VIDS11,FII,,,,,,,,,,,
+VDSV11,FII,,,,,,,,,,,
+VCRI11,FII,FII VINCI CRCI,Vinci Credit Securities Fundo De Investimento Imobiliario,Real Estate,REIT - Office,15.85,-0.539083,none,LOW,Equity,Imobiliária,REIT - Escritório
+VIUR11,FII,FII VINCI IUCI,Vinci Imoveis Urbanos Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,14.01,0.1766825,none,LOW,Equity,Imobiliária,REIT - diversificado
+VLQI11,FII,,,,,,,,,,,
+VIFI11,FII,FII VINCI IFCI,Vinci Instrumentos Financeiros Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,18.27,0.9472283,none,LOW,Equity,Imobiliária,REIT - diversificado
+VILG11,FII,FII VINCI LGCI,Vinci Logistica Fundo Investimento Imobiliario FII,Financial Services,Asset Management,9.65,-0.048095368,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+VIMO11,FII,,,,,,,,,,,
+VINO11,FII,FII VINCI OFCI,Vinci Corporate Fundo De Investimento Imobiliario,Real Estate,REIT - Office,11.7,,none,LOW,Equity,Imobiliária,REIT - Escritório
+VIOL11,FII,,,,,,,,,,,
+VISC11,FII,FII VINCI SCCI,Vinci Shopping Centers Fundo Investimento Imobiliario - Fii,Real Estate,REIT - Retail,8.69,-0.6841517,none,LOW,Equity,Imobiliária,REIT - varejo
+WSEC11,FII,FII WARREN  CI  ERA,Warren Securities Fundo De Investimento Imobiliario - FII,Real Estate,REIT - Specialty,43.84,3.5058439,none,LOW,Equity,Imobiliária,REIT - Especialidade
+SPDE11,FII,FII WHG F SPCI  ER,,Real Estate,REIT - Specialty,5.54,3.514019,none,LOW,Equity,Imobiliária,REIT - Especialidade
+WHGR11,FII,FII WHG REALCI,Whg Real Estate Fundo De Investimento Imobiliario – Fii,Real Estate,REIT - Specialty,13.53,0.45454502,none,LOW,Equity,Imobiliária,REIT - Especialidade
+XPCM11,FII,FII XP MACAECI,XP Corporate Macaé Fundo de Investimento Imobiliário - FII,Real Estate,REIT - Diversified,8.15,4.8543677,none,LOW,Equity,Imobiliária,REIT - diversificado
+XPCI11,FII,FII XP CRED CI,Xp Credito Imobiliario ae Fundo De Investimento Imobiliario,Real Estate,REIT - Mortgage,14.03,0.702316,none,LOW,Equity,Imobiliária,REIT - hipoteca
+XPIN11,FII,FII XP INDL CI,Xp Industrial Fundo Investimento Imobiliario,Real Estate,REIT - Industrial,12.6,1.2322986,none,LOW,Equity,Imobiliária,REIT - Industrial
+XPLG11,FII,FII XP LOG  CI,Xp Log Fundo Investimento Imobiliario FII,Real Estate,REIT - Industrial,9.89,-0.3780315,none,LOW,Equity,Imobiliária,REIT - Industrial
+XPML11,FII,FII XP MALLSCI,Xp Malls Fundo Investimentos Imobiliarios,Real Estate,REIT - Retail,10.6,-1.3657079,none,LOW,Equity,Imobiliária,REIT - varejo
+XPSF11,FII,FII XP SELECCI,XP Selection Fundo De Fundos De Investimento Imobiliario - FII,Real Estate,REIT - Mortgage,11.73,-0.49341667,none,LOW,Equity,Imobiliária,REIT - hipoteca
+YUFI11,FII,FII YUCA    CI  ER,Yuca Fundo De Investimento Imobiliario,Real Estate,REIT - Residential,4.92,0.61672187,none,LOW,Equity,Imobiliária,REIT - Residencial
+ZAGH11,FII,FII ZAGH    CI,Zagros Multiestrategia Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,8.15,0.68094015,none,LOW,Equity,Imobiliária,REIT - Especialidade
+ZAVC11,FII,FII ZAVIT C CI,Zavit Credito Imobiliario - Fundo De Investimento Imobiliario,Real Estate,REIT - Specialty,17.33,6.7285376,none,LOW,Equity,Imobiliária,REIT - Especialidade
+ZAVI11,FII,FII ZAVIT R CI,Zavit Real Estate Fund Fundo De Investimento Imobiliario,Real Estate,REIT - Diversified,15.66,0.066924214,none,LOW,Equity,Imobiliária,REIT - diversificado
+ZIFI11,FII,FII ZION    CI,Zion Capital Fundo De Investimento Imobiliario-Fii,Real Estate,REIT - Specialty,,-0.37807184,none,LOW,Equity,Imobiliária,REIT - Especialidade
+COGN3,Ação,COGNA ON    ON      NM,Cogna Educação S.A.,Consumer Defensive,Education & Training Services,9.5,-8.934708,buy,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+ITUB4,Ação,ITAUUNIBANCOPN      N1,Itaú Unibanco Holding S.A.,Financial Services,Banks - Regional,0.57,-7.341639,strong_buy,LOW,Equity,Serviços financeiros,Bancos - Regional
+ABEV3,Ação,AMBEV S/A   ON,Ambev S.A.,Consumer Defensive,Beverages - Brewers,6.93,-1.6272207,hold,LOW,Equity,Defensivo do consumidor,Bebidas - cervejeiros
+AZUL4,Ação,AZUL        PN      N2,Azul S.A.,Industrials,Airlines,,-12.903227,underperform,LOW,Equity,Industriais,Companhias aéreas
+ITSA4,Ação,ITAUSA      PN      N1,Itaúsa S.A.,Industrials,Conglomerates,7.84,-5.7553988,strong_buy,LOW,Equity,Industriais,Conglomerados
+BBAS3,Ação,BRASIL      ON      NM,Banco do Brasil S.A.,Financial Services,Banks - Regional,1.64,-5.7512302,hold,LOW,Equity,Serviços financeiros,Bancos - Regional
+B3SA3,Ação,B3          ON      NM,"B3 S.A. - Brasil, Bolsa, Balcão",Financial Services,Financial Data & Stock Exchanges,2.0,-6.662138,buy,LOW,Equity,Serviços financeiros,Dados financeiros e bolsas de valores
+PETR4,Ação,PETROBRAS   PN      N2,Petróleo Brasileiro S.A. - Petrobras,Energy,Oil & Gas Integrated,16.29,1.5878025,buy,LOW,Equity,Energia,Petróleo e gás integrado
+MGLU3,Ação,MAGAZ LUIZA ON      NM,Magazine Luiza S.A.,Consumer Cyclical,Specialty Retail,3.1,-13.081081,hold,LOW,Equity,Consumidor cíclico,Varejo especializado
+BBDC4,Ação,BRADESCO    PN  EJ  N1,Banco Bradesco S.A.,Financial Services,Banks - Regional,1.35,-3.7192612,buy,LOW,Equity,Serviços financeiros,Bancos - Regional
+VALE3,Ação,VALE        ON      NM,Vale S.A.,Basic Materials,Other Industrial Metals & Mining,14.23,1.449274,buy,LOW,Equity,Materiais básicos,Outros metais industriais e mineração
+MRVE3,Ação,MRV         ON      NM,MRV Engenharia e Participações S.A.,Real Estate,Real Estate - Development,,-3.1796474,buy,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+CVCB3,Ação,CVC BRASIL  ON      NM,CVC Brasil Operadora e Agência de Viagens S.A.,Consumer Cyclical,Travel Services,,-6.0241003,none,LOW,Equity,Consumidor cíclico,Serviços de viagem
+VAMO3,Ação,VAMOS       ON      NM,"Vamos Locação de Caminhões, Máquinas e Equipamentos S.A.",Industrials,Rental & Leasing Services,14.05,-1.5113336,none,LOW,Equity,Industriais,Serviços de aluguel e leasing
+CSAN3,Ação,COSAN       ON      NM,Cosan S.A.,Energy,Oil & Gas Refining & Marketing,5.62,-10.644254,buy,LOW,Equity,Energia,Reino e marketing de petróleo e gás
+LREN3,Ação,LOJAS RENNERON  EJ  NM,Lojas Renner S.A.,Consumer Cyclical,Department Stores,4.13,-3.3092008,buy,LOW,Equity,Consumidor cíclico,Lojas de departamento
+GGBR4,Ação,GERDAU      PN      N1,Gerdau S.A.,Basic Materials,Steel,4.0,-0.5363537,buy,LOW,Equity,Materiais básicos,Aço
+RAIZ4,Ação,RAIZEN      PN      N2,Raízen S.A.,Utilities,Utilities - Renewable,10.88,-9.941525,buy,LOW,Equity,Utilities,Utilitários - renovável
+MRFG3,Ação,MARFRIG     ON      NM,Marfrig Global Foods S.A.,Consumer Defensive,Packaged Foods,12.37,3.46379,buy,LOW,Equity,Defensivo do consumidor,Alimentos embalados
+ANIM3,Ação,ANIMA       ON      NM,Ânima Holding S.A.,Consumer Defensive,Education & Training Services,1.26,-13.636367,buy,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+BRFS3,Ação,BRF SA      ON      NM,BRF S.A.,Consumer Defensive,Packaged Foods,3.5,10.831232,none,LOW,Equity,Defensivo do consumidor,Alimentos embalados
+WEGE3,Ação,WEG         ON      NM,WEG S.A.,Industrials,Electrical Equipment & Parts,0.76,-7.5581393,buy,LOW,Equity,Industriais,Equipamento elétrico e peças
+EMBR3,Ação,EMBRAER     ON      NM,Embraer S.A.,Industrials,Aerospace & Defense,0.18,-11.0073,buy,LOW,Equity,Industriais,Aeroespacial e Defesa
+RENT3,Ação,LOCALIZA    ON      NM,Localiza Rent a Car S.A.,Industrials,Rental & Leasing Services,5.0,-6.431854,strong_buy,LOW,Equity,Industriais,Serviços de aluguel e leasing
+BEEF3,Ação,MINERVA     ON      NM,Minerva S.A.,Consumer Defensive,Farm Products,,4.0618963,buy,LOW,Equity,Defensivo do consumidor,Produtos agrícolas
+CASH3,Ação,MELIUZ      ON      NM,Méliuz S.A.,Communication Services,Internet Content & Information,68.32,6.0431666,hold,LOW,Equity,Serviços de comunicação,Conteúdo e informação da Internet
+AZTE3,Ação,AZT ENERGIA ON,Azevedo & Travassos Energia S.A.,Energy,Oil & Gas E&P,,6.1538496,none,LOW,Equity,Energia,Petróleo e gás E&P
+MOVI3,Ação,MOVIDA      ON      NM,Movida Participações S.A.,Industrials,Rental & Leasing Services,2.53,-8.333336,buy,LOW,Equity,Industriais,Serviços de aluguel e leasing
+ASAI3,Ação,ASSAI       ON      NM,Sendas Distribuidora S.A.,Consumer Defensive,Grocery Stores,0.95,-3.1068022,buy,LOW,Equity,Defensivo do consumidor,Supermercados
+VBBR3,Ação,VIBRA       ON      NM,Vibra Energia S.A.,Consumer Cyclical,Specialty Retail,11.03,-3.7627285,buy,LOW,Equity,Consumidor cíclico,Varejo especializado
+CMIG4,Ação,CEMIG       PN      N1,Companhia Energética de Minas Gerais - CEMIG,Utilities,Utilities - Diversified,11.6,-3.3989277,hold,LOW,Equity,Utilities,Utilitários - diversificados
+RADL3,Ação,RAIADROGASILON  EJ  NM,Raia Drogasil S.A.,Healthcare,Pharmaceutical Retailers,2.08,-9.999998,buy,LOW,Equity,Assistência médica,Varejistas farmacêuticos
+RAIL3,Ação,RUMO S.A.   ON      NM,Rumo S.A.,Industrials,Railroads,4.37,-7.857907,buy,LOW,Equity,Industriais,Ferrovias
+BRAV3,Ação,BRAVA       ON      NM,Brava Energia S.A.,Energy,Oil & Gas E&P,2.22,-1.1117224,buy,LOW,Equity,Energia,Petróleo e gás E&P
+PRIO3,Ação,PETRORIO    ON      NM,Prio S.A.,Energy,Oil & Gas E&P,,0.3287914,buy,LOW,Equity,Energia,Petróleo e gás E&P
+BBDC3,Ação,BRADESCO    ON  EJ  N1,Banco Bradesco S.A.,Financial Services,Banks - Regional,1.43,-4.024982,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+CPLE6,Ação,COPEL       PNB     N2,Companhia Paranaense de Energia - COPEL,Utilities,Utilities - Regulated Electric,4.88,-3.8087542,strong_buy,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+PCAR3,Ação,"P.ACUCAR,CBDON      NM",Companhia Brasileira De Distribuicao,Consumer Cyclical,Department Stores,,-0.3105587,none,LOW,Equity,Consumidor cíclico,Lojas de departamento
+BPAC11,Ação,BTGP BANCO  UNT     N2,Banco BTG Pactual S.A.,Financial Services,Capital Markets,2.38,-3.7935834,none,LOW,Equity,Serviços financeiros,Mercados de capitais
+VIVT3,Ação,TELEF BRASILON,Telefônica Brasil S.A.,Communication Services,Telecom Services,3.72,-0.9259353,buy,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+USIM5,Ação,USIMINAS    PNA     N1,Usinas Siderúrgicas de Minas Gerais S.A.,Basic Materials,Steel,4.94,-4.026842,hold,LOW,Equity,Materiais básicos,Aço
+TIMS3,Ação,TIM         ON  EBG NM,TIM S.A.,Communication Services,Telecom Services,5.7,-5.7880645,buy,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+POMO4,Ação,MARCOPOLO   PN      N2,Marcopolo S.A.,Industrials,Farm & Heavy Construction Machinery,7.22,-1.5950818,strong_buy,LOW,Equity,Industriais,Fazenda e máquinas de construção pesada
+MOTV3,Ação,MOTIVA SA   ON      NM,Motiva Infraestrutura de Mobilidade S.A.,Industrials,Infrastructure Operations,2.19,-6.1638894,buy,LOW,Equity,Industriais,Operações de infraestrutura
+CYRE3,Ação,CYRELA REALTON      NM,Cyrela Brazil Realty S.A. Empreendimentos e Participações,Consumer Cyclical,Residential Construction,4.09,-1.5763161,buy,LOW,Equity,Consumidor cíclico,Construção residencial
+RDOR3,Ação,REDE D OR   ON      NM,Rede D'Or São Luiz S.A.,Healthcare,Medical Care Facilities,2.3,-4.666479,buy,LOW,Equity,Assistência médica,Instalações de assistência médica
+PETR3,Ação,PETROBRAS   ON      N2,Petróleo Brasileiro S.A. - Petrobras,Energy,Oil & Gas Integrated,14.99,0.91038316,buy,LOW,Equity,Energia,Petróleo e gás integrado
+EQTL3,Ação,EQUATORIAL  ON      NM,Equatorial S.A.,Utilities,Utilities - Regulated Electric,2.19,-4.768509,strong_buy,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+ELET3,Ação,ELETROBRAS  ON      N1,Centrais Elétricas Brasileiras S.A. - Eletrobrás,Utilities,Utilities - Renewable,3.14,-4.0283146,strong_buy,LOW,Equity,Utilities,Utilitários - renovável
+LWSA3,Ação,LWSA        ON      NM,Locaweb Serviços de Internet S.A.,Technology,Software - Infrastructure,1.81,2.1798344,buy,LOW,Equity,Tecnologia,Software - Infraestrutura
+AURE3,Ação,AUREN       ON      NM,Auren Energia S.A.,Utilities,Utilities - Renewable,0.56,-7.0408216,none,LOW,Equity,Utilities,Utilitários - renovável
+ENEV3,Ação,ENEVA       ON      NM,Eneva S.A.,Utilities,Utilities - Diversified,,-4.7482004,buy,LOW,Equity,Utilities,Utilitários - diversificados
+GOAU4,Ação,GERDAU MET  PN      N1,Metalurgica Gerdau S.A.,Basic Materials,Steel,3.81,-0.53362,buy,LOW,Equity,Materiais básicos,Aço
+CSNA3,Ação,SID NACIONALON,Companhia Siderúrgica Nacional,Basic Materials,Steel,17.03,0.4872102,hold,LOW,Equity,Materiais básicos,Aço
+SIMH3,Ação,SIMPAR      ON      NM,SIMPAR S.A.,Industrials,Rental & Leasing Services,1.38,-7.883819,buy,LOW,Equity,Industriais,Serviços de aluguel e leasing
+AZEV4,Ação,AZEVEDO     PN,Azevedo & Travassos S.A.,Industrials,Engineering & Construction,,18.51851,none,LOW,Equity,Industriais,Engenharia e Construção
+HAPV3,Ação,HAPVIDA     ON      NM,Hapvida Participações e Investimentos S.A.,Financial Services,Insurance - Life,,-9.23898,buy,LOW,Equity,Serviços financeiros,Seguro - Vida
+YDUQ3,Ação,YDUQS PART  ON      NM,Yduqs Participações S.A.,Consumer Defensive,Education & Training Services,3.46,-15.003061,buy,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+SANB11,Ação,SANTANDER BRUNT,Banco Santander (Brasil) S.A.,Financial Services,Banks - Regional,5.41,-5.354706,buy,LOW,Equity,Serviços financeiros,Bancos - Regional
+RECV3,Ação,PETRORECSA  ON      NM,Petroreconcavo S.A.,Energy,Oil & Gas E&P,6.28,-1.4976128,buy,LOW,Equity,Energia,Petróleo e gás E&P
+CMIN3,Ação,CSNMINERACAOON      N2,CSN Mineração S.A.,Basic Materials,Steel,19.92,-1.717551,underperform,LOW,Equity,Materiais básicos,Aço
+RAPT4,Ação,RANDON PART PN      N1,Randoncorp S.A.,Industrials,Farm & Heavy Construction Machinery,0.52,-7.1835814,buy,LOW,Equity,Industriais,Fazenda e máquinas de construção pesada
+ODPV3,Ação,ODONTOPREV  ON      NM,Odontoprev S.A.,Healthcare,Healthcare Plans,7.79,-1.1935158,hold,LOW,Equity,Assistência médica,Planos de saúde
+SMFT3,Ação,SMART FIT   ON      NM,Smartfit Escola de Ginástica e Dança S.A.,Consumer Cyclical,Leisure,2.66,-3.1678073,strong_buy,LOW,Equity,Consumidor cíclico,Lazer
+CPLE3,Ação,COPEL       ON      N2,Companhia Paranaense de Energia - COPEL,Utilities,Utilities - Regulated Electric,6.84,-3.8095284,strong_buy,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+GRND3,Ação,GRENDENE    ON      NM,Grendene S.A.,Consumer Cyclical,Footwear & Accessories,8.79,-2.3809545,none,LOW,Equity,Consumidor cíclico,Calçados e acessórios
+UGPA3,Ação,ULTRAPAR    ON      NM,Ultrapar Participações S.A.,Energy,Oil & Gas Refining & Marketing,3.99,-4.94719,hold,LOW,Equity,Energia,Reino e marketing de petróleo e gás
+SUZB3,Ação,SUZANO S.A. ON      NM,Suzano S.A.,Basic Materials,Paper & Paper Products,3.94,-3.9461005,strong_buy,LOW,Equity,Materiais básicos,Papel e produtos de papel
+ALOS3,Ação,ALLOS       ON      NM,Allos S.A.,Real Estate,Real Estate Services,5.28,-5.2954087,buy,LOW,Equity,Imobiliária,Serviços imobiliários
+RCSL4,Ação,RECRUSUL    PN,Recrusul S/A,Industrials,Specialty Industrial Machinery,,1.0638287,none,LOW,Equity,Industriais,Máquinas industriais especiais
+GGPS3,Ação,GPS         ON      NM,GPS Participações e Empreendimentos S.A.,Industrials,Specialty Business Services,1.46,-4.265691,none,LOW,Equity,Industriais,Serviços de Negócios Especiais
+IFCM3,Ação,INFRACOMM   ON      NM,Infracommerce CXaaS S.A.,Industrials,Specialty Business Services,,,none,LOW,Equity,Industriais,Serviços de Negócios Especiais
+CBAV3,Ação,CBA         ON      NM,Companhia Brasileira de Alumínio,Basic Materials,Aluminum,,0.20450366,buy,LOW,Equity,Materiais básicos,Alumínio
+CXSE3,Ação,CAIXA SEGURION      NM,Caixa Seguridade Participações S.A.,Financial Services,Insurance - Diversified,8.0,-3.3557045,buy,LOW,Equity,Serviços financeiros,Seguro - diversificado
+FLRY3,Ação,FLEURY      ON      NM,Fleury S.A.,Healthcare,Diagnostics & Research,8.95,-3.072201,hold,LOW,Equity,Assistência médica,Diagnóstico e pesquisa
+DXCO3,Ação,DEXCO       ON      NM,Dexco S.A.,Basic Materials,Lumber & Wood Production,0.95,-6.46853,buy,LOW,Equity,Materiais básicos,Produção de madeira e madeira
+CEAB3,Ação,CEA MODAS   ON      NM,C&A Modas S.A.,Consumer Cyclical,Specialty Retail,1.95,-10.542321,buy,LOW,Equity,Consumidor cíclico,Varejo especializado
+VIVA3,Ação,VIVARA S.A. ON      NM,Vivara Participações S.A.,Consumer Cyclical,Luxury Goods,2.44,-6.3165607,buy,LOW,Equity,Consumidor cíclico,Produtos de luxo
+OIBR3,Ação,OI          ON      N1,Oi S.A.,Communication Services,Telecom Services,,-9.523809,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+PETZ3,Ação,PETZ        ON      NM,Pet Center Comércio e Participações S.A.,Consumer Cyclical,Specialty Retail,14.75,-5.4404097,none,LOW,Equity,Consumidor cíclico,Varejo especializado
+JHSF3,Ação,JHSF PART   ON  ED  NM,JHSF Participações S.A.,Real Estate,Real Estate - Development,7.0,-1.5094414,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+ARML3,Ação,ARMAC       ON      NM,"Armac Locação, Logística e Serviços S.A.",Industrials,Rental & Leasing Services,11.35,7.1808567,buy,LOW,Equity,Industriais,Serviços de aluguel e leasing
+BBSE3,Ação,BBSEGURIDADEON      NM,BB Seguridade Participações S.A.,Financial Services,Insurance - Diversified,12.96,-3.5332708,hold,LOW,Equity,Serviços financeiros,Seguro - diversificado
+BRKM5,Ação,BRASKEM     PNA     N1,Braskem S.A.,Basic Materials,Chemicals,,5.172419,hold,LOW,Equity,Materiais básicos,Produtos químicos
+MULT3,Ação,MULTIPLAN   ON      N2,Multiplan Empreendimentos Imobiliários S.A.,Real Estate,Real Estate Services,3.61,-4.674275,strong_buy,LOW,Equity,Imobiliária,Serviços imobiliários
+ECOR3,Ação,ECORODOVIAS ON      NM,EcoRodovias Infraestrutura e Logística S.A.,Industrials,Infrastructure Operations,2.94,-6.24152,buy,LOW,Equity,Industriais,Operações de infraestrutura
+HBOR3,Ação,HELBOR      ON      NM,Helbor Empreendimentos S.A.,Real Estate,Real Estate Services,3.95,-3.9301271,hold,LOW,Equity,Imobiliária,Serviços imobiliários
+PORT3,Ação,WILSON SONS ON      NM,Wilson Sons S.A.,Industrials,Marine Shipping,8.77,,none,LOW,Equity,Industriais,Envio marítimo
+TOTS3,Ação,TOTVS       ON      NM,TOTVS S.A.,Technology,Software - Application,0.69,-4.685689,buy,LOW,Equity,Tecnologia,Software - Aplicativo
+AZEV3,Ação,AZEVEDO     ON,Azevedo & Travassos S.A.,Industrials,Engineering & Construction,,32.608696,none,LOW,Equity,Industriais,Engenharia e Construção
+SBFG3,Ação,GRUPO SBF   ON      NM,Grupo SBF S.A.,Consumer Cyclical,Specialty Retail,4.49,-5.138337,none,LOW,Equity,Consumidor cíclico,Varejo especializado
+SRNA3,Ação,SERENA      ON      NM,Serena Energia S.A.,Utilities,Utilities - Renewable,,,none,LOW,Equity,Utilities,Utilitários - renovável
+CURY3,Ação,CURY S/A    ON      NM,Cury Construtora e Incorporadora S.A.,Real Estate,Real Estate - Development,6.4,-0.6677822,strong_buy,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+BRAP4,Ação,BRADESPAR   PN      N1,Bradespar S.A.,Financial Services,Asset Management,15.26,1.0309283,hold,LOW,Equity,Serviços financeiros,Gestão de ativos
+BHIA3,Ação,CASAS BAHIA ON      NM,Grupo Casas Bahia S.A.,Consumer Cyclical,Specialty Retail,,-6.2500014,none,LOW,Equity,Consumidor cíclico,Varejo especializado
+STBP3,Ação,SANTOS BRP  ON      NM,Santos Brasil Participações S.A.,Industrials,Marine Shipping,4.24,0.4360426,buy,LOW,Equity,Industriais,Envio marítimo
+GMAT3,Ação,GRUPO MATEUSON      NM,Grupo Mateus S.A.,Consumer Cyclical,Department Stores,3.28,-1.6089122,buy,LOW,Equity,Consumidor cíclico,Lojas de departamento
+LJQQ3,Ação,"QUERO,QUERO ON      NM",Lojas Quero-Quero S.A.,Consumer Cyclical,Specialty Retail,4.64,-8.076916,none,LOW,Equity,Consumidor cíclico,Varejo especializado
+FRAS3,Ação,"FRAS,LE     ON  EJ  N1",Fras-le S.A.,Consumer Cyclical,Auto Parts,2.0,-12.388396,none,LOW,Equity,Consumidor cíclico,Auto Peças
+KLBN11,Ação,KLABIN S/A  UNT     N2,Klabin S.A.,Basic Materials,Paper & Paper Products,4.96,-4.575842,buy,LOW,Equity,Materiais básicos,Papel e produtos de papel
+CSMG3,Ação,COPASA      ON      NM,Companhia de Saneamento de Minas Gerais,Utilities,Utilities - Regulated Water,5.84,-4.748599,hold,LOW,Equity,Utilities,Utilitários - água regulada
+HBSA3,Ação,HIDROVIAS   ON      NM,Hidrovias do Brasil S.A.,Industrials,Integrated Freight & Logistics,,-1.6997151,none,LOW,Equity,Industriais,Frete e logística integrada
+AZZA3,Ação,AZZAS 2154  ON      NM,Azzas 2154 S.A.,Consumer Cyclical,Footwear & Accessories,5.11,-13.166221,buy,LOW,Equity,Consumidor cíclico,Calçados e acessórios
+QUAL3,Ação,QUALICORP   ON      NM,Qualicorp Consultoria e Corretora de Seguros S.A.,Healthcare,Healthcare Plans,0.29,-4.3243265,hold,LOW,Equity,Assistência médica,Planos de saúde
+SLCE3,Ação,SLC AGRICOLAON      NM,SLC Agrícola S.A.,Consumer Defensive,Farm Products,7.7,0.5524883,buy,LOW,Equity,Defensivo do consumidor,Produtos agrícolas
+DIRR3,Ação,DIRECIONAL  ON      NM,Direcional Engenharia S.A.,Real Estate,Real Estate - Development,13.06,-3.6505234,strong_buy,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+INTB3,Ação,INTELBRAS   ON      NM,Intelbras S.A. - Indústria de Telecomunicação Eletrônica Brasileira,Technology,Communication Equipment,3.66,-5.555557,buy,LOW,Equity,Tecnologia,Equipamento de comunicação
+SBSP3,Ação,SABESP      ON      NM,Companhia de Saneamento Básico do Estado de São Paulo - SABESP,Utilities,Utilities - Regulated Water,3.13,-5.253779,buy,LOW,Equity,Utilities,Utilitários - água regulada
+ENGI11,Ação,ENERGISA    UNT     N2,Energisa S.A.,Utilities,Utilities - Regulated Electric,6.0,-5.219554,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+IGTI11,Ação,IGUATEMI S.AUNT     N1,Iguatemi S.A.,Real Estate,Real Estate Services,2.91,-3.6713214,strong_buy,LOW,Equity,Imobiliária,Serviços imobiliários
+ONCO3,Ação,ONCOCLINICASON      NM,Oncoclínicas do Brasil Serviços Médicos S.A.,Healthcare,Medical Care Facilities,,7.630524,underperform,LOW,Equity,Assistência médica,Instalações de assistência médica
+SMTO3,Ação,SAO MARTINHOON      NM,São Martinho S.A.,Basic Materials,Specialty Chemicals,5.13,-4.0336204,buy,LOW,Equity,Materiais básicos,Produtos químicos especiais
+KEPL3,Ação,KEPLER WEBERON      NM,Kepler Weber S.A.,Industrials,Farm & Heavy Construction Machinery,6.48,-5.1787868,none,LOW,Equity,Industriais,Fazenda e máquinas de construção pesada
+HYPE3,Ação,HYPERA      ON      NM,Hypera S.A.,Healthcare,Drug Manufacturers - Specialty & Generic,4.3,-2.4909766,buy,LOW,Equity,Assistência médica,Fabricantes de medicamentos - Especialidade e genérica
+EGIE3,Ação,ENGIE BRASILON      NM,Engie Brasil Energia S.A.,Utilities,Utilities - Renewable,5.12,-10.194379,none,LOW,Equity,Utilities,Utilitários - renovável
+MDIA3,Ação,M.DIASBRANCOON      NM,M. Dias Branco S.A. Indústria e Comércio de Alimentos,Consumer Defensive,Packaged Foods,2.54,9.451716,hold,LOW,Equity,Defensivo do consumidor,Alimentos embalados
+SAPR11,Ação,SANEPAR     UNT     N2,Companhia de Saneamento do Paraná - SANEPAR,Utilities,Utilities - Regulated Water,7.39,-1.940456,none,LOW,Equity,Utilities,Utilitários - água regulada
+SAPR4,Ação,SANEPAR     PN      N2,Companhia de Saneamento do Paraná - SANEPAR,Utilities,Utilities - Regulated Water,7.6,-2.294198,none,LOW,Equity,Utilities,Utilitários - água regulada
+TUPY3,Ação,TUPY        ON      NM,Tupy S.A.,Industrials,Metal Fabrication,9.89,-1.9922558,none,LOW,Equity,Industriais,Fabricação de metal
+ISAE4,Ação,ISA ENERGIA PN      N1,ISA Energía Brasil S.A.,Utilities,Utilities - Independent Power Producers,10.18,-2.1879032,hold,LOW,Equity,Utilities,Utilitários - produtores de energia independentes
+PSSA3,Ação,PORTO SEGUROON      NM,Porto Seguro S.A.,Financial Services,Insurance - Diversified,3.48,-7.6067796,buy,LOW,Equity,Serviços financeiros,Seguro - diversificado
+MYPK3,Ação,"IOCHP,MAXIONON      NM",Iochpe-Maxion S.A.,Consumer Cyclical,Auto Parts,5.99,0.6711421,buy,LOW,Equity,Consumidor cíclico,Auto Peças
+ALUP11,Ação,ALUPAR      UNT     N2,Alupar Investimento S.A.,Utilities,Utilities - Renewable,2.71,-3.6679518,none,LOW,Equity,Utilities,Utilitários - renovável
+TCSA3,Ação,TECNISA     ON      NM,Tecnisa S.A.,Real Estate,Real Estate - Development,,20.496897,underperform,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+NEOE3,Ação,NEOENERGIA  ON      NM,Neoenergia S.A.,Utilities,Utilities - Regulated Electric,3.88,-6.6640973,buy,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+ENJU3,Ação,ENJOEI      ON      NM,Enjoei S.A.,Consumer Cyclical,Internet Retail,,-3.5398197,none,LOW,Equity,Consumidor cíclico,Varejo da Internet
+TAEE11,Ação,TAESA       UNT     N2,Transmissora Aliança de Energia Elétrica S.A.,Utilities,Utilities - Regulated Electric,7.84,-2.9403334,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+AMER3,Ação,AMERICANAS  ON      NM,Americanas S.A.,Consumer Cyclical,Internet Retail,,-3.7313483,none,LOW,Equity,Consumidor cíclico,Varejo da Internet
+ALPA4,Ação,ALPARGATAS  PN      N1,Alpargatas S.A.,Consumer Cyclical,Footwear & Accessories,1.15,-4.2505503,none,LOW,Equity,Consumidor cíclico,Calçados e acessórios
+TEND3,Ação,TENDA       ON      NM,Construtora Tenda S.A.,Real Estate,Real Estate - Development,0.7,-5.889622,buy,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+JSLG3,Ação,JSL         ON      NM,JSL S.A.,Industrials,Integrated Freight & Logistics,6.95,-6.010011,strong_buy,LOW,Equity,Industriais,Frete e logística integrada
+LPSB3,Ação,LOPES BRASILON      NM,LPS Brasil - Consultoria de Imóveis S.A.,Real Estate,Real Estate Services,2.01,-12.658231,none,LOW,Equity,Imobiliária,Serviços imobiliários
+ZAMP3,Ação,ZAMP S.A.   ON,Zamp S.A.,Consumer Cyclical,Restaurants,,-0.5882347,none,LOW,Equity,Consumidor cíclico,Restaurantes
+BPAN4,Ação,BANCO PAN   PN      N1,Banco Pan S.A.,Financial Services,Banks - Regional,2.99,-4.743594,buy,LOW,Equity,Serviços financeiros,Bancos - Regional
+MLAS3,Ação,MULTILASER  ON      NM,Grupo Multi S.A.,Technology,Electronics & Computer Distribution,,-2.8037467,none,LOW,Equity,Tecnologia,Distribuição Eletrônica e Computador
+CAML3,Ação,CAMIL       ON      NM,Camil Alimentos S.A.,Consumer Defensive,Packaged Foods,5.73,-3.201508,buy,LOW,Equity,Defensivo do consumidor,Alimentos embalados
+BRSR6,Ação,BANRISUL    PNB     N1,Banco do Estado do Rio Grande do Sul S.A.,Financial Services,Banks - Regional,7.61,-4.1987987,hold,LOW,Equity,Serviços financeiros,Bancos - Regional
+TTEN3,Ação,3TENTOS     ON      NM,Três Tentos Agroindustrial S/A,Basic Materials,Agricultural Inputs,1.26,-7.9895234,buy,LOW,Equity,Materiais básicos,Entradas agrícolas
+MEAL3,Ação,IMC S/A     ON      NM,International Meal Company Alimentação S.A.,Consumer Cyclical,Restaurants,,-1.6260147,none,LOW,Equity,Consumidor cíclico,Restaurantes
+KLBN4,Ação,KLABIN S/A  PN      N2,Klabin S.A.,Basic Materials,Paper & Paper Products,5.0,-4.8843203,buy,LOW,Equity,Materiais básicos,Papel e produtos de papel
+ELET6,Ação,ELETROBRAS  PNB     N1,Centrais Elétricas Brasileiras S.A. - Eletrobrás,Utilities,Utilities - Renewable,8.16,-4.7030272,strong_buy,LOW,Equity,Utilities,Utilitários - renovável
+MILS3,Ação,MILLS       ON      NM,"Mills Locação, Serviços e Logística S.A.",Industrials,Rental & Leasing Services,5.4,-2.0887709,buy,LOW,Equity,Industriais,Serviços de aluguel e leasing
+POSI3,Ação,POSITIVO TECON      NM,Positivo Tecnologia S.A.,Technology,Computer Hardware,6.07,-1.0706679,none,LOW,Equity,Tecnologia,Hardware do computador
+PGMN3,Ação,PAGUE MENOS ON      NM,Empreendimentos Pague Menos S.A.,Healthcare,Pharmaceutical Retailers,7.33,-1.4749318,buy,LOW,Equity,Assistência médica,Varejistas farmacêuticos
+EZTC3,Ação,EZTEC       ON      NM,EZTEC Empreendimentos e Participações S.A.,Real Estate,Real Estate - Development,2.94,-5.420829,hold,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+GUAR3,Ação,GUARARAPES  ON      NM,Guararapes Confecções S.A.,Consumer Cyclical,Apparel Retail,1.48,-9.966026,buy,LOW,Equity,Consumidor cíclico,Varejo de vestuário
+LIGT3,Ação,LIGHT S/A   ON      NM,Light S.A.,Utilities,Utilities - Renewable,,-13.829785,none,LOW,Equity,Utilities,Utilitários - renovável
+CPFE3,Ação,CPFL ENERGIAON      NM,CPFL Energia S.A.,Utilities,Utilities - Regulated Electric,1.91,-7.1254225,hold,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+PLPL3,Ação,PLANOEPLANO ON      NM,Plano & Plano Desenvolvimento Imobiliário S.A.,Real Estate,Real Estate - Development,12.82,-2.6938229,strong_buy,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+ITUB3,Ação,ITAUUNIBANCOON      N1,Itaú Unibanco Holding S.A.,Financial Services,Banks - Regional,0.64,-6.1757717,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+ABCB4,Ação,ABC BRASIL  PN      N2,Banco ABC Brasil S.A.,Financial Services,Banks - Regional,9.7,-3.049907,hold,LOW,Equity,Serviços financeiros,Bancos - Regional
+SEER3,Ação,SER EDUCA   ON      NM,Ser Educacional S.A.,Consumer Defensive,Education & Training Services,1.69,-7.749474,none,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+HBRE3,Ação,HBR REALTY  ON      NM,HBR Realty Empreendimentos Imobiliários S.A.,Real Estate,Real Estate Services,,-9.467461,none,LOW,Equity,Imobiliária,Serviços imobiliários
+SEQL3,Ação,SEQUOIA LOG ON      NM,Sequoia Logística e Transportes S.A.,Industrials,Integrated Freight & Logistics,,-3.571425,none,LOW,Equity,Industriais,Frete e logística integrada
+FESA4,Ação,FERBASA     PN      N1,Cia de Ferro Ligas da Bahia S.A. - FERBASA,Basic Materials,Steel,7.36,-1.5850164,none,LOW,Equity,Materiais básicos,Aço
+JALL3,Ação,JALLESMACHADON      NM,Jalles Machado S/A,Consumer Defensive,Confectioners,1.76,-5.3984585,strong_buy,LOW,Equity,Defensivo do consumidor,Confectioners
+DASA3,Ação,DASA        ON      NM,Diagnósticos da América S.A.,Healthcare,Diagnostics & Research,,-4.379566,hold,LOW,Equity,Assistência médica,Diagnóstico e pesquisa
+TASA4,Ação,TAURUS ARMASPN      N2,Taurus Armas S.A.,Industrials,Aerospace & Defense,2.69,-8.236997,none,LOW,Equity,Industriais,Aeroespacial e Defesa
+PDGR3,Ação,PDG REALT   ON      NM,PDG Realty S.A. Empreendimentos e Participações,Real Estate,Real Estate - Development,,-4.000002,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+EVEN3,Ação,EVEN        ON      NM,Even Construtora e Incorporadora S.A.,Real Estate,Real Estate - Development,21.45,-1.2311922,hold,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+IRBR3,Ação,IRBBRASIL REON      NM,IRB-Brasil Resseguros S.A.,Financial Services,Insurance - Reinsurance,,-4.8068624,none,LOW,Equity,Serviços financeiros,Seguro - resseguro
+VULC3,Ação,VULCABRAS   ON      NM,Vulcabras S.A.,Consumer Cyclical,Footwear & Accessories,7.11,-7.6782384,none,LOW,Equity,Consumidor cíclico,Calçados e acessórios
+RANI3,Ação,IRANI       ON      NM,Irani Papel e Embalagem S.A.,Consumer Cyclical,Packaging & Containers,8.53,-3.9577801,strong_buy,LOW,Equity,Consumidor cíclico,Embalagem e contêineres
+LAVV3,Ação,LAVVI       ON      NM,Lavvi Empreendimentos Imobiliários S.A.,Real Estate,Real Estate Services,5.62,0.31720826,strong_buy,LOW,Equity,Imobiliária,Serviços imobiliários
+ORVR3,Ação,ORIZON      ON      NM,Orizon Valorização de Resíduos S.A.,Industrials,Waste Management,,-4.4402933,none,LOW,Equity,Industriais,Gerenciamento de resíduos
+MDNE3,Ação,MOURA DUBEUXON      NM,Moura Dubeux Engenharia S.A.,Real Estate,Real Estate Services,2.82,-4.0495925,none,LOW,Equity,Imobiliária,Serviços imobiliários
+BMOB3,Ação,BEMOBI TECH ON      NM,Bemobi Mobile Tech S.A.,Communication Services,Entertainment,5.68,-0.86050963,none,LOW,Equity,Serviços de comunicação,Entretenimento
+BMGB4,Ação,BANCO BMG   PN      N1,Banco BMG S.A.,Financial Services,Banks - Regional,10.84,-2.1505356,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+VTRU3,Ação,VITRUEDUCA  ON      NM,"Vitru Brasil Empreendimentos, Participações e Comércio S.A.",Consumer Defensive,Education & Training Services,0.23,-4.798261,none,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+GFSA3,Ação,GAFISA      ON      NM,Gafisa S.A.,Consumer Cyclical,Residential Construction,,4.9343863,none,LOW,Equity,Consumidor cíclico,Construção residencial
+BRBI11,Ação,BR PARTNERS UNT     N2,BRBI BR Partners S.A.,Financial Services,Capital Markets,8.7,-0.18126152,strong_buy,LOW,Equity,Serviços financeiros,Mercados de capitais
+SHUL4,Ação,SCHULZ      PN,Schulz S.A.,Consumer Cyclical,Auto Parts,5.95,-1.7045484,none,LOW,Equity,Consumidor cíclico,Auto Peças
+SOJA3,Ação,BOA SAFRA   ON      NM,Boa Safra Sementes S.A.,Basic Materials,Agricultural Inputs,2.58,-3.4572136,strong_buy,LOW,Equity,Materiais básicos,Entradas agrícolas
+CSED3,Ação,CRUZEIRO EDUON      NM,Cruzeiro do Sul Educacional S.A.,Consumer Defensive,Education & Training Services,6.38,-5.8823476,none,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+SYNE3,Ação,SYN PROP TECON      NM,Syn Prop & Tech S.A.,Real Estate,Real Estate - Diversified,51.17,-0.33003268,none,LOW,Equity,Imobiliária,Imóvel - diversificado
+VLID3,Ação,VALID       ON      NM,Valid Soluções S.A.,Industrials,Specialty Business Services,13.09,-6.7708282,none,LOW,Equity,Industriais,Serviços de Negócios Especiais
+WIZC3,Ação,WIZ CO      ON      NM,Wiz Co Participações e Corretagem de Seguros S.A.,Financial Services,Insurance Brokers,3.21,-0.89974517,none,LOW,Equity,Serviços financeiros,Corretores de seguros
+POMO3,Ação,MARCOPOLO   ON      N2,Marcopolo S.A.,Industrials,Farm & Heavy Construction Machinery,8.85,-1.3782566,none,LOW,Equity,Industriais,Fazenda e máquinas de construção pesada
+VVEO3,Ação,VIVEO       ON      NM,CM Hospitalar S/A,Healthcare,Medical Distribution,11.87,0.84746695,underperform,LOW,Equity,Assistência médica,Distribuição médica
+TRIS3,Ação,TRISUL      ON      NM,Trisul S.A.,Real Estate,Real Estate Services,4.68,-3.7356355,none,LOW,Equity,Imobiliária,Serviços imobiliários
+TGMA3,Ação,TEGMA       ON      NM,Tegma Gestão Logística S.A.,Industrials,Trucking,9.4,-3.7581728,buy,LOW,Equity,Industriais,Caminhão
+MTRE3,Ação,MITRE REALTYON      NM,Mitre Realty Empreendimentos e Participações S.A.,Real Estate,Real Estate - Development,14.01,-2.6698947,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+RNEW4,Ação,RENOVA      PN      N2,Renova Energia S.A.,Utilities,Utilities - Renewable,,4.210529,none,LOW,Equity,Utilities,Utilitários - renovável
+SAPR3,Ação,SANEPAR     ON      N2,Companhia de Saneamento do Paraná - SANEPAR,Utilities,Utilities - Regulated Water,6.62,-1.0037632,none,LOW,Equity,Utilities,Utilitários - água regulada
+FIQE3,Ação,UNIFIQUE    ON      NM,Unifique Telecomunicações S.A.,Communication Services,Telecom Services,8.14,-4.84694,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+PNVL3,Ação,DIMED       ON  EJ  NM,Dimed S.A. Distribuidora de Medicamentos,Healthcare,Drug Manufacturers - General,3.63,-2.096434,none,LOW,Equity,Assistência médica,Fabricantes de drogas - Geral
+IGTI3,Ação,IGUATEMI S.AON      N1,Iguatemi S.A.,Real Estate,Real Estate Services,3.41,-5.7142806,none,LOW,Equity,Imobiliária,Serviços imobiliários
+TFCO4,Ação,TRACK FIELD PN      N2,Track & Field Co S.A.,Consumer Cyclical,Apparel Retail,1.29,-4.376657,buy,LOW,Equity,Consumidor cíclico,Varejo de vestuário
+OPCT3,Ação,OCEANPACT   ON      NM,OceanPact Serviços Marítimos S.A.,Industrials,Specialty Business Services,,-2.5714262,buy,LOW,Equity,Industriais,Serviços de Negócios Especiais
+BRST3,Ação,BRISANET    ON      NM,,Communication Services,Telecom Services,1.39,-3.1690114,hold,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+ESPA3,Ação,ESPACOLASER ON      NM,MPM Corpóreos S.A.,Consumer Cyclical,Personal Services,0.15,0.9009,none,LOW,Equity,Consumidor cíclico,Serviços pessoais
+PTBL3,Ação,PORTOBELLO  ON      NM,PBG S.A.,Industrials,Building Products & Equipment,,-8.620692,none,LOW,Equity,Industriais,Construindo produtos e equipamentos
+MELK3,Ação,MELNICK     ON      NM,Melnick Desenvolvimento Imobiliário S.A.,Real Estate,Real Estate Services,13.06,0.28818414,none,LOW,Equity,Imobiliária,Serviços imobiliários
+SANB4,Ação,SANTANDER BRPN,Banco Santander (Brasil) S.A.,Financial Services,Banks - Regional,5.47,-6.0507503,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+USIM3,Ação,USIMINAS    ON      N1,Usinas Siderúrgicas de Minas Gerais S.A.,Basic Materials,Steel,4.48,-0.4494378,none,LOW,Equity,Materiais básicos,Aço
+BLAU3,Ação,BLAU        ON      NM,Blau Farmacêutica S.A.,Healthcare,Drug Manufacturers - Specialty & Generic,4.38,1.3239881,buy,LOW,Equity,Assistência médica,Fabricantes de medicamentos - Especialidade e genérica
+KLBN3,Ação,KLABIN S/A  ON      N2,Klabin S.A.,Basic Materials,Paper & Paper Products,4.82,-4.51128,none,LOW,Equity,Materiais básicos,Papel e produtos de papel
+PMAM3,Ação,PARANAPANEMAON  ES  NM,Paranapanema S.A.,Basic Materials,Copper,,-1.7647111,none,LOW,Equity,Materiais básicos,Cobre
+LEVE3,Ação,METAL LEVE  ON      NM,MAHLE Metal Leve S.A.,Consumer Cyclical,Auto Parts,8.55,-1.8327262,none,LOW,Equity,Consumidor cíclico,Auto Peças
+RCSL3,Ação,RECRUSUL    ON,Recrusul S/A,Industrials,Specialty Industrial Machinery,,-7.82609,none,LOW,Equity,Industriais,Máquinas industriais especiais
+PRNR3,Ação,PRINER      ON  ES  NM,Priner Serviços Industriais S.A.,Industrials,Engineering & Construction,0.81,0.3234165,none,LOW,Equity,Industriais,Engenharia e Construção
+MATD3,Ação,MATER DEI   ON      NM,Hospital Mater Dei S.A.,Healthcare,Medical Care Facilities,1.59,-0.8658,buy,LOW,Equity,Assistência médica,Instalações de assistência médica
+RNEW3,Ação,RENOVA      ON      N2,Renova Energia S.A.,Utilities,Utilities - Renewable,,1.0309268,none,LOW,Equity,Utilities,Utilitários - renovável
+AMAR3,Ação,LOJAS MARISAON      NM,Marisa Lojas S.A.,Consumer Cyclical,Apparel Retail,,-5.147063,none,LOW,Equity,Consumidor cíclico,Varejo de vestuário
+TAEE4,Ação,TAESA       PN      N2,Transmissora Aliança de Energia Elétrica S.A.,Utilities,Utilities - Regulated Electric,7.88,-3.3191516,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+AALR3,Ação,ALLIAR      ON      NM,Alliança Saúde e Participações S.A.,Healthcare,Diagnostics & Research,,25.0,none,LOW,Equity,Assistência médica,Diagnóstico e pesquisa
+UNIP6,Ação,UNIPAR      PNB,Unipar Carbocloro S.A.,Basic Materials,Chemicals,6.79,-1.9919691,none,LOW,Equity,Materiais básicos,Produtos químicos
+DESK3,Ação,DESKTOP     ON      NM,Desktop S.A.,Communication Services,Telecom Services,0.37,-5.362778,hold,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+LOGG3,Ação,LOG COM PROPON      NM,LOG Commercial Properties e Participações S.A.,Real Estate,Real Estate Services,9.32,-3.3205028,buy,LOW,Equity,Imobiliária,Serviços imobiliários
+CMIG3,Ação,CEMIG       ON      N1,Companhia Energética de Minas Gerais - CEMIG,Utilities,Utilities - Diversified,9.28,0.7147476,none,LOW,Equity,Utilities,Utilitários - diversificados
+VITT3,Ação,VITTIA      ON      NM,Vittia S.A.,Basic Materials,Agricultural Inputs,3.31,0.20202485,none,LOW,Equity,Materiais básicos,Entradas agrícolas
+PINE4,Ação,PINE        PN      N2,Banco Pine S.A.,Financial Services,Banks - Regional,9.49,2.8813572,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+RAPT3,Ação,RANDON PART ON      N1,Randoncorp S.A.,Industrials,Farm & Heavy Construction Machinery,0.56,-4.353091,none,LOW,Equity,Industriais,Fazenda e máquinas de construção pesada
+AGRO3,Ação,BRASILAGRO  ON      NM,BrasilAgro - Companhia Brasileira de Propriedades Agrícolas,Consumer Defensive,Farm Products,7.86,0.5802656,none,LOW,Equity,Defensivo do consumidor,Produtos agrícolas
+CAMB3,Ação,CAMBUCI     ON,Cambuci S.A.,Consumer Cyclical,Leisure,8.02,-2.556541,none,LOW,Equity,Consumidor cíclico,Lazer
+SANB3,Ação,SANTANDER BRON,Banco Santander (Brasil) S.A.,Financial Services,Banks - Regional,5.48,-4.4540224,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+DMVF3,Ação,D1000VFARMA ON      NM,d1000 Varejo Farma Participações S.A.,Healthcare,Pharmaceutical Retailers,,-4.0485888,none,LOW,Equity,Assistência médica,Varejistas farmacêuticos
+ALPK3,Ação,ESTAPAR     ON      NM,"Allpark Empreendimentos, Participações e Serviços S.A.",Industrials,Infrastructure Operations,,-4.8780518,none,LOW,Equity,Industriais,Operações de infraestrutura
+LUPA3,Ação,LUPATECH    ON      NM,Lupatech S.A.,Energy,Oil & Gas Equipment & Services,,-0.83333254,none,LOW,Equity,Energia,Equipamentos e serviços de petróleo e gás
+PFRM3,Ação,PROFARMA    ON      NM,Profarma Distribuidora de Produtos Farmacêuticos S.A.,Healthcare,Medical Distribution,6.43,-2.1251512,none,LOW,Equity,Assistência médica,Distribuição médica
+ITSA3,Ação,ITAUSA      ON      N1,Itaúsa S.A.,Industrials,Conglomerates,7.85,-5.7450657,none,LOW,Equity,Industriais,Conglomerados
+TAEE3,Ação,TAESA       ON      N2,Transmissora Aliança de Energia Elétrica S.A.,Utilities,Utilities - Regulated Electric,7.9,-3.0120432,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+WHRL4,Ação,WHIRLPOOL   PN,Whirlpool S.A.,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.61,-8.695655,none,LOW,Equity,Consumidor cíclico,"Móveis, utensílios e eletrodomésticos"
+ETER3,Ação,ETERNIT     ON      NM,Eternit S.A.,Industrials,Building Products & Equipment,7.22,-3.9312057,none,LOW,Equity,Industriais,Construindo produtos e equipamentos
+ALLD3,Ação,ALLIED      ON      NM,Allied Tecnologia S.A.,Technology,Software - Application,47.47,-0.9943206,none,LOW,Equity,Tecnologia,Software - Aplicativo
+DEXP3,Ação,DEXXOS PAR  ON      N1,Dexxos Participações S.A.,Basic Materials,Chemicals,9.89,-2.8601644,none,LOW,Equity,Materiais básicos,Produtos químicos
+EUCA4,Ação,EUCATEX     PN      N1,Eucatex S.A. Indústria e Comércio,Industrials,Building Products & Equipment,3.9,-8.47548,none,LOW,Equity,Industriais,Construindo produtos e equipamentos
+AERI3,Ação,AERIS       ON      NM,Aeris Indústria e Comércio de Equipamentos para Geração de Energia S.A.,Industrials,Specialty Industrial Machinery,,-2.505687,none,LOW,Equity,Industriais,Máquinas industriais especiais
+AMOB3,Ação,AUTOMOB     ON      NM,Automob Participações S.A.,Consumer Cyclical,Auto & Truck Dealerships,,-4.9586806,strong_buy,LOW,Equity,Consumidor cíclico,Concessionárias de automóveis e caminhões
+ROMI3,Ação,ROMI        ON      NM,Romi S.A.,Industrials,Industrial Distribution,8.07,0.78563064,none,LOW,Equity,Industriais,Distribuição industrial
+AMBP3,Ação,AMBIPAR     ON      NM,Ambipar Participações e Empreendimentos S.A.,Industrials,Waste Management,,0.40249792,none,LOW,Equity,Industriais,Gerenciamento de resíduos
+BRAP3,Ação,BRADESPAR   ON      N1,Bradespar S.A.,Financial Services,Asset Management,14.83,,hold,LOW,Equity,Serviços financeiros,Gestão de ativos
+TECN3,Ação,TECHNOS     ON      NM,Technos S.A.,Consumer Cyclical,Luxury Goods,3.34,-3.6363602,none,LOW,Equity,Consumidor cíclico,Produtos de luxo
+LVTC3,Ação,WDC NETWORKSON      NM,Livetech da Bahia Indústria e Comércio S.A.,Communication Services,Telecom Services,5.38,-5.660378,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+FHER3,Ação,FER HERINGERON      NM,Fertilizantes Heringer S.A.,Basic Materials,Agricultural Inputs,,5.5696206,none,LOW,Equity,Materiais básicos,Entradas agrícolas
+EQPA3,Ação,EQTL PARA   ON,Equatorial Pará Distribuidora de Energia S.A.,Utilities,Utilities - Regulated Electric,11.66,-4.280822,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+GGBR3,Ação,GERDAU      ON      N1,Gerdau S.A.,Basic Materials,Steel,4.4,-1.451189,none,LOW,Equity,Materiais básicos,Aço
+PDTC3,Ação,PADTEC      ON      NM,Padtec Holding S.A.,Technology,Communication Equipment,4.58,,none,LOW,Equity,Tecnologia,Equipamento de comunicação
+RNEW11,Ação,RENOVA      UNT     N2,Renova Energia S.A.,Utilities,Utilities - Renewable,,5.4421716,none,LOW,Equity,Utilities,Utilitários - renovável
+GOAU3,Ação,GERDAU MET  ON      N1,Metalurgica Gerdau S.A.,Basic Materials,Steel,3.8,-0.8519693,hold,LOW,Equity,Materiais básicos,Aço
+TPIS3,Ação,TRIUNFO PARTON      NM,Triunfo Participações e Investimentos S.A.,Industrials,Infrastructure Operations,5.78,-0.9828,none,LOW,Equity,Industriais,Operações de infraestrutura
+CSUD3,Ação,CSU DIGITAL ON      NM,CSU Digital S.A.,Technology,Software - Infrastructure,5.03,-1.0226078,none,LOW,Equity,Tecnologia,Software - Infraestrutura
+REAG3,Ação,REAGINVEST  ON      NM,REAG Investimentos S.A.,Financial Services,Asset Management,,5.2631593,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+DOTZ3,Ação,DOTZ SA     ON      NM,Dotz S.A.,Communication Services,Advertising Agencies,,-22.054382,none,LOW,Equity,Serviços de comunicação,Agências de publicidade
+ENGI3,Ação,ENERGISA    ON      N2,Energisa S.A.,Utilities,Utilities - Regulated Electric,4.73,-9.758133,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+BRKM3,Ação,BRASKEM     ON      N1,Braskem S.A.,Basic Materials,Chemicals,,2.2449007,none,LOW,Equity,Materiais básicos,Produtos químicos
+OIBR4,Ação,OI          PN      N1,Oi S.A.,Communication Services,Telecom Services,,0.35170794,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+TRAD3,Ação,TC          ON      NM,TC S.A.,Technology,Software - Application,,12.139601,none,LOW,Equity,Tecnologia,Software - Aplicativo
+AGXY3,Ação,AGROGALAXY  ON      NM,AgroGalaxy Participações S.A.,Basic Materials,Agricultural Inputs,,-0.16639315,none,LOW,Equity,Materiais básicos,Entradas agrícolas
+VIVR3,Ação,VIVER       ON      NM,Viver Incorporadora e Construtora S.A.,Real Estate,Real Estate - Development,,-3.4090877,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+LAND3,Ação,TERRASANTAPAON      NM,Terra Santa Propriedades Agrícolas S.A.,Consumer Defensive,Farm Products,0.72,-2.873556,none,LOW,Equity,Defensivo do consumidor,Produtos agrícolas
+BEES3,Ação,BANESTES    ON  EJ,Banestes S.A - Banco do Estado do Espírito Santo,Financial Services,Banks - Regional,3.36,-1.5063744,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+SHOW3,Ação,TIME FOR FUNON      NM,T4F Entretenimento S.A.,Consumer Cyclical,Leisure,,-4.4510345,none,LOW,Equity,Consumidor cíclico,Lazer
+TASA3,Ação,TAURUS ARMASON      N2,Taurus Armas S.A.,Industrials,Aerospace & Defense,2.3,-3.129252,none,LOW,Equity,Industriais,Aeroespacial e Defesa
+EUCA3,Ação,EUCATEX     ON      N1,Eucatex S.A. Indústria e Comércio,Industrials,Building Products & Equipment,3.21,11.2230215,none,LOW,Equity,Industriais,Construindo produtos e equipamentos
+ATED3,Ação,ATOM EDUC   ON,,Communication Services,Publishing,,-5.1282063,none,LOW,Equity,Serviços de comunicação,Publicação
+SCAR3,Ação,SAO CARLOS  ON      NM,São Carlos Empreendimentos e Participações S.A.,Real Estate,Real Estate Services,10.06,-3.092175,none,LOW,Equity,Imobiliária,Serviços imobiliários
+BMEB4,Ação,MERCANTIL   PN      N1,Banco Mercantil do Brasil S.A.,Financial Services,Banks - Regional,5.51,-0.8607599,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+VSTE3,Ação,VESTE       ON      NM,Veste S.A. Estilo,,,,,none,LOW,Equity,,
+ALUP4,Ação,ALUPAR      PN      N2,Alupar Investimento S.A.,Utilities,Utilities - Renewable,2.81,-2.4340749,none,LOW,Equity,Utilities,Utilitários - renovável
+LOGN3,Ação,"LOG,IN      ON      NM",Log-In Logística Intermodal S.A.,Industrials,Marine Shipping,,-0.5769216,none,LOW,Equity,Industriais,Envio marítimo
+PINE3,Ação,PINE        ON      N2,Banco Pine S.A.,Financial Services,Banks - Regional,5.4,2.0338964,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+INEP4,Ação,INEPAR      PN,Inepar S.A. Indústria e Construções,Industrials,Specialty Industrial Machinery,,-2.3668685,none,LOW,Equity,Industriais,Máquinas industriais especiais
+CEDO4,Ação,CEDRO       PN      N1,Companhia de Fiação e Tecidos Cedro e Cachoeira S.A.,Consumer Cyclical,Textile Manufacturing,,-3.6571395,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+RSID3,Ação,ROSSI RESID ON      NM,Rossi Residencial S.A.,Consumer Cyclical,Residential Construction,,,none,LOW,Equity,Consumidor cíclico,Construção residencial
+EALT4,Ação,ACO ALTONA  PN,Electro Aço Altona S.A.,Industrials,Metal Fabrication,3.21,-1.379309,none,LOW,Equity,Industriais,Fabricação de metal
+UCAS3,Ação,UNICASA     ON      NM,Unicasa Indústria de Móveis S.A.,Consumer Cyclical,"Furnishings, Fixtures & Appliances",12.88,-2.7586262,none,LOW,Equity,Consumidor cíclico,"Móveis, utensílios e eletrodomésticos"
+BIOM3,Ação,BIOMM       ON      MA,Biomm S.A.,Healthcare,Biotechnology,,6.575342,none,LOW,Equity,Assistência médica,Biotecnologia
+SNSY5,Ação,SANSUY      PNA,Sansuy S.A.,Consumer Cyclical,Auto Parts,,-1.404493,none,LOW,Equity,Consumidor cíclico,Auto Peças
+WLMM4,Ação,WLM IND COM PN,WLM Participações e Comércio de Máquinas e Veículos S.A.,Consumer Cyclical,Auto & Truck Dealerships,1.33,-5.8775535,none,LOW,Equity,Consumidor cíclico,Concessionárias de automóveis e caminhões
+PTNT4,Ação,PETTENATI   PN,Pettenati S.A. Industria Têxtil,Consumer Cyclical,Apparel Manufacturing,5.64,-5.9405975,none,LOW,Equity,Consumidor cíclico,Fabricação de vestuário
+BAZA3,Ação,AMAZONIA    ON,Banco da Amazônia S.A.,Financial Services,Banks - Regional,10.77,-1.8754207,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+EPAR3,Ação,EMBPAR S/A  ON,Embpar Participacoes S.A.,Basic Materials,Lumber & Wood Production,42.06,-1.2096763,none,LOW,Equity,Materiais básicos,Produção de madeira e madeira
+WHRL3,Ação,WHIRLPOOL   ON,Whirlpool S.A.,Consumer Cyclical,"Furnishings, Fixtures & Appliances",6.64,-2.9345293,none,LOW,Equity,Consumidor cíclico,"Móveis, utensílios e eletrodomésticos"
+BPAC5,Ação,BTGP BANCO  PNA     N2,Banco BTG Pactual S.A.,Financial Services,Capital Markets,3.54,-4.463338,none,LOW,Equity,Serviços financeiros,Mercados de capitais
+JFEN3,Ação,JOAO FORTES ON  ES,João Fortes Engenharia S.A.,Real Estate,Real Estate Services,,-4.9180346,none,LOW,Equity,Imobiliária,Serviços imobiliários
+CGRA4,Ação,GRAZZIOTIN  PN,Grazziotin S.A.,Consumer Cyclical,Department Stores,12.55,-1.204814,none,LOW,Equity,Consumidor cíclico,Lojas de departamento
+CTSA4,Ação,SANTANENSE  PN,Companhia Tecidos Santanense Ltda.,Consumer Cyclical,Textile Manufacturing,,-2.1008482,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+RDNI3,Ação,RNI         ON      NM,RNI Negócios Imobiliários S.A.,Real Estate,Real Estate - Development,,-2.092058,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+NGRD3,Ação,NEOGRID     ON      NM,Neogrid Participações S.A.,Technology,Software - Application,0.68,-4.000002,none,LOW,Equity,Tecnologia,Software - Aplicativo
+AMAR11,Ação,,,,,,,,NONE,,,
+CEBR3,Ação,CEB         ON,Companhia Energética de Brasília - CEB,Utilities,Utilities - Regulated Electric,10.21,-1.6508251,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+BPAC3,Ação,BTGP BANCO  ON      N2,Banco BTG Pactual S.A.,Financial Services,Capital Markets,1.45,-4.0511756,none,LOW,Equity,Serviços financeiros,Mercados de capitais
+ENGI4,Ação,ENERGISA    PN      N2,Energisa S.A.,Utilities,Utilities - Regulated Electric,6.38,-5.1142473,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+BEES4,Ação,BANESTES    PN  EJ,Banestes S.A - Banco do Estado do Espírito Santo,Financial Services,Banks - Regional,3.34,-0.8148975,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+UNIP3,Ação,UNIPAR      ON,Unipar Carbocloro S.A.,Basic Materials,Chemicals,6.87,-4.875352,none,LOW,Equity,Materiais básicos,Produtos químicos
+CRPG5,Ação,CRISTAL     PNA,Tronox Pigmentos do Brasil S.A.,Basic Materials,Chemicals,5.57,-0.68027586,none,LOW,Equity,Materiais básicos,Produtos químicos
+COCE5,Ação,COELCE      PNA,Companhia Energética do Ceará - COELCE,Utilities,Utilities - Regulated Electric,5.03,-4.5891175,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+ALUP3,Ação,ALUPAR      ON      N2,Alupar Investimento S.A.,Utilities,Utilities - Renewable,2.55,-3.0685935,none,LOW,Equity,Utilities,Utilitários - renovável
+INEP3,Ação,INEPAR      ON,Inepar S.A. Indústria e Construções,Industrials,Specialty Industrial Machinery,,-2.8435993,none,LOW,Equity,Industriais,Máquinas industriais especiais
+BRSR3,Ação,BANRISUL    ON      N1,Banco do Estado do Rio Grande do Sul S.A.,Financial Services,Banks - Regional,9.44,-3.0179436,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+HAGA4,Ação,HAGA S/A    PN,HAGA S/A Indústria e Comércio,Industrials,Building Products & Equipment,,-3.3057916,none,LOW,Equity,Industriais,Construindo produtos e equipamentos
+CGAS5,Ação,COMGAS      PNA,Companhia de Gás de São Paulo - COMGÁS,Utilities,Utilities - Regulated Gas,18.21,0.79721266,none,LOW,Equity,Utilities,Utilitários - gás regulado
+MGEL4,Ação,MANGELS INDLPN,Mangels Industrial S.A.,Basic Materials,Steel,,1.5037639,none,LOW,Equity,Materiais básicos,Aço
+CEBR6,Ação,CEB         PNB,Companhia Energética de Brasília - CEB,Utilities,Utilities - Regulated Electric,10.31,0.60184795,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+BGIP4,Ação,BANESE      PN,Banco do Estado de Sergipe S.A.,Financial Services,Banks - Regional,15.08,1.9332135,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+ALPA3,Ação,ALPARGATAS  ON      N1,Alpargatas S.A.,Consumer Cyclical,Footwear & Accessories,1.11,-5.930235,none,LOW,Equity,Consumidor cíclico,Calçados e acessórios
+FICT3,Ação,FICTORALIMENON,Fictor Alimentos S.A.,Communication Services,Telecom Services,,-0.86956435,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+REDE3,Ação,REDE ENERGIAON,Rede Energia Participações S.A.,Utilities,Utilities - Regulated Electric,9.72,-1.3432788,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+WEST3,Ação,WESTWING    ON      NM,Westwing Comércio Varejista S.A.,Consumer Cyclical,Specialty Retail,,-2.7247996,none,LOW,Equity,Consumidor cíclico,Varejo especializado
+AVLL3,Ação,ALPHAVILLE  ON      NM,Alphaville S.A.,Real Estate,Real Estate - Development,,-0.59523755,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+BOBR4,Ação,BOMBRIL     PN,Bombril S.A.,Consumer Defensive,Household & Personal Products,,-0.6329107,none,LOW,Equity,Defensivo do consumidor,Produtos domésticos e pessoais
+NUTR3,Ação,NUTRIPLANT  ON      MA,Nutriplant Indústria e Comércio S/A,Basic Materials,Agricultural Inputs,,-6.685237,none,LOW,Equity,Materiais básicos,Entradas agrícolas
+ISAE3,Ação,ISA ENERGIA ON      N1,ISA Energía Brasil S.A.,Utilities,Utilities - Independent Power Producers,7.79,2.0000029,none,LOW,Equity,Utilities,Utilitários - produtores de energia independentes
+MRSA3B,Ação,MRS LOGISTICA,MRS Logística S.A.,Industrials,Railroads,3.31,-2.8124983,none,LOW,Equity,Industriais,Ferrovias
+OSXB3,Ação,OSX BRASIL  ON      NM,OSX Brasil S.A.,Energy,Oil & Gas Equipment & Services,,-1.1320833,none,LOW,Equity,Energia,Equipamentos e serviços de petróleo e gás
+EMAE4,Ação,EMAE        PN,Empresa Metropolitana de Águas e Energia S.A.,Utilities,Utilities - Diversified,9.62,-4.4375,none,LOW,Equity,Utilities,Utilitários - diversificados
+TELB3,Ação,TELEBRAS    ON,Telecomunicações Brasileiras S.A. - Telebras,Communication Services,Telecom Services,,-4.609376,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+BSLI4,Ação,BRB BANCO   PN,BRB - Banco de Brasília S.A.,Financial Services,Banks - Regional,3.02,-1.6666625,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+TELB4,Ação,TELEBRAS    PN,Telecomunicações Brasileiras S.A. - Telebras,Communication Services,Telecom Services,,-3.7484932,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+CLSC4,Ação,CELESC      PN      N2,Centrais Elétricas de Santa Catarina S.A.,Utilities,Utilities - Regulated Electric,7.66,-1.077221,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+CGRA3,Ação,GRAZZIOTIN  ON,Grazziotin S.A.,Consumer Cyclical,Department Stores,12.37,-1.331056,none,LOW,Equity,Consumidor cíclico,Lojas de departamento
+AFLT3,Ação,AFLUENTE T  ON  EJ,Afluente Transmissão de Energia Elétrica S.A.,Utilities,Utilities - Regulated Electric,1.48,3.066256,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+GSHP3,Ação,GENERALSHOPPON,General Shopping e Outlets do Brasil S.A.,Real Estate,Real Estate - Diversified,,0.23363906,none,LOW,Equity,Imobiliária,Imóvel - diversificado
+UNIP5,Ação,UNIPAR      PNA,Unipar Carbocloro S.A.,Basic Materials,Chemicals,7.18,-7.940935,none,LOW,Equity,Materiais básicos,Produtos químicos
+MTSA4,Ação,METISA      PN,METISA Metalúrgica Timboense S.A.,Industrials,Farm & Heavy Construction Machinery,6.25,-1.6184161,none,LOW,Equity,Industriais,Fazenda e máquinas de construção pesada
+CEBR5,Ação,CEB         PNA,Companhia Energética de Brasília - CEB,Utilities,Utilities - Regulated Electric,10.09,-1.9033647,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+PSVM11,Ação,PORTO VM    TPR,Porto Sudeste VM SA,,,,21.403513,,LOW,Equity,,
+RPMG3,Ação,PET MANGUINHON,Refinaria de Petróleos de Manguinhos S.A.,Energy,Oil & Gas Refining & Marketing,,-2.027025,none,LOW,Equity,Energia,Reino e marketing de petróleo e gás
+HOOT4,Ação,HOTEIS OTHONPN,Hotéis Othon S.A.,Consumer Cyclical,Lodging,,3.81679,none,LOW,Equity,Consumidor cíclico,Alojamento
+BIED3,Ação,BIOMA EDUC  ON  ES  MA,Bahema Educação S.A.,Consumer Defensive,Education & Training Services,,-7.853402,none,LOW,Equity,Defensivo do consumidor,Serviços de educação e treinamento
+RSUL4,Ação,RIOSULENSE  PN,Metalúrgica Riosulense S.A.,Consumer Cyclical,Auto Parts,3.21,,none,LOW,Equity,Consumidor cíclico,Auto Peças
+EKTR4,Ação,ELEKTRO     PN  EJ,Elektro Redes S.A.,Utilities,Utilities - Regulated Electric,2.9,0.06380004,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+CEEB3,Ação,COELBA      ON  EJ,Companhia de Eletricidade do Estado da Bahia - COELBA,Utilities,Utilities - Regulated Electric,5.04,1.0103844,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+BSLI3,Ação,BRB BANCO   ON,BRB - Banco de Brasília S.A.,Financial Services,Banks - Regional,1.52,4.6571813,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+AZEV11,Ação,,,,,,,,NONE,,,
+BNBR3,Ação,NORD BRASIL ON,Banco do Nordeste do Brasil S.A.,Financial Services,Banks - Regional,6.99,-4.354621,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+GEPA4,Ação,GER PARANAP PN,Rio Paranapanema Energia S.A.,Utilities,Utilities - Regulated Electric,16.7,-0.027773116,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+MRSA6B,Ação,MRS LOGISTICA,MRS Logística S.A.,Industrials,Railroads,4.11,-1.9607844,none,LOW,Equity,Industriais,Ferrovias
+OFSA3,Ação,OUROFINO S/AON      NM,Ouro Fino Saúde Animal Participações S.A.,Healthcare,Drug Manufacturers - Specialty & Generic,0.39,-0.470893,none,LOW,Equity,Assistência médica,Fabricantes de medicamentos - Especialidade e genérica
+CBEE3,Ação,AMPLA ENERG ON,Ampla Energia e Serviços S.A.,Utilities,Utilities - Regulated Electric,4.92,6.0381427,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+EQPA5,Ação,EQTL PARA   PNA,Equatorial Pará Distribuidora de Energia S.A.,Utilities,Utilities - Regulated Electric,8.84,-4.878297,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+DOHL4,Ação,DOHLER      PN,Döhler S.A.,Consumer Cyclical,Textile Manufacturing,0.28,8.249998,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+PPLA11,Ação,PPLA        UNT,PPLA Participations Ltd.,Financial Services,Asset Management,,-0.9433954,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+MOAR3,Ação,MONT ARANHA ON,Monteiro Aranha S.A.,Industrials,Conglomerates,23.28,0.07143293,none,LOW,Equity,Industriais,Conglomerados
+CGAS3,Ação,COMGAS      ON,Companhia de Gás de São Paulo - COMGÁS,Utilities,Utilities - Regulated Gas,17.38,3.9203196,none,LOW,Equity,Utilities,Utilitários - gás regulado
+SOND5,Ação,SONDOTECNICAPNA,Sondotécnica Engenharia de Solos S.A.,Industrials,Engineering & Construction,14.25,2.181816,none,LOW,Equity,Industriais,Engenharia e Construção
+GEPA3,Ação,GER PARANAP ON,Rio Paranapanema Energia S.A.,Utilities,Utilities - Regulated Electric,18.16,-7.3888884,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+COCE3,Ação,COELCE      ON,Companhia Energética do Ceará - COELCE,Utilities,Utilities - Regulated Electric,4.83,-1.9238032,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+EALT3,Ação,ACO ALTONA  ON,Electro Aço Altona S.A.,Industrials,Metal Fabrication,2.79,2.9781651,none,LOW,Equity,Industriais,Fabricação de metal
+DEXP4,Ação,DEXXOS PAR  PN      N1,Dexxos Participações S.A.,Basic Materials,Chemicals,9.52,0.5494421,none,LOW,Equity,Materiais básicos,Produtos químicos
+BRKM6,Ação,BRASKEM     PNB     N1,Braskem S.A.,Basic Materials,Chemicals,,-1.7499983,none,LOW,Equity,Materiais básicos,Produtos químicos
+PLAS3,Ação,PLASCAR PARTON,Plascar Participações Industriais S.A.,Consumer Cyclical,Auto Parts,,,none,LOW,Equity,Consumidor cíclico,Auto Peças
+HAGA3,Ação,HAGA S/A    ON,HAGA S/A Indústria e Comércio,Industrials,Building Products & Equipment,,1.53846,none,LOW,Equity,Industriais,Construindo produtos e equipamentos
+BMKS3,Ação,BIC MONARK  ON,Bicicletas Monark S.A.,Consumer Cyclical,Leisure,9.46,,none,LOW,Equity,Consumidor cíclico,Lazer
+CEED3,Ação,"CEEE,D      ON",Companhia Estadual de Distribuição de Energia Elétrica,Utilities,Utilities - Regulated Electric,,1.8893434,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+FRIO3,Ação,METALFRIO   ON      NM,Metalfrio Solutions S.A.,Consumer Cyclical,"Furnishings, Fixtures & Appliances",,-6.818182,none,LOW,Equity,Consumidor cíclico,"Móveis, utensílios e eletrodomésticos"
+ENMT4,Ação,ENERGISA MT PN,Energisa Mato Grosso - Distribuidora de Energia S/A,Utilities,Utilities - Regulated Electric,5.1,-12.53029,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+PATI3,Ação,PANATLANTICAON,Panatlântica S.A.,Basic Materials,Steel,15.02,7.8399963,none,LOW,Equity,Materiais básicos,Aço
+PTNT3,Ação,PETTENATI   ON,Pettenati S.A. Industria Têxtil,Consumer Cyclical,Apparel Manufacturing,2.98,0.6734054,none,LOW,Equity,Consumidor cíclico,Fabricação de vestuário
+RPAD3,Ação,ALFA HOLDINGON,Alfa Holdings S.A.,Industrials,Conglomerates,,3.365393,none,LOW,Equity,Industriais,Conglomerados
+ESTR4,Ação,ESTRELA     PN,Manufatura de Brinquedos Estrela S.A.,Consumer Cyclical,Leisure,,0.8645525,none,LOW,Equity,Consumidor cíclico,Lazer
+CLSC3,Ação,CELESC      ON      N2,Centrais Elétricas de Santa Catarina S.A.,Utilities,Utilities - Regulated Electric,7.95,7.8540506,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+BMEB3,Ação,MERCANTIL   ON      N1,Banco Mercantil do Brasil S.A.,Financial Services,Banks - Regional,6.1,-1.1818163,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+EQMA3B,Ação,EQUATORIAL MARANHA,Equatorial Maranhão Distribuidora de Energia S.A.,Utilities,Utilities - Regulated Electric,9.86,,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+LUXM4,Ação,TREVISA     PN,Trevisa Investimentos S.A.,Industrials,Marine Shipping,2.23,,none,LOW,Equity,Industriais,Envio marítimo
+HBTS5,Ação,HABITASUL   PNA,Companhia Habitasul de Participações,Real Estate,Real Estate Services,5.95,,none,LOW,Equity,Imobiliária,Serviços imobiliários
+MNPR3,Ação,MINUPAR     ON,Minupar Participações S.A.,Consumer Defensive,Farm Products,,1.3513529,none,LOW,Equity,Defensivo do consumidor,Produtos agrícolas
+DTCY3,Ação,"DTCOM,DIRECTON",DTCOM - Direct to Company S.A.,Communication Services,Telecom Services,,3.2258112,none,LOW,Equity,Serviços de comunicação,Serviços de telecomunicações
+BALM4,Ação,BAUMER      PN,Baumer S.A.,Healthcare,Medical Instruments & Supplies,4.14,1.1250019,none,LOW,Equity,Assistência médica,Instrumentos médicos e suprimentos
+PEAB4,Ação,PAR AL BAHIAPN,Companhia de Participações Aliança da Bahia,Financial Services,Asset Management,1.9,-3.614461,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+BRSR5,Ação,BANRISUL    PNA     N1,Banco do Estado do Rio Grande do Sul S.A.,Financial Services,Banks - Regional,7.72,6.5573773,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+CCTY3,Ação,RDVC CITY   ON      NM,,Real Estate,Real Estate - Development,,,none,LOW,Equity,Imobiliária,Imóveis - desenvolvimento
+MWET4,Ação,WETZEL S/A  PN,Wetzel S.A.,Consumer Cyclical,Auto Parts,,,none,LOW,Equity,Consumidor cíclico,Auto Peças
+CTSA3,Ação,SANTANENSE  ON,Companhia Tecidos Santanense Ltda.,Consumer Cyclical,Textile Manufacturing,,-1.1194018,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+MNDL3,Ação,MUNDIAL     ON,Mundial S.A. - Produtos de Consumo,Consumer Defensive,Household & Personal Products,,2.631579,none,LOW,Equity,Defensivo do consumidor,Produtos domésticos e pessoais
+SNSY3,Ação,SANSUY      ON,Sansuy S.A.,Consumer Cyclical,Auto Parts,,1.7543926,none,LOW,Equity,Consumidor cíclico,Auto Peças
+NEXP3,Ação,NEXPE       ON,Nexpe Participações S.A.,Real Estate,Real Estate Services,,1.8518502,none,LOW,Equity,Imobiliária,Serviços imobiliários
+CPLE5,Ação,COPEL       PNA     N2,Companhia Paranaense de Energia - COPEL,Utilities,Utilities - Regulated Electric,4.34,-3.0236046,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+EKTR3,Ação,ELEKTRO     ON  EJ,Elektro Redes S.A.,Utilities,Utilities - Regulated Electric,3.54,11.767563,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+CTKA4,Ação,KARSTEN     PN,Karsten S.A.,Consumer Cyclical,Textile Manufacturing,,,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+FESA3,Ação,FERBASA     ON      N1,Cia de Ferro Ligas da Bahia S.A. - FERBASA,Basic Materials,Steel,3.95,-3.7974744,none,LOW,Equity,Materiais básicos,Aço
+CEDO3,Ação,CEDRO       ON      N1,Companhia de Fiação e Tecidos Cedro e Cachoeira S.A.,Consumer Cyclical,Textile Manufacturing,,4.209659,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+BALM3,Ação,BAUMER      ON,Baumer S.A.,Healthcare,Medical Instruments & Supplies,3.2,5.0,none,LOW,Equity,Assistência médica,Instrumentos médicos e suprimentos
+MAPT4,Ação,CEMEPE      PN,Cemepe Investimentos S.A.,Financial Services,Asset Management,,12.785387,none,LOW,Equity,Serviços financeiros,Gestão de ativos
+AHEB5,Ação,SPTURIS     PNA,São Paulo Turismo S.A.,Consumer Cyclical,Travel Services,,,none,LOW,Equity,Consumidor cíclico,Serviços de viagem
+CEEB5,Ação,COELBA      PNA EJ,Companhia de Eletricidade do Estado da Bahia - COELBA,Utilities,Utilities - Regulated Electric,4.01,5.155164,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+PINE11,Ação,,,,,,,,,,,
+PATI4,Ação,PANATLANTICAPN,Panatlântica S.A.,Basic Materials,Steel,26.04,,none,LOW,Equity,Materiais básicos,Aço
+WLMM3,Ação,WLM IND COM ON,WLM Participações e Comércio de Máquinas e Veículos S.A.,Consumer Cyclical,Auto & Truck Dealerships,1.22,,none,LOW,Equity,Consumidor cíclico,Concessionárias de automóveis e caminhões
+BAUH4,Ação,EXCELSIOR   PN,Excelsior Alimentos S.A.,Consumer Defensive,Packaged Foods,1.47,,none,LOW,Equity,Defensivo do consumidor,Alimentos embalados
+EMAE3,Ação,EMAE        ON,Empresa Metropolitana de Águas e Energia S.A.,Utilities,Utilities - Diversified,3.81,,none,LOW,Equity,Utilities,Utilitários - diversificados
+MRSA5B,Ação,MRS LOGISTICA,MRS Logística S.A.,Industrials,Railroads,4.04,,none,LOW,Equity,Industriais,Ferrovias
+JOPA3,Ação,JOSAPAR     ON,JOSAPAR Joaquim Oliveira S.A. Participações,Consumer Defensive,Packaged Foods,3.15,,none,LOW,Equity,Defensivo do consumidor,Alimentos embalados
+CRPG6,Ação,CRISTAL     PNB,Tronox Pigmentos do Brasil S.A.,Basic Materials,Chemicals,5.31,,none,LOW,Equity,Materiais básicos,Produtos químicos
+BDLL4,Ação,BARDELLA    PN,Bardella S.A. Indústrias Mecânicas,Industrials,Specialty Industrial Machinery,,,none,LOW,Equity,Industriais,Máquinas industriais especiais
+HETA4,Ação,HERCULES    PN,Hercules S.A - Fábrica de Talheres,Consumer Defensive,Household & Personal Products,,,none,LOW,Equity,Defensivo do consumidor,Produtos domésticos e pessoais
+BMIN4,Ação,MERC INVEST PN,Banco Mercantil de Investimentos S.A.,Financial Services,Banks - Regional,8.0,,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+NTCO3,Ação,GRUPO NATURAON      NM,Natura &Co Holding S.A.,Consumer Defensive,Household & Personal Products,7.87,-2.2624433,buy,LOW,Equity,Defensivo do consumidor,Produtos domésticos e pessoais
+BGIP3,Ação,BANESE      ON,Banco do Estado de Sergipe S.A.,Financial Services,Banks - Regional,12.97,,none,LOW,Equity,Serviços financeiros,Bancos - Regional
+NORD3,Ação,NORDON MET  ON,Nordon Indústrias Metalúrgicas S/A,Financial Services,Shell Companies,,,none,LOW,Equity,Serviços financeiros,Empresas de concha
+ENMT3,Ação,ENERGISA MT ON,Energisa Mato Grosso - Distribuidora de Energia S/A,Utilities,Utilities - Regulated Electric,6.19,,none,LOW,Equity,Utilities,Utilitários - Elétrica regulada
+CTKA3,Ação,KARSTEN     ON,Karsten S.A.,Consumer Cyclical,Textile Manufacturing,,,none,LOW,Equity,Consumidor cíclico,Fabricação têxtil
+IBOV,Índice,,,,,,,,NONE,Fund,,
+IEEX,Índice,,,,,,,,,,,
+IBXX,Índice,IBRX BRASIL,IBRX BRASIL,,,,-3.5653734,,LOW,Index,,
+ITAG,Índice,ITAG ALONG,ITAG ALONG,,,,-3.5959408,,LOW,Index,,
+INDX,Índice,INDUSTRIAL,INDUSTRIAL,,,,-4.074034,,LOW,Index,,
+IBXL,Índice,,,,,,,,,,,
+BDRX,Índice,BDRX,BDRX,,,,2.7917829,,LOW,Index,,
+IBLV,Índice,IBOV S LVOL,IBOV S LVOL,,,,-4.299937,,LOW,Index,,
+IGCX,Índice,,,,,,,,,,,
+IFNC,Índice,IFINANCEIRO,IFINANCEIRO,,,,-5.3544717,,LOW,Index,,
+IVBX,Índice,,,,,,,,,,,
+UTIL,Índice,UTILITIES,UTILITIES,,,,-4.5328264,,LOW,Index,,
+IDIV,Índice,I DIVIDENDOS,I DIVIDENDOS,,,,-3.0473728,,LOW,Index,,
+IGCT,Índice,IGC TRADE,IGC TRADE,,,,-3.647946,,LOW,Index,,
+IBRA,Índice,IBRASIL,IBRASIL,,,,-3.5649445,,LOW,Index,,
+IMAT,Índice,IMAT BASICOS,IMAT BASICOS,,,,-1.3877807,,LOW,Index,,
+TFIX,Índice,INDICE TESTE,,,,,,,LOW,Index,,
+IBEE,Índice,IBOVB3 ESTAT,IBOVB3 ESTAT,,,,-2.7490804,,LOW,Index,,
+IGNM,Índice,"IGC , NM","IGC , NM",,,,-3.9546292,,LOW,Index,,
+ISEE,Índice,ISUSTENTABIL,ISUSTENTABIL,,,,-4.6807246,,LOW,Index,,
+IFIX,Índice,IND FDO IMOB,IND FDO IMOB,,,,-0.34902677,,LOW,Index,,
+ICON,Índice,ICONSUMO,ICONSUMO,,,,-3.6596198,,LOW,Index,,
+MLCX,Índice,MIDLARGE CAP,MIDLARGE CAP,,,,-3.5745249,,LOW,Index,,
+ICO2,Índice,ICO2,ICO2,,,,-5.377049,,LOW,Index,,
+SMLL,Índice,SMALL CAP,SMALL CAP,,,,-3.499312,,LOW,Index,,
+IBEW,Índice,IBOVEQWEIGHT,IBOVEQWEIGHT,,,,-4.245904,,LOW,Index,,
+IBHB,Índice,,,,,,-5.404242,,LOW,Index,,
+IBSD,Índice,IBOV SD TR,IBOV SD TR,,,,-2.551664,,LOW,Index,,
+AGFS,Índice,"IAGRO,FFS B3","IAGRO,FFS B3",,,,-2.705329,,LOW,Index,,
+IFIL,Índice,IFIX L B3,IFIX L B3,,,,-0.44364265,,LOW,Index,,
+IBEP,Índice,IBOVB3 PRIV,IBOVB3 PRIV,,,,-4.20279,,LOW,Index,,
+IDVR,Índice,IDIVERSA B3,IDIVERSA B3,,,,-4.365937,,LOW,Index,,
+IBBC,Índice,IBOVBRCAP B3,IBOVBRCAP B3,,,,-4.006802,,LOW,Index,,
+GPTW,Índice,IGPTW B3,IGPTW B3,,,,-4.3442607,,LOW,Index,,
+IBBR,Índice,IBOVESPAB3BR,IBOVESPAB3BR,,,,-3.5025432,,LOW,Index,,
+IMOB,Índice,IMOBILIARIO,IMOBILIARIO,,,,-3.5403128,,LOW,Index,,
+IBBE,Índice,IBOVBREW B3,IBOVBREW B3,,,,-4.076054,,LOW,Index,,
