@@ -21,6 +21,7 @@ def atualizar_base_setores():
         pd.DataFrame(columns=colunas).to_csv(setores_path, index=False)
 
     df_tickers = pd.read_csv(tickers_path)
+    df_tickers = df_tickers.sample(50).reset_index(drop=True)  # Seleciona 50 tickers aleatórios
     setores = []
 
     progress_bar = st.progress(0)
@@ -70,7 +71,10 @@ def atualizar_base_setores():
     #retirar 'REIT -' de setores_df['industria']
     df_setores['industria'] = df_setores['industria'].str.replace('REIT - ', '', regex=False)
     # Convertendo para porcentagem    
-    df_setores['rendimento'] = df_setores['rendimento'].fillna(0).astype(float)
+    try: 
+        df_setores['rendimento'] = df_setores['rendimento'].fillna(0).astype(float)
+    except ValueError:
+        df_setores['rendimento'] = 0.0
     
     df_setores.to_csv(setores_path, index=False)
     st.success("Importação realizada com sucesso.")
