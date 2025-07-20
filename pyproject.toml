@@ -19,7 +19,7 @@ streamlit = "^1.45.1"
 scikit-learn = "^1.7.0"
 certifi = "^2025.7.9"
 curl-cffi = "0.11.3"
-googletrans = "^4.0.2"
+googletrans = "4.0.0-rc1"
 
 
 [build-system]

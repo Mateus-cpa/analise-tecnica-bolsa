@@ -67,8 +67,8 @@ def tela_streamlit():
         st.error("Por favor, selecione um ticker válido.")
     else:
         fundamentos = importar_fundamentos(ticker)
-        if ticker != 'Nenhum':
-            mostrar_fundamentos(fundamentos)
+        st.success(f"Fundamentos importados para {ticker}.")
+        mostrar_fundamentos(fundamentos)
         #else:
         #    analise_setor
         with st.sidebar:
