@@ -3,7 +3,7 @@ import pandas as pd
 import yfinance as yf
 import streamlit as st  # Adicione esta linha
 
-#from traducao_base import traduzir_base  # Adicione no topo do arquivo
+from traducao_base import traduzir_base  # Adicione no topo do arquivo
 
 
 def atualizar_base_setores():
@@ -67,9 +67,15 @@ def atualizar_base_setores():
         progress_bar.progress((i + 1) / len(df_tickers))
 
     df_setores = pd.DataFrame(setores)
+    #retirar 'REIT -' de setores_df['industria']
+    df_setores['industria'] = df_setores['industria'].str.replace('REIT - ', '', regex=False)
+    # Convertendo para porcentagem    
+    df_setores['rendimento'] = df_setores['rendimento'].fillna(0).astype(float)
+    
     df_setores.to_csv(setores_path, index=False)
     st.success("Importação realizada com sucesso.")
-    #traduzir_base()
+    
+    traduzir_base()
     st.success("Base de dados traduzida com sucesso.")
 
 
