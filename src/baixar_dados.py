@@ -58,29 +58,16 @@ def definir_ticker():
         setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
                                  (setores_df['variacao_valor'] <= max_var)]
         
-        # Filtro Rendimento 0 a 2%, 2% a 5%, 5% a 10%, 10% a 20%, >20%
-        faixa_dy = st.segmented_control(
-            "Selecione a faixa de rendimento:",
-            options=["0 a 2%", "2% a 5%", "5% a 10%", "10% a 20%", ">20%"],
-            selection_mode='multi',
-            default=["0 a 2%", "2% a 5%", "5% a 10%", "10% a 20%", ">20%"],
-            key='faixa_dy'
+        # Filtro Rendimento "2%", "5%", "10%", "15%", "20%"
+        minimo_dy = st.segmented_control(
+            "DY mínimo:",
+            options=["2%", "5%", "10%", "15%", "20%"],
+            default=["20%"],
+            key='minimo_dy'
         )
-        # Mapeia as faixas de rendimento para os valores correspondentes a df_setores['rendimento']
-        rendimento_map = {
-            "0 a 2%": (0, 2),
-            "2% a 5%": (2, 5),
-            "5% a 10%": (5, 10),
-            "10% a 20%": (10, 20),
-            ">20%": (20, max(setores_df['rendimento']))
-        }
-        tupla_rendimento = [rendimento_map[faixa] for faixa in faixa_dy]
-        min_dy = min(tupla_rendimento, key=lambda x: x[0])[0]
-        max_dy = max(tupla_rendimento, key=lambda x: x[1])[1]
-
-        st.write(f'Rendimento: {round(min_dy,2)}% a {round(max_dy,2)}%.')
-        setores_df = setores_df[(setores_df['rendimento'] >= min_dy) &
-                                 (setores_df['rendimento'] <= max_dy)]
+        minimo_dy_float = float(minimo_dy[0].replace('%', ''))
+        
+        setores_df = setores_df[setores_df['rendimento'] >= minimo_dy_float]
         
         # Filtro por grupo
         grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
