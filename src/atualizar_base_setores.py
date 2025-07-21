@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import pandas as pd 
 import yfinance as yf
 import streamlit as st  # Adicione esta linha
@@ -73,14 +74,11 @@ def atualizar_base_setores():
     df_setores = df_setores.dropna(subset=['nome'])
 
     #retirar 'REIT -', 'Utilities -' e 'Real Estate - ' de setores_df['industria']
+    df_setores['industria'] = df_setores['industria'].str.replace('Utilities - ', '', regex=False)
+    df_setores['industria'] = df_setores['industria'].str.replace('Real Estate - ', '', regex=False)
     df_setores['industria'] = df_setores['industria'].str.replace('REIT - ', '', regex=False)
-    # Preenchendo valores nulos
-    try: 
-        df_setores['rendimento'] = df_setores['rendimento'].fillna(0).astype(float)
-    except ValueError:
-        df_setores['rendimento'] = 0.0
-    
-    
+    # Preenchendo valores nulos de 'rendimento' com numpy
+    df_setores['rendimento'] = np.where(df_setores['rendimento'].isnull(), 0.0, df_setores['rendimento'])
 
     df_setores.to_csv(setores_path, index=False)
     st.success("Importação realizada com sucesso.")

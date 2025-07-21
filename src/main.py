@@ -67,7 +67,6 @@ def tela_streamlit():
         st.error("Por favor, selecione um ticker válido.")
     else:
         fundamentos = importar_fundamentos(ticker)
-        st.success(f"Fundamentos importados para {ticker}.")
         mostrar_fundamentos(fundamentos)
         #else:
         #    analise_setor
@@ -103,8 +102,13 @@ def tela_streamlit():
         acao = adicionar_target_median_price(acao=acao,
                                              target_median_price=target_median_price)
         plotar_grafico(acao, ticker)
-        if st.checkbox("Tabelas:"):
+        if st.checkbox("Histórico do ativo"):
             lancar_dataframe(acao, ticker)
+    if st.checkbox("Base de dados de setores"):
+        with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
+            setores_df = pd.read_csv(f)
+        st.dataframe(setores_df)
+            
     st.write(f"Versão do python: {str(sys.version).split('(')[0]}")
 
 
