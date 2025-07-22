@@ -35,40 +35,44 @@ def definir_ticker():
         setores_df = pd.read_csv('raw_data/lista_setores_traduzido.csv')  # Espera colunas: ticker, setor, industria
 
         # Filtro por variação de valor (<-5%, -5% a -1%, -1% a 1%, 1% a 5%, >5%)
-        faixa_variacao = st.segmented_control(
-            "Selecione a faixa de variação:",
-            options=["<-5%", "-5=>-1%", "-1=>1%", "1=>5%", ">5%"],
-            selection_mode='multi',
-            default=["<-5%", "-5=>-1%", "-1=>1%", "1=>5%", ">5%"],
-            key='faixa_variacao'
-        )
-        # Mapeia as faixas de variação para os valores correspondentes a df_setores['variacao_valor']
-        variacao_map = { 
-            "<-5%": (min(setores_df['variacao_valor']), -5),
-            "-5=>-1%": (-5, -1),
-            "-1=>1%": (-1, 1),
-            "1=>5%": (1, 5),
-            ">5%": (5, max(setores_df['variacao_valor']))
-        }
-        tupla_variacao = [variacao_map[faixa] for faixa in faixa_variacao]
-        min_var = min(tupla_variacao, key=lambda x: x[0])[0]
-        max_var = max(tupla_variacao, key=lambda x: x[1])[1]
-
-        st.write(f'Variação: {round(min_var,2)}% a {round(max_var,2)}%.')
-        setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
-                                 (setores_df['variacao_valor'] <= max_var)]
+        try:
+            faixa_variacao = st.segmented_control(
+                "Selecione a faixa de variação:",
+                options=["<-5%", "-5=>-1%", "-1=>1%", "1=>5%", ">5%"],
+                default=[">5%"],
+                key='faixa_variacao_key'
+            )
+            # Mapeia as faixas de variação para os valores correspondentes a df_setores['variacao_valor']
+            variacao_map = { 
+                "<-5%": (min(setores_df['variacao_valor']), -5),
+                "-5=>-1%": (-5, -1),
+                "-1=>1%": (-1, 1),
+                "1=>5%": (1, 5),
+                ">5%": (5, max(setores_df['variacao_valor']))
+            }
+            tupla_variacao = variacao_map[faixa_variacao]
+            min_var = tupla_variacao[0]
+            max_var = tupla_variacao[1]
+            #st.write(f'Variação: {min_var}% a {max_var}%.')
+            setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
+                                    (setores_df['variacao_valor'] <= max_var)]
+        except KeyError:
+            pass    
         
         # Filtro Rendimento "2%", "5%", "10%", "15%", "20%"
-        minimo_dy = st.segmented_control(
-            "DY mínimo:",
-            options=["2%", "5%", "10%", "15%", "20%"],
-            default=["20%"],
-            key='minimo_dy'
-        )
-        minimo_dy_float = float(minimo_dy[0].replace('%', ''))
-        
-        setores_df = setores_df[setores_df['rendimento'] >= minimo_dy_float]
-        
+        try:
+            minimo_dy = st.segmented_control(
+                "DY mínimo:",
+                options=["2%", "5%", "10%", "15%", "20%"],
+                default=None,
+                key='minimo_dy'
+            )
+        except TypeError:
+            pass
+        if minimo_dy:
+            minimo_dy_float = float(minimo_dy[0].replace('%', ''))
+            setores_df = setores_df[setores_df['rendimento'] >= minimo_dy_float]
+
         # Filtro por grupo
         grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
         grupo_selecionado = st.selectbox('Tipo', options=['Todos'] + grupo, key='grupo_select')
