@@ -1,9 +1,8 @@
 import pandas as pd
 import streamlit as st
 from googletrans import Translator
-import asyncio
 
-async def translate_text(text_to_translate: str, dest_lang: str = 'pt') -> str:
+def translate_text(text_to_translate: str, dest_lang: str = 'pt') -> str:
     """
     Translates the given text asynchronously to the destination language.
 
@@ -16,15 +15,15 @@ async def translate_text(text_to_translate: str, dest_lang: str = 'pt') -> str:
     """
     try:
         translator = Translator()
-        # Await the asynchronous translate method
-        translated_obj = await translator.translate(text_to_translate, dest=dest_lang)
+        # Como esperar tradução sem ser assíncrono?
+        translated_obj = translator.translate(text_to_translate, dest=dest_lang)
         return translated_obj.text
     except Exception as e:
         st.error(f"Erro ao traduzir: {e}")
         return f"Erro na tradução: {text_to_translate}" # Return original text or an error message
 
 
-async def mostrar_fundamentos(fundamentos: pd.DataFrame):
+def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """Mostra os fundamentos da ação no Streamlit.
     Args:
         fundamentos (pd.DataFrame): DataFrame contendo os fundamentos da ação.
@@ -44,7 +43,7 @@ async def mostrar_fundamentos(fundamentos: pd.DataFrame):
         st.subheader("Descrição do Negócio")
         # Tenta traduzir a descrição do negócio para português
         descricao = fundamentos['longBusinessSummary'].values[0]
-        descricao_traduzida = await translate_text(descricao, dest_lang='pt')
+        descricao_traduzida = translate_text(descricao, dest_lang='pt')
         st.write(f'{descricao_traduzida}')
     st.subheader("Fundamentos")
     if fundamentos.empty:

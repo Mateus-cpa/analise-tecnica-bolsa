@@ -1,9 +1,10 @@
 import os
+import numpy as np
 import pandas as pd 
 import yfinance as yf
 import streamlit as st  # Adicione esta linha
 
-#from traducao_base import traduzir_base  # Adicione no topo do arquivo
+from traducao_base import traduzir_base  # Adicione no topo do arquivo
 
 
 def atualizar_base_setores():
@@ -21,6 +22,7 @@ def atualizar_base_setores():
         pd.DataFrame(columns=colunas).to_csv(setores_path, index=False)
 
     df_tickers = pd.read_csv(tickers_path)
+    #df_tickers = df_tickers.sample(50).reset_index(drop=True)  # Seleciona 50 tickers aleatórios
     setores = []
 
     progress_bar = st.progress(0)
@@ -67,9 +69,21 @@ def atualizar_base_setores():
         progress_bar.progress((i + 1) / len(df_tickers))
 
     df_setores = pd.DataFrame(setores)
+    
+    #retirar dados com nome NA
+    df_setores = df_setores.dropna(subset=['nome'])
+
+    #retirar 'REIT -', 'Utilities -' e 'Real Estate - ' de setores_df['industria']
+    df_setores['industria'] = df_setores['industria'].str.replace('Utilities - ', '', regex=False)
+    df_setores['industria'] = df_setores['industria'].str.replace('Real Estate - ', '', regex=False)
+    df_setores['industria'] = df_setores['industria'].str.replace('REIT - ', '', regex=False)
+    # Preenchendo valores nulos de 'rendimento' com numpy
+    df_setores['rendimento'] = np.where(df_setores['rendimento'].isnull(), 0.0, df_setores['rendimento'])
+
     df_setores.to_csv(setores_path, index=False)
     st.success("Importação realizada com sucesso.")
-    #traduzir_base()
+    
+    traduzir_base()
     st.success("Base de dados traduzida com sucesso.")
 
 
