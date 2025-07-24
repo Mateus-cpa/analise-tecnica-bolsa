@@ -18,6 +18,7 @@ from modelo_preditivo import acao_com_preditivo
 from tratamento_ativo import enriquecer_dados, marcador_hoje, adicionar_target_median_price
 from plotar_grafico import plotar_grafico
 from mostrar_fundamentos import mostrar_fundamentos
+from analise_setorial import analise_setorial
 
 def configuracoes_iniciais():
     # Configurações iniciais
@@ -56,6 +57,8 @@ def lancar_dataframe(acao, ticker):
 
 def tela_streamlit():
     configuracoes_iniciais()
+    
+        #importação
     col1, col2 = st.columns(2)
     if col1.button('Importar tickers'):
         importar_tickers()  # Importa os tickers disponíveis
@@ -65,14 +68,21 @@ def tela_streamlit():
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
         st.error("Por favor, selecione um ticker válido.")
+        # -- ANALISE SETORIAL --
+        st.header(" Análise Setorial")
+        with open ('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
+            setores_df = pd.read_csv(f)
+        analise_setorial(setores_df)
+
     else:
         fundamentos = importar_fundamentos(ticker)
         mostrar_fundamentos(fundamentos)
-        #else:
-        #    analise_setor
+        
         with st.sidebar:
             tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
         acao = baixar_dados(ticker, tempo_anos)
+        
+        
         try:
             acao = enriquecer_dados(acao)
         except IndexError:
