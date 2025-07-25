@@ -17,7 +17,8 @@ def atualizar_base_setores():
     if not os.path.exists(setores_path):
         colunas = [
             'ticker', 'grupo', 'nome', 'nome completo', 'setor', 'industria',
-            'rendimento', 'variacao_valor', 'recomendação', 'confiança do alerta', 'tipo'
+            'rendimento', 'variacao_valor', 'recomendação', 'confiança do alerta', 'tipo',
+            'valor patrimonial por ação', 'pvp'
         ]
         pd.DataFrame(columns=colunas).to_csv(setores_path, index=False)
 
@@ -42,6 +43,8 @@ def atualizar_base_setores():
             recomendacao = info.get('recommendationKey') or ''
             confianca_alerta = info.get('customPriceAlertConfidence') or ''
             tipo = info.get('typeDisp') or ''
+            valor_patrimonial_por_acao = info.get('bookValue') or ''
+            pvp = info.get('priceToBook') or ''
             status_text.text(f"Ticker: {ticker} | Grupo: {grupo} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
         except Exception as e:
             print(f"Erro ao buscar dados de {ticker}: {e}")
@@ -54,6 +57,8 @@ def atualizar_base_setores():
             recomendacao = ''
             confianca_alerta = ''
             tipo = ''
+            valor_patrimonial_por_acao = ''
+            pvp = ''
 
         setores.append({'ticker': ticker, 
                         'grupo': grupo,
@@ -65,7 +70,9 @@ def atualizar_base_setores():
                         'variacao_valor' : variacao_valor,
                         'recomendação': recomendacao,
                         'confiança do alerta': confianca_alerta,
-                        'tipo': tipo})
+                        'tipo': tipo,
+                        'valor patrimonial por ação': valor_patrimonial_por_acao,
+                        'pvp': pvp})
         progress_bar.progress((i + 1) / len(df_tickers))
 
     df_setores = pd.DataFrame(setores)
