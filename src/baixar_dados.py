@@ -39,7 +39,7 @@ def definir_ticker():
             faixa_variacao = st.segmented_control(
                 "Selecione a faixa de variação:",
                 options=["<-5%", "-5=>-1%", "-1=>1%", "1=>5%", ">5%"],
-                default=[">5%"],
+                default=None,
                 key='faixa_variacao_key'
             )
             # Mapeia as faixas de variação para os valores correspondentes a df_setores['variacao_valor']
