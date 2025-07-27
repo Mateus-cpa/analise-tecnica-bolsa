@@ -20,17 +20,22 @@ def analise_setorial():
     grafico_qtd.update_xaxes(title_text="Grupo")
     grafico_qtd.update_yaxes(title_text="Contagem")
     col1.plotly_chart(grafico_qtd)
+
+    # Gráfico de contagem de tickers por setor/indústria
+    coluna_qtd = col2.radio("Selecione a coluna:", 
+                            ("setor_pt", "industria_pt"),
+                            horizontal=True)
+    nome_coluna_qtd = "Setor" if coluna_qtd == "setor_pt" else "Indústria"
     grafico_qtd_por_setor = px.histogram(df, 
-                                         y="setor_pt",
-                                         title="Contagem de Tickers por Setor",
-                                         color="grupo",
-                                         labels={"setor_pt": "Setor","count": "Contagem"}
+                                         y=coluna_qtd,
+                                         title= f"Contagem de Tickers por {nome_coluna_qtd}",
+                                         color="grupo"
                                          )
     grafico_qtd_por_setor.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.7))
-    grafico_qtd_por_setor.update_yaxes(title_text="Setor")
+    grafico_qtd_por_setor.update_yaxes(title_text=nome_coluna_qtd)
     grafico_qtd_por_setor.update_xaxes(title_text="Contagem")
     col2.plotly_chart(grafico_qtd_por_setor)
-
+    st.divider()
     # Gráfico de variação percentual com leganda abaixo do gráfico
     grafico_variacao = px.histogram(df[(df['variacao_valor']>-20) & (df['variacao_valor']<20)], 
                                      x="variacao_valor", 
@@ -81,5 +86,32 @@ def analise_setorial():
                                title="Distribuição do P/VPA",
                                color="grupo")
     st.plotly_chart(grafico_pvp)
+
+    # listar tikers como botões para filtrar
+    st.subheader("Lista de Tickers")
+    tickers = df['ticker'].unique().tolist()
+    tickers.sort()
+    if len(tickers) < 40:
+        col1, col2, col3, col4, col5 = st.columns(5)
+        with col1:  
+            for ticker in tickers[:len(tickers)//5]:
+                if st.button(ticker):
+                    st.session_state.ticker = ticker
+        with col2:
+            for ticker in tickers[len(tickers)//5:len(tickers)//5*2]:
+                if st.button(ticker):
+                    st.session_state.ticker = ticker
+        with col3:
+            for ticker in tickers[len(tickers)//5*2:len(tickers)//5*3]:
+                if st.button(ticker):
+                    st.session_state.ticker = ticker
+        with col4:
+            for ticker in tickers[len(tickers)//5*3:len(tickers)//5*4]:
+                if st.button(ticker):
+                    st.session_state.ticker = ticker
+        with col5:
+            for ticker in tickers[len(tickers)//5*4:]:
+                if st.button(ticker):
+                    st.session_state.ticker = ticker
     # utilizar ytdata-profiling para análise mais detalhada
     
