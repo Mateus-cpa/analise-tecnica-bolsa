@@ -30,7 +30,14 @@ def definir_ticker():
     """
     with st.sidebar:
         st.header("Definir Ticker")
-    
+        #botão de limpar filtros
+        if st.button('Limpar filtros'):
+            st.session_state.ticker = 'Nenhum'
+            st.session_state.ticker_select = 'Nenhum'
+            st.session_state.grupo_select = 'Todos'
+            st.session_state.setor_select = 'Todos'
+            st.session_state.industrias_select = 'Todos'
+
         # Lê lista_setores.csv com cabeçalho
         setores_df = pd.read_csv('raw_data/lista_setores_traduzido.csv')  # Espera colunas: ticker, setor, industria
 
@@ -56,6 +63,9 @@ def definir_ticker():
             #st.write(f'Variação: {min_var}% a {max_var}%.')
             setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
                                     (setores_df['variacao_valor'] <= max_var)]
+            setores_df.to_json('bronze_data/setores_filtrados.json', 
+                               orient='records', 
+                               force_ascii=False)
         except KeyError:
             pass    
         
@@ -72,16 +82,28 @@ def definir_ticker():
         if minimo_dy:
             minimo_dy_float = float(minimo_dy[0].replace('%', ''))
             setores_df = setores_df[setores_df['rendimento'] >= minimo_dy_float]
+            setores_df.to_json('bronze_data/setores_filtrados.json', 
+                               orient='records', 
+                               force_ascii=False)
+
 
         # Filtro por grupo
         grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
         grupo_selecionado = st.selectbox('Tipo', options=['Todos'] + grupo, key='grupo_select')
+        if grupo_selecionado != 'Todos':
+            setores_df = setores_df[setores_df['grupo'] == grupo_selecionado]
+            setores_df.to_json('bronze_data/setores_filtrados.json', 
+                               orient='records', 
+                               force_ascii=False)
         
         # Filtro por setor
         if grupo_selecionado != 'Todos':
             setores_filtrados = setores_df[setores_df['setor_pt'] == grupo_selecionado]['setor_pt'].dropna().unique().tolist()
         else:
             setores_filtrados = setores_df['setor_pt'].unique().tolist() # Filtrar por setor
+            setores_df.to_json('bronze_data/setores_filtrados.json',
+                                 orient='records',
+                                    force_ascii=False)
         setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
         
         # Filtro por Indústria
@@ -92,10 +114,14 @@ def definir_ticker():
         else:
             industrias_filtradas = setores_df['industria_pt'].dropna().unique().tolist()
         industria_selecionada = st.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
-
-        
-        # Segunda linha de filtros por nome ou ticker
-        # Filtragem apenas pelos selects
+        # filtra setores_df conforme lista indústrias_selecionadas
+        if industria_selecionada != 'Todos':
+            setores_df = setores_df[setores_df['industria_pt'] == industria_selecionada]
+            setores_df.to_json('bronze_data/setores_filtrados.json', 
+                               orient='records', 
+                               force_ascii=False)
+            
+        # Filtragem de tickers pelos dados selecionados
         setores_filtrados_df = setores_df.copy()
         if grupo_selecionado != 'Todos':
             setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == grupo_selecionado]

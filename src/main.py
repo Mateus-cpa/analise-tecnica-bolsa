@@ -25,6 +25,7 @@ def configuracoes_iniciais():
     plt.style.use('dark_background')  # Corrigido: 'darkgrid' não existe, use 'dark_background'
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
+    st.set_page_config(layout="wide")
 
 
 
@@ -67,12 +68,10 @@ def tela_streamlit():
             
     ticker = definir_ticker()
     if 'Nenhum' in st.session_state.ticker:
-        st.error("Por favor, selecione um ticker válido.")
+        #st.error("Por favor, selecione um ticker válido.")
         # -- ANALISE SETORIAL --
         st.header(" Análise Setorial")
-        with open ('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
-            setores_df = pd.read_csv(f)
-        analise_setorial(setores_df)
+        analise_setorial()
 
     else:
         fundamentos = importar_fundamentos(ticker)
