@@ -58,8 +58,23 @@ def analise_setorial():
                                        x="rendimento", 
                                        title="Distribuição do Retorno",
                                        color="grupo")
-    st.plotly_chart(grafico_rendimento)
-    
+    grafico_rendimento.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+    grafico_rendimento.update_xaxes(title_text="Rendimento (%)")
+    grafico_rendimento.update_yaxes(title_text="Contagem")
+    grafico_rendimento.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    grafico_rendimento.update_layout(bargap=0.2)  # Ajusta
+    col1.plotly_chart(grafico_rendimento)
+
+    boxplot_rendimento = px.box(df[(df['rendimento']<30) & (df['rendimento']>0)],
+                                y="setor_pt",
+                                x="rendimento",
+                                title="Boxplot do Rendimento por Setor",
+                                color="grupo")
+    boxplot_rendimento.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.75))
+    boxplot_rendimento.update_yaxes(title_text="Setor")
+    boxplot_rendimento.update_xaxes(title_text="Rendimento (%)")
+    col2.plotly_chart(boxplot_rendimento)
+
     # Gráfico de PVP
     grafico_pvp = px.histogram(df[df['pvp'] <= 10], 
                                x="pvp", 
