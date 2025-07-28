@@ -6,9 +6,15 @@ def analise_setorial():
     #utilizar a largura da página
     df = pd.read_json('bronze_data/setores_filtrados.json', orient='records')
 
+    nome_coluna = st.radio("Selecione a coluna:", 
+                            ("Setor", "Indústria"),
+                            horizontal=True)
+    coluna = "setor_pt" if nome_coluna == "Setor" else "industria_pt"
+    
     col1, col2 = st.columns([0.4, 0.6])
     
     # Gráfico de contagem de tickers por grupo
+    
     grafico_qtd = px.histogram(df, 
                                x="grupo", 
                                title="Contagem de Tickers por Grupo",
@@ -19,23 +25,23 @@ def analise_setorial():
     grafico_qtd.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
     grafico_qtd.update_xaxes(title_text="Grupo")
     grafico_qtd.update_yaxes(title_text="Contagem")
+    grafico_qtd.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    grafico_qtd.update_layout(bargap=0.2)  # Ajusta o espaçamento entre as barras
     col1.plotly_chart(grafico_qtd)
 
     # Gráfico de contagem de tickers por setor/indústria
-    coluna_qtd = col2.radio("Selecione a coluna:", 
-                            ("setor_pt", "industria_pt"),
-                            horizontal=True)
-    nome_coluna_qtd = "Setor" if coluna_qtd == "setor_pt" else "Indústria"
     grafico_qtd_por_setor = px.histogram(df, 
-                                         y=coluna_qtd,
-                                         title= f"Contagem de Tickers por {nome_coluna_qtd}",
+                                         y=coluna,
+                                         title= f"Contagem de Tickers por {nome_coluna}",
                                          color="grupo"
                                          )
     grafico_qtd_por_setor.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.7))
-    grafico_qtd_por_setor.update_yaxes(title_text=nome_coluna_qtd)
+    grafico_qtd_por_setor.update_yaxes(title_text=nome_coluna)
     grafico_qtd_por_setor.update_xaxes(title_text="Contagem")
+    grafico_qtd_por_setor.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    grafico_qtd_por_setor.update_layout(bargap=0.2)
     col2.plotly_chart(grafico_qtd_por_setor)
-    st.divider()
+    
     # Gráfico de variação percentual com leganda abaixo do gráfico
     grafico_variacao = px.histogram(df[(df['variacao_valor']>-20) & (df['variacao_valor']<20)], 
                                      x="variacao_valor", 
@@ -44,18 +50,23 @@ def analise_setorial():
                                      labels={"variacao_valor": "Variação Percentual"})
     grafico_variacao.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.7))
     grafico_variacao.update_xaxes(title_text="Variação Percentual")
+    grafico_variacao.update_yaxes(title_text="Contagem")
+    grafico_variacao.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    grafico_variacao.update_layout(bargap=0.2)  # Ajusta
     col1.plotly_chart(grafico_variacao)
 
     boxplot_variacao = px.box((df[(df['variacao_valor']<50) & 
                                   (df['variacao_valor']>-20)]),
-                            y="setor_pt", 
+                            y=coluna, 
                             x="variacao_valor",
-                            title="Boxplot da Variação Percentual por Setor",
+                            title=f"Boxplot da Variação Percentual por {nome_coluna}",
                             #points="all",
                             color="grupo")
     boxplot_variacao.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.75))
-    boxplot_variacao.update_yaxes(title_text="Setor")
+    boxplot_variacao.update_yaxes(title_text=nome_coluna)
     boxplot_variacao.update_xaxes(title_text="Variação Percentual")
+    boxplot_variacao.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    boxplot_variacao.update_layout(bargap=0.2)  # Ajusta
     col2.plotly_chart(boxplot_variacao)
 
     # Gráfico de rendimento
@@ -71,13 +82,15 @@ def analise_setorial():
     col1.plotly_chart(grafico_rendimento)
 
     boxplot_rendimento = px.box(df[(df['rendimento']<30) & (df['rendimento']>0)],
-                                y="setor_pt",
+                                y=coluna,
                                 x="rendimento",
-                                title="Boxplot do Rendimento por Setor",
+                                title=f"Boxplot do Rendimento por {nome_coluna}",
                                 color="grupo")
     boxplot_rendimento.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.75))
-    boxplot_rendimento.update_yaxes(title_text="Setor")
+    boxplot_rendimento.update_yaxes(title_text=nome_coluna)
     boxplot_rendimento.update_xaxes(title_text="Rendimento (%)")
+    boxplot_rendimento.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    boxplot_rendimento.update_layout(bargap=0.2)  # Ajusta
     col2.plotly_chart(boxplot_rendimento)
 
     # Gráfico de PVP
@@ -85,7 +98,23 @@ def analise_setorial():
                                x="pvp", 
                                title="Distribuição do P/VPA",
                                color="grupo")
-    st.plotly_chart(grafico_pvp)
+    grafico_pvp.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+    grafico_pvp.update_xaxes(title_text="P/VPA")
+    grafico_pvp.update_yaxes(title_text="Contagem")
+    grafico_pvp.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    grafico_pvp.update_layout(bargap=0.2)  # Ajusta
+    col1.plotly_chart(grafico_pvp)
+
+    boxplot_pvp = px.box(df[(df['pvp']<10) & (df['pvp']>0)],
+                         y=coluna,
+                         x="pvp",
+                         title=f"Boxplot do P/VPA por {nome_coluna}",
+                         color="grupo")
+    boxplot_pvp.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.75))
+    boxplot_pvp.update_yaxes(title_text=nome_coluna)
+    boxplot_pvp.update_xaxes(title_text="P/VPA")
+    boxplot_pvp.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
+    boxplot_pvp.update_layout(bargap=0.2)  # Ajusta
 
     # listar tikers como botões para filtrar
     st.subheader("Lista de Tickers")
