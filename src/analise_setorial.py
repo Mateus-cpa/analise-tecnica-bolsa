@@ -1,3 +1,5 @@
+import numpy as np
+
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -117,30 +119,18 @@ def analise_setorial():
     boxplot_pvp.update_layout(bargap=0.2)  # Ajusta
 
     # listar tikers como botões para filtrar
-    st.subheader("Lista de Tickers")
     tickers = df['ticker'].unique().tolist()
+    st.subheader(f"Lista dos {len(tickers)} tickers")
     tickers.sort()
     if len(tickers) < 40:
-        col1, col2, col3, col4, col5 = st.columns(5)
-        with col1:  
-            for ticker in tickers[:len(tickers)//5]:
-                if st.button(ticker):
-                    st.session_state.ticker = ticker
-        with col2:
-            for ticker in tickers[len(tickers)//5:len(tickers)//5*2]:
-                if st.button(ticker):
-                    st.session_state.ticker = ticker
-        with col3:
-            for ticker in tickers[len(tickers)//5*2:len(tickers)//5*3]:
-                if st.button(ticker):
-                    st.session_state.ticker = ticker
-        with col4:
-            for ticker in tickers[len(tickers)//5*3:len(tickers)//5*4]:
-                if st.button(ticker):
-                    st.session_state.ticker = ticker
-        with col5:
-            for ticker in tickers[len(tickers)//5*4:]:
-                if st.button(ticker):
-                    st.session_state.ticker = ticker
+        ticker_columns = np.array_split(tickers, 5)
+        cols = st.columns(5)
+        for i, col in enumerate(cols):
+            with col:
+                for ticker in ticker_columns[i]:
+                    if st.button(ticker):
+                        st.session_state.ticker = ticker
+    else:
+        st.warning(f"Existem {len(tickers)} tickers disponíveis. Use os filtros para encontrar o ticker desejado.")
     # utilizar ytdata-profiling para análise mais detalhada
     
