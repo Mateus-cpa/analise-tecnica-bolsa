@@ -80,7 +80,7 @@ def definir_ticker():
         except TypeError:
             pass
         if minimo_dy:
-            minimo_dy_float = float(minimo_dy[0].replace('%', ''))
+            minimo_dy_float = float(minimo_dy.replace('%', ''))
             setores_df = setores_df[setores_df['rendimento'] >= minimo_dy_float]
             setores_df.to_json('bronze_data/setores_filtrados.json', 
                                orient='records', 

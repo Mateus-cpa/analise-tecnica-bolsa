@@ -76,7 +76,7 @@ def analise_setorial():
                                        x="rendimento", 
                                        title="Distribuição do Retorno",
                                        color="grupo")
-    grafico_rendimento.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+    grafico_rendimento.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.75))
     grafico_rendimento.update_xaxes(title_text="Rendimento (%)")
     grafico_rendimento.update_yaxes(title_text="Contagem")
     grafico_rendimento.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
