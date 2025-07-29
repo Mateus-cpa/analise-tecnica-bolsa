@@ -18,7 +18,7 @@ def atualizar_base_setores():
         colunas = [
             'ticker', 'grupo', 'nome', 'nome completo', 'setor', 'industria',
             'rendimento', 'variacao_valor', 'recomendação', 'confiança do alerta', 'tipo',
-            'valor patrimonial por ação', 'pvp'
+            'valor patrimonial por ação', 'pvp', 'valor_mercado'
         ]
         pd.DataFrame(columns=colunas).to_csv(setores_path, index=False)
 
@@ -45,6 +45,7 @@ def atualizar_base_setores():
             tipo = info.get('typeDisp') or ''
             valor_patrimonial_por_acao = info.get('bookValue') or ''
             pvp = info.get('priceToBook') or ''
+            valor_mercado = info.get('marketCap') or ''
             status_text.text(f"Ticker: {ticker} | Grupo: {grupo} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
         except Exception as e:
             print(f"Erro ao buscar dados de {ticker}: {e}")
@@ -59,6 +60,7 @@ def atualizar_base_setores():
             tipo = ''
             valor_patrimonial_por_acao = ''
             pvp = ''
+            valor_mercado = ''
 
         setores.append({'ticker': ticker, 
                         'grupo': grupo,
@@ -72,7 +74,9 @@ def atualizar_base_setores():
                         'confiança do alerta': confianca_alerta,
                         'tipo': tipo,
                         'valor patrimonial por ação': valor_patrimonial_por_acao,
-                        'pvp': pvp})
+                        'pvp': pvp,
+                        'valor_mercado': valor_mercado
+                        })
         progress_bar.progress((i + 1) / len(df_tickers))
 
     df_setores = pd.DataFrame(setores)

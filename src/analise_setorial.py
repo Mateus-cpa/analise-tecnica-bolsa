@@ -7,18 +7,26 @@ import plotly.express as px
 def analise_setorial():
     #utilizar a largura da página
     df = pd.read_json('bronze_data/setores_filtrados.json', orient='records')
+    st.warning("Utilize os filtros no menu lateral para encontrar o ticker desejado.")
 
-    nome_coluna = st.radio("Selecione a coluna:", 
+    st.subheader("Gráficos")    
+    col1, col2 = st.columns([0.4, 0.6])
+    
+    dimensao_graficos = col1.radio("Selecione a dimensão dos gráficos:",
+                                 ("Valor de Mercado", "Quantidade de Tickers"),
+                                 horizontal=True)
+    medida = df['valor_mercado'] if dimensao_graficos == "Valor de Mercado" else df['ticker']
+    
+
+    nome_coluna = col2.radio("Selecione o critério da coluna:", 
                             ("Setor", "Indústria"),
                             horizontal=True)
     coluna = "setor_pt" if nome_coluna == "Setor" else "industria_pt"
     
-    col1, col2 = st.columns([0.4, 0.6])
-    
     # Gráfico de contagem de tickers por grupo
-    
+    col1, col2 = st.columns([0.4, 0.6])
     grafico_qtd = px.histogram(df, 
-                               x="grupo", 
+                               x= 'grupo',
                                title="Contagem de Tickers por Grupo",
                                color="grupo",
                                #mortar ao apontar no gráfico os tickers
