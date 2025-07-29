@@ -117,6 +117,7 @@ def analise_setorial():
     boxplot_pvp.update_xaxes(title_text="P/VPA")
     boxplot_pvp.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
     boxplot_pvp.update_layout(bargap=0.2)  # Ajusta
+    col2.plotly_chart(boxplot_pvp)
 
     # listar tikers como botões para filtrar
     tickers = df['ticker'].unique().tolist()
@@ -129,7 +130,7 @@ def analise_setorial():
             with col:
                 for ticker in ticker_columns[i]:
                     if st.button(ticker):
-                        st.session_state.ticker = ticker
+                        return ticker
     else:
         st.warning(f"Existem {len(tickers)} tickers disponíveis. Use os filtros para encontrar o ticker desejado.")
     # utilizar ytdata-profiling para análise mais detalhada

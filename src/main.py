@@ -26,6 +26,7 @@ def configuracoes_iniciais():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
     st.set_page_config(layout="wide")
+    st.session_state.ticker = 'Nenhum'  # Inicializa o ticker como 'Nenhum'
 
 
 
@@ -67,11 +68,10 @@ def tela_streamlit():
             atualizar_base_setores()
             
     ticker = definir_ticker()
-    if 'Nenhum' in st.session_state.ticker:
+    while (st.session_state.ticker == None or 'Nenhum' in st.session_state.ticker):
         #st.error("Por favor, selecione um ticker válido.")
-        # -- ANALISE SETORIAL --
         st.header(" Análise Setorial")
-        analise_setorial()
+        st.session_state.ticker = analise_setorial()
 
     else:
         fundamentos = importar_fundamentos(ticker)
