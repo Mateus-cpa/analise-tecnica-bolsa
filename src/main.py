@@ -68,12 +68,14 @@ def tela_streamlit():
             atualizar_base_setores()
             
     ticker = definir_ticker()
-    while (st.session_state.ticker == None or 'Nenhum' in st.session_state.ticker):
-        #st.error("Por favor, selecione um ticker válido.")
+    while st.session_state.ticker is None or st.session_state.ticker == 'Nenhum':
         st.header(" Análise Setorial")
-        st.session_state.ticker = analise_setorial()
-
-    else:
+        resultado = analise_setorial()
+        if resultado is not None:
+            st.session_state.ticker = resultado
+        else:
+            break
+    if st.session_state.ticker != 'Nenhum':
         fundamentos = importar_fundamentos(ticker)
         mostrar_fundamentos(fundamentos)
         

@@ -10,17 +10,17 @@ def analise_setorial():
     st.warning("Utilize os filtros no menu lateral para encontrar o ticker desejado.")
 
     st.subheader("Gráficos")    
-    col1, col2 = st.columns([0.4, 0.6])
+    colA, colB = st.columns([0.4, 0.6])
     
-    dimensao_graficos = col1.radio("Selecione a dimensão dos gráficos:",
+    dimensao_graficos = colA.radio("Selecione a dimensão dos gráficos:",
                                  ("Valor de Mercado", "Quantidade de Tickers"),
-                                 horizontal=True)
-    medida = df['valor_mercado'] if dimensao_graficos == "Valor de Mercado" else df['ticker']
-    
+                                 horizontal=True,
+                                 key="dimensao_graficos_setorial")
 
-    nome_coluna = col2.radio("Selecione o critério da coluna:", 
+    nome_coluna = colB.radio("Selecione o critério da coluna:",
                             ("Setor", "Indústria"),
-                            horizontal=True)
+                            horizontal=True,
+                            key="nome_coluna_setorial")
     coluna = "setor_pt" if nome_coluna == "Setor" else "industria_pt"
     
     # Gráfico de contagem de tickers por grupo
