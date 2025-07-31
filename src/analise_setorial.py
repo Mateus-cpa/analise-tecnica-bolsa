@@ -138,7 +138,8 @@ def analise_setorial():
             with col:
                 for ticker in ticker_columns[i]:
                     if st.button(ticker):
-                        return ticker
+                        return f'{ticker}.SA'
+    
     else:
         st.warning(f"Existem {len(tickers)} tickers disponíveis. Use os filtros para encontrar o ticker desejado.")
     # utilizar ytdata-profiling para análise mais detalhada
