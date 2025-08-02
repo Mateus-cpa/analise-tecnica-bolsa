@@ -11,7 +11,7 @@ import streamlit as st # Streamlit para interface web
 
 #bibliotecas locais
 from importar_tickers import importar_tickers # Importando a função para definir o ticker
-from baixar_dados import baixar_dados, definir_ticker
+from painel_lateral import baixar_dados, definir_ticker
 from importar_fundamentos import importar_fundamentos # Importando a função para importar fundamentos
 from atualizar_base_setores import atualizar_base_setores
 from modelo_preditivo import acao_com_preditivo

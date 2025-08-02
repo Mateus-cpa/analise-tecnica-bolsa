@@ -6,7 +6,7 @@ import plotly.express as px
 
 def analise_setorial():
     #utilizar a largura da página
-    df = pd.read_json('bronze_data/setores_filtrados.json', orient='records')
+    df = st.session_state['setores_filtrados']
     st.warning("Utilize os filtros no menu lateral para encontrar o ticker desejado.")
 
     st.subheader("Gráficos")    
