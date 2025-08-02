@@ -76,7 +76,6 @@ def tela_streamlit():
         
     
     if st.session_state.ticker != 'NENHUM':
-        st.subheader(f'Mostrando dados do ticker: {st.session_state.ticker}')
         fundamentos = importar_fundamentos(st.session_state.ticker)
         mostrar_fundamentos(fundamentos)
         
