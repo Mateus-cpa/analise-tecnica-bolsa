@@ -27,8 +27,8 @@ def configuracoes_iniciais():
     pd.set_option('display.max_rows', None)
     st.set_page_config(layout="wide")
     if 'ticker' not in st.session_state:
-        # Inicializa o ticker como 'Nenhum' se não estiver definido
-        st.session_state.ticker = 'Nenhum'
+        # Inicializa o ticker como 'NENHUM' se não estiver definido
+        st.session_state.ticker = 'NENHUM'
 
 
 
@@ -68,23 +68,21 @@ def tela_streamlit():
         importar_tickers()  # Importa os tickers disponíveis
     if col2.button('Atualizar base'):
             atualizar_base_setores()
-            
-    ticker = definir_ticker()
-    while st.session_state.ticker is None or st.session_state.ticker == 'Nenhum':
+
+    st.session_state.ticker = definir_ticker()
+    if (st.session_state.ticker is None or st.session_state.ticker == 'NENHUM'):
         st.header(" Análise Setorial")
-        ticker = analise_setorial()
-        if ticker is not None:
-            st.session_state.ticker = ticker
-        else:
-            break
-    st.subheader(f'Mostrando dados do ticker: {st.session_state.ticker}')
-    if st.session_state.ticker != 'Nenhum':
+        analise_setorial()
+        
+    
+    if st.session_state.ticker != 'NENHUM':
+        st.subheader(f'Mostrando dados do ticker: {st.session_state.ticker}')
         fundamentos = importar_fundamentos(st.session_state.ticker)
         mostrar_fundamentos(fundamentos)
         
         with st.sidebar:
             tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
-        acao = baixar_dados(ticker, tempo_anos)
+        acao = baixar_dados(st.session_state.ticker, tempo_anos)
         
         
         try:
@@ -115,9 +113,9 @@ def tela_streamlit():
         target_median_price = fundamentos['targetMedianPrice'].iloc[0] if 'targetMedianPrice' in fundamentos.columns else None
         acao = adicionar_target_median_price(acao=acao,
                                              target_median_price=target_median_price)
-        plotar_grafico(acao, ticker)
+        plotar_grafico(acao, st.session_state.ticker)
         if st.checkbox("Histórico do ativo"):
-            lancar_dataframe(acao, ticker)
+            lancar_dataframe(acao, st.session_state.ticker)
     if st.checkbox("Base de dados de setores"):
         with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
             setores_df = pd.read_csv(f)
