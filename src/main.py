@@ -116,9 +116,14 @@ def tela_streamlit():
         plotar_grafico(acao, st.session_state.ticker)
         if st.checkbox("Histórico do ativo"):
             lancar_dataframe(acao, st.session_state.ticker)
-    if st.checkbox("Base de dados de setores"):
+    st.subheader("Base de dados de setores")
+    # colocar seção retrátil st.expander
+    with st.expander("Ver setores disponíveis"):
         with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
             setores_df = pd.read_csv(f)
+            if st.button("Baixar setores"):
+                setores_df.to_csv('bronze_data/setores_filtrados.json', orient='records', index=False)
+                st.success("Setores baixados com sucesso!")
         st.dataframe(setores_df)
             
     st.write(f"Versão do python: {str(sys.version).split('(')[0]}")
