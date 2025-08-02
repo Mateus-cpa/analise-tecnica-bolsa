@@ -84,41 +84,31 @@ def definir_ticker():
             st.session_state['setores_filtrados'] = setores_df.copy()
 
         # -- GRUPO --
-        grupo = setores_df['grupo'].unique().tolist()
+        grupo = st.session_state['setores_filtrados']['grupo'].unique().tolist()
         grupo_selecionado = st.selectbox('Tipo', options=['Todos'] + grupo, key='grupo_select')
         if grupo_selecionado != 'Todos':
-            setores_df = setores_df[setores_df['grupo'] == grupo_selecionado]
-            st.session_state['setores_filtrados'] = setores_df.copy()
+            st.session_state['setores_filtrados'] = st.session_state['setores_filtrados'][st.session_state['setores_filtrados']['grupo'] == grupo_selecionado]
 
         # -- SETOR --
         if grupo_selecionado != 'Todos':
-            setores_filtrados = setores_df[setores_df['grupo'] == grupo_selecionado]['setor_pt'].dropna().unique().tolist()
+            setores_filtrados = st.session_state['setores_filtrados']['setor_pt'].dropna().unique().tolist()
         else:
-            setores_filtrados = setores_df['setor_pt'].unique().tolist()
-            st.session_state['setores_filtrados'] = setores_df.copy()
+            setores_filtrados = st.session_state['setores_filtrados']['setor_pt'].unique().tolist()
         setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
+        if setor_selecionado != 'Todos':
+            st.session_state['setores_filtrados'] = st.session_state['setores_filtrados'][st.session_state['setores_filtrados']['setor_pt'] == setor_selecionado]
 
-
-        # Filtro por Indústria
-        if grupo_selecionado != 'Todos':
-            industrias_filtradas = setores_df[setores_df['grupo'] == grupo_selecionado]['industria_pt'].dropna().unique().tolist()
-        elif setor_selecionado != 'Todos':
-            industrias_filtradas = setores_df[setores_df['setor_pt'] == setor_selecionado]['industria_pt'].dropna().unique().tolist()
+        # -- INDÚSTRIA --
+        if setor_selecionado != 'Todos':
+            industrias_filtradas = st.session_state['setores_filtrados']['industria_pt'].dropna().unique().tolist()
         else:
-            industrias_filtradas = setores_df['industria_pt'].dropna().unique().tolist()
+            industrias_filtradas = st.session_state['setores_filtrados']['industria_pt'].dropna().unique().tolist()
         industria_selecionada = st.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
         if industria_selecionada != 'Todos':
-            setores_df = setores_df[setores_df['industria_pt'] == industria_selecionada]
-            st.session_state['setores_filtrados'] = setores_df.copy()
+            st.session_state['setores_filtrados'] = st.session_state['setores_filtrados'][st.session_state['setores_filtrados']['industria_pt'] == industria_selecionada]
 
-        # Filtragem de tickers pelos dados selecionados
-        setores_filtrados_df = setores_df.copy()
-        if grupo_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == grupo_selecionado]
-        if setor_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor_pt'] == setor_selecionado]
-        if industria_selecionada != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria_pt'] == industria_selecionada]
+        # -- TICKER --
+        setores_filtrados_df = st.session_state['setores_filtrados'].copy()
 
         setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(
             lambda linha: f"{str(linha['ticker'])} {str(linha.get('nome',''))} {str(linha.get('nome completo',''))}", axis=1
