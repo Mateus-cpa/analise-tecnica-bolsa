@@ -5,7 +5,6 @@ import streamlit as st
 import plotly.express as px
 
 def analise_setorial():
-    #utilizar a largura da página
     df = st.session_state['setores_filtrados']
     st.warning("Utilize os filtros no menu lateral para encontrar o ticker desejado.")
 
