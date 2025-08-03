@@ -30,11 +30,21 @@ def definir_ticker():
     """
     with st.sidebar:
         st.header("Definir Ticker")
-    
-        # Lê lista_setores.csv com cabeçalho
-        setores_df = pd.read_csv('raw_data/lista_setores_traduzido.csv')  # Espera colunas: ticker, setor, industria
+        setores_df = pd.read_csv('raw_data/lista_setores_traduzido.csv')
 
-        # Filtro por variação de valor (<-5%, -5% a -1%, -1% a 1%, 1% a 5%, >5%)
+        # -- LIMPAR FILTROS --
+        if st.button('Limpar filtros'):
+            st.session_state.ticker = 'NENHUM'
+            st.session_state.ticker_select = 'Nenhum'
+            st.session_state.grupo_select = 'Todos'
+            st.session_state.setor_select = 'Todos'
+            st.session_state.industrias_select = 'Todos'
+            st.session_state['setores_filtrados'] = setores_df.copy()
+            #limpar faixa de variação e rendimento
+            st.session_state['faixa_variacao_key'] = None
+            st.session_state['minimo_dy'] = None
+
+        # -- VARIAÇÃO DE VALOR --
         try:
             faixa_variacao = st.segmented_control(
                 "Selecione a faixa de variação:",
@@ -42,7 +52,6 @@ def definir_ticker():
                 default=None,
                 key='faixa_variacao_key'
             )
-            # Mapeia as faixas de variação para os valores correspondentes a df_setores['variacao_valor']
             variacao_map = { 
                 "<-5%": (min(setores_df['variacao_valor']), -5),
                 "-5=>-1%": (-5, -1),
@@ -53,13 +62,13 @@ def definir_ticker():
             tupla_variacao = variacao_map[faixa_variacao]
             min_var = tupla_variacao[0]
             max_var = tupla_variacao[1]
-            #st.write(f'Variação: {min_var}% a {max_var}%.')
             setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
                                     (setores_df['variacao_valor'] <= max_var)]
+            st.session_state['setores_filtrados'] = setores_df.copy()
         except KeyError:
             pass    
-        
-        # Filtro Rendimento "2%", "5%", "10%", "15%", "20%"
+
+        # -- RENDIMENTO (DY) --
         try:
             minimo_dy = st.segmented_control(
                 "DY mínimo:",
@@ -70,46 +79,41 @@ def definir_ticker():
         except TypeError:
             pass
         if minimo_dy:
-            minimo_dy_float = float(minimo_dy[0].replace('%', ''))
+            minimo_dy_float = float(minimo_dy.replace('%', ''))
             setores_df = setores_df[setores_df['rendimento'] >= minimo_dy_float]
+            st.session_state['setores_filtrados'] = setores_df.copy()
 
-        # Filtro por grupo
-        grupo = setores_df['grupo'].unique().tolist() # Filtrar por grupo de ticker - Equity (ações), Funds e Index
+        # -- GRUPO --
+        grupo = st.session_state['setores_filtrados']['grupo'].unique().tolist()
         grupo_selecionado = st.selectbox('Tipo', options=['Todos'] + grupo, key='grupo_select')
-        
-        # Filtro por setor
         if grupo_selecionado != 'Todos':
-            setores_filtrados = setores_df[setores_df['setor_pt'] == grupo_selecionado]['setor_pt'].dropna().unique().tolist()
+            st.session_state['setores_filtrados'] = st.session_state['setores_filtrados'][st.session_state['setores_filtrados']['grupo'] == grupo_selecionado]
+
+        # -- SETOR --
+        if grupo_selecionado != 'Todos':
+            setores_filtrados = st.session_state['setores_filtrados']['setor_pt'].dropna().unique().tolist()
         else:
-            setores_filtrados = setores_df['setor_pt'].unique().tolist() # Filtrar por setor
+            setores_filtrados = st.session_state['setores_filtrados']['setor_pt'].unique().tolist()
         setor_selecionado = st.selectbox('Setor', options=['Todos'] + setores_filtrados, key='setor_select')
-        
-        # Filtro por Indústria
-        if grupo_selecionado != 'Todos':
-            industrias_filtradas = setores_df[setores_df['grupo'] == grupo_selecionado]['industria_pt'].dropna().unique().tolist()
-        elif setor_selecionado != 'Todos': # Filtra subsetores conforme setor
-            industrias_filtradas = setores_df[setores_df['setor_pt'] == setor_selecionado]['industria_pt'].dropna().unique().tolist()
-        else:
-            industrias_filtradas = setores_df['industria_pt'].dropna().unique().tolist()
-        industria_selecionada = st.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
-
-        
-        # Segunda linha de filtros por nome ou ticker
-        # Filtragem apenas pelos selects
-        setores_filtrados_df = setores_df.copy()
-        if grupo_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['grupo'] == grupo_selecionado]
         if setor_selecionado != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['setor_pt'] == setor_selecionado]
-        if industria_selecionada != 'Todos':
-            setores_filtrados_df = setores_filtrados_df[setores_filtrados_df['industria_pt'] == industria_selecionada]
+            st.session_state['setores_filtrados'] = st.session_state['setores_filtrados'][st.session_state['setores_filtrados']['setor_pt'] == setor_selecionado]
 
-        # Cria coluna de busca concatenada
+        # -- INDÚSTRIA --
+        if setor_selecionado != 'Todos':
+            industrias_filtradas = st.session_state['setores_filtrados']['industria_pt'].dropna().unique().tolist()
+        else:
+            industrias_filtradas = st.session_state['setores_filtrados']['industria_pt'].dropna().unique().tolist()
+        industria_selecionada = st.selectbox('Indústria', options=['Todos'] + industrias_filtradas, key='industrias_select')
+        if industria_selecionada != 'Todos':
+            st.session_state['setores_filtrados'] = st.session_state['setores_filtrados'][st.session_state['setores_filtrados']['industria_pt'] == industria_selecionada]
+
+        # -- TICKER --
+        setores_filtrados_df = st.session_state['setores_filtrados'].copy()
+
         setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(
             lambda linha: f"{str(linha['ticker'])} {str(linha.get('nome',''))} {str(linha.get('nome completo',''))}", axis=1
         )
 
-        # Cria dicionário para mapear o texto exibido ao ticker real
         opcoes_dict = {row['ticker_busca']: row['ticker'] for _, row in setores_filtrados_df.iterrows()}
         opcoes_lista = ['Nenhum'] + list(opcoes_dict.keys())
 
@@ -120,10 +124,8 @@ def definir_ticker():
         )
         st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
 
-
         ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
-        return ticker.upper()  # Convertendo para maiúsculas para padronização
-
+        return ticker.upper()
 
 
 
