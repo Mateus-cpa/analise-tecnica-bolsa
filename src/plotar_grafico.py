@@ -45,8 +45,9 @@ def plotar_grafico(acao, ticker):
     
     # Adicionando elementos no gráfico
     col1, col2, col3, col4, col5 = st.columns(5)
-    if col1.checkbox('MM5', value=False):
+    if 'MM5' in acao.columns and col1.checkbox('MM5', value=True):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM5'], mode='lines', name='MM5', marker_color='rgba(250,250,250,0.5)'))
+    
     if col1.checkbox('Candles', value=True):
         fig.add_trace(
         go.Candlestick(
@@ -56,15 +57,15 @@ def plotar_grafico(acao, ticker):
             low=acao['Low'],
             close=acao['Close'],
             name='Candlestick'))
-    if col2.checkbox('MM21', value=False):
+    if 'MM21' in acao.columns and col2.checkbox('MM21', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM21'], mode='lines', name='MM21', marker_color='rgba(160,160,160,0.5)'))
-    if col3.checkbox('MM72', value=False):
+    if 'MM72' in acao.columns and col3.checkbox('MM72', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM72'], mode='lines', name='MM72', marker_color='rgba(90,90,90,0.5)'))
-    if col4.checkbox('MM200', value=False):
+    if 'MM200' in acao.columns and col4.checkbox('MM200', value=False):
         fig.add_trace(go.Scatter(x=acao.index, y=acao['MM200'], mode='lines', name='MM200', marker_color='rgba(40,40,40,0.5)'))
 
     #adicionando marcadores de topos e fundos com gráfico
-    if col5.checkbox('Topos e Fundos', value=False):
+    if 'marcador' in acao.columns and col5.checkbox('Topos e Fundos', value=False):
         fig.add_trace(go.Scatter(
             x=acao[acao['marcador'] == 'topo'].index,
             y=acao[acao['marcador'] == 'topo']['Close'],
@@ -83,7 +84,7 @@ def plotar_grafico(acao, ticker):
     fig.add_trace(go.Scatter(x=acao.index, y=acao['Close'], mode='lines', name='Real', marker_color='rgba(255,0,0,0.5)'))
     
     # Adicionando marcadores de tendência
-    if col2.checkbox('Mudança de Tendência', value=False):
+    if 'mudanca_tendencia' in acao.columns and col2.checkbox('Mudança de Tendência', value=False):
         # Filtra as datas com mudança de tendência
         mudanca_tendencia = acao[acao['mudanca_tendencia'].notnull()]
         fig.add_trace(go.Scatter(
@@ -124,44 +125,44 @@ def plotar_grafico(acao, ticker):
         st.warning("Arquivo de coeficientes não encontrado.")
         coeficientes_modelos = {}
 
-    
-    if coeficientes_modelos['regressao_linear'] > 90.0:
+
+    if 'previsao_regressao_linear' in acao.columns and coeficientes_modelos['regressao_linear'] > 90.0:
         if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
             fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_regressao_linear'], mode='lines', name='Regr. linear', marker_color='rgba(0,255,0,0.5)'))
-    
-    if coeficientes_modelos['rede_neural'] > 90.0:
+
+    if 'previsao_rede_neural' in acao.columns and coeficientes_modelos['rede_neural'] > 90.0:
         if col4.checkbox('Rede neural', value=True, key = 'neural_net'):
             fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural'], mode='lines', name='Rede neural', marker_color='rgba(0,255,255,0.5)'))
-    
-    if coeficientes_modelos['hiper_parametro'] > 90.0:
+
+    if 'previsao_hiper_parametro' in acao.columns and coeficientes_modelos['hiper_parametro'] > 90.0:
         if col5.checkbox('Hiperparâmetros', value=True, key = 'hyperparam'):
-            fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_rede_neural_hiper_parameter'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
-    
-    if coeficientes_modelos['random_forest'] > 90.0:    
+            fig.add_trace(go.Scatter(x=acao.index, y=acao['previsao_hiper_parametro'], mode='lines', name='Hiperparâmetros', marker_color='rgba(255,255,0,0.5)'))
+
+    if 'previsao_random_forest' in acao.columns and coeficientes_modelos['random_forest'] > 90.0:
         if col1.checkbox('Random Forest', value=True, key='rf'):
             fig.add_trace(go.Scatter(
                 x=acao.index, y=acao['previsao_random_forest'],
                 mode='lines', name='Random Forest', marker_color='rgba(0,100,255,0.5)'
             ))
-    if coeficientes_modelos['gradient_boosting'] > 90.0:
+    if 'previsao_gradient_boosting' in acao.columns and coeficientes_modelos['gradient_boosting'] > 90.0:
         if col2.checkbox('Gradient Boosting', value=True, key='gb'):
             fig.add_trace(go.Scatter(
                 x=acao.index, y=acao['previsao_gradient_boosting'],
                 mode='lines', name='Gradient Boosting', marker_color='rgba(255,100,0,0.5)'
                 ))
-    if coeficientes_modelos['svr'] > 90.0:    
+    if 'previsao_svr' in acao.columns and coeficientes_modelos['svr'] > 90.0:
         if col3.checkbox('SVR', value=True, key='svr'):
             fig.add_trace(go.Scatter(
                 x=acao.index, y=acao['previsao_svr'],
                 mode='lines', name='SVR', marker_color='rgba(150,0,255,0.5)'
             ))
-    if coeficientes_modelos['ridge'] > 90.0:
+    if 'previsao_ridge' in acao.columns and coeficientes_modelos['ridge'] > 90.0:
         if col4.checkbox('Ridge', value=True, key='ridge'):
             fig.add_trace(go.Scatter(
                 x=acao.index, y=acao['previsao_ridge'],
                 mode='lines', name='Ridge', marker_color='rgba(0,255,100,0.5)'
             ))
-    if coeficientes_modelos['lasso'] > 90.0:
+    if 'previsao_lasso' in acao.columns and coeficientes_modelos['lasso'] > 90.0:
         if col5.checkbox('Lasso', value=True, key='lasso'):
             fig.add_trace(go.Scatter(
                 x=acao.index, y=acao['previsao_lasso'],
