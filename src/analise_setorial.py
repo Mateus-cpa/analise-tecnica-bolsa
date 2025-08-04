@@ -139,7 +139,7 @@ def analise_setorial():
 
     # Gráficos de PVP
     if dimensao_graficos == "Valor de Mercado":
-        grafico_pvp = px.histogram(df[df['pvp'] <= 10], 
+        grafico_pvp = px.histogram(df[(df['pvp'] <= 10) & (df['pvp'] > -20)], 
                                    x="pvp", 
                                    y="valor_mercado",
                                    title="Soma do Valor de Mercado por P/VPA",
@@ -147,7 +147,7 @@ def analise_setorial():
                                    histfunc="sum")
         grafico_pvp.update_yaxes(title_text="Valor de Mercado (R$)")
     else:
-        grafico_pvp = px.histogram(df[df['pvp'] <= 10], 
+        grafico_pvp = px.histogram(df[(df['pvp'] <= 10) & (df['pvp'] > -20)], 
                                    x="pvp", 
                                    title="Distribuição do P/VPA",
                                    color="grupo")
