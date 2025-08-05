@@ -73,6 +73,7 @@ poetry run streamlit run src/main.py
 - matplotlib
 - mplfinance
 - scikit-learn
+- [BRAPI](https://brapi.dev/dashboard)
 
 ### Contribuição
 
