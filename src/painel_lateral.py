@@ -58,7 +58,6 @@ def definir_ticker():
                 "-1=>1%": (-1, 1),
                 "1=>5%": (1, 5),
                 ">5%": (5, float('inf'))
-
             }
             tupla_variacao = variacao_map[faixa_variacao]
             min_var = tupla_variacao[0]
