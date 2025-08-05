@@ -2,7 +2,7 @@ import requests
 
 token = "7W2BDVtnhys7QYKiaMUVcg"
 
-print('TESTE 1: AÇÕES')
+"""print('TESTE 1: AÇÕES')
 ticker = "ITUB4"
 url = f"https://brapi.dev/api/quote/{ticker}?token={token}&range=1d&interval=1m&fundamental=true&dividends=true&modules=summaryProfile%2CbalanceSheetHistory"
 
@@ -16,10 +16,17 @@ if response.status_code == 200:
     print(data['results'])
 else:
     print(f"Erro: {response.status_code}")
-
-print('TESTE 2: CRIPTOS')
+"""
+print('TESTE 2: 1 CRIPTO')
 cripto = "BTC"
 url = f"https://brapi.dev/api/v2/crypto/available?search={cripto}&token={token}"
+
+response = requests.request("GET", url, headers = {
+                            "Authorization": f"Bearer {token}"
+                            })
+
+print('TESTE 3: TODAS CRIPTOS')
+url = f"https://brapi.dev/api/v2/crypto/available?token={token}"
 
 response = requests.request("GET", url, headers = {
                             "Authorization": f"Bearer {token}"
