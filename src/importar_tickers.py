@@ -22,31 +22,26 @@ def importar_tickers():
 
     # -- ETFs --
     #https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/etf/renda-variavel/etfs-listados/
-    print('Importando ETFs')
     df_etfs = pd.read_csv('raw_data/etfsListados.csv', 
                                encoding='latin-1', 
                                sep=';').Fundo
     df_etfs = df_etfs.rename('ticker').to_frame().reset_index(drop=True)
-    print(f'Qtde. de ETFs: {df_etfs.shape[0]}')
+    st.write(f'Qtde. de ETFs: {df_etfs.shape[0]}')
     df_etfs['grupo'] = 'ETF'
     df_etfs['ticker'] = df_etfs['ticker'].apply(lambda x: str(x) + '11')
-    print(df_etfs.head())
-
+    
     # -- FIIs --
     #https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/fundos-de-investimentos/fii/fiis-listados/
-    print('Importando FIIs')
     df_fiis = pd.read_csv('raw_data/fiisListados.csv', 
                                encoding='latin-1', 
                                sep=';'
                                ).Fundo
     df_fiis = df_fiis.rename('ticker').to_frame().reset_index(drop=True)
-    print(f'Qtde. de FIIs:  {df_fiis.shape[0]}')
+    st.write(f'Qtde. de FIIs:  {df_fiis.shape[0]}')
     df_fiis['grupo'] = 'FII'
     df_fiis['ticker'] = df_fiis['ticker'].apply(lambda x: str(x) + '11')
-    print(df_fiis.head())
-
+    
     # -- AÇÕES --
-    print('Importando ações')
     url = "https://www.dadosdemercado.com.br/acoes"
     try:
         request = requests.get(url)
@@ -66,13 +61,11 @@ def importar_tickers():
         df_acoes = pd.DataFrame(lista_acoes, columns=['ticker'])
         df_acoes['grupo'] = 'Ação'
     except Exception as e:
-        print(f"Erro ao buscar dados de ações: {e}")
+        st.error(f"Erro ao buscar dados de ações: {e}")
         df_acoes = pd.DataFrame(columns=['ticker', 'grupo'])
-    print(f'Qtde. de ações:  {df_acoes.shape[0]}')
-    
+    st.write(f'Qtde. de ações:  {df_acoes.shape[0]}')
 
     # -- ÍNDICES B3 --
-    print('Importando índices')
     try:
         url = "https://www.dadosdemercado.com.br/b3"
         request = requests.get(url)
@@ -90,15 +83,15 @@ def importar_tickers():
         df_indices = pd.DataFrame(lista_indices, columns=['ticker'])
         df_indices['grupo'] = 'Índice'
     except Exception as e:
-        print(f"Erro ao buscar dados de índices: {e}")
+        st.error(f"Erro ao buscar dados de índices: {e}")
         df_indices = pd.DataFrame(columns=['ticker', 'grupo'])
-    print(f'Qtde. de índices:  {df_indices.shape[0]}')
+    st.write(f'Qtde. de índices:  {df_indices.shape[0]}')
 
     # -- Índices macroeconômicos --
     #importar_ipca_sidra()
 
     # -- API BrAPI - stocks --
-    print('Importando ações da API BrAPI')
+    st.write('Importando ações da API BrAPI -- stocks e indexes')
     df_acoes_brapi = pd.DataFrame(columns=['ticker','grupo'])
     df_indices_brapi = pd.DataFrame(columns=['ticker','grupo'])
     url = "https://brapi.dev/api/available"
@@ -106,26 +99,25 @@ def importar_tickers():
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
-            df_acoes_brapi = pd.DataFrame(data['stocks'],columns='ticker')
+            df_acoes_brapi['ticker'] = data['stocks']
             df_acoes_brapi['grupo'] ='Ações'
-            df_indices_brapi = pd.DataFrame(data['indexes'],columns='ticker')
+            st.write(f"Tickers Ações brapi importados com sucesso: {df_acoes_brapi.shape[0]}")
+            df_indices_brapi['ticker'] = data['indexes']
             df_indices_brapi['grupo'] = 'Índice'
-            print(f"Tickers Ações brapi importados com sucesso: {df_acoes_brapi.shape[0]}")
-            print(f"Tickers Índices brapi importados com sucesso: {df_indices_brapi.shape[0]}")
+            st.write(f"Tickers Índices brapi importados com sucesso: {df_indices_brapi.shape[0]}")
             #Classifica os tickers
             df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'BDR' if x.ticker.endswith('34') or
                                     x.ticker.endswith('39') else 'Ação', axis=1)
-            df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'ETF/Unit/FII' if x.ticker.endswith('11')
+            df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'ETF/FII' if x.ticker.endswith('11')
                                 else x.grupo, axis=1)
             df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'Índice' if x.ticker.startswith('^') 
                                 else x.grupo, axis=1)
-
         else:
-            print(f"Erro ao acessar a API BrAPI: {response.status_code}")
+            st.error(f"Erro ao acessar a API BrAPI: {response.status_code}")
     except Exception as e:
-        print(f'Erro ao buscar dados de BRAPI: {e}')
-    
-    
+        st.error(f'Erro ao buscar dados de BRAPI: {e}')
+
+
     # Anexa cada dataframe a df_total se não já tiver
     if 'df_total' not in locals():
         df_total = pd.DataFrame(columns=['ticker', 'grupo'])
@@ -147,36 +139,33 @@ def importar_tickers():
             data = response.json()
             df_criptos['ticker'] = data['coins']
             df_criptos['grupo'] = 'Criptomoeda'
-            print(f"Criptomoedas importadas da API BrAPI: {df_criptos.shape[0]}")
+            st.write(f"Criptomoedas importadas da API BrAPI: {df_criptos.shape[0]}")
         else:
-            print(f"Erro ao acessar a API BrAPI: {response.status_code}")
+            st.error(f"Erro ao acessar a API BrAPI: {response.status_code}")
     except Exception as e:
-        print(f'Não foi possível importar dados de cripto: {e}')
-        
+        st.error(f'Não foi possível importar dados de cripto: {e}')
     df_total = pd.concat([df_total, df_criptos], ignore_index=True)
+    
+    # -- Moedas --
+    # url = https://brapi.dev/api/v2/currency/available
+
+    # -- Inflação --
+    # url = https://brapi.dev/api/v2/inflation/available
+        
+    # -- Taxa de Juros --
+    # url = https://brapi.dev/api/v2/prime-rate/available
     
     # -- Mostra quantidade por grupo --
     df_grupos = df_total.groupby('grupo').size().reset_index(name='quantidade')
-    print(df_grupos)
+    st.dataframe(df_grupos)
+    st.success(f'Qtde. Total:  {df_total.shape[0]}')
 
-    """# -- Exporta os tickers --
-    st.write('Exportando tickers para raw_data/tickers.csv')
-    # Cria o diretório se não existir
+    # -- Exporta os tickers --
     if not os.path.exists('raw_data'):
         os.makedirs('raw_data')
-    # Salva os tickers em um arquivo CSV
-    with open('raw_data/tickers.csv', 'w', encoding='utf-8') as file:
-        file.write('ticker,grupo\n')
-        for ticker, grupo in tickers_dict.items():
-            file.write(f"{ticker},{grupo}\n")
+    df_total.to_csv('raw_data/tickers.csv', index=False, encoding='utf-8')
 
+    
 
-    # -- TOTAL --
-    st.write(f'Qtde. Total (sem duplicatas):  {len(tickers_dict)}')
-    with open('raw_data/tickers.csv', 'w', encoding='utf-8') as file:
-        file.write('ticker,grupo\n')
-        for ticker, grupo in tickers_dict.items():
-            file.write(f"{ticker},{grupo}\n")
-"""
 if __name__ == "__main__":
     importar_tickers()
