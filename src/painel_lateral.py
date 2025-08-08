@@ -125,7 +125,7 @@ def definir_ticker():
         )
         st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
 
-        ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
+        ticker = st.session_state.ticker if st.session_state.ticker != 'Nenhum' else 'Nenhum'
 
         # -- Mostrar filtros aplicados --
         st.sidebar.markdown("## Filtros Aplicados")
