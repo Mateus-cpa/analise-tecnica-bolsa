@@ -11,6 +11,7 @@ def analise_setorial():
     st.subheader("Gráficos")    
     colA, colB = st.columns([0.4, 0.6])
     
+    # Filtros
     dimensao_graficos = colA.radio("Selecione a dimensão dos gráficos:",
                                  ("Valor de Mercado", "Quantidade de Tickers"),
                                  horizontal=True,
@@ -23,7 +24,8 @@ def analise_setorial():
     coluna = "setor_pt" if nome_coluna == "Setor" else "industria_pt"
     
     col1, col2 = st.columns([0.4, 0.6])
-    # Gráficos de contagem ou soma de valor de mercado por grupo
+
+    # Gráficos
     if dimensao_graficos == "Valor de Mercado":
         grafico_qtd = px.histogram(df, 
                                    x='grupo',

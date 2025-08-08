@@ -108,7 +108,7 @@ def importar_tickers():
             #Classifica os tickers
             df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'BDR' if x.ticker.endswith('34') or
                                     x.ticker.endswith('39') else 'Ação', axis=1)
-            df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'ETF/FII' if x.ticker.endswith('11')
+            df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'ETF' if x.ticker.endswith('11')
                                 else x.grupo, axis=1)
             df_acoes_brapi['grupo'] = df_acoes_brapi.apply(lambda x: 'Índice' if x.ticker.startswith('^') 
                                 else x.grupo, axis=1)
