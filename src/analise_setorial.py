@@ -13,7 +13,7 @@ def analise_setorial():
     
     # Filtros
     dimensao_graficos = colA.radio("Selecione a dimensão dos gráficos:",
-                                 ("Valor de Mercado", "Quantidade de Tickers"),
+                                 ("Quantidade de Tickers", "Valor de Mercado"),
                                  horizontal=True,
                                  key="dimensao_graficos_setorial")
 
@@ -182,8 +182,8 @@ def analise_setorial():
         for i, col in enumerate(cols):
             with col:
                 for ticker in ticker_columns[i]:
-                    if st.button(ticker):
-                        st.session_state.ticker = f'{ticker}.SA'
+                    if st.button(f'{ticker.split(".")[0]}', key=f'ticker_{ticker}'):
+                        st.session_state.ticker = f'{ticker}'
 
     else:
         st.warning(f"Existem {len(tickers)} tickers disponíveis. Use os filtros para encontrar o ticker desejado.")
