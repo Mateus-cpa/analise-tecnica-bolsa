@@ -42,7 +42,7 @@ def analise_setorial():
                                    color="grupo",
                                    hover_data=["ticker", "setor_pt", "industria_pt"])
         grafico_qtd.update_yaxes(title_text="Contagem")
-    grafico_qtd.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+    grafico_qtd.update_layout(legend=dict(yanchor="top", y=1.1, xanchor="left", x=0.9))
     grafico_qtd.update_xaxes(title_text="Grupo")
     grafico_qtd.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
     grafico_qtd.update_layout(bargap=0.2)
