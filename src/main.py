@@ -75,7 +75,7 @@ def tela_streamlit():
     st.session_state.ticker = definir_ticker()
     if (st.session_state.ticker is None or st.session_state.ticker == 'NENHUM'):
         st.header(" Análise Setorial")
-        analise_setorial()
+        st.session_state.ticker = analise_setorial()
         
     
     if st.session_state.ticker != 'NENHUM':

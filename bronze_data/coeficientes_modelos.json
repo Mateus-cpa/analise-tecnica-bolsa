@@ -1,1 +1,1 @@
-{"regressao_linear": 99.93067224451953, "rede_neural": 99.81773267038757, "hiper_parametro": 0.0, "random_forest": 99.68966083966475, "gradient_boosting": 99.69050126528384, "svr": 90.35019570200876, "ridge": 99.3877147427246, "lasso": 93.9864063751641}
+{"regressao_linear": 99.64138797606601, "rede_neural": 99.62848083034997, "hiper_parametro": 0.0, "random_forest": 99.5781889031009, "gradient_boosting": 99.44360638090124, "svr": 99.3140385595503, "ridge": 99.33084895732188, "lasso": 92.42783840857287}
