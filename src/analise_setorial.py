@@ -11,8 +11,9 @@ def analise_setorial():
     st.subheader("Gráficos")    
     colA, colB = st.columns([0.4, 0.6])
     
+    # Filtros
     dimensao_graficos = colA.radio("Selecione a dimensão dos gráficos:",
-                                 ("Valor de Mercado", "Quantidade de Tickers"),
+                                 ("Quantidade de Tickers", "Valor de Mercado"),
                                  horizontal=True,
                                  key="dimensao_graficos_setorial")
 
@@ -23,7 +24,8 @@ def analise_setorial():
     coluna = "setor_pt" if nome_coluna == "Setor" else "industria_pt"
     
     col1, col2 = st.columns([0.4, 0.6])
-    # Gráficos de contagem ou soma de valor de mercado por grupo
+
+    # Gráficos
     if dimensao_graficos == "Valor de Mercado":
         grafico_qtd = px.histogram(df, 
                                    x='grupo',
@@ -40,7 +42,7 @@ def analise_setorial():
                                    color="grupo",
                                    hover_data=["ticker", "setor_pt", "industria_pt"])
         grafico_qtd.update_yaxes(title_text="Contagem")
-    grafico_qtd.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
+    grafico_qtd.update_layout(legend=dict(yanchor="top", y=1.1, xanchor="left", x=0.9))
     grafico_qtd.update_xaxes(title_text="Grupo")
     grafico_qtd.update_traces(marker=dict(line=dict(width=1, color='DarkSlateGrey')))
     grafico_qtd.update_layout(bargap=0.2)
@@ -139,7 +141,7 @@ def analise_setorial():
 
     # Gráficos de PVP
     if dimensao_graficos == "Valor de Mercado":
-        grafico_pvp = px.histogram(df[df['pvp'] <= 10], 
+        grafico_pvp = px.histogram(df[(df['pvp'] <= 10) & (df['pvp'] > -20)], 
                                    x="pvp", 
                                    y="valor_mercado",
                                    title="Soma do Valor de Mercado por P/VPA",
@@ -147,7 +149,7 @@ def analise_setorial():
                                    histfunc="sum")
         grafico_pvp.update_yaxes(title_text="Valor de Mercado (R$)")
     else:
-        grafico_pvp = px.histogram(df[df['pvp'] <= 10], 
+        grafico_pvp = px.histogram(df[(df['pvp'] <= 10) & (df['pvp'] > -20)], 
                                    x="pvp", 
                                    title="Distribuição do P/VPA",
                                    color="grupo")
@@ -172,18 +174,25 @@ def analise_setorial():
 
     # listar tikers como botões para filtrar
     tickers = df['ticker'].unique().tolist()
-    st.subheader(f"Lista dos {len(tickers)} tickers")
-    tickers.sort()
+
+    # Inicializa o ticker selecionado se não existir
+    if 'ticker' not in st.session_state:
+        st.session_state.ticker = None
+
     if len(tickers) < 40:
+        st.subheader(f"Lista dos {len(tickers)} tickers")
+        tickers.sort()
         ticker_columns = np.array_split(tickers, 5)
         cols = st.columns(5)
         for i, col in enumerate(cols):
             with col:
                 for ticker in ticker_columns[i]:
-                    if st.button(ticker):
-                        st.session_state.ticker = f'{ticker}.SA'
+                    if st.button(f'{ticker.split(".")[0]}', key=f'ticker_{ticker}'):
+                        st.session_state.ticker = ticker
 
     else:
-        st.warning(f"Existem {len(tickers)} tickers disponíveis. Use os filtros para encontrar o ticker desejado.")
+        st.markdown(f"### {len(tickers)} tickers correspondem a estes filtros")
+        st.warning("Utilize os filtros para encontrar o ticker desejado para reduzir ao máximo de 40 tickers.")
     # utilizar ytdata-profiling para análise mais detalhada
+    return st.session_state.ticker
     

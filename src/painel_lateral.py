@@ -57,13 +57,16 @@ def definir_ticker():
                 "-5=>-1%": (-5, -1),
                 "-1=>1%": (-1, 1),
                 "1=>5%": (1, 5),
-                ">5%": (5, max(setores_df['variacao_valor']))
+                ">5%": (5, float('inf'))
             }
             tupla_variacao = variacao_map[faixa_variacao]
             min_var = tupla_variacao[0]
             max_var = tupla_variacao[1]
-            setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
-                                    (setores_df['variacao_valor'] <= max_var)]
+            if faixa_variacao == ">5%":
+                setores_df = setores_df[setores_df['variacao_valor'] > 5]
+            else:
+                setores_df = setores_df[(setores_df['variacao_valor'] >= min_var) &
+                                        (setores_df['variacao_valor'] <= max_var)]
             st.session_state['setores_filtrados'] = setores_df.copy()
         except KeyError:
             pass    
@@ -109,11 +112,9 @@ def definir_ticker():
 
         # -- TICKER --
         setores_filtrados_df = st.session_state['setores_filtrados'].copy()
-
         setores_filtrados_df['ticker_busca'] = setores_filtrados_df.apply(
             lambda linha: f"{str(linha['ticker'])} {str(linha.get('nome',''))} {str(linha.get('nome completo',''))}", axis=1
         )
-
         opcoes_dict = {row['ticker_busca']: row['ticker'] for _, row in setores_filtrados_df.iterrows()}
         opcoes_lista = ['Nenhum'] + list(opcoes_dict.keys())
 
@@ -124,7 +125,17 @@ def definir_ticker():
         )
         st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
 
-        ticker = st.session_state.ticker + '.SA' if st.session_state.ticker != 'Nenhum' else 'Nenhum'
+        ticker = st.session_state.ticker if st.session_state.ticker != 'Nenhum' else 'Nenhum'
+
+        # -- Mostrar filtros aplicados --
+        st.sidebar.markdown("## Filtros Aplicados")
+        st.sidebar.write(f"**Variação de Valor:** {faixa_variacao if 'faixa_variacao_key' in st.session_state else 'Nenhum'}")
+        st.sidebar.write(f"**Rendimento (DY):** {minimo_dy if 'minimo_dy' in st.session_state else 'Nenhum'}")
+        st.sidebar.write(f"**Grupo:** {grupo_selecionado if 'grupo_select' in st.session_state else 'Todos'}")
+        st.sidebar.write(f"**Setor:** {setor_selecionado if 'setor_select' in st.session_state else 'Todos'}")
+        st.sidebar.write(f"**Indústria:** {industria_selecionada if 'industrias_select' in st.session_state else 'Todos'}") 
+
+        # -- Retorna o ticker selecionado --
         return ticker.upper()
 
 

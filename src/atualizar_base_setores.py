@@ -33,7 +33,7 @@ def atualizar_base_setores():
         ticker = row['ticker']
         grupo = row['grupo']
         try:
-            info = yf.Ticker(ticker + '.SA').info # Assumindo que yf está importado
+            info = yf.Ticker(ticker).info # Assumindo que yf está importado
             nome = info.get('shortName') or ''
             nome_completo = info.get('longName') or ''
             setor = info.get('sector') or ''
@@ -91,6 +91,11 @@ def atualizar_base_setores():
     # Preenchendo valores nulos de 'rendimento' com numpy
     df_setores['rendimento'] = np.where(df_setores['rendimento'].isnull(), 0.0, df_setores['rendimento'])
 
+    # Trata valores ETF
+    df_setores['grupo'] = df_setores.apply(lambda x: 'Fiagro' if 'Fiagro' in x['nome completo'] else x.grupo, axis=1)
+    #df_setores['grupo'] = df_setores.apply(lambda x: 'ETF/FII' if x.ticker.endswith('11') else x.grupo, axis=1)
+
+    # Exportação do DataFrame para CSV
     df_setores.to_csv(setores_path, index=False)
     st.success("Importação realizada com sucesso.")
     

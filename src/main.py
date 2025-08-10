@@ -72,10 +72,11 @@ def tela_streamlit():
     if 'setores_filtrados' not in st.session_state:
         with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
             st.session_state['setores_filtrados'] = pd.read_csv(f)
-    st.session_state.ticker = definir_ticker()
+    if ('ticker' not in st.session_state) or (st.session_state.ticker is None) or (st.session_state.ticker == 'NENHUM'):
+        st.session_state.ticker = definir_ticker()
     if (st.session_state.ticker is None or st.session_state.ticker == 'NENHUM'):
         st.header(" Análise Setorial")
-        analise_setorial()
+        st.session_state.ticker = analise_setorial()
         
     
     if st.session_state.ticker != 'NENHUM':
