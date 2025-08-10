@@ -174,9 +174,14 @@ def analise_setorial():
 
     # listar tikers como botões para filtrar
     tickers = df['ticker'].unique().tolist()
-    st.subheader(f"Lista dos {len(tickers)} tickers")
-    tickers.sort()
+
+    # Inicializa o ticker selecionado se não existir
+    if 'ticker' not in st.session_state:
+        st.session_state.ticker = None
+
     if len(tickers) < 40:
+        st.subheader(f"Lista dos {len(tickers)} tickers")
+        tickers.sort()
         ticker_columns = np.array_split(tickers, 5)
         cols = st.columns(5)
         for i, col in enumerate(cols):
@@ -186,7 +191,7 @@ def analise_setorial():
                         st.session_state.ticker = ticker
 
     else:
-        st.warning(f"Existem {len(tickers)} tickers disponíveis.")
+        st.markdown(f"### {len(tickers)} tickers correspondem a estes filtros")
         st.warning("Utilize os filtros para encontrar o ticker desejado para reduzir ao máximo de 40 tickers.")
     # utilizar ytdata-profiling para análise mais detalhada
     return st.session_state.ticker
