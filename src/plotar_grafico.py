@@ -117,14 +117,7 @@ def plotar_grafico(acao, ticker):
                                     font=dict(color='white')
                                 )
 
-    #marcadores de Machine Learning
-    try:
-        with open('bronze_data/coeficientes_modelos.json', 'r') as f:
-            coeficientes_modelos = json.load(f) #salva como dict
-    except FileNotFoundError:
-        st.warning("Arquivo de coeficientes não encontrado.")
-        coeficientes_modelos = {}
-
+    coeficientes_modelos = st.session_state.get('coeficientes_modelos', {})
 
     if 'previsao_regressao_linear' in acao.columns and coeficientes_modelos['regressao_linear'] > 90.0:
         if col3.checkbox('Regr. linear', value=True, key= 'reg_linear'):
