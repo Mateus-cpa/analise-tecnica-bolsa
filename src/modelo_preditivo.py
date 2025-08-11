@@ -215,9 +215,8 @@ def acao_com_preditivo(acao):
         coeficientes_modelos['lasso'] = cd_lasso * 100
         modelos['lasso'] = lasso
 
-    # Salva coeficientes dos modelos em json
-    with open('bronze_data/coeficientes_modelos.json', 'w') as f:
-        json.dump(coeficientes_modelos, f)
+    #salvar coeficientes em st.session_state
+    st.session_state.coeficientes_modelos = coeficientes_modelos
 
     previsao_supervisionada = features_scale[qtd_linhas_teste:qtd_linhas]
     data_pregao_full = acao_prev.index
