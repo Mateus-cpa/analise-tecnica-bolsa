@@ -19,6 +19,16 @@ def importar_fundamentos(ticker):
     for coluna in colunas:
         if coluna not in dados.columns:
             dados[coluna] = None
+    # cria arquivos json se não existirem
+    arquivos_json = ['traducao_setor.json', 'traducao_industria.json']
+    for arquivo in arquivos_json:
+        try:
+            with open(f'bronze_data/{arquivo}', 'r', encoding='utf-8') as f:
+                json.load(f)
+        except FileNotFoundError:
+            with open(f'bronze_data/{arquivo}', 'w', encoding='utf-8') as f:
+                json.dump({}, f)
+                
     # Adiciona a coluna setor_pt usando o dicionário de tradução
     try:
         with open('bronze_data/traducao_setor.json', encoding='utf-8') as f:
