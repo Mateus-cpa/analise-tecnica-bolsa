@@ -46,6 +46,16 @@ def atualizar_base_setores():
             valor_patrimonial_por_acao = info.get('bookValue') or ''
             pvp = info.get('priceToBook') or ''
             valor_mercado = info.get('marketCap') or ''
+            endereco1 = info.get('address1') or ''
+            endereco2 = info.get('address2') or ''
+            ultimo_valor_dividendo = info.get('lastDividendValue') or ''
+            ultima_data_dividendo = info.get('lastDividendDate') or ''
+            preco_alvo_maximo = info.get('targetHighPrice') or ''
+            preco_alvo_minimo = info.get('targetLowPrice') or ''
+            preco_alvo_medio = info.get('targetMeanPrice') or ''
+            preco_alvo_medio = info.get('targetMedianPrice') or ''
+            numero_opinioes_analistas = info.get('numberOfAnalystOpinions') or ''
+            
             status_text.text(f"Ticker: {ticker} | Grupo: {grupo} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
         except Exception as e:
             print(f"Erro ao buscar dados de {ticker}: {e}")
@@ -61,6 +71,14 @@ def atualizar_base_setores():
             valor_patrimonial_por_acao = ''
             pvp = ''
             valor_mercado = ''
+            endereco1 = ''
+            endereco2 = ''
+            ultimo_valor_dividendo = ''
+            ultima_data_dividendo = ''
+            preco_alvo_maximo = ''
+            preco_alvo_minimo = ''
+            preco_alvo_medio = ''
+            numero_opinioes_analistas = ''
 
         setores.append({'ticker': ticker, 
                         'grupo': grupo,
@@ -75,7 +93,15 @@ def atualizar_base_setores():
                         'tipo': tipo,
                         'valor patrimonial por ação': valor_patrimonial_por_acao,
                         'pvp': pvp,
-                        'valor_mercado': valor_mercado
+                        'valor_mercado': valor_mercado,
+                        'endereco1': endereco1,
+                        'endereco2': endereco2,
+                        'ultimo_valor_dividendo': ultimo_valor_dividendo,
+                        'ultima_data_dividendo': ultima_data_dividendo,
+                        'preco_alvo_maximo': preco_alvo_maximo,
+                        'preco_alvo_minimo': preco_alvo_minimo,
+                        'preco_alvo_medio': preco_alvo_medio,
+                        'numero_opinioes_analistas': numero_opinioes_analistas
                         })
         progress_bar.progress((i + 1) / len(df_tickers))
 
