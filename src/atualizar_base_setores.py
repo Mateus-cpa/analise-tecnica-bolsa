@@ -79,6 +79,7 @@ def atualizar_base_setores():
             preco_alvo_minimo = ''
             preco_alvo_medio = ''
             numero_opinioes_analistas = ''
+            expectativa =
 
         setores.append({'ticker': ticker, 
                         'grupo': grupo,
