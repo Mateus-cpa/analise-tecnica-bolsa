@@ -18,7 +18,8 @@ def atualizar_base_setores():
         colunas = [
             'ticker', 'grupo', 'nome', 'nome completo', 'setor', 'industria',
             'rendimento', 'variacao_valor', 'recomendação', 'confiança do alerta', 'tipo',
-            'valor patrimonial por ação', 'pvp', 'valor_mercado'
+            'valor patrimonial por ação', 'pvp', 'valor_mercado',
+            'sumario'
         ]
         pd.DataFrame(columns=colunas).to_csv(setores_path, index=False)
 
@@ -32,82 +33,61 @@ def atualizar_base_setores():
     for i, row in df_tickers.iterrows():
         ticker = row['ticker']
         grupo = row['grupo']
+        
         try:
             info = yf.Ticker(ticker).info # Assumindo que yf está importado
-            nome = info.get('shortName') or ''
-            nome_completo = info.get('longName') or ''
-            setor = info.get('sector') or ''
-            industria = info.get('industry') or ''
-            rendimento = info.get('dividendYield') or ''
-            variacao_valor = info.get('regularMarketChangePercent') or ''
-            recomendacao = info.get('recommendationKey') or ''
-            confianca_alerta = info.get('customPriceAlertConfidence') or ''
-            tipo = info.get('typeDisp') or ''
-            valor_patrimonial_por_acao = info.get('bookValue') or ''
-            pvp = info.get('priceToBook') or ''
-            valor_mercado = info.get('marketCap') or ''
-            endereco1 = info.get('address1') or ''
-            endereco2 = info.get('address2') or ''
-            ultimo_valor_dividendo = info.get('lastDividendValue') or ''
-            ultima_data_dividendo = info.get('lastDividendDate') or ''
-            preco_alvo_maximo = info.get('targetHighPrice') or ''
-            preco_alvo_minimo = info.get('targetLowPrice') or ''
-            preco_alvo_medio = info.get('targetMeanPrice') or ''
-            preco_alvo_medio = info.get('targetMedianPrice') or ''
-            numero_opinioes_analistas = info.get('numberOfAnalystOpinions') or ''
-            
-            status_text.text(f"Ticker: {ticker} | Grupo: {grupo} | Nome: {nome} | Setor: {setor} | Indústria: {industria}")
         except Exception as e:
             print(f"Erro ao buscar dados de {ticker}: {e}")
-            nome = ''
-            nome_completo = ''
-            setor = ''
-            industria = ''
-            rendimento = ''
-            variacao_valor = ''
-            recomendacao = ''
-            confianca_alerta = ''
-            tipo = ''
-            valor_patrimonial_por_acao = ''
-            pvp = ''
-            valor_mercado = ''
-            endereco1 = ''
-            endereco2 = ''
-            ultimo_valor_dividendo = ''
-            ultima_data_dividendo = ''
-            preco_alvo_maximo = ''
-            preco_alvo_minimo = ''
-            preco_alvo_medio = ''
-            numero_opinioes_analistas = ''
-            expectativa =
-
-        setores.append({'ticker': ticker, 
+        info = {}
+        
+        # atributos a importar
+        lista_get = ['shortName', 'longName', 'sector', 'industry', 'dividendYield',
+                     'regularMarketChangePercent', 'recommendationKey', 'customPriceAlertConfidence',
+                    'typeDisp', 'bookValue', 'priceToBook', 'marketCap', 'address1', 'address2',
+                    'lastDividendValue', 'lastDividendDate', 'targetHighPrice', 'targetLowPrice',
+                    'targetMeanPrice', 'targetMedianPrice', 'numberOfAnalystOpinions','longBusinessSummary']
+        for key in lista_get:
+            try:
+                info[key] = yf.Ticker(ticker).info.get(key, None)
+            except Exception as e:
+                print(f"Erro ao buscar {key} de {ticker}: {e}")
+                
+        setores.append({'ticker': ticker,
                         'grupo': grupo,
-                        'nome': nome,
-                        'nome completo' : nome_completo,
-                        'setor': setor, 
-                        'industria': industria,
-                        'rendimento': rendimento,
-                        'variacao_valor' : variacao_valor,
-                        'recomendação': recomendacao,
-                        'confiança do alerta': confianca_alerta,
-                        'tipo': tipo,
-                        'valor patrimonial por ação': valor_patrimonial_por_acao,
-                        'pvp': pvp,
-                        'valor_mercado': valor_mercado,
-                        'endereco1': endereco1,
-                        'endereco2': endereco2,
-                        'ultimo_valor_dividendo': ultimo_valor_dividendo,
-                        'ultima_data_dividendo': ultima_data_dividendo,
-                        'preco_alvo_maximo': preco_alvo_maximo,
-                        'preco_alvo_minimo': preco_alvo_minimo,
-                        'preco_alvo_medio': preco_alvo_medio,
-                        'numero_opinioes_analistas': numero_opinioes_analistas
+                        'nome': info['shortName'],
+                        'nome completo': info['longName'],
+                        'setor': info['sector'],
+                        'industria': info['industry'],
+                        'rendimento': info['dividendYield'],
+                        'variacao_valor': info['regularMarketChangePercent'],
+                        'recomendação': info['recommendationKey'],
+                        'confiança do alerta': info['customPriceAlertConfidence'],
+                        'tipo': info['typeDisp'],
+                        'valor patrimonial por ação': info['bookValue'],
+                        'pvp': info['priceToBook'],
+                        'valor_mercado': info['marketCap'],
+                        'endereco1': info['address1'],
+                        'endereco2': info['address2'],
+                        'ultimo_valor_dividendo': info['lastDividendValue'],
+                        'ultima_data_dividendo': info['lastDividendDate'],
+                        'preco_alvo_maximo': info['targetHighPrice'],
+                        'preco_alvo_minimo': info['targetLowPrice'],
+                        'preco_alvo_medio': info['targetMeanPrice'],
+                        'preco_alvo_mediana': info['targetMedianPrice'],
+                        'numero_opinioes_analistas': info['numberOfAnalystOpinions'],
+                        'sumario': info['longBusinessSummary']
                         })
+        #mostrar dados apenas do ativo lido, após apagar
+        st.success(f'{ticker} - {info["shortName"]} ({grupo}) - {info["sector"]} - {info["industry"]} - {info["typeDisp"]} - DY: {info["dividendYield"]}% - Variação: {info["regularMarketChangePercent"]}%')
+        
+        # Atualizar a barra de progresso
         progress_bar.progress((i + 1) / len(df_tickers))
 
     df_setores = pd.DataFrame(setores)
-    
+
+    # calcular coluna 'expectativa' = (preco_alvo_medio - valor_mercado) / valor_mercado * 100
+    df_setores['expectativa'] = (df_setores['preco_alvo_medio'] - df_setores['valor_mercado']) / df_setores['valor_mercado'] * 100
+
     #retirar dados com nome NA
     df_setores = df_setores.dropna(subset=['nome'])
 
