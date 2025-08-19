@@ -6,7 +6,7 @@ from googletrans import Translator
 import pandas as pd
 
 
-def traduzir_base(colunas=['setor', 'industria']):
+def traduzir_base(colunas=['setor', 'industria', 'sumario']):
     translator = Translator()
     df = pd.read_csv('raw_data/lista_setores.csv', na_values=['N/A'])
 
@@ -43,3 +43,7 @@ def traduzir_base(colunas=['setor', 'industria']):
     print(f'Salvando DataFrame traduzido em {csv_path} ...')
     df.to_csv(csv_path, index=False, encoding='utf-8-sig')
     print(f'DataFrame salvo em {csv_path}.')
+
+if __name__ == "__main__":
+    traduzir_base()
+    print('Tradução concluída.')
