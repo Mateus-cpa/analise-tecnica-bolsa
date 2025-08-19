@@ -1,1 +1,14 @@
-{}
+{
+  "Industrials": "Industriais",
+  "Energy": "Energia",
+  "Healthcare": "Assistência médica",
+  "Financial": "Financial",
+  "Technology": "Tecnologia",
+  "Utilities": "Utilities",
+  "Consumer Cyclical": "Consumidor cíclico",
+  "Real Estate": "Imobiliária",
+  "Consumer Defensive": "Defensivo do consumidor",
+  "Financial Services": "Serviços financeiros",
+  "Basic Materials": "Materiais básicos",
+  "Communication Services": "Serviços de comunicação"
+}

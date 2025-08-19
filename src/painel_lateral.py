@@ -1,5 +1,6 @@
 from datetime import date, timedelta
 import pandas as pd
+import os
 
 import yfinance as yf
 import streamlit as st
@@ -30,7 +31,12 @@ def definir_ticker():
     """
     with st.sidebar:
         st.header("Definir Ticker")
-        setores_df = pd.read_csv('raw_data/lista_setores_traduzido.csv')
+        # lê lista_setores_traduzido ou lista_setores
+        if os.path.exists('bronze_data/lista_setores_traduzido.csv'):
+            setores_df = pd.read_csv('bronze_data/lista_setores_traduzido.csv')
+        else:
+            setores_df = pd.read_csv('raw_data/lista_setores.csv')
+        
 
         # -- LIMPAR FILTROS --
         if st.button('Limpar filtros'):

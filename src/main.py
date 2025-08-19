@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
-import json
+import os
 import sys
 
 # bibliotecas de terceiros
@@ -75,8 +75,15 @@ def tela_streamlit():
             traduzir_base()
 
     if 'setores_filtrados' not in st.session_state:
-        with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
-            st.session_state['setores_filtrados'] = pd.read_csv(f)
+        # se não existir lista_setores_traduzido.csv, utiliza lista_setores
+        if os.path.exists('bronze_data/lista_setores_traduzido.csv'):
+            with open('bronze_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
+                st.session_state['setores_filtrados'] = pd.read_csv(f)
+        else:
+            with open('raw_data/lista_setores.csv', 'r', encoding='utf-8') as f:
+                st.session_state['setores_filtrados'] = pd.read_csv(f)
+                st.session_state['setores_filtrados']['setor_pt'] = st.session_state['setores_filtrados']['setor']
+                st.session_state['setores_filtrados']['industria_pt'] = st.session_state['setores_filtrados']['industria']
     if ('ticker' not in st.session_state) or (st.session_state.ticker is None) or (st.session_state.ticker == 'NENHUM'):
         st.session_state.ticker = definir_ticker()
     if (st.session_state.ticker is None or st.session_state.ticker == 'NENHUM'):
@@ -124,20 +131,28 @@ def tela_streamlit():
         with st.expander("Histórico do ativo"):
             lancar_dataframe(acao, st.session_state.ticker)
     st.subheader("Base de dados de setores")
-    # colocar seção retrátil st.expander
-    with st.expander("Ver setores disponíveis"):
-        with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
+    
+    with st.expander("Ver tickers disponíveis"):
+        with open('bronze_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
             setores_df = pd.read_csv(f)
             if st.button("Baixar setores"):
                 setores_df.to_csv('bronze_data/setores_filtrados.json', orient='records', index=False)
                 st.success("Setores baixados com sucesso!")
         st.dataframe(setores_df)
+    
+    # -- REFERÊNCIAS DE TRADUÇÃO DA BASE --
     with st.expander('Referências de tradução'):
         st.subheader('Setor')
-        st.dataframe(pd.read_json('bronze_data/traducao_setor.json'))
+        import json
+        with open('bronze_data/traducao_setor.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        df_setor = pd.DataFrame(list(data.items()), columns=['setor', 'setor_pt'])
+        st.dataframe(df_setor, hide_index=True)
         st.subheader('Indústria')
-        st.dataframe(pd.read_json('bronze_data/traducao_industria.json'))
-
+        with open('bronze_data/traducao_industria.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        df_industria = pd.DataFrame(list(data.items()), columns=['industria', 'industria_pt'])
+        st.dataframe(df_industria, hide_index=True)
     st.write(f"Versão do python: {str(sys.version).split('(')[0]}")
 
 
