@@ -30,6 +30,7 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
     """
     st.header(f"{fundamentos['shortName'].values[0]} - {fundamentos['symbol'].values[0]}")
     st.write(f"Nome completo: {fundamentos['longName'].values[0]}")
+    #st.write(f"Grupo: {fundamentos['tipo'].values[0]}")
     if fundamentos['setor_pt'].values[0] == None:
         st.write(f"Setor: {fundamentos['sector'].values[0]}")
     else:
@@ -45,6 +46,7 @@ def mostrar_fundamentos(fundamentos: pd.DataFrame):
         descricao = fundamentos['longBusinessSummary'].values[0]
         descricao_traduzida = translate_text(descricao, dest_lang='pt')
         st.write(f'{descricao_traduzida}')
+    
     st.subheader("Fundamentos")
     if fundamentos.empty:
         st.error("Nenhum dado fundamental disponível para o ticker selecionado.")

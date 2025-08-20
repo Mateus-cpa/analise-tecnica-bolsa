@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
-import json
+import os
 import sys
 
 # bibliotecas de terceiros
@@ -19,6 +19,7 @@ from tratamento_ativo import enriquecer_dados, marcador_hoje, adicionar_target_m
 from plotar_grafico import plotar_grafico
 from mostrar_fundamentos import mostrar_fundamentos
 from analise_setorial import analise_setorial
+from traducao_base import traduzir_base  # Importando a função de tradução
 
 def configuracoes_iniciais():
     # Configurações iniciais
@@ -62,29 +63,42 @@ def lancar_dataframe(acao, ticker):
 def tela_streamlit():
     configuracoes_iniciais()
     
-        #importação
-    col1, col2 = st.columns(2)
-    if col1.button('Importar tickers'):
-        importar_tickers()  # Importa os tickers disponíveis
-    if col2.button('Atualizar base'):
-            atualizar_base_setores()
+    # -- Base de Dados --
+    with st.expander("Base de Dados"):
+        st.warning('Alterar a base de dados pode levar de minutos a horas.')
+        col1, col2, col3 = st.columns(3)
+        if col1.button('Importar tickers'):
+            importar_tickers()  # Importa os tickers disponíveis
+        if col2.button('Atualizar e traduzir base'):
+                atualizar_base_setores()
+        if col3.button('Apenas retraduzir setores e indústrias'):
+            traduzir_base()
 
+    # -- Carrega arquivo de setores --
     if 'setores_filtrados' not in st.session_state:
-        with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
-            st.session_state['setores_filtrados'] = pd.read_csv(f)
-    if ('ticker' not in st.session_state) or (st.session_state.ticker is None) or (st.session_state.ticker == 'NENHUM'):
-        st.session_state.ticker = definir_ticker()
-    if (st.session_state.ticker is None or st.session_state.ticker == 'NENHUM'):
+        # se não existir lista_setores_traduzido.csv, utiliza lista_setores
+        if os.path.exists('bronze_data/lista_setores_traduzido.csv'):
+            with open('bronze_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
+                st.session_state['setores_filtrados'] = pd.read_csv(f)
+        else:
+            with open('raw_data/lista_setores.csv', 'r', encoding='utf-8') as f:
+                st.session_state['setores_filtrados'] = pd.read_csv(f)
+                st.session_state['setores_filtrados']['setor_pt'] = st.session_state['setores_filtrados']['setor']
+                st.session_state['setores_filtrados']['industria_pt'] = st.session_state['setores_filtrados']['industria']
+    
+    with st.sidebar:
+        definir_ticker()
+        tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
+
+            
+    if st.session_state.ticker == None or st.session_state.ticker == 'Nenhum':
         st.header(" Análise Setorial")
         st.session_state.ticker = analise_setorial()
-        
-    
-    if st.session_state.ticker != 'NENHUM':
+        st.write(f"Ticker selecionado: {st.session_state.ticker}")
+
+    if st.session_state.ticker != None and st.session_state.ticker != 'Nenhum':
         fundamentos = importar_fundamentos(st.session_state.ticker)
         mostrar_fundamentos(fundamentos)
-        
-        with st.sidebar:
-            tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
         acao = baixar_dados(st.session_state.ticker, tempo_anos)
         
         
@@ -98,37 +112,50 @@ def tela_streamlit():
             st.warning('Não foram calculados dados de previsão com Machine Learning.')
         except ValueError:
             st.warning('Não foram calculados dados de previsão com Machine Learning.')
-            with open('bronze_data/coeficientes_modelos.json', mode='w') as coef_file:
-                file_coef = {
-                    "regressao_linear": 0.0,
-                    "rede_neural": 0.0,
-                    "hiper_parametro": 0.0,
-                    "random_forest": 0.0,
-                    "gradient_boosting": 0.0,
-                    "svr": 0.0,
-                    "ridge": 0.0,
-                    "lasso": 0.0
-                }
-                json.dump(file_coef, coef_file, indent=4)  # Esta linha grava o dicionário no arquivo
-
+            if 'coeficientes_modelos' not in st.session_state:
+                st.session_state.coeficientes_modelos = {
+                        "regressao_linear": 0.0,
+                        "rede_neural": 0.0,
+                        "hiper_parametro": 0.0,
+                        "random_forest": 0.0,
+                        "gradient_boosting": 0.0,
+                        "svr": 0.0,
+                        "ridge": 0.0,
+                        "lasso": 0.0
+                    }
+                
         acao = marcador_hoje(acao)
         # Obtém o targetMedianPrice do DataFrame fundamentos
         target_median_price = fundamentos['targetMedianPrice'].iloc[0] if 'targetMedianPrice' in fundamentos.columns else None
         acao = adicionar_target_median_price(acao=acao,
                                              target_median_price=target_median_price)
         plotar_grafico(acao, st.session_state.ticker)
-        if st.checkbox("Histórico do ativo"):
+        with st.expander("Histórico do ativo"):
             lancar_dataframe(acao, st.session_state.ticker)
     st.subheader("Base de dados de setores")
-    # colocar seção retrátil st.expander
-    with st.expander("Ver setores disponíveis"):
-        with open('raw_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
+    
+    # -- Mostrar base de dados
+    with st.expander("Ver todos tickers disponíveis na base de dados"):
+        with open('bronze_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
             setores_df = pd.read_csv(f)
             if st.button("Baixar setores"):
                 setores_df.to_csv('bronze_data/setores_filtrados.json', orient='records', index=False)
                 st.success("Setores baixados com sucesso!")
         st.dataframe(setores_df)
-            
+    
+    # -- REFERÊNCIAS DE TRADUÇÃO DA BASE --
+    with st.expander('Referências de tradução'):
+        st.subheader('Setor')
+        import json
+        with open('bronze_data/traducao_setor.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        df_setor = pd.DataFrame(list(data.items()), columns=['setor', 'setor_pt'])
+        st.dataframe(df_setor, hide_index=True)
+        st.subheader('Indústria')
+        with open('bronze_data/traducao_industria.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        df_industria = pd.DataFrame(list(data.items()), columns=['industria', 'industria_pt'])
+        st.dataframe(df_industria, hide_index=True)
     st.write(f"Versão do python: {str(sys.version).split('(')[0]}")
 
 
