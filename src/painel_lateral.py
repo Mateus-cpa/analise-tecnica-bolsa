@@ -40,7 +40,7 @@ def definir_ticker():
 
         # -- LIMPAR FILTROS --
         if st.button('Limpar filtros'):
-            st.session_state.ticker = 'NENHUM'
+            st.session_state.ticker = None
             st.session_state.ticker_select = 'Nenhum'
             st.session_state.grupo_select = 'Todos'
             st.session_state.setor_select = 'Todos'
@@ -131,7 +131,10 @@ def definir_ticker():
         )
         st.session_state.ticker = opcoes_dict.get(selecionado, 'Nenhum')
 
-        ticker = st.session_state.ticker if st.session_state.ticker != 'Nenhum' else 'Nenhum'
+        if st.session_state.ticker != 'Nenhum':
+            ticker = st.session_state.ticker
+        else: 
+            ticker = None
 
         # -- Mostrar filtros aplicados --
         st.sidebar.markdown("## Filtros Aplicados")
@@ -140,9 +143,8 @@ def definir_ticker():
         st.sidebar.write(f"**Grupo:** {grupo_selecionado if 'grupo_select' in st.session_state else 'Todos'}")
         st.sidebar.write(f"**Setor:** {setor_selecionado if 'setor_select' in st.session_state else 'Todos'}")
         st.sidebar.write(f"**Indústria:** {industria_selecionada if 'industrias_select' in st.session_state else 'Todos'}") 
-
-        # -- Retorna o ticker selecionado --
-        return ticker.upper()
+        st.sidebar.write(f"**Ticker Selecionado:** {ticker}")
+        
 
 
 

@@ -74,6 +74,7 @@ def tela_streamlit():
         if col3.button('Apenas retraduzir setores e indústrias'):
             traduzir_base()
 
+    # -- Carrega arquivo de setores --
     if 'setores_filtrados' not in st.session_state:
         # se não existir lista_setores_traduzido.csv, utiliza lista_setores
         if os.path.exists('bronze_data/lista_setores_traduzido.csv'):
@@ -84,19 +85,18 @@ def tela_streamlit():
                 st.session_state['setores_filtrados'] = pd.read_csv(f)
                 st.session_state['setores_filtrados']['setor_pt'] = st.session_state['setores_filtrados']['setor']
                 st.session_state['setores_filtrados']['industria_pt'] = st.session_state['setores_filtrados']['industria']
-    if ('ticker' not in st.session_state) or (st.session_state.ticker is None) or (st.session_state.ticker == 'NENHUM'):
-        st.session_state.ticker = definir_ticker()
-    if (st.session_state.ticker is None or st.session_state.ticker == 'NENHUM'):
+    
+    with st.sidebar:
+        definir_ticker()
+        tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
+
+            
+    if st.session_state.ticker == None or st.session_state.ticker == 'Nenhum':
         st.header(" Análise Setorial")
         st.session_state.ticker = analise_setorial()
-        
-    
-    if st.session_state.ticker != 'NENHUM':
+    else:
         fundamentos = importar_fundamentos(st.session_state.ticker)
         mostrar_fundamentos(fundamentos)
-        
-        with st.sidebar:
-            tempo_anos = st.selectbox(label='Qtde. de anos de download', options=range(20, 0, -1))
         acao = baixar_dados(st.session_state.ticker, tempo_anos)
         
         
@@ -132,7 +132,8 @@ def tela_streamlit():
             lancar_dataframe(acao, st.session_state.ticker)
     st.subheader("Base de dados de setores")
     
-    with st.expander("Ver tickers disponíveis"):
+    # -- Mostrar base de dados
+    with st.expander("Ver todos tickers disponíveis na base de dados"):
         with open('bronze_data/lista_setores_traduzido.csv', 'r', encoding='utf-8') as f:
             setores_df = pd.read_csv(f)
             if st.button("Baixar setores"):
