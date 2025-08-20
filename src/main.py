@@ -94,7 +94,9 @@ def tela_streamlit():
     if st.session_state.ticker == None or st.session_state.ticker == 'Nenhum':
         st.header(" Análise Setorial")
         st.session_state.ticker = analise_setorial()
-    else:
+        st.write(f"Ticker selecionado: {st.session_state.ticker}")
+
+    if st.session_state.ticker != None and st.session_state.ticker != 'Nenhum':
         fundamentos = importar_fundamentos(st.session_state.ticker)
         mostrar_fundamentos(fundamentos)
         acao = baixar_dados(st.session_state.ticker, tempo_anos)
