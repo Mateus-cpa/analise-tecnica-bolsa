@@ -274,19 +274,20 @@ def acao_com_preditivo(acao):
     previsoes = df[previsoes_cols]
     acao_concat = pd.concat([acao, previsoes], axis=1)
 
-    #previsão dos próximos 10 dias
-    df_prev_10_dias = prever_n_dias(acao_prev, modelos, scaler, melhores_colunas, n=10)
-    df_prev_10_dias.index.name = acao_concat.index.name
+    #previsão dos próximos x dias
+    dias_futuros = st.sidebar.selectbox('Prever os próximos dias?', options=[5, 10, 15, 30, 60], index=1)
+    df_prev_dias = prever_n_dias(acao_prev, modelos, scaler, melhores_colunas, n=dias_futuros)
+    df_prev_dias.index.name = acao_concat.index.name
 
     for col in acao_concat.columns:
-        if col not in df_prev_10_dias.columns:
-            df_prev_10_dias[col] = np.nan
-    for col in df_prev_10_dias.columns:
+        if col not in df_prev_dias.columns:
+            df_prev_dias[col] = np.nan
+    for col in df_prev_dias.columns:
         if col not in acao_concat.columns:
             acao_concat[col] = np.nan
 
-    df_prev_10_dias = df_prev_10_dias[acao_concat.columns]
-    acao_concat = pd.concat([acao_concat, df_prev_10_dias], axis=0)
+    df_prev_dias = df_prev_dias[acao_concat.columns]
+    acao_concat = pd.concat([acao_concat, df_prev_dias], axis=0)
     acao_concat = acao_concat[~acao_concat.index.duplicated(keep='first')]
 
     # Apaga valores de 'Close' nos dias de previsão futura (após o último índice real)
