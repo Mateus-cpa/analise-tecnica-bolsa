@@ -282,8 +282,8 @@ def acao_com_preditivo(acao):
     acao_concat = pd.concat([acao, previsoes], axis=1)
 
     #previsão dos próximos x dias
-    dias_futuros = st.sidebar.selectbox('Prever os próximos dias?', options=[5, 10, 15, 30, 60], index=1)
-    df_prev_dias = prever_n_dias(acao_prev, modelos, scaler, melhores_colunas, n=dias_futuros)
+    st.session_state.dias_futuros = st.sidebar.selectbox('Prever os próximos dias?', options=[5, 10, 15, 30, 60], index=1)
+    df_prev_dias = prever_n_dias(acao_prev, modelos, scaler, melhores_colunas, n=st.session_state.dias_futuros)
     df_prev_dias.index.name = acao_concat.index.name
 
     for col in acao_concat.columns:
