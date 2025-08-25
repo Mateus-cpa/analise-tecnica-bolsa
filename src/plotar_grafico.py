@@ -28,7 +28,7 @@ def plotar_grafico(acao, ticker):
             data_inicio = st.date_input(
                 "Selecione o início do gráfico",
                 # Define o valor inicial como 37 dias antes da última data disponível ou a data mínima do DataFrame
-                value = max(acao.index.min().date(), acao.index.max().date() - timedelta(days=37)),
+                value = max(acao.index.min().date(), acao.index.max().date() - timedelta(days=30-st.session_state.get('dias_futuros', 10))),
                 min_value=acao.index.min().date(),
                 max_value=acao.index.max().date(),
                 key="data_inicio_calendario"
