@@ -99,20 +99,21 @@ def prever_n_dias(acao, modelos, scaler, melhores_colunas, n=10):
     for i in range(n):
         proxima_data = acao_prev.index[-1] + BDay(1)
         nova_linha = {}
-        temp = acao_prev[-200:].copy()
+        # Sempre usar apenas os dados reais para cálculo das features
+        temp_real = acao.copy()  # temp_real nunca inclui previsões
         if i == 0:
             # Primeiro dia de previsão: usar todos os valores reais do último dia
-            for col in acao_prev.columns:
+            for col in temp_real.columns:
                 if col in ['Open', 'High', 'Low', 'Close', 'Volume', 'MM5', 'MM21', 'MM72', 'MM200']:
-                    nova_linha[col] = acao_prev.iloc[-1][col]
+                    nova_linha[col] = temp_real.iloc[-1][col]
         else:
-            # Dias seguintes: usar valores previstos
-            nova_linha['Open'] = temp['Close'].iloc[-1]
-            nova_linha['High'] = temp['Close'].iloc[-1]
-            nova_linha['Low'] = temp['Close'].iloc[-1]
-            nova_linha['Volume'] = temp['Volume'].iloc[-1]
+            # Dias seguintes: usar apenas os dados reais para cálculo das features
+            nova_linha['Open'] = temp_real['Close'].iloc[-1]
+            nova_linha['High'] = temp_real['Close'].iloc[-1]
+            nova_linha['Low'] = temp_real['Close'].iloc[-1]
+            nova_linha['Volume'] = temp_real['Volume'].iloc[-1]
             for mm in [5, 21, 72, 200]:
-                nova_linha[f'MM{mm}'] = pd.concat([temp['Close'], pd.Series([temp['Close'].iloc[-1]])]).rolling(window=mm).mean().iloc[-1]
+                nova_linha[f'MM{mm}'] = temp_real['Close'].rolling(window=mm).mean().iloc[-1]
         features_novo_dia = pd.DataFrame([nova_linha], index=[proxima_data])
         features_novo_dia = features_novo_dia[melhores_colunas]
         features_novo_dia_scaled = scaler.transform(features_novo_dia)
